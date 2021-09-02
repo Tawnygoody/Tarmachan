@@ -32,21 +32,21 @@ Below you can find the links for my wireframes, showing how I would like the pag
 The wireframes have been created using Balsamiq and show for Desktop, iPad and iPhone. 
 
 - Home Page
-    - [Desktop](documentation/wireframes/home-page/home-page-desktop.png)
-    - [iPad](documentation/wireframes/home-page/home-page-ipad.png)
-    - [iPhone](documentation/wireframes/home-page/home-page-iphone.png)
+    - [Desktop](documentation/wireframes/home-page/home-page-desktop-r.png)
+    - [iPad](documentation/wireframes/home-page/home-page-ipad-r.png)
+    - [iPhone](documentation/wireframes/home-page/home-page-iphone-r.png)
 - All Products Page
-    - [Desktop](documentation/wireframes/all-products-page/all-products-page-desktop.png)
-    - [iPad](documentation/wireframes/all-products-page/all-products-page-ipad.png)
-    - [iPhone](documentation/wireframes/all-products-page/all-products-page-iphone.png)
+    - [Desktop](documentation/wireframes/all-products-page/all-products-page-desktop-r.png)
+    - [iPad](documentation/wireframes/all-products-page/all-products-page-ipad-r.png)
+    - [iPhone](documentation/wireframes/all-products-page/all-products-page-iphone-r.png)
 - View Product Page
-    - [Desktop](documentation/wireframes/view-product-page/product-page-desktop.png)
-    - [iPad](documentation/wireframes/view-product-page/product-page-ipad.png)
-    - [iPhone](documentation/wireframes/view-product-page/product-page-iphone.png)
+    - [Desktop](documentation/wireframes/view-product-page/product-page-desktop-r.png)
+    - [iPad](documentation/wireframes/view-product-page/product-page-ipad-r.png)
+    - [iPhone](documentation/wireframes/view-product-page/product-page-iphone-r.png)
 - Basket Page
-    - [Desktop](documentation/wireframes/basket-page/basket-page-desktop.png)
-    - [iPad](documentation/wireframes/basket-page/basket-page-ipad.png)
-    - [iPhone](documentation/wireframes/basket-page/basket-page-iphone.png)
+    - [Desktop](documentation/wireframes/basket-page/basket-page-desktop-r.png)
+    - [iPad](documentation/wireframes/basket-page/basket-page-ipad-r.png)
+    - [iPhone](documentation/wireframes/basket-page/basket-page-iphone-r.png)
 - Checkout Page
     - [Desktop](documentation/wireframes/checkout-page/checkout-page-desktop-r.png)
     - [iPad](documentation/wireframes/checkout-page/checkout-page-ipad-r.png)
