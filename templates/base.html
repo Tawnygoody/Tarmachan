@@ -14,6 +14,7 @@
 
     {% block corecss %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -44,12 +45,23 @@
   <body>
 
     <header class="container-fluid fixed-top">
-      <div class="row" id="delivery-banner">
-        <div class="col-lg-6 offset-lg-3 text-center">
-          <h1>test</h1>
+      <div class="row bg-dark-green" id="delivery-banner">
+        <div class="col-lg-8 offset-lg-2 text-center my-3">
+          <h5 class="text-white content-text my-0">Free delivery on orders over £{{ free_delivery_threshold }}!</h5>
         </div>
-        <div class="col-lg-3 text-center">
-          <h1>test</h1>
+        <div class="col-lg-2 text-center my-auto d-none d-lg-block">
+          <ul class="list-inline list-unstyled text-white my-2">
+            <li class="list-inline-item mx-3">
+              <a href="{% url 'account_login' %}" class="text-white">
+                  <i class="icon fas fa-sign-in-alt fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-3">
+              <a href="{% url 'account_signup' %}" class="text-white">
+                  <i class="icon fas fa-user-plus fa-lg"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

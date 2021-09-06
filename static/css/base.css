@@ -2,6 +2,34 @@ html {
     height: 100%
 }
 
-#delivery-banner {
-    background: green;
+/*--- Backgrounds ---*/
+
+.bg-dark-green {
+    background: #004242;
 }
+
+/*--- Backgrounds Ends ---*/
+
+/*--- Text ---*/
+
+.title-text {
+    font-family: 'Cantata One', sans-serif;
+}
+
+.content-text {
+    font-family: 'Crimson Text', sans-serif;
+}
+
+/*--- Text Ends ---*/
+
+/*--- Icons ---*/
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
