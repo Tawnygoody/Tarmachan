@@ -5,7 +5,11 @@ html {
 /*--- Backgrounds ---*/
 
 .bg-dark-green {
-    background: #004242;
+    background: #003838;
+}
+
+.bg-darker-green {
+    background: #002929;
 }
 
 /*--- Backgrounds Ends ---*/
@@ -21,7 +25,7 @@ html {
 }
 
 .color-text {
-    color: #004242;
+    color: #003838;
 }
 
 /*--- Text Ends ---*/
@@ -55,13 +59,23 @@ html {
     font-size: 12px;
 }
 
+.unstyled-white {
+    text-decoration: none;
+    color: #fff;
+}
+
+.unstyled-white:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .unstyled:hover {
     text-decoration: none;
     color: black;
 }
 
 .unstyled-color:hover {
-    color: #004242;
+    color: #003838;
 }
 
 .align-right {
@@ -82,8 +96,16 @@ html {
 
 .index-image {
     object-fit: cover;
-    height: 70vh;
+    height: calc(100vh - 142px);
     width: 100%;
 }
 
+
+/*--- Media Queries ---*/
+
+@media screen and (max-width: 992px) {
+    .center-text-medium {
+        text-align: center !important;
+    }
+}
 
