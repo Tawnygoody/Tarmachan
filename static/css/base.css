@@ -90,6 +90,13 @@ html {
     z-index: 10000;
 }
 
+.dropdown-nav-menu {
+    width: 100vw;
+    margin-top: 34px;
+    border: none;
+    border-radius: 0;
+}
+
 /*--- Main Nav Ends ---*/
 
 /*--- Home Page ---*/
