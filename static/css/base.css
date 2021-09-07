@@ -90,11 +90,17 @@ html {
     z-index: 10000;
 }
 
+.dropdown {
+    position: static !important
+}
+
 .dropdown-nav-menu {
-    width: 100vw;
+    width: 100% !important;
     margin-top: 34px;
     border: none;
     border-radius: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30)!important;
+    left: 0px;
 }
 
 /*--- Main Nav Ends ---*/
