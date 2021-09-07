@@ -40,7 +40,7 @@ html {
 
 .border-right {
     border-right: solid 1px #177373;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 /*--- Icons Ends ---*/
@@ -95,12 +95,28 @@ html {
 }
 
 .dropdown-nav-menu {
-    width: 100% !important;
+    width: 100vw !important;
     margin-top: 34px;
     border: none;
     border-radius: 0;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30)!important;
-    left: 0px;
+    left: -12px;
+    overflow-y: scroll;
+}
+
+.dropdown-menu {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar-light .navbar-toggler {
+    color: #003838;
+    border: none;
+}
+
+.basket-padding {
+    padding-top: 32px;
 }
 
 /*--- Main Nav Ends ---*/
@@ -173,6 +189,44 @@ html {
 @media screen and (max-width: 992px) {
     .center-text-medium {
         text-align: center !important;
+    }
+
+    .dropdown-nav-menu {
+        width: 92vw !important;
+        margin-top: 10px;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30)!important;
+        left: 0px;
+        overflow-y: auto;
+    }
+
+    .first-link {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .logo {
+        height: 69px;
+        width: 120px;
+        object-fit: cover
+    }
+
+    .header-container {
+        padding-top: 125px;
+    }
+
+    .basket-padding {
+        padding-top: 23px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .navbar-nav {
+        max-height: 200px;
+        overflow-y: auto;
+        width: 100vw;
     }
 }
 
