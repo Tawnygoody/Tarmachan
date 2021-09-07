@@ -113,6 +113,11 @@ html {
     color: #fff;
     padding-left: 8px !important;
     padding-right: 8px !important;
+    transition: all .5s ease-in-out;
+}
+
+.product-container:hover {
+    transform: scale(1.03);
 }
 
 .featured-image {
@@ -120,11 +125,6 @@ html {
     height: 400px;
     object-fit: cover;
     object-position: center center;
-    transition: all .5s ease-in-out;
-}
-
-.featured-image:hover {
-    transform: scale(1.03);
 }
 
 .top-left {
@@ -140,13 +140,20 @@ html {
     transform: translate(-50%, -50%);
 }
 
+/** thanks to https://stackoverflow.com/questions/27456919/triggering-a-transition-of-a-element-when-hovered-on-another-element/27457228 **/
 .gender-buttons {
     background-color: #000;
     border-radius: 0;
+    opacity: 0;
+    transition: .5s linear;
+}
+
+.product-container:hover .gender-buttons {
+    opacity: 1;
 }
 
 .gender-buttons:hover {
-    background-color: #002929;
+    background-color: #003838;
 }
 
 .button-container {
