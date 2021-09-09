@@ -178,12 +178,27 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
+.bottom-center {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+
 /** thanks to https://stackoverflow.com/questions/27456919/triggering-a-transition-of-a-element-when-hovered-on-another-element/27457228 **/
 .gender-buttons {
     background-color: #000;
     border-radius: 0;
     opacity: 0;
     transition: .5s linear;
+}
+
+.master-buttons {
+    background-color: #000;
+    border-radius: 0;
+    transition: .5s linear;
+    width: 150px;
 }
 
 .product-container:hover .gender-buttons {
@@ -194,9 +209,20 @@ html, body {
     background-color: #003838;
 }
 
+.master-buttons:hover {
+    background-color: #003838;
+}
+
 .button-container {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.search-field {
+    margin-top: 41px;
+    border-top: 1px solid #003838 !important;
+    width: 100vw;
+    left: 5px !important;
 }
 
 /*--- Home Page Ends ---*/
@@ -287,6 +313,10 @@ html, body {
         height: calc(100vh - 125px);
         object-fit: cover;
         object-position: center center;
+    }
+
+    .search-field {
+        margin-top: 33px;
     }
 }
 
