@@ -2,6 +2,10 @@ html {
     height: 100%
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /*--- Backgrounds ---*/
 
 .bg-dark-green {
@@ -26,6 +30,10 @@ html {
 
 .color-text {
     color: #003838;
+}
+
+.larger-content-text {
+    font-size: 20px;
 }
 
 /*--- Text Ends ---*/
@@ -124,9 +132,10 @@ html {
 /*--- Home Page ---*/
 
 .index-image {
-    object-fit: cover;
-    height: calc(100vh - 142px);
     width: 100%;
+    height: calc(100vh - 142px);
+    object-fit: cover;
+    object-position: center center;
 }
 
 .product-container {
@@ -153,6 +162,13 @@ html {
     position: absolute;
     top: 25px;
     left: 25px;
+}
+
+.top-right {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    text-align: right;
 }
 
 .bottom-right {
@@ -182,6 +198,41 @@ html {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/*--- Home Page Ends ---*/
+
+/*--- About Us ---*/
+
+.about-us-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.about-us-image-container {
+    position: relative;
+    text-align:left;
+    color: #fff;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}
+
+/** thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax **/
+.parallax {
+    background-image: url("/media/parallax-image.jpeg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 
 /*--- Media Queries ---*/
@@ -219,6 +270,23 @@ html {
 
     .basket-padding {
         padding-top: 23px;
+    }
+
+    .larger-content-text {
+        font-size: 16px;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+
+    .index-image {
+        width: 100%;
+        height: calc(100vh - 125px);
+        object-fit: cover;
+        object-position: center center;
     }
 }
 
