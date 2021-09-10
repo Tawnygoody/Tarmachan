@@ -1,0 +1,26 @@
+[
+    {
+        "pk": 1,
+        "model": "products.mastercategory",
+        "fields": {
+            "name": "mens",
+            "friendly_name": "Men's"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.mastercategory",
+        "fields": {
+            "name": "womens",
+            "friendly_name": "Women's"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.mastercategory",
+        "fields": {
+            "name": "equipment",
+            "friendly_name": "Equipment"
+        }
+    }
+]

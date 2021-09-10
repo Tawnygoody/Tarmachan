@@ -1,0 +1,170 @@
+[
+    {
+        "pk": 1,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "tshirts",
+            "friendly_name": "T-shirts"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "pullover",
+            "friendly_name": "Pullover"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "fleece",
+            "friendly_name": "Fleece"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "soft_shell",
+            "friendly_name": "Soft Shell"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "insulated",
+            "friendly_name": "Insulated"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "gilet",
+            "friendly_name": "Gilet"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "waterproof",
+            "friendly_name": "Waterproof"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "trousers",
+            "friendly_name": "Trousers"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "shorts",
+            "friendly_name": "Shorts"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "walking_boots",
+            "friendly_name": "Walking Boots"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "walking_shoes",
+            "friendly_name": "Walking Shoes"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "running_shoes",
+            "friendly_name": "Running Shoes"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "gloves",
+            "friendly_name": "Gloves"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "hats_and_caps",
+            "friendly_name": "Hats & Caps"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "sleeping_bags",
+            "friendly_name": "Sleeping Bags"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "sleeping_mats",
+            "friendly_name": "Sleeping Mats"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "tents",
+            "friendly_name": "Tents"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "rucksacks",
+            "friendly_name": "Rucksacks"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "duffel_bags",
+            "friendly_name": "Duffel Bags"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "walking_poles",
+            "friendly_name": "Walking Poles"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.productsubcategory",
+        "fields": {
+            "name": "water_bottles",
+            "friendly_name": "Water Bottles"
+        }
+    }
+]

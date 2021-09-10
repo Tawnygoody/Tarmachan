@@ -1,0 +1,58 @@
+[
+    {
+        "pk": 1,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "tops",
+            "friendly_name": "Tops"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "jackets",
+            "friendly_name": "Jackets"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "legwear",
+            "friendly_name": "Legwear"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "shoes",
+            "friendly_name": "Shoes"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "accessories",
+            "friendly_name": "Accessories"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "camping",
+            "friendly_name": "Camping"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.productcategory",
+        "fields": {
+            "name": "essentials",
+            "friendly_name": "Essentials"
+        }
+    }
+]

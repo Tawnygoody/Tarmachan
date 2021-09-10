@@ -1,0 +1,212 @@
+[
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "sku": "MTEENA01",
+            "name": "Cairn Gorm Tee (Navy)",
+            "description1": "A high performace technical tee.",
+            "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
+            "spec1": "Polygiene technology make sure garments, footwear, gear and textiles stay fresh and last longer.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "QuickDry fabrics to quickly and effectively wick away moisture.",
+            "spec4": "100% recycled polyester",
+            "price": "29.99",
+            "rating": "4.74",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "sku": "MTEEGR02",
+            "name": "Cairn Gorm Tee (Grey)",
+            "description1": "A high performace technical tee.",
+            "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
+            "spec1": "Polygiene technology make sure garments, footwear, gear and textiles stay fresh and last longer.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "QuickDry fabrics to quickly and effectively wick away moisture.",
+            "spec4": "100% recycled polyester",
+            "price": "29.99",
+            "rating": "4.74",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "sku": "MTEENA03",
+            "name": "Cairn Gorm LS Tee (Navy)",
+            "description1": "A long sleeve high performace zip tee.",
+            "description2": "This versatile and fast drying zip tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
+            "spec1": "Polygiene technology make sure garments, footwear, gear and textiles stay fresh and last longer.",
+            "spec2": "160g lightweight fabric with a half zip collar.",
+            "spec3": "QuickDry fabrics to quickly and effectively wick away moisture.",
+            "spec4": "100% recycled polyester",
+            "price": "39.99",
+            "rating": "4.81",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-03.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "sku": "MTEELB04",
+            "name": "Cairn Gorm LS Tee (Light Blue)",
+            "description1": "A long sleeve high performace zip tee.",
+            "description2": "This versatile and fast drying zip tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
+            "spec1": "Polygiene technology make sure garments, footwear, gear and textiles stay fresh and last longer.",
+            "spec2": "160g lightweight fabric with a half zip collar.",
+            "spec3": "QuickDry fabrics to quickly and effectively wick away moisture.",
+            "spec4": "100% recycled polyester",
+            "price": "39.99",
+            "rating": "4.61",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-04.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "sku": "MTEERE05",
+            "name": "Ben Lomond LS Tee",
+            "description1": "A lightweight, stretchy and comfortable LS tee perfect all year round.",
+            "description2": "This comfortable long sleeve tee is perfect for all conditions. Use it as an inside layer on colder days, or a top layer during the summer. Ultrasoft drirelease Lyocell fabric makes this tee soft yet durable.",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "175g lightweight fabric with a crew neck collar.",
+            "spec3": "QuickDry fabrics to quickly and effectively wick away moisture.",
+            "spec4": "70% organic cotton, 30% recycled polyester.",
+            "price": "34.99",
+            "rating": "4.31",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-05.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,
+        "fields": {
+            "sku": "MTEEMO06",
+            "name": "Three Peaks Tee",
+            "description1": "A comfy cotton tee for everyday wear.",
+            "description2": "Using 100% organic cotton, there isn't a softer tee going. Utilising HeiQ Fresh technology this tee is ideal for urban exploration whilst ensuring long lasting odour control",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "155g lightweight fabric with a crew neck collar.",
+            "spec3": "HeiQ Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the “smelly molecules”).",
+            "spec4": "100% organic cotton.",
+            "price": "42.99",
+            "rating": "4.53",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-06.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "sku": "MTEEBL07",
+            "name": "Breadalbane Tee (Blue)",
+            "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
+            "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "HeiQ Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the “smelly molecules”).",
+            "spec4": "30% organic cotton, 70% polyester",
+            "price": "25.99",
+            "rating": "4.62",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-07.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "sku": "MTEELG07",
+            "name": "Breadalbane Tee (Light Grey)",
+            "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
+            "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "HeiQ Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the “smelly molecules”).",
+            "spec4": "30% organic cotton, 70% polyester",
+            "price": "25.99",
+            "rating": "4.62",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-08.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "sku": "MTEEOR09",
+            "name": "Breadalbane Tee (Orange)",
+            "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
+            "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "HeiQ Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the “smelly molecules”).",
+            "spec4": "30% organic cotton, 70% polyester",
+            "price": "25.99",
+            "rating": "4.62",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-09.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "sku": "MTEEGR07",
+            "name": "Breadalbane Tee (Grey)",
+            "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
+            "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
+            "spec1": "Drierlease Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions.",
+            "spec2": "120g lightweight fabric with a crew neck collar.",
+            "spec3": "HeiQ Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the “smelly molecules”).",
+            "spec4": "30% organic cotton, 70% polyester",
+            "price": "25.99",
+            "rating": "4.62",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 1,
+            "image": "m-tee-10.png"
+        }
+    },
+]
