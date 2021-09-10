@@ -325,7 +325,7 @@
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
             "spec2": "170g lightweight fabric with a half zip.",
             "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
-            "spec4": "393% recycled polyester, 7% elastane",
+            "spec4": "93% recycled polyester, 7% elastane",
             "price": "69.99",
             "rating": "4.81",
             "sizes": true,
@@ -346,7 +346,7 @@
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
             "spec2": "170g lightweight fabric with a half zip.",
             "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
-            "spec4": "393% recycled polyester, 7% elastane",
+            "spec4": "93% recycled polyester, 7% elastane",
             "price": "69.99",
             "rating": "4.81",
             "sizes": true,
@@ -356,4 +356,130 @@
             "image": "m-pul-07.png"
         }
     },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "sku": "MFLENA01",
+            "name": "Aonach Mor Fleece (Royal Blue)",
+            "description1": "An incredibly warm berber style fleece for high mountain insulation.",
+            "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "450g fabric with a half zip.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "100% Berber Pile recycled polyester",
+            "price": "82.00",
+            "rating": "4.92",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "sku": "MFLEGR02",
+            "name": "Aonach Mor Fleece (Grey)",
+            "description1": "An incredibly warm berber style fleece for high mountain insulation.",
+            "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "450g fabric with a half zip.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "100% Berber Pile recycled polyester",
+            "price": "82.00",
+            "rating": "4.92",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "sku": "MFLENA03",
+            "name": "Knoydart Fleece (Navy)",
+            "description1": "An very warm yet amazingly packable fleece for all occasions.",
+            "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "300g fabric with a half zip.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "70% polyester, 30% organic cotton",
+            "price": "75.00",
+            "rating": "4.13",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-03.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 21,
+        "fields": {
+            "sku": "MFLETE04",
+            "name": "Knoydart Fleece (Teal)",
+            "description1": "An very warm yet amazingly packable fleece for all occasions.",
+            "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "300g fabric with a half zip.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "70% recycled polyester, 30% organic cotton",
+            "price": "75.00",
+            "rating": "4.13",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-04.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 22,
+        "fields": {
+            "sku": "MFLERU05",
+            "name": "Trotternish Fleece (Rust)",
+            "description1": "This shearling style height weight midlayer combines retro charm with 21st century performance.",
+            "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "400g fabric with a full zip and hood.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "100% recycled polyester, Overlays - 100% Polyamide",
+            "price": "95.00",
+            "rating": "3.72",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-05.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 23,
+        "fields": {
+            "sku": "MFLEGR06",
+            "name": "Trotternish Fleece (Green)",
+            "description1": "This shearling style height weight midlayer combines retro charm with 21st century performance.",
+            "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "400g fabric with a full zip and hood.",
+            "spec3": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
+            "spec4": "100% recycled polyester, Overlays - 100% Polyamide",
+            "price": "95.00",
+            "rating": "3.72",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 1,
+            "product_sub_category": 3,
+            "image": "m-fl-06.png"
+        }
+    }
 ]
