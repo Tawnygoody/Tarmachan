@@ -36,6 +36,10 @@ html, body {
     font-size: 20px;
 }
 
+.small-font {
+    font-size: 12px;
+}
+
 /*--- Text Ends ---*/
 
 /*--- Icons ---*/
@@ -82,6 +86,10 @@ html, body {
     color: black;
 }
 
+.unstyled-color {
+    text-decoration: none;
+}
+
 .unstyled-color:hover {
     color: #003838;
 }
@@ -124,7 +132,11 @@ html, body {
 }
 
 .basket-padding {
-    padding-top: 32px;
+    padding-top: 20px;
+}
+
+.custom-padding {
+    padding-right: 10px;
 }
 
 /*--- Main Nav Ends ---*/
@@ -219,10 +231,10 @@ html, body {
 }
 
 .search-field {
-    margin-top: 41px;
+    margin-top: -4px;
     border-top: 1px solid #003838 !important;
     width: 100vw;
-    left: 5px !important;
+    transform: translate3d(0px, 146px, 0px) !important;
 }
 
 /*--- Home Page Ends ---*/
@@ -250,7 +262,7 @@ html, body {
 
 /** thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax **/
 .parallax {
-    background-image: url("/media/parallax-image.jpeg");
+    background-image: url("/media/parallax-image-r.jpeg");
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -295,7 +307,7 @@ html, body {
     }
 
     .basket-padding {
-        padding-top: 23px;
+        padding-top: 13px;
     }
 
     .larger-content-text {
@@ -316,7 +328,8 @@ html, body {
     }
 
     .search-field {
-        margin-top: 33px;
+        margin-top: -14px;
+        transform: translate3d(0px, 139px, 0px) !important;
     }
 }
 
@@ -325,6 +338,33 @@ html, body {
         max-height: 200px;
         overflow-y: auto;
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logo {
+        height: 48px;
+        width: 84px;
+        object-fit: cover
+    }
+
+    .header-container {
+        padding-top: 100px;
+    }
+
+    .basket-padding {
+        padding-top: 4px;
+    }
+
+    .search-field {
+        margin-top: -26px;
+        transform: translate3d(0px, 130px, 0px) !important;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .custom-padding {
+        padding-right: 0px;
     }
 }
 

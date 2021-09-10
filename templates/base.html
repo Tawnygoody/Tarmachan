@@ -40,28 +40,41 @@
 
     <header class="container-fluid fixed-top">
       <!--Delivery Banner-->
-      <div class="row bg-dark-green" id="delivery-banner">
+      <div class="row no-gutters bg-dark-green" id="delivery-banner">
         <div class="col-lg-8 offset-lg-2 text-center my-2">
           <h5 class="text-white content-text my-0">Free delivery on orders over £{{ free_delivery_threshold }}!</h5>
         </div>
         <div class="col-lg-2 my-auto d-none d-lg-block">
           <ul class="list-inline list-unstyled text-white my-1 align-right">
-            <li class="list-inline-item px-1">
-              <a href="{% url 'account_login' %}" class="text-white">
-                  <i class="icon fas fa-sign-in-alt fa-lg"></i>
-              </a>
-            </li>
-            <li class="list-inline-item px-1">
-              <a href="{% url 'account_signup' %}" class="text-white">
-                  <i class="icon fas fa-user-plus fa-lg"></i>
-              </a>
-            </li>
+            {% if request.user.is_authenticated %}
+              <li class="list-inline-item px-lg-3">
+                <a href="{% url 'account_login' %}" class="text-white">
+                    <i class="icon fas fa-user fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item pe-lg-4">
+                <a href="{% url 'account_signup' %}" class="text-white">
+                    <i class="icon fas fa-sign-out-alt fa-lg"></i>
+                </a>
+              </li>
+            {% else %}
+              <li class="list-inline-item px-lg-3">
+                <a href="{% url 'account_login' %}" class="text-white">
+                    <i class="icon fas fa-sign-in-alt fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item pe-lg-4">
+                <a href="{% url 'account_signup' %}" class="text-white">
+                    <i class="icon fas fa-user-plus fa-lg"></i>
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
       <!--Main Nav-->
       <div class="row bg-white no-gutters py-2">
-        <div class="col-lg-5 col-sm-4 col-3 my-auto">
+        <div class="col-lg-5 col-sm-4 col-4 my-auto">
           <nav class="navbar navbar-expand-lg navbar-light w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
               <span>
@@ -75,17 +88,20 @@
           </nav>
         </div>
         <!--Logo Image-->
-        <div class="col-lg-2 col-sm-4 col-6 px-0 text-center">
+        <div class="col-lg-2 col-sm-4 col-4 px-0 text-center">
           <a href="{% url 'home' %}" class="logo">
             <img src="/media/logo-black.png" class="logo" alt="Tarmachan Logo">
           </a>
         </div>
         <!--Search and Basket-->
-        <div class="col-lg-5 col-sm-4 col-3 px-1 basket-padding">
-          <ul class="list-inline list-unstyled align-right my-0 color-text">
-            <li class="list-inline-item mx-1 border-right">
+        <div class="col-lg-5 col-sm-4 col-4 px-1 px-md-3 px-lg-4 basket-padding content-text">
+          <ul class="list-inline list-unstyled align-right my-auto color-text">
+            <li class="list-inline-item mx-0 mx-sm-1 border-right">
               <a href="" class="color-text unstyled-color" id="search-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search"></i>
+                <div class="text-center">
+                  <div><i class="fas fa-search"></i></div>
+                    <p class="my-0 small-font">Search</p>
+                </div>
               </a>
               <div class="dropdown-menu border-0 p-3 rounded-0 search-field" aria-labelledby="search-bar">
                 <form class="form" method="GET" action="">
@@ -104,9 +120,18 @@
                 </form>
               </div>
             </li>
-            <li class="list-inline-item mx-1">
-              <a href="" class="color-text unstyled-color">
-                <i class="fas fa-shopping-basket"></i>
+            <li class="list-inline-item mx-0 mx-sm-1 custom-padding">
+              <a href="" class="{% if grand_total %}text-success font-weight-bold{% else %}color-text{% endif %} link-unstyled unstyled-color">
+                <div class="text-center">
+                  <div><i class="fas fa-shopping-basket"></i></div>
+                  <p class="my-0 small-font">
+                    {% if grand_total %}
+                      £{{ grand_total|floatformat:2 }}
+                    {% else %}
+                      £0.00
+                    {% endif %}
+                  </p>
+                </div>
               </a>
             </li>
           </ul>
@@ -126,7 +151,7 @@
 
     <footer class="bg-dark-green w-100">
       <div class="container-fluid">
-        <div class="row pt-4">
+        <div class="row no-gutters pt-4">
           <div class="col-lg-5 col-md-6 col-sm-12 pt-3">
             <p class="title-text"></p>
           </div>
@@ -186,12 +211,12 @@
             </ul>
           </div>
         </div>
-        <div class="row">
+        <div class="row no-gutters">
           <div class="col-12 text-center my-4">
             <img src="/media/logo-white.png" class="logo" alt="Tarmachan Logo">
           </div>
         </div>
-        <div class="row bg-darker-green py-3">
+        <div class="row no-gutters bg-darker-green py-3">
           <div class="col-12 text-center">
             <p class="text-white content-text my-auto">&copy 2021 created by Christopher Goodfellow  
               <a href="https://github.com/Tawnygoody/Tarmachan" class="unstyled-white mx-1" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></p></a>

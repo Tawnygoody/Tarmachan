@@ -5,7 +5,7 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="mensDropdown">
           <a href="#" class="title-text px-4 unstyled text-uppercase">All Men's</a>
           <div class="dropdown-divider"></div>
-          <div class="row">
+          <div class="row no-gutters">
             
             <!--Large Devices-->
             <div class="col-lg-2 mx-2 title-text text-uppercase d-none d-lg-block">
@@ -72,7 +72,7 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="womensDropdown">
           <a href="#" class="title-text mx-4 unstyled text-uppercase">All Women's</a>
           <div class="dropdown-divider"></div>
-          <div class="row">
+          <div class="row no-gutters">
 
             <!--Large Devices-->
             <div class="col-lg-2 mx-2 title-text text-uppercase d-none d-lg-block">
@@ -139,7 +139,7 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="equipmentDropdown">
           <a href="#" class="title-text mx-4 unstyled text-uppercase">All Equipment</a>
           <div class="dropdown-divider"></div>
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-lg-3 mx-2 content-text d-none d-lg-block">
               <a class="dropdown-item my-2 title-text text-uppercase" href="#">Accessories</a>
               <a class="dropdown-item my-2" href="#">Gloves</a>
@@ -183,7 +183,7 @@
       <li class="nav-item dropdown px-1 mt-sm-3 mt-lg-0 d-none d-lg-block">
         <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="companyDropdown">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-lg-4 px-2 content-text text-center">
               <a class="dropdown-item" href="{% url 'about_us' %}">About Us</a>
             </div>
@@ -196,12 +196,21 @@
           </div>
         </div>
       </li>
-      <li class="nav-item px-1 d-lg-none">
-        <a href="#" class="title-text text-uppercase unstyled nav-link">Log In</a>
-      </li>
-      <li class="nav-item px-1 d-lg-none">
-        <a href="#" class="title-text text-uppercase unstyled nav-link">Sign Up</a>
-      </li>
+      {% if request.user.is_authenticated %}
+        <li class="nav-item px-1 d-lg-none">
+          <a href="#" class="title-text text-uppercase unstyled nav-link">Profile</a>
+        </li>
+        <li class="nav-item px-1 d-lg-none">
+          <a href="#" class="title-text text-uppercase unstyled nav-link">Log Out</a>
+        </li>
+      {% else %}
+        <li class="nav-item px-1 d-lg-none">
+          <a href="#" class="title-text text-uppercase unstyled nav-link">Log In</a>
+        </li>
+        <li class="nav-item px-1 d-lg-none">
+          <a href="#" class="title-text text-uppercase unstyled nav-link">Sign Up</a>
+        </li>
+      {% endif %}
       <li class="nav-item px-1 d-lg-none">
         <a href="{% url 'about_us' %}" class="title-text text-uppercase unstyled nav-link">About Us</a>
       </li>
