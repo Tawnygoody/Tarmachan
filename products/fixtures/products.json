@@ -813,4 +813,136 @@
             "image": "m-gil-03.png"
         }
     },
+    {
+        "model": "products.product",
+        "pk": 38,
+        "fields": {
+            "sku": "MWATBL01",
+            "name": "Assynt Waterproof",
+            "colour": "Navy",
+            "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
+            "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "650g fabric with full zip and adjustable hood.",
+            "spec3": "3-layer DRILITE® 40D fabric with PFC-free DWR.",
+            "spec4": "100% recycled polyamide",
+            "price": "195.00",
+            "rating": "4.45",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 7,
+            "image": "m-wat-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 39,
+        "fields": {
+            "sku": "MWATGO02",
+            "name": "Assynt Waterproof",
+            "colour": "Gold",
+            "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
+            "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "650g fabric with full zip and adjustable hood.",
+            "spec3": "3-layer DRILITE® 40D fabric with PFC-free DWR.",
+            "spec4": "100% recycled polyamide",
+            "price": "195.00",
+            "rating": "4.45",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 7,
+            "image": "m-wat-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 40,
+        "fields": {
+            "sku": "MWATOR03",
+            "name": "Suilven Waterproof",
+            "colour": "Orange",
+            "description1": "The Suilven jacket is a serious off-piste hard shell for full throttle Big Mountain adventure.",
+            "description2": "The Suilven jacket is designed for cold, deep winter powder. Constructed from a hybrid of hardwearing, fully recycled 3-layer GORE-TEX® Pro fabrics, it combines durable waterproof performance with extreme breathability for outstanding weather protection and comfort.",
+            "spec1": "3-layer GORE-TEX® PRO 80D fabric throughout",
+            "spec2": "650g fabric with full zip, adjustable hood and multiple pockets.",
+            "spec3": "Ski pass pocket on sleeve.",
+            "spec4": "100% recycled polyamide",
+            "price": "270.00",
+            "rating": "4.98",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 7,
+            "image": "m-wat-03.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 41,
+        "fields": {
+            "sku": "MWATGR04",
+            "name": "Suilven Waterproof",
+            "colour": "Green",
+            "description1": "The Suilven jacket is a serious off-piste hard shell for full throttle Big Mountain adventure.",
+            "description2": "The Suilven jacket is designed for cold, deep winter powder. Constructed from a hybrid of hardwearing, fully recycled 3-layer GORE-TEX® Pro fabrics, it combines durable waterproof performance with extreme breathability for outstanding weather protection and comfort.",
+            "spec1": "3-layer GORE-TEX® PRO 80D fabric throughout",
+            "spec2": "650g fabric with full zip, adjustable hood and multiple pockets.",
+            "spec3": "Ski pass pocket on sleeve.",
+            "spec4": "100% recycled polyamide",
+            "price": "270.00",
+            "rating": "4.98",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 7,
+            "image": "m-wat-04.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 42,
+        "fields": {
+            "sku": "MTROCH01",
+            "name": "Canisp Rain Pant",
+            "colour": "Charcoal",
+            "description1": "A lightweight, packable waterproof mountain trouser.",
+            "description2": "These trousers are an unobtrussive packable pant, ideal as a back up plan for the unexpected deluge. They are easy to slip on and off thanks to their full length side zips.",
+            "spec1": "DRILITE® Plus 50D fabric; totally windproof and fully water resistant",
+            "spec2": "200g fabric with full length side zips.",
+            "spec3": "Adjustable hem and elasticated waist",
+            "spec4": "100% recycled polyamide",
+            "price": "39.99",
+            "rating": "4.98",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 43,
+        "fields": {
+            "sku": "MTROBB02",
+            "name": "Liathach Insulated Pant",
+            "colour": "Black & Brown",
+            "description1": "Take a belt and braces approach for high altitude trekking and polar travel.",
+            "description2": "Whether you're hitting the slopes in deep powder or experiencing arctic conditions the Liathach pant meets all needs. Reinforced kickpatches stand up well to scuffs with boots, poles and bindings.",
+            "spec1": "DRILITE® Loft 40D outer fabric; totally windproof and highly water resistant",
+            "spec2": "860g fabric with semi-elasticated waist with removable and adjustable braces.",
+            "spec3": "Reinforced kickpatches, knees and seat strips",
+            "spec4": "100% recycled polyamide",
+            "price": "145.00",
+            "rating": "3.93",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-02.png"
+        }
+    },
 ]
