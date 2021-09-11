@@ -659,4 +659,158 @@
             "image": "m-ss-07.png"
         }
     },
+    {
+        "model": "products.product",
+        "pk": 31,
+        "fields": {
+            "sku": "MINSBL01",
+            "name": "Marsco Insulated",
+            "colour": "Royal Blue & Charcoal",
+            "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
+            "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
+            "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant.",
+            "spec2": "850g fabric with a full zip and hood.",
+            "spec3": "POLARLOFT® insulation on the shoulders to resist compression",
+            "spec4": "100% recycled polyamide, recycled Down fill",
+            "price": "370.00",
+            "rating": "4.36",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 5,
+            "image": "m-ins-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 32,
+        "fields": {
+            "sku": "MINSRE02",
+            "name": "Marsco Insulated",
+            "colour": "Red & Black",
+            "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
+            "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
+            "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant.",
+            "spec2": "850g fabric with a full zip and hood.",
+            "spec3": "POLARLOFT® insulation on the shoulders to resist compression",
+            "spec4": "100% recycled polyamide, recycled Down fill",
+            "price": "370.00",
+            "rating": "4.36",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 5,
+            "image": "m-ins-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 33,
+        "fields": {
+            "sku": "MINSGO03",
+            "name": "Glen Clova Insulated",
+            "colour": "Gold",
+            "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
+            "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
+            "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
+            "spec2": "820g fabric with a full zip and hood.",
+            "spec3": "POLARLOFT® insulation on the shoulders to resist compression",
+            "spec4": "100% recycled polyamide, recycled Down fill",
+            "price": "330.00",
+            "rating": "4.55",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 5,
+            "image": "m-ins-03.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 34,
+        "fields": {
+            "sku": "MINSBL04",
+            "name": "Glen Clova Insulated",
+            "colour": "Blue",
+            "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
+            "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
+            "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
+            "spec2": "820g fabric with a full zip and hood.",
+            "spec3": "POLARLOFT® insulation on the shoulders to resist compression",
+            "spec4": "100% recycled polyamide, recycled Down fill",
+            "price": "330.00",
+            "rating": "4.55",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 5,
+            "image": "m-ins-04.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 35,
+        "fields": {
+            "sku": "MGILBL01",
+            "name": "Lochnagar Gilet",
+            "colour": "Black",
+            "description1": "Need a lightweight Gilet everyday activities? Look no further than the Lochnagar Gilet.",
+            "description2": "Using full stretch, double weave Soft Shell; fabric the Frontier Vest balances exceptional breathability against protection from freezing wind for early starts on north facing walls. Our Active fit layers perfectly over a base layer or lightweight fleece.",
+            "spec1": "EXOLITE 210 stretch double weave Soft Shell fabric",
+            "spec2": "220g fabric with a full zip.",
+            "spec3": "HeiQ® Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the 'smelly molecules').",
+            "spec4": "92% recycled polyamide, 8% elastane",
+            "price": "84.99",
+            "rating": "3.23",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 6,
+            "image": "m-gil-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 36,
+        "fields": {
+            "sku": "MGILBL02",
+            "name": "Rannoch Gilet",
+            "colour": "Black",
+            "description1": "Our Rannoch Gilet is a stylish midlayer that'll keep you cosy in cooler hiking conditions",
+            "description2": "High fill, Responsible Down Standard (RDS) goose down delivers extreme and consistent warmth in seriously cold weather. With an internal chest pocket and zipped hand pockets, youll have space for all your accessories.",
+            "spec1": "DRILITE® Loft 20D outer fabric; totally windproof and highly water resistant",
+            "spec2": "240g fabric with a full zip.",
+            "spec3": "HeiQ® Fresh products tackle the real problem of smells on textiles effectively by adsorbing VOC (Volatile Organic Compound or the 'smelly molecules').",
+            "spec4": "100% recycled polyamide, responsibly sourced Goose Down fill.",
+            "price": "114.99",
+            "rating": "2.98",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 6,
+            "image": "m-gil-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 37,
+        "fields": {
+            "sku": "MGILBL03",
+            "name": "Badenoch Gilet",
+            "colour": "Black",
+            "description1": "A hybrid Gilet with an insulated front and microfleece back for fast moving mountain sports.",
+            "description2": "Highly breathable and fast drying POLARTEC® Alpha® insulation is combined with our lightweight 20D RS shell fabric in the front of the body for wind resistance. Pontetorto® Tecnostretch 187 panels in the back and sides minimise bulk and dry even faster after a strenuous ascent.",
+            "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece.",
+            "spec2": "200g fabric with a full zip.",
+            "spec3": "The Tecnostretch® line from Pontetorto is the answer to the market request for fabrics with a technical outer surface, high elasticity, and high thermal insulation.",
+            "spec4": "100% recycled polyamide, recycled polyster fill.",
+            "price": "130.00",
+            "rating": "4.87",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 2,
+            "product_sub_category": 6,
+            "image": "m-gil-03.png"
+        }
+    },
 ]
