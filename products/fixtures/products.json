@@ -933,7 +933,7 @@
             "description1": "Take a belt and braces approach for high altitude trekking and polar travel.",
             "description2": "Whether you're hitting the slopes in deep powder or experiencing arctic conditions the Liathach pant meets all needs. Reinforced kickpatches stand up well to scuffs with boots, poles and bindings.",
             "spec1": "DRILITE® Loft 40D outer fabric; totally windproof and highly water resistant",
-            "spec2": "860g fabric with semi-elasticated waist with removable and adjustable braces.",
+            "spec2": "860g fabric with semi-elasticated waist, removable and adjustable braces.",
             "spec3": "Reinforced kickpatches, knees and seat strips",
             "spec4": "100% recycled polyamide",
             "price": "145.00",
@@ -943,6 +943,94 @@
             "product_category": 3,
             "product_sub_category": 8,
             "image": "m-tr-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 44,
+        "fields": {
+            "sku": "MTROGR03",
+            "name": "Atholl Pant",
+            "colour": "Grey",
+            "description1": "These lightweight technical pants are functional, stetchy and durable.",
+            "description2": "If you like the freedom to stretch, leap and scramble, these technical trousers could have your name on them. With an active fit these fast drying pants offer all-day comfort when clocking up the miles. ",
+            "spec1": "Ascender fabric; light, tough and fast drying.",
+            "spec2": "320g fabric with elasticated waist, an integrated belt and button waist closure.",
+            "spec3": "Microfleece linked waistband for improved comfort. ",
+            "spec4": "100% recycled polyamide",
+            "price": "54.99",
+            "rating": "3.12",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-03.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 45,
+        "fields": {
+            "sku": "MTROBL04",
+            "name": "Eagach Pant",
+            "colour": "Black",
+            "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
+            "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
+            "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
+            "spec2": "290g fabric with semi-elasticated waist and an integrated belt.",
+            "spec3": "Zipped thigh and rear pocket.",
+            "spec4": "85% recycled polyamide, 15% elastane",
+            "price": "84.99",
+            "rating": "4.62",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-04.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 46,
+        "fields": {
+            "sku": "MTROLB05",
+            "name": "Eagach Pant",
+            "colour": "Light Blue",
+            "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
+            "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
+            "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
+            "spec2": "290g fabric with semi-elasticated waist and an integrated belt.",
+            "spec3": "Zipped thigh and rear pocket.",
+            "spec4": "85% recycled polyamide, 15% elastane",
+            "price": "84.99",
+            "rating": "4.52",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-05.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 47,
+        "fields": {
+            "sku": "MTROOL06",
+            "name": "Ben Cruachan Pant",
+            "colour": "Olive Green",
+            "description1": "Built for severe weather conditions, the Ben Cruachan pant delivers serious alpine performance.",
+            "description2": "These full spec mountaineering pants give total protection and mobility in the worst conditions imaginable. Using GORE-TEX® Pro 80D fabric throughout they easily resist abrasion in ice choked chimneys and further reinforcement protects against cuts from racked screws.",
+            "spec1": "3-layer GORE-TEX® Pro 80D fabric throughout",
+            "spec2": "510g fabric with semi-elasticated waist with braces.",
+            "spec3": "Alpine fit with articulated knees and bonded reinforced kick strips for durability.",
+            "spec4": "85% recycled polyamide, 15% elastane",
+            "price": "210.00",
+            "rating": "4.98",
+            "sizes": true,
+            "master_category": 1,
+            "product_category": 3,
+            "product_sub_category": 8,
+            "image": "m-tr-06.png"
         }
     },
 ]
