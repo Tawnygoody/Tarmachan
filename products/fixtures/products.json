@@ -2815,4 +2815,70 @@
             "image": "e-hat-06.png"
         }
     },
+    {
+        "model": "products.product",
+        "pk": 129,
+        "fields": {
+            "sku": "ESLBPU01",
+            "name": "Mamore 700",
+            "colour": "Purple",
+            "description1": "For higher trekking peaks and those camping in the depths of winter this more generously sized bag offers oodles of warmth and protection.",
+            "description2": "The Mamore 700 sleeping bag is a hi-weight sleeping bag, designed for when the night temperatures drop below freezing. It's constructed from a DRILITE® LOFT™ II ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides great warmth even when damp.",
+            "spec1": "DRILITE® LOFT™ II outer shell is lightweight, breathable and water resistant",
+            "spec2": "Weight: 1480g",
+            "spec3": "Supplied with waterproof roll-top stuff-sack and storage cube",
+            "spec4": "Minimum fill power of 700",
+            "price": "450.00",
+            "rating": "4.68",
+            "sizes": false,
+            "master_category": 3,
+            "product_category": 6,
+            "product_sub_category": 15,
+            "image": "e-sb-01.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 130,
+        "fields": {
+            "sku": "ESLBNA02",
+            "name": "Cluanie 1000",
+            "colour": "Navy",
+            "description1": "Incredibly warm and one of only a handful of bags to make use of our roomier Expedition fit, it is well suited to nights on ice.",
+            "description2": "The Cluanie 1000 sleeping bag is a hi-weight sleeping bag, designed for arctic conditions. It's constructed from a DRILITE® LOFT™ II ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides great warmth even when damp.",
+            "spec1": "DRILITE® LOFT™ II outer shell is lightweight, breathable and water resistant",
+            "spec2": "Weight: 1880g",
+            "spec3": "Supplied with waterproof roll-top stuff-sack and storage cube",
+            "spec4": "Minimum fill power of 1000",
+            "price": "600.00",
+            "rating": "4.98",
+            "sizes": false,
+            "master_category": 3,
+            "product_category": 6,
+            "product_sub_category": 15,
+            "image": "e-sb-02.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 131,
+        "fields": {
+            "sku": "ESLBBL03",
+            "name": "Kintail 500",
+            "colour": "Blue",
+            "description1": "Spacious and comfortable, a perfect all-round bag for use during the Spring, Summer and Autumn in temperate climates.",
+            "description2": "The Mamore 700 sleeping bag is a low-weight sleeping bag. It's constructed from a HELIUM™ 40 ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides warmth during more temperate months.",
+            "spec1": "HELIUM™ 40 outer shell is lightweight and breathable",
+            "spec2": "Weight: 1100g",
+            "spec3": "Supplied with waterproof roll-top stuff-sack and storage cube",
+            "spec4": "Minimum fill power of 500",
+            "price": "180.00",
+            "rating": "3.32",
+            "sizes": false,
+            "master_category": 3,
+            "product_category": 6,
+            "product_sub_category": 15,
+            "image": "e-sb-03.png"
+        }
+    },
 ]
