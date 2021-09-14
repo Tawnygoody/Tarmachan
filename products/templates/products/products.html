@@ -10,12 +10,83 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{ products }}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-4">
+                <h2 class="title-text">Products</h2>
+                <hr class="w-50 mb-3 m-auto">
+            </div>
+        </div>
+        <div class="col-12">
+            <hr>
+        </div>
+        <div class="row">
+            {% for product in products %}
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 text-center my-2">
+                    <div class="card border-0">
+                        {% if product.image %}
+                            <div class="product-image-container">
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                <div class="overlay my-auto d-none d-lg-block d-xl-block">
+                                    <p class="content-text fs-5">{{ product.description1 }}</p>
+                                </div>
+                            </div>
+                        {% else %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="/media/default-product-image.png" alt="{{ product.name }}">
+                            </a>
+                        {% endif %}
+                        <div class="card-body bg-white pb-0">
+                            <p class="title-text text-uppercase mb-1">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white text-center pt-0">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead content-text mb-1">£{{ product.price }}</p>
+                                    {% if product.product_sub_category %}
+                                    <a href="" class="unstyled-color">
+                                        <p class="content-text mb-1 text-muted"><i class="fas fa-tag"></i> {{product.master_category.friendly_name }} - {{ product.product_sub_category.friendly_name }}</p>
+                                    </a>
+                                    {% endif %}
+                                    {% if product.rating %}
+                                        {% include 'products/includes/stars.html' %}
+                                        <p class="content-text small text-muted">(Rating: {{ product.rating }})</p>
+                                    {% endif %}
+                                    {% if request.user.is_superuser %}
+                                        <small>
+                                            <a class="unstyled-color-icon mx-1" href=""><i class="far fa-edit"></i></a>
+                                            <a class="text-danger mx-1" href=""><i class="fas fa-minus-circle"></i></a>
+                                        </small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-4">
+                        <hr>
+                    </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-4">
+                        <hr>
+                    </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-4">
+                        <hr>
+                    </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-4">
+                        <hr>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
-</div>
 
 {% endblock %}

@@ -90,6 +90,11 @@ html, body {
     text-decoration: none;
 }
 
+.unstyled-color-icon {
+    text-decoration: none;
+    color:#177373;
+}
+
 .unstyled-color:hover {
     color: #003838;
 }
@@ -270,10 +275,56 @@ html, body {
     background-size: cover;
 }
 
+/*--- About Us Ends ---*/
 
+/*--- Products Page ---*/
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 80%;
+    transition: 0.5s ease;
+}
+
+.checked-star {
+    color: #177373;
+}
+
+.unchecked-star {
+    color: #cccccc;
+}
+
+.card-body {
+    height: 75px;
+}
+
+.product-image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.0);
+    transition: 0.5s ease;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50%;
+    opacity: 0;
+}
+
+.product-image-container:hover .overlay {
+    opacity: 1;
+}
 
 
 /*--- Media Queries ---*/
+
+@media screen and (min-width: 992px) {
+    .product-image-container:hover .card-img-top {
+        opacity: 0.1;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .center-text-medium {
