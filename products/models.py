@@ -86,22 +86,22 @@ class Product(models.Model):
         blank=True
     )
     spec1 = models.TextField(
-        max_length=150,
+        max_length=200,
         null=True,
         blank=True
     )
     spec2 = models.TextField(
-        max_length=150,
+        max_length=200,
         null=True,
         blank=True
     )
     spec3 = models.TextField(
-        max_length=150,
+        max_length=200,
         null=True,
         blank=True
     )
     spec4 = models.TextField(
-        max_length=150,
+        max_length=200,
         null=True,
         blank=True
     )

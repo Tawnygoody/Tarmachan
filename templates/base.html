@@ -159,13 +159,13 @@
             <p class="title-text text-white text-uppercase">Shop</p>
             <ul class="list-unstyled text-white content-text">
               <li class="my-2">
-                <a href="" class="unstyled-white">Men's</a>
+                <a href="{% url 'products' %}?master_category=mens" class="unstyled-white">Men's</a>
               </li>
               <li class="my-2">
-                <a href="" class="unstyled-white">Women's</a>
+                <a href="{% url 'products' %}?master_category=womens" class="unstyled-white">Women's</a>
               </li>
               <li class="my-2">
-                <a href="" class="unstyled-white">Equipment</a>
+                <a href="{% url 'products' %}?master_category=equipment" class="unstyled-white">Equipment</a>
               </li>
               <li class="my-2">
                 <a href="{% url 'products' %}" class="unstyled-white">All Products</a>
