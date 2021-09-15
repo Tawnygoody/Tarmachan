@@ -54,7 +54,7 @@
                                     {% endif %}
                                     {% if product.rating %}
                                         {% include 'products/includes/stars.html' %}
-                                        <p class="content-text small text-muted">(Rating: {{ product.rating }})</p>
+                                        <p class="content-text small text-muted">(Rating: {{ product.rating }}/5)</p>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                         <small>
