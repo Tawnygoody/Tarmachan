@@ -19,7 +19,7 @@
                     <p class="content-text">{% include 'products/includes/stars.html' %} <small class="px-2">{{ product.rating }}/5</small></p>
                 {% endif %}
                 <p class="content-text mt-5 fs-4">{{ product.description1 }}</p>
-                <a href="" class="unstyled">
+                <a href="#description" class="unstyled">
                     <p class="content-text text-black">Read More  <i class="fas fa-arrow-right px-2"></i></p>
                 </a>
             </div>
@@ -37,6 +37,11 @@
             <div class="d-none d-lg-block d-xl-block col-lg-4 px-md-5">
                 <h5 class="title-text mb-1 text-uppercase">£{{ product.price }}</h5>
                 <hr>
+                {% if product.product_sub_category %}
+                    <a href="{% url 'products' %}?master_category={{ product.master_category }}&product_sub_category={{ product.product_sub_category }}" class="unstyled-color">
+                        <p class="content-text mb-3 text-muted"><i class="fas fa-tag"></i> {{product.master_category.friendly_name }} - {{ product.product_sub_category.friendly_name }}</p>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -49,18 +54,23 @@
                     <p class="content-text">{% include 'products/includes/stars.html' %} <small class="px-2">{{ product.rating }}/5</small></p>
                 {% endif %}
                 <p class="content-text mt-3 fs-4">{{ product.description1 }}</p>
-                <a href="" class="unstyled">
+                <a href="#description" class="unstyled">
                     <p class="content-text text-black">Read More  <i class="fas fa-arrow-right px-2"></i></p>
                 </a>
             </div>
             <div class="col-12 col-md-6 d-lg-none pt-4 px-4">
                 <h5 class="title-text mb-1 text-uppercase">£{{ product.price }}</h5>
                 <hr>
+                {% if product.product_sub_category %}
+                    <a href="{% url 'products' %}?master_category={{ product.master_category }}&product_sub_category={{ product.product_sub_category }}" class="unstyled-color">
+                        <p class="content-text mb-3 text-muted"><i class="fas fa-tag"></i> {{product.master_category.friendly_name }} - {{ product.product_sub_category.friendly_name }}</p>
+                    </a>
+                {% endif %}
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 py-5 px-4">
-                <p class="content-text fs-4">{{ product.description1 }}</p>
+                <p class="content-text fs-4" id="description">{{ product.description1 }}</p>
                 {% if product.description2 %}
                     <p class="content-text fs-5">{{ product.description2 }}</p>
                 {% endif %}

@@ -317,7 +317,15 @@ html, body {
     opacity: 1;
 }
 
-/*--- Products Page ---*/
+.box-shadow {
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+.text-align-man {
+    text-align: left;
+}
+
+/*--- Products Page Ends ---*/
 
 /*--- Product Detail Page ---*/
 
@@ -353,6 +361,12 @@ html, body {
 
     .first-link {
         padding-top: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-align-man {
+        text-align: center;
     }
 }
 

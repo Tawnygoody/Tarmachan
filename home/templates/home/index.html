@@ -22,13 +22,13 @@
             <div class="bottom-center">
                 <div class="row no-gutters text-center">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 button-container text-center my-1 px-1">
-                        <a href="" class="btn content-text text-white master-buttons" role="button">Men's </a>
+                        <a href="{% url 'products' %}?master_category=mens" class="btn content-text text-white master-buttons" role="button">Men's </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 button-container text-center my-1 px-1">
-                        <a href="" class="btn content-text text-white master-buttons" role="button">Women's</a>
+                        <a href="{% url 'products' %}?master_category=womens" class="btn content-text text-white master-buttons" role="button">Women's</a>
                     </div>
                     <div class="col-12 col-lg-4 button-container text-center my-1 px-1">
-                        <a href="" class="btn content-text text-white master-buttons" role="button">Equipment</a>
+                        <a href="{% url 'products' %}?master_category=equipment" class="btn content-text text-white master-buttons" role="button">Equipment</a>
                     </div>
                 </div>
             </div>
@@ -47,10 +47,10 @@
                 <div class="bottom-right">
                     <div class="row no-gutters">
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Men's </a>
+                            <a href="{% url 'products' %}?master_category=mens&product_category=jackets" class="btn content-text text-white gender-buttons" role="button">Men's </a>
                         </div>
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Women's</a>
+                            <a href="{% url 'products' %}?master_category=womens&product_category=jackets" class="btn content-text text-white gender-buttons" role="button">Women's</a>
                         </div>
                     </div>
                 </div>
@@ -63,10 +63,10 @@
                 <div class="bottom-right">
                     <div class="row no-gutters">
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Men's </a>
+                            <a href="{% url 'products' %}?master_category=mens&product_category=shoes" class="btn content-text text-white gender-buttons" role="button">Men's </a>
                         </div>
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Women's</a>
+                            <a href="{% url 'products' %}?master_category=womens&product_category=shoes" class="btn content-text text-white gender-buttons" role="button">Women's</a>
                         </div>
                     </div>
                 </div>
@@ -74,15 +74,15 @@
             <div class="col-lg-3 col-md-6 col-sm-12 my-2 product-container">
                 <img src="/media/legs-index-r.png" class="featured-image" alt="Legs">
                 <div class="top-left">
-                    <h5 class="title-text text-white text-uppercase">Legs</h5>
+                    <h5 class="title-text text-white text-uppercase">Legwear</h5>
                 </div>
                 <div class="bottom-right">
                     <div class="row no-gutters">
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Men's </a>
+                            <a href="{% url 'products' %}?master_category=mens&product_category=legwear" class="btn content-text text-white gender-buttons" role="button">Men's </a>
                         </div>
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Women's</a>
+                            <a href="{% url 'products' %}?master_category=womens&product_category=legwear" class="btn content-text text-white gender-buttons" role="button">Women's</a>
                         </div>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                 <div class="bottom-right">
                     <div class="row no-gutters">
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Men's </a>
+                            <a href="{% url 'products' %}?master_category=mens&product_category=tops" class="btn content-text text-white gender-buttons" role="button">Men's </a>
                         </div>
                         <div class="col-6 button-container">
-                            <a href="" class="btn content-text text-white gender-buttons" role="button">Women's</a>
+                            <a href="{% url 'products' %}?master_category=womens&product_category=tops" class="btn content-text text-white gender-buttons" role="button">Women's</a>
                         </div>
                     </div>
                 </div>
