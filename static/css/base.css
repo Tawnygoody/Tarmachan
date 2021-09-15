@@ -317,12 +317,22 @@ html, body {
     opacity: 1;
 }
 
+/*--- Products Page ---*/
+
+/*--- Product Detail Page ---*/
+
+.product-detail-bg {
+    background: url('/media/product-background-2.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+}
+
 
 /*--- Media Queries ---*/
 
 @media screen and (min-width: 992px) {
     .product-image-container:hover .card-img-top {
-        opacity: 0.1;
+        opacity: 0.2;
     }
 }
 

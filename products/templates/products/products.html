@@ -26,17 +26,17 @@
                     <div class="card border-0">
                         {% if product.image %}
                             <div class="product-image-container">
-                                <a href="">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
-                                <a href="" class="unstyled">
+                                <a href="{% url 'product_detail' product.id %}" class="unstyled d-none d-lg-block d-xl-bloc">
                                     <div class="overlay my-auto d-none d-lg-block d-xl-block">
                                         <p class="content-text fs-5">{{ product.description1 }}</p>
                                     </div>
                                 </a>
                             </div>
                         {% else %}
-                            <a href="">
+                            <a href="{% url 'product_detail' product.id %}" class="unstyled">
                                 <img class="card-img-top img-fluid" src="/media/default-product-image.png" alt="{{ product.name }}">
                             </a>
                         {% endif %}
