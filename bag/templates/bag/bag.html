@@ -75,9 +75,11 @@
                     </table>
                 </div>
                 {% else %}
+                <div class="text-center">
                     <p class="content-text fs-4">It appears your shopping bag is currently empty</p>
                     <a href="{% url 'products' %}" class="btn content-text text-white buttons-general text-uppercase mt-2 px-4" role="button"><i class="fas fa-chevron-left pe-2"></i>Keep Shopping</a>
-                {% endif %}
+                </div>
+                    {% endif %}
             </div>
         </div>
     </div>

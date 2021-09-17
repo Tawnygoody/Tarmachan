@@ -13,7 +13,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-4">
-                <h2 class="title-text text-uppercase">Products</h2>
+                {% if current_product_sub_category %}
+                    {% for c in current_product_sub_category %}
+                        <h2 class="title-text text-uppercase">{{ c.friendly_name }}</h2>
+                    {% endfor%}
+                {% elif current_product_category %}
+                    {% for c in current_product_category %}
+                        <h2 class="title-text text-uppercase">{{ c.friendly_name }}</h2>
+                    {% endfor%}
+                {% elif current_master_category %}
+                    {% for c in current_master_category %}
+                        <h2 class="title-text text-uppercase">{{ c.friendly_name }}</h2>
+                    {% endfor%}
+                {% else %}
+                    <h2 class="title-text text-uppercase">Products</h2>
+                {% endif %}
                 <hr class="w-50 mb-1 mx-auto">
             </div>
         </div>
