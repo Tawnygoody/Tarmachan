@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row no-gutters">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5 min-height">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="title-text text-uppercase">Shopping Bag</h2>
+                <hr class="w-50 mb-1 mx-auto">
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col text-center">
+                {% if bag_items %}
+                {% else %}
+                    <p class="content-text fs-4">It appears your shopping bag is currently empty</p>
+                    <a href="{% url 'products' %}" class="btn content-text text-white buttons-general text-uppercase mt-2 px-4" role="button"><i class="fas fa-chevron-left pe-2"></i>Keep Shopping</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -70,7 +70,7 @@
         </div>
       </div>
       <!--Main Nav-->
-      <div class="row bg-white no-gutters py-2">
+      <div class="row bg-white no-gutters py-2 box-shadow">
         <div class="col-lg-5 col-sm-4 col-4 my-auto">
           <nav class="navbar navbar-expand-lg navbar-light w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +118,7 @@
               </div>
             </li>
             <li class="list-inline-item mx-0 mx-sm-1 custom-padding">
-              <a href="" class="{% if grand_total %}text-success font-weight-bold{% else %}color-text{% endif %} link-unstyled unstyled-color">
+              <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-success font-weight-bold{% else %}color-text{% endif %} link-unstyled unstyled-color">
                 <div class="text-center">
                   <div><i class="fas fa-shopping-basket"></i></div>
                   <p class="my-0 small-font">

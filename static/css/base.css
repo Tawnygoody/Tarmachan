@@ -6,6 +6,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.min-height {
+    min-height: calc(100vh - 580px)
+}
+
 /*--- Backgrounds ---*/
 
 .bg-dark-green {
@@ -349,6 +353,19 @@ html, body {
     width: 100vw;
 }
 
+/*--- Product Detail Ends ---*/
+
+/*--- Shopping Bag Page ---*/
+
+.buttons-general {
+    background-color: #000;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
+.buttons-general:hover {
+    background-color: #003838;
+}
 
 /*--- Media Queries ---*/
 
