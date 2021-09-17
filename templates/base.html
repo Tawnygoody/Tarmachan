@@ -31,9 +31,6 @@
     {% block extra_js %}
     {% endblock %}
 
-    {% block postloadjs %}
-    {% endblock %}
-
     <title>Tarmachan {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
@@ -147,6 +144,9 @@
     {% endblock %}
 
     {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
     {% endblock %}
 
     <footer class="bg-dark-green w-100">
