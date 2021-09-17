@@ -367,6 +367,22 @@ html, body {
     background-color: #003838;
 }
 
+.buttons-general-2 {
+    background-color: #fff;
+    color: #003838;
+    border: 1px solid #002929;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
+.buttons-general-2:hover {
+    background-color: #003838;
+    color: #fff;
+    border: 1px solid #003838;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
 /*--- Media Queries ---*/
 
 @media screen and (min-width: 992px) {
