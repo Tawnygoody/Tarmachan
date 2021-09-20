@@ -403,6 +403,16 @@ html, body {
     transition: .5s linear;
 }
 
+.update-link {
+    float: left;
+    cursor: pointer;
+}
+
+.remove-item {
+    float: right;
+    cursor: pointer;
+}
+
 /*--- Media Queries ---*/
 
 @media screen and (min-width: 992px) {
