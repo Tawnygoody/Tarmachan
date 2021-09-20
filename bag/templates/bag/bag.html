@@ -22,7 +22,7 @@
                 {% if bag_items %}
                 <div class="table-responsive table-sm">
                     <table class="table table-borderless">
-                        <thead class="title-text text-center">
+                        <thead class="title-text text-center fs-5">
                             <tr>
                                 <th scope="col">Image</th>
                                 <th scope="col">Product Info</th>
@@ -38,7 +38,8 @@
                                     <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 </td>
                                 <td class="py-3">
-                                    <p>{{ item.product.name }}</p>
+                                    <p class="fs-5"><strong>{{ item.product.name }}</strong></p>
+                                    <p>Size: {% if item.product.sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                     <p class="text-muted">SKU: {{ item.product.sku }}</p>
                                 </td>
                                 <td class="py-3">
