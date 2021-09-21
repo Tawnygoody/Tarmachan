@@ -61,6 +61,36 @@ html, body {
 
 /*--- Icons Ends ---*/
 
+/*--- Toasts ---*/
+
+.message-container {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    z-index: 9999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 3px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+/*--- Toasts Ends ---*/
+
 /*--- Main Nav ---*/
 
 .logo {
@@ -497,6 +527,13 @@ html, body {
         margin-top: -14px;
         transform: translate3d(0px, 139px, 0px) !important;
     }
+
+    .message-container {
+        position: fixed;
+        top: 135px;
+        right: 10px;
+        z-index: 9999999999;
+    }
 }
 
 @media screen and (max-height: 400px) {
@@ -525,6 +562,13 @@ html, body {
     .search-field {
         margin-top: -26px;
         transform: translate3d(0px, 130px, 0px) !important;
+    }
+
+    .message-container {
+        position: fixed;
+        top: 110px;
+        right: 10px;
+        z-index: 9999999999;
     }
 }
 

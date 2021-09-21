@@ -106,9 +106,9 @@
                     <input class="form-control border border-black rounded-0 content-text" type="text" name="q"
                       placeholder="Search our site">
                     <div class="input-group-append">
-                      <button class="form-control form-control btn btn-black border border-black rounded-0"
+                      <button class="form-control btn btn-black border border-black rounded-0 bg-white"
                         type="submit">
-                        <span class="icon">
+                        <span>
                           <i class="fas fa-search"></i>
                         </span>
                       </button>
@@ -137,16 +137,27 @@
     </header>
 
     {% if messages %}
-    <div class="message-container"></div>
+    <div class="message-container">
+      {% for message in messages %}
+        {% with message.level as level %}
+          {% if level == 40 %}
+            {% include 'includes/toasts/toast_error.html' %}
+          {% elif level == 30 %}
+            {% include 'includes/toasts/toast_warning.html' %}
+          {% elif level == 25 %}
+            {% include 'includes/toasts/toast_success.html' %}
+          {% else %}
+            {% include 'includes/toasts/toast_info.html' %}
+          {% endif %}
+        {% endwith %}
+      {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
     {% endblock %}
 
     {% block content %}
-    {% endblock %}
-
-    {% block postloadjs %}
     {% endblock %}
 
     <footer class="bg-dark-green w-100">
@@ -227,6 +238,12 @@
         </div>
       </div>
     </footer>
+
+    {% block postloadjs %}
+      <script type="text/javascript">
+        $('.toast').toast('show');
+      </script>
+    {% endblock %}
 
     
   </body>
