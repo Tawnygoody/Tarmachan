@@ -75,7 +75,7 @@
                                         </div>
                                     </form>
                                     <a class="update-link unstyled content-text pt-2 fs-6"><small>Update</small></a>
-                                    <a class="remove-item unstyled text-danger content-text pt-2 fs-6" id="remove_{{ item.item_id }}" data-product- size="{{ item.size }}"><small>Remove</small></a>
+                                    <a class="remove-item unstyled text-danger content-text pt-2 fs-6" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">
                                     <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -123,17 +123,17 @@
     <script type="text/javascript">
         // Update quantity on click
         $('.update-link').click(function(e) {
-            var form = $(this).prev('.update-form');
+            let form = $(this).prev('.update-form');
             form.submit();
         })
 
         // Remove item and reload on click
         $('.remove-item').click(function(e) {
-            var csrfToken = "{{ csrf_token }}";
-            var itemId = $(this).attr('id').split('remove_')[1];
-            var size = $(this).data('product_size');
-            var url = `/bag/remove/${itemId}/`;
-            var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+            let csrfToken = "{{ csrf_token }}";
+            let itemId = $(this).attr('id').split('remove_')[1];
+            let size = $(this).data('product_size');
+            let url = `/bag/remove/${itemId}/`;
+            let data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
             $.post(url, data)
             .done(function() {
