@@ -479,7 +479,8 @@ html, body {
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
-    border-top: 1px solid #003838
+    border-top: 1px solid #003838;
+    overflow-y: scroll;
 }
 
 .close-btn {
@@ -597,6 +598,10 @@ html, body {
     .text-align-man {
         text-align: center;
     }
+
+    .main-popup {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -654,6 +659,30 @@ html, body {
     .main-popup {
         height: calc(100vh - 125px);
         width: 100%;
+    }
+}
+
+@media screen and (max-height: 666px) {
+    .size-guide {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    .size-guide {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-height: 470px) {
+    .size-guide {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-height: 370px) {
+    .size-guide {
+        margin-top: 400px;
     }
 }
 
