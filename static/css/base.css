@@ -443,6 +443,74 @@ html, body {
     align-items: center;
 }
 
+/**--- Pop up animation thanks to https://www.youtube.com/watch?v=_oVBA15MdoI ---**/
+
+#sizing-chart {
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 142px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.popup-overlay {
+    background-color: rgba(0,0,0,0.5);
+    height: calc(100vh - 142px);
+    width: 100%;
+    position: fixed;
+}
+
+.main-popup {
+    position: fixed;
+    right: 0;
+    height: calc(100vh - 142px);
+    width: 50%;
+    z-index: 9999999;
+    background: #fff;
+    padding: 30px 20px;
+    line-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    border-top: 1px solid #003838
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/**--- Pop up animation Ends ---**/
+
+
 /*--- Product Detail Ends ---*/
 
 /*--- Shopping Bag Page ---*/
@@ -574,6 +642,19 @@ html, body {
         right: 10px;
         z-index: 9999999999;
     }
+
+    .popup {
+        height: calc(100vh - 125px);
+    }
+
+    .popup-overlay {
+        height: calc(100vh - 125px);
+    }
+    
+    .main-popup {
+        height: calc(100vh - 125px);
+        width: 100%;
+    }
 }
 
 @media screen and (max-height: 400px) {
@@ -609,6 +690,19 @@ html, body {
         top: 114px;
         right: 10px;
         z-index: 9999999999;
+    }
+
+    .popup {
+        height: calc(100vh - 104px);
+    }
+    
+    .popup-overlay {
+        height: calc(100vh - 104px);
+    }
+    
+    .main-popup {
+        height: calc(100vh - 104px);
+        width: 100%;
     }
 }
 
