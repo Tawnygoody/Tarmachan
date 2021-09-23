@@ -34,6 +34,12 @@ html, body {
 
 .content-text {
     font-family: 'Crimson Text', sans-serif;
+    font-weight: 400;
+}
+
+.content-text-bold {
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
 }
 
 .color-text {
