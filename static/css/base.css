@@ -188,7 +188,7 @@ html, body {
 }
 
 .fixed-top {
-    z-index: 10000;
+    z-index: 1000;
 }
 
 .dropdown {
