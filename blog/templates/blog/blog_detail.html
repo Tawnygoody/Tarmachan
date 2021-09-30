@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row no-gutters">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col-12 px-0 about-us-image-container">
+                <img src="{{ blog.image1.url }}" class="about-us-image" alt="{{ blog.title }}">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
+                <h3 class="title-text mb-4">{{ blog.title }}</h3>
+                <p class="content-text mb-1">By: {{ blog.author }}</p>
+                <p class="content-text text-muted mb-4">{{ blog.date }}</p>
+                <p class="content-text">{{ blog.para1 }}</p>
+            </div>
+        </div>
+        {% if blog.image2 %}
+            <div class="blog-parallax" style="background-image: url('{{ blog.image2.url }}');"></div>
+        {% endif %}
+        {% if blog.para2 %}
+            <div class="row my-4">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
+                    <p class="content-text">{{ blog.para2 }}</p>
+                </div>
+            </div>
+        {% endif %}
+        {% if blog.image3 %}
+            <div class="blog-parallax" style="background-image: url('{{ blog.image3.url }}');"></div>
+        {% endif %}
+        {% if blog.para3 %}
+            <div class="row my-4">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
+                    <p class="content-text">{{ blog.para3 }}</p>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

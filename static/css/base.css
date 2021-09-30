@@ -372,7 +372,7 @@ html, body {
     color: #cccccc;
 }
 
-.card-body {
+.product-card-body {
     height: 75px;
 }
 
@@ -556,6 +556,57 @@ html, body {
 .remove-item {
     float: right;
     cursor: pointer;
+}
+
+/*--- Shopping Bag Page Ends ---*/
+
+/*--- Blog Page ---*/
+
+.blog-img-top {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/*- Thanks to https://css-tricks.com/line-clampin/ -*/
+
+.module {
+    width: 100%;
+    overflow: hidden;
+}
+
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    height: 25px;
+    margin-bottom: 10px;
+}
+  
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+}
+
+.blog-card {
+    transition: all .5s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: scale(1.03);
+}
+
+.blog-title {
+    min-height: 80px;
+}
+
+.blog-parallax {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*--- Media Queries ---*/
