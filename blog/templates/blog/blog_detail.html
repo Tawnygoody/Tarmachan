@@ -22,7 +22,7 @@
         <div class="row mt-4">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 <h3 class="title-text mb-4">{{ blog.title }}</h3>
-                <p class="content-text mb-1">By: {{ blog.author }}</p>
+                <p class="content-text mb-1 fs-5">By: {{ blog.author }}</p>
                 <p class="content-text text-muted mb-4">{{ blog.date }}</p>
                 {% if blog.subheading1 %}
                     <h6 class="title-text mt-1">{{ blog.subheading1 }}</h6>
@@ -102,6 +102,7 @@
                 {% if blog.para9 %}
                     <p class="content-text">{{ blog.para9 }}</p>
                 {% endif %}
+                <a href="{% url 'blog' %}" class="btn content-text text-white buttons-general text-uppercase my-3 px-4" role="button"><i class="fas fa-chevron-left pe-2"></i>All Blogs</a>
             </div>
         </div>
     </div>
