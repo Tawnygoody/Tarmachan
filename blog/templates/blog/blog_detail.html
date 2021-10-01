@@ -14,36 +14,96 @@
         <div class="row no-gutters">
             <div class="col-12 px-0 about-us-image-container">
                 <img src="{{ blog.image1.url }}" class="about-us-image" alt="{{ blog.title }}">
+                {% if blog.image_caption1 %}
+                    <p class="content-text text-muted text-end me-4 me-xl-5 pt-2"><em>Image above: {{ blog.image_caption1 }}</em></p>
+                {% endif %}
             </div>
         </div>
-        <div class="row my-4">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
+        <div class="row mt-4">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 <h3 class="title-text mb-4">{{ blog.title }}</h3>
                 <p class="content-text mb-1">By: {{ blog.author }}</p>
                 <p class="content-text text-muted mb-4">{{ blog.date }}</p>
+                {% if blog.subheading1 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading1 }}</h6>
+                {% endif %}
                 <p class="content-text">{{ blog.para1 }}</p>
+                {% if blog.subheading2 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading2 }}</h6>
+                {% endif %}
+                {% if blog.para2 %}
+                    <p class="content-text">{{ blog.para2 }}</p>
+                {% endif %}
+                {% if blog.subheading3 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading3 }}</h6>
+                {% endif %}
+                {% if blog.para3 %}
+                    <p class="content-text">{{ blog.para3 }}</p>
+                {% endif %}
             </div>
         </div>
         {% if blog.image2 %}
-            <div class="blog-parallax" style="background-image: url('{{ blog.image2.url }}');"></div>
+            <div class="blog-parallax my-4" style="background-image: url('{{ blog.image2.url }}');"></div>
+        {% endif %}
+        {% if blog.image_caption2 %}
+            <div class="row">
+                <div class="col-12 px-0">
+                    <p class="content-text text-muted text-end me-4 mb-4 me-xl-5"><em>Image above: {{ blog.image_caption2 }}</em></p>
+                </div>
+            </div>
         {% endif %}
         {% if blog.para2 %}
-            <div class="row my-4">
-                <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
-                    <p class="content-text">{{ blog.para2 }}</p>
+            <div class="row mt-0">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
+                    {% if blog.subheading4 %}
+                        <h6 class="title-text mt-1">{{ blog.subheading4 }}</h6>
+                    {% endif %}
+                    <p class="content-text">{{ blog.para4 }}</p>
+                    {% if blog.subheading5 %}
+                        <h6 class="title-text mt-1">{{ blog.subheading5 }}</h6>
+                    {% endif %}
+                    {% if blog.para5 %}
+                        <p class="content-text">{{ blog.para5 }}</p>
+                    {% endif %}
+                    {% if blog.subheading6 %}
+                        <h6 class="title-text mt-1">{{ blog.subheading6 }}</h6>
+                    {% endif %}
+                    {% if blog.para6 %}
+                        <p class="content-text">{{ blog.para6 }}</p>
+                    {% endif %}
                 </div>
             </div>
         {% endif %}
         {% if blog.image3 %}
-            <div class="blog-parallax" style="background-image: url('{{ blog.image3.url }}');"></div>
-        {% endif %}
-        {% if blog.para3 %}
-            <div class="row my-4">
-                <div class="col-12 col-md-8 offset-md-2 col-lg-7 offset-lg-3 px-4">
-                    <p class="content-text">{{ blog.para3 }}</p>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-4 px-4 my-4">
+                    <img src="{{ blog.image3.url }}" class="blog-image3" alt="{{ blog.title }}">
+                    {% if blog.image_caption3 %}
+                        <p class="content-text text-muted text-end pt-2"><em>Image above: {{ blog.image_caption3 }}</em></p>
+                    {% endif %}
                 </div>
             </div>
         {% endif %}
+        <div class="row mt-0 mb-4">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
+                {% if blog.subheading7 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading7 }}</h6>
+                {% endif %}
+                <p class="content-text">{{ blog.para7 }}</p>
+                {% if blog.subheading8 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading8 }}</h6>
+                {% endif %}
+                {% if blog.para8 %}
+                    <p class="content-text">{{ blog.para8 }}</p>
+                {% endif %}
+                {% if blog.subheading9 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading9 }}</h6>
+                {% endif %}
+                {% if blog.para9 %}
+                    <p class="content-text">{{ blog.para9 }}</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
 
 {% endblock %}

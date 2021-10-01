@@ -602,11 +602,18 @@ html, body {
 }
 
 .blog-parallax {
-    min-height: 300px;
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.blog-image3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
 }
 
 /*--- Media Queries ---*/
