@@ -1,0 +1,48 @@
+.profile-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #b1b1b1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  margin-bottom: 10px;
+}
+
+.profile-style-input:focus,
+.profile-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.profile-style-input::placeholder {
+  color: #aab7c4;
+}
+
+.profile-style-input {
+  margin-bottom: 10px;
+}
+
+#id_default_country {
+    padding: 0 12px;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
+
+
+
+#profile-form-input .form-control {
+    color: #000;
+}
+
+#profile-form-input::placeholder {
+    color: #aab7c4;
+}
