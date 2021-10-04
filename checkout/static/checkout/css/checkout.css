@@ -48,6 +48,10 @@ select option[value=""] {
   color: #aab7c4 !important;
 }
 
+#id_country {
+  padding: 0 12px;
+}
+
 #loading-overlay {
   display: none;
   position: fixed;
