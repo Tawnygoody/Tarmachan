@@ -616,6 +616,69 @@ html, body {
     object-position: center center;
 }
 
+/*--- Blog Page Ends ---*/
+
+/*--- All auth  ---*/
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+}
+
+.allauth-form-inner-content input {
+    border-radius: 0;
+    box-shadow: 0 1px 3px 0 #b1b1b1;
+    border: 0;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content .form-group {
+    margin-bottom: 20px;
+}
+
+.allauth-form-inner-content label {
+    margin-bottom: 10px;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #003838;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid #002929;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: .5s linear;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #002929;
+    border-color: #002929;
+}
+
+.allauth-form-inner-content a {
+	color: #177373; /* text-info */
+}
+
+.min-height-allauth {
+    min-height: calc(100vh - 438px);
+}
+
 /*--- Media Queries ---*/
 
 @media screen and (min-width: 992px) {

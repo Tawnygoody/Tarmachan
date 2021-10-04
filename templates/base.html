@@ -47,12 +47,12 @@
           <ul class="list-inline list-unstyled text-white my-1 align-right">
             {% if request.user.is_authenticated %}
               <li class="list-inline-item px-lg-3">
-                <a href="{% url 'account_login' %}" class="text-white">
+                <a href="{% url 'profile' %}" class="text-white">
                     <i class="icon fas fa-user fa-lg"></i>
                 </a>
               </li>
               <li class="list-inline-item pe-lg-4">
-                <a href="{% url 'account_signup' %}" class="text-white">
+                <a href="{% url 'account_logout' %}" class="text-white">
                     <i class="icon fas fa-sign-out-alt fa-lg"></i>
                 </a>
               </li>
