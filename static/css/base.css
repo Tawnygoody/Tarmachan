@@ -419,6 +419,18 @@ html, body {
     cursor: pointer;
 }
 
+.modal-header {
+    display: inline-block !important;
+}
+
+.modal-footer {
+    display: inline-block !important;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
 /*--- Products Page Ends ---*/
 
 /*--- Product Detail Page ---*/
@@ -545,6 +557,20 @@ html, body {
     color: #fff;
     border: 1px solid #003838;
     border-radius: 0;
+    transition: .5s linear;
+}
+
+.delete-button {
+    background-color: #fff;
+    color: #DC3545;
+    border: 1px solid #DC3545;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
+.delete-button:hover {
+    background-color: #DC3545;
+    color: #fff;
     transition: .5s linear;
 }
 
