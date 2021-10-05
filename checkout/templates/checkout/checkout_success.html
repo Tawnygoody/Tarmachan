@@ -198,6 +198,8 @@
             <div class="col-12">
                 {% if from_profile %}
                     <a href="{% url 'profile' %}" class="btn content-text text-white buttons-general text-uppercase mx-1 mb-4 px-2 fs-6"><i class="fas fa-chevron-left pe-2"></i>Back to Profile</a>
+                {% else %}
+                    <a href="{% url 'products' %}" class="btn content-text text-white buttons-general text-uppercase mx-1 mb-4 px-2 fs-6"><i class="fas fa-chevron-left pe-2"></i>More Products</a>
                 {% endif %}
             </div>
         </div>
