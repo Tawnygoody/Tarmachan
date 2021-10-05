@@ -175,6 +175,11 @@ html, body {
     color:#177373;
 }
 
+.unstyled-color-icon:hover {
+    text-decoration: none;
+    color:#177373;
+}
+
 .unstyled-color:hover {
     color: #003838;
 }
@@ -429,6 +434,10 @@ html, body {
 
 .modal-content {
     border-radius: 0;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /*--- Products Page Ends ---*/

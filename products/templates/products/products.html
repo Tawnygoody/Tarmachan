@@ -89,7 +89,7 @@
                                     {% if request.user.is_superuser %}
                                         <small>
                                             <a class="unstyled-color-icon mx-1" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
-                                            <a class="text-danger mx-1" data-toggle="modal" data-target="#deleteModal" data-id="{{ product.name }}" data-url="{% url 'delete_product' product.id %}"><i class="fas fa-minus-circle"></i></a>
+                                            <a class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal" data-id="{{ product.name }}" data-url="{% url 'delete_product' product.id %}"><i class="fas fa-minus-circle"></i></a>
                                         </small>
                                     {% endif %}
                                 </div>
@@ -133,7 +133,7 @@
               <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
             </div>
             <div class="modal-body content-text text-center">
-                <p>Are you sure you want to delete <span id="modalProductName"><strong></strong></span>?</p>
+                <p>Are you sure you want to delete <strong><span id="modalProductName"></span></strong>?</p>
             </div>
             <div class="modal-footer text-center">
                 <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2" data-dismiss="modal">Cancel</button>
