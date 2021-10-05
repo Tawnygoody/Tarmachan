@@ -229,6 +229,13 @@ html, body {
     padding-right: 10px;
 }
 
+.tooltip-inner {
+    margin-top: 5px;
+    background-color: #003838;
+    border-radius: 0;
+    font-family: "Crimson Text", sans-serif;
+}
+
 /*--- Main Nav Ends ---*/
 
 /*--- Home Page ---*/

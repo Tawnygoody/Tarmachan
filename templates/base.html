@@ -40,37 +40,37 @@
     <header class="container-fluid fixed-top">
       <!--Delivery Banner-->
       <div class="row no-gutters bg-dark-green" id="delivery-banner">
-        <div class="col-lg-8 offset-lg-2 text-center my-2 px-0">
+        <div class="col-lg-6 offset-lg-3 text-center my-2 px-0">
           <h5 class="text-white content-text my-0">Free delivery on orders over £{{ free_delivery_threshold }}!</h5>
         </div>
-        <div class="col-lg-2 my-auto d-none d-lg-block">
+        <div class="col-lg-3 my-auto d-none d-lg-block">
           <ul class="list-inline list-unstyled text-white my-1 align-right">
             {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
                 <li class="list-inline-item">
-                  <a href="{% url 'product_management' %}" class="text-white">
+                  <a href="{% url 'product_management' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Product Management">
                       <i class="icon fas fa-user-cog fa-lg"></i>
                   </a>
                 </li>
               {% endif %}
               <li class="list-inline-item px-lg-3">
-                <a href="{% url 'profile' %}" class="text-white">
+                <a href="{% url 'profile' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="My Profile">
                     <i class="icon fas fa-user fa-lg"></i>
                 </a>
               </li>
               <li class="list-inline-item pe-lg-4">
-                <a href="{% url 'account_logout' %}" class="text-white">
+                <a href="{% url 'account_logout' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Log Out">
                     <i class="icon fas fa-sign-out-alt fa-lg"></i>
                 </a>
               </li>
             {% else %}
               <li class="list-inline-item px-lg-3">
-                <a href="{% url 'account_login' %}" class="text-white">
+                <a href="{% url 'account_login' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Log In">
                     <i class="icon fas fa-sign-in-alt fa-lg"></i>
                 </a>
               </li>
               <li class="list-inline-item pe-lg-4">
-                <a href="{% url 'account_signup' %}" class="text-white">
+                <a href="{% url 'account_signup' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Sign Up">
                     <i class="icon fas fa-user-plus fa-lg"></i>
                 </a>
               </li>
@@ -196,7 +196,7 @@
             <p class="title-text text-white text-uppercase">Company</p>
             <ul class="list-unstyled text-white content-text pl-md-5">
               <li class="my-2">
-                <a href="" class="unstyled-white">About Us</a>
+                <a href="{% url 'about_us' %}" class="unstyled-white">About Us</a>
               </li>
               <li class="my-2">
                 <a href="" class="unstyled-white">Contact Us</a>
@@ -260,6 +260,10 @@
     {% block postloadjs %}
       <script type="text/javascript">
         $('.toast').toast('show');
+
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
       </script>
     {% endblock %}
 

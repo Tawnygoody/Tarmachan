@@ -43,7 +43,7 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                     <small>
-                        <a class="unstyled-color-icon mx-1" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
+                        <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
                         <a class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-minus-circle"></i></a>
                     </small>
                 {% endif %}
