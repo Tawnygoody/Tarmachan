@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 px-3">
-                <div class="order-confirmation-wrapper border mb-5 p-4">
+                <div class="order-confirmation-wrapper border mb-4 p-4">
                     <!-- Order Info -->
                     <div class="row mb-3">
                         <div class="col">
@@ -192,6 +192,13 @@
                     </div>
                     <hr>
                 {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn content-text text-white buttons-general text-uppercase mx-1 mb-4 px-2 fs-6"><i class="fas fa-chevron-left pe-2"></i>Back to Profile</a>
+                {% endif %}
             </div>
         </div>
             

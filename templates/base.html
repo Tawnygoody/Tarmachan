@@ -194,12 +194,21 @@
               <li class="my-2">
                 <a href="" class="unstyled-white">Contact Us</a>
               </li>
-              <li class="my-2">
-                <a href="{% url 'account_login' %}" class="unstyled-white">Login</a>
-              </li>
-              <li class="my-2">
-                <a href="{% url 'account_signup' %}" class="unstyled-white">Sign Up</a>
-              </li>
+              {% if request.user.is_authenticated %}
+                <li class="my-2">
+                  <a href="{% url 'profile' %}" class="unstyled-white">Profile</a>
+                </li>
+                <li class="my-2">
+                  <a href="{% url 'account_logout' %}" class="unstyled-white">Log Out</a>
+                </li>
+              {% else %}
+                <li class="my-2">
+                  <a href="{% url 'account_login' %}" class="unstyled-white">Login</a>
+                </li>
+                <li class="my-2">
+                  <a href="{% url 'account_signup' %}" class="unstyled-white">Sign Up</a>
+                </li>
+              {% endif %}
               <li class="my-2">
                 <a href="{% url 'blog' %}" class="unstyled-white">Blog</a>
               </li>
