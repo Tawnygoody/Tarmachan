@@ -679,6 +679,32 @@ html, body {
     min-height: calc(100vh - 438px);
 }
 
+/*--- All auth Ends  ---*/
+
+/*--- Product Management  ---*/
+
+.product-style-input {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #b1b1b1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin-bottom: 20px;
+  }
+  
+  .product-style-input:focus,
+  .product-style-input:active {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .product-style-input::placeholder {
+    color: #aab7c4;
+  }
+
+
 /*--- Media Queries ---*/
 
 @media screen and (min-width: 992px) {
