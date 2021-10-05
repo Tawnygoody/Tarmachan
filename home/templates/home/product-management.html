@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row no-gutters">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4 min-height">
+        <div class="row">
+            <div class="col text-center mb-3">
+                <h2 class="title-text text-uppercase">Site Management</h2>
+                <hr class="w-50 mb-4 mx-auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="title-text text-uppercase text-center">Products</h4>
+                <hr class="w-25 mb-4 mx-auto">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12 col-sm-6 col-md-4 text-center">
+                <a href="{% url 'add_product' %}"><i class="fas fa-plus-circle fa-10x icon color-text"></i></a>
+                <p class="content-text fs-3 mt-3">Add a Product</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

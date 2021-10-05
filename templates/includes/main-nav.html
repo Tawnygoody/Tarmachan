@@ -197,6 +197,11 @@
         </div>
       </li>
       {% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+          <li class="nav-item px-1 d-lg-none">
+            <a href="{% url 'product_management' %}" class="title-text text-uppercase unstyled nav-link">Site Admin</a>
+          </li>
+        {% endif %}
         <li class="nav-item px-1 d-lg-none">
           <a href="{% url 'profile' %}" class="title-text text-uppercase unstyled nav-link">Profile</a>
         </li>

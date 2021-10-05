@@ -46,6 +46,13 @@
         <div class="col-lg-2 my-auto d-none d-lg-block">
           <ul class="list-inline list-unstyled text-white my-1 align-right">
             {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+                <li class="list-inline-item">
+                  <a href="{% url 'product_management' %}" class="text-white">
+                      <i class="icon fas fa-user-cog fa-lg"></i>
+                  </a>
+                </li>
+              {% endif %}
               <li class="list-inline-item px-lg-3">
                 <a href="{% url 'profile' %}" class="text-white">
                     <i class="icon fas fa-user fa-lg"></i>
