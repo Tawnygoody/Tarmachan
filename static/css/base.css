@@ -735,16 +735,46 @@ html, body {
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
     margin-bottom: 20px;
-  }
+}
   
-  .product-style-input:focus,
-  .product-style-input:active {
+.product-style-input:focus,
+.product-style-input:active {
     box-shadow: 0 1px 3px 0 #cfd7df;
-  }
+}
   
-  .product-style-input::placeholder {
+.product-style-input::placeholder {
     color: #aab7c4;
-  }
+}
+
+.widget-image {
+    object-fit: cover;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #DC3545
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #DC3545;
+    border-color: #DC3545;
+    border-radius: 0;
+}
 
 
 /*--- Media Queries ---*/
