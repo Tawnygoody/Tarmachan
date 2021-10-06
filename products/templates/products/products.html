@@ -76,7 +76,11 @@
                         <div class="card-footer border-0 bg-white text-center pt-0">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead content-text mb-1">£{{ product.price }}</p>
+                                    {% if product.clearance and product.clearance_price %}
+                                        <p class="lead content-text mb-1 discount-text"><span class="rrp-price text-black">£{{ product.price }}</span> - £{{ product.clearance_price }}</p>
+                                    {% else %}
+                                        <p class="lead content-text mb-1">£{{ product.price }}</p>
+                                    {% endif %}
                                     {% if product.product_sub_category %}
                                         <a href="{% url 'products' %}?master_category={{ product.master_category }}&product_sub_category={{ product.product_sub_category }}" class="unstyled-color">
                                             <p class="content-text mb-1 text-muted"><i class="fas fa-tag"></i> {{product.master_category.friendly_name }} - {{ product.product_sub_category.friendly_name }}</p>

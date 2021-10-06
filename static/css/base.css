@@ -46,6 +46,10 @@ html, body {
     color: #003838;
 }
 
+.discount-text {
+    color:#1b7945
+}
+
 .larger-content-text {
     font-size: 20px;
 }
@@ -445,6 +449,10 @@ html, body {
 
 .pointer {
     cursor: pointer;
+}
+
+.rrp-price {
+    text-decoration:line-through;
 }
 
 /*--- Products Page Ends ---*/
