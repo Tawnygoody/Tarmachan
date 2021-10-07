@@ -54,10 +54,14 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 px-3 px-sm-5 py-3 py-md-5">
                 {% if product.clearance and product.clearance_price %}
-                    <h5 class="title-text mb-1 text-uppercase discount-text"><span class="rrp-price text-black">£{{ product.price }}</span> - £{{ product.clearance_price }}</h5>
+                    <img width="50" height="50" class="widget-image mb-2" src="{{MEDIA_URL}}sale-logo.png" alt="Sale Logo">
+                    <p class="content-text discount-text my-1">Save: <strong>£{{ savings }}</strong></p>
+                    <h6 class="title-text mb-1 text-uppercase discount-text"><span class="rrp-price text-black">£{{ product.price }}</span> - £{{ product.clearance_price }} <span class="text-capitalize"><small>({{ percentage_savings }}% off)</small></span></h6>
                 {% else %}
                     <h5 class="title-text mb-1 text-uppercase">£{{ product.price }}</h5>
                 {% endif %}
+
+
                 <hr>
                 {% if product.product_sub_category %}
                     <a href="{% url 'products' %}?master_category={{ product.master_category }}&product_sub_category={{ product.product_sub_category }}" class="unstyled-color">

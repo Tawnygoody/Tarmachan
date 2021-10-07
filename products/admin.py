@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory
+    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance
 )
 
 
@@ -9,6 +9,7 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'master_category',
+        'clearance',
         'price',
         'rating',
         'image',
@@ -38,8 +39,16 @@ class ProductSubCategoryAdmin(admin.ModelAdmin):
     )
 
 
+class ClearanceAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
 # Register your models here.
 admin.site.register(Product, ProductAdmin)
 admin.site.register(MasterCategory, MasterCategoryAdmin)
 admin.site.register(ProductCategory, ProductCategoryAdmin)
 admin.site.register(ProductSubCategory, ProductSubCategoryAdmin)
+admin.site.register(Clearance, ClearanceAdmin)

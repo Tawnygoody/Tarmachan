@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory
+    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance
 )
 from .forms import ProductForm
 # Create your views here.
@@ -23,6 +23,7 @@ def all_products(request):
     master_category = None
     product_category = None
     product_sub_category = None
+    clearance = None
     sort = None
     direction = None
 
@@ -65,6 +66,14 @@ def all_products(request):
                 name__in=product_sub_category
             )
 
+        if 'clearance' in request.GET:
+            clearance = request.GET['clearance'].split(',')
+            products = products.filter(
+                clearance__name__in=clearance)
+            clearance = Clearance.objects.filter(
+                name__in=clearance
+            )
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -84,6 +93,7 @@ def all_products(request):
         'current_master_category': master_category,
         'current_product_category': product_category,
         'current_product_sub_category': product_sub_category,
+        'current_clearance': clearance,
         'current_sorting': current_sorting,
     }
     return render(request, 'products/products.html', context)
@@ -95,9 +105,19 @@ def product_detail(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
+    savings = None
+    percentage_savings = None
+
+    if product.clearance:
+        if product.clearance_price:
+            savings = product.price - product.clearance_price
+            percentage_savings_dec = ((product.price - product.clearance_price)/product.price) * 100
+            percentage_savings = round(percentage_savings_dec, 0)
 
     context = {
         'product': product,
+        'savings': savings,
+        'percentage_savings': percentage_savings
     }
     return render(request, 'products/product_detail.html', context)
 

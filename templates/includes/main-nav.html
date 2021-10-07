@@ -13,6 +13,7 @@
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=mens&product_category=jackets">Jackets</a>
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=mens&product_category=legwear">Legwear</a>
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=mens&product_category=shoes">Shoes</a>
+              <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=mens&clearance=clearance">Clearance</a>
             </div>
             <div class="col-lg-2 content-text d-none d-lg-block">
               <h6 class="my-2 px-3 title-text text-uppercase">Tops</h6>
@@ -80,6 +81,7 @@
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=womens&product_category=jackets">Jackets</a>
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=womens&product_category=legwear">Legwear</a>
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=womens&product_category=shoes">Shoes</a>
+              <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=womens&clearance=clearance">Clearance</a>
             </div>
             <div class="col-lg-2 content-text d-none d-lg-block">
               <h6 class="my-2 px-3 title-text text-uppercase">Tops</h6>
@@ -157,6 +159,9 @@
               <a class="dropdown-item" href="{% url 'products' %}?master_category=equipment&product_category=essentials&product_sub_category=duffel_bags">Duffel Bags</a>
               <a class="dropdown-item" href="{% url 'products' %}?master_category=equipment&product_category=essentials&product_sub_category=walking_poles">Walking Poles</a>
               <a class="dropdown-item" href="{% url 'products' %}?master_category=equipment&product_category=essentials&product_sub_category=water_bottles">Water Bottles</a>
+            </div>
+            <div class="col-lg-2 content-text d-none d-lg-block">
+              <a class="dropdown-item my-2 title-text text-uppercase" href="{% url 'products' %}?master_category=equipment&clearance=clearance">Clearance</a>
             </div>
 
             <div class="col-5 px-4 my-3 d-lg-none content-text">

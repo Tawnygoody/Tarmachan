@@ -455,6 +455,13 @@ html, body {
     text-decoration:line-through;
 }
 
+.top-right-sale {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    text-align: right;
+}
+
 /*--- Products Page Ends ---*/
 
 /*--- Product Detail Page ---*/

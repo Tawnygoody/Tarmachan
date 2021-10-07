@@ -17,6 +17,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-01.png"
         }
     },
@@ -38,6 +39,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-02.png"
         }
     },
@@ -59,6 +61,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-03.png"
         }
     },
@@ -80,6 +83,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-04.png"
         }
     },
@@ -101,6 +105,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-05.png"
         }
     },
@@ -122,6 +127,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-06.png"
         }
     },
@@ -143,6 +149,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-07.png"
         }
     },
@@ -164,6 +171,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-08.png"
         }
     },
@@ -185,6 +193,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-09.png"
         }
     },
@@ -206,6 +215,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "m-tee-10.png"
         }
     },
@@ -227,6 +237,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-01.png"
         }
     },
@@ -248,6 +259,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-02.png"
         }
     },
@@ -269,6 +281,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-03.png"
         }
     },
@@ -290,6 +303,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-04.png"
         }
     },
@@ -311,6 +325,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-05.png"
         }
     },
@@ -332,6 +347,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-06.png"
         }
     },
@@ -353,6 +369,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "m-pul-07.png"
         }
     },
@@ -374,6 +391,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-01.png"
         }
     },
@@ -395,6 +413,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-02.png"
         }
     },
@@ -416,6 +435,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-03.png"
         }
     },
@@ -437,6 +457,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-04.png"
         }
     },
@@ -458,6 +479,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-05.png"
         }
     },
@@ -479,6 +501,7 @@
             "master_category": 1,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "m-fl-06.png"
         }
     },
@@ -500,6 +523,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-01.png"
         }
     },
@@ -521,6 +545,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-02.png"
         }
     },
@@ -542,6 +567,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-03.png"
         }
     },
@@ -563,6 +589,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-04.png"
         }
     },
@@ -584,6 +611,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-05.png"
         }
     },
@@ -605,6 +633,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-06.png"
         }
     },
@@ -626,6 +655,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "m-ss-07.png"
         }
     },
@@ -647,6 +677,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "m-ins-01.png"
         }
     },
@@ -668,6 +699,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "m-ins-02.png"
         }
     },
@@ -689,6 +721,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "m-ins-03.png"
         }
     },
@@ -710,6 +743,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "m-ins-04.png"
         }
     },
@@ -731,6 +765,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "m-gil-01.png"
         }
     },
@@ -752,6 +787,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "m-gil-02.png"
         }
     },
@@ -773,6 +809,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "m-gil-03.png"
         }
     },
@@ -794,6 +831,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "m-wat-01.png"
         }
     },
@@ -815,6 +853,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "m-wat-02.png"
         }
     },
@@ -836,6 +875,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "m-wat-03.png"
         }
     },
@@ -857,6 +897,7 @@
             "master_category": 1,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "m-wat-04.png"
         }
     },
@@ -878,6 +919,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-01.png"
         }
     },
@@ -899,6 +941,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-02.png"
         }
     },
@@ -920,6 +963,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-03.png"
         }
     },
@@ -941,6 +985,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-04.png"
         }
     },
@@ -962,6 +1007,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-05.png"
         }
     },
@@ -983,6 +1029,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "m-tr-06.png"
         }
     },
@@ -1004,6 +1051,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "m-sht-02.png"
         }
     },
@@ -1025,6 +1073,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "m-sht-03.png"
         }
     },
@@ -1046,6 +1095,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "m-sht-04.png"
         }
     },
@@ -1067,6 +1117,7 @@
             "master_category": 1,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "m-sht-05.png"
         }
     },
@@ -1088,6 +1139,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "m-sh-01.png"
         }
     },
@@ -1109,6 +1161,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "m-sh-06.png"
         }
     },
@@ -1130,6 +1183,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "m-sh-08.png"
         }
     },
@@ -1151,6 +1205,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "m-sh-03.png"
         }
     },
@@ -1172,6 +1227,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "m-sh-04.png"
         }
     },
@@ -1193,6 +1249,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "m-sh-05.png"
         }
     },
@@ -1214,6 +1271,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "m-sh-02.png"
         }
     },
@@ -1235,6 +1293,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "m-sh-07.png"
         }
     },
@@ -1256,6 +1315,7 @@
             "master_category": 1,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "m-sh-09.png"
         }
     },
@@ -1277,6 +1337,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-01.png"
         }
     },
@@ -1298,6 +1359,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-02.png"
         }
     },
@@ -1319,6 +1381,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-03.png"
         }
     },
@@ -1340,6 +1403,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-04.png"
         }
     },
@@ -1361,6 +1425,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-05.png"
         }
     },
@@ -1382,6 +1447,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-06.png"
         }
     },
@@ -1403,6 +1469,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 1,
+            "clearance": 2,
             "image": "w-tee-07.png"
         }
     },
@@ -1424,6 +1491,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-01.png"
         }
     },
@@ -1445,6 +1513,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-02.png"
         }
     },
@@ -1466,6 +1535,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-03.png"
         }
     },
@@ -1487,6 +1557,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-04.png"
         }
     },
@@ -1508,6 +1579,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-05.png"
         }
     },
@@ -1529,6 +1601,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-06.png"
         }
     },
@@ -1550,6 +1623,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 2,
+            "clearance": 2,
             "image": "w-pul-07.png"
         }
     },
@@ -1571,6 +1645,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-01.png"
         }
     },
@@ -1592,6 +1667,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-02.png"
         }
     },
@@ -1613,6 +1689,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-03.png"
         }
     },
@@ -1634,6 +1711,7 @@
             "master_category": 2,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-04.png"
         }
     },
@@ -1655,6 +1733,7 @@
             "master_category": 3,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-05.png"
         }
     },
@@ -1676,6 +1755,7 @@
             "master_category": 3,
             "product_category": 1,
             "product_sub_category": 3,
+            "clearance": 2,
             "image": "w-fl-06.png"
         }
     },
@@ -1697,6 +1777,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-01.png"
         }
     },
@@ -1718,6 +1799,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-02.png"
         }
     },
@@ -1739,6 +1821,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-03.png"
         }
     },
@@ -1760,6 +1843,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-04.png"
         }
     },
@@ -1781,6 +1865,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-05.png"
         }
     },
@@ -1802,6 +1887,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 4,
+            "clearance": 2,
             "image": "w-ss-06.png"
         }
     },
@@ -1823,6 +1909,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-01.png"
         }
     },
@@ -1844,6 +1931,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-02.png"
         }
     },
@@ -1865,6 +1953,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-03.png"
         }
     },
@@ -1886,6 +1975,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-04.png"
         }
     },
@@ -1907,6 +1997,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-05.png"
         }
     },
@@ -1928,6 +2019,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 5,
+            "clearance": 2,
             "image": "w-ins-06.png"
         }
     },
@@ -1949,6 +2041,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "w-gil-01.png"
         }
     },
@@ -1970,6 +2063,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "w-gil-02.png"
         }
     },
@@ -1991,6 +2085,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 6,
+            "clearance": 2,
             "image": "w-gil-03.png"
         }
     },
@@ -2012,6 +2107,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "w-wat-01.png"
         }
     },
@@ -2033,6 +2129,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "w-wat-02.png"
         }
     },
@@ -2054,6 +2151,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "w-wat-03.png"
         }
     },
@@ -2075,6 +2173,7 @@
             "master_category": 2,
             "product_category": 2,
             "product_sub_category": 7,
+            "clearance": 2,
             "image": "w-wat-04.png"
         }
     },
@@ -2096,6 +2195,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-01.png"
         }
     },
@@ -2117,6 +2217,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-02.png"
         }
     },
@@ -2138,6 +2239,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-03.png"
         }
     },
@@ -2159,6 +2261,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-04.png"
         }
     },
@@ -2180,6 +2283,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-05.png"
         }
     },
@@ -2201,6 +2305,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-06.png"
         }
     },
@@ -2222,6 +2327,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 8,
+            "clearance": 2,
             "image": "w-tr-07.png"
         }
     },
@@ -2243,6 +2349,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "w-sht-01.png"
         }
     },
@@ -2264,6 +2371,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "w-sht-02.png"
         }
     },
@@ -2285,6 +2393,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "w-sht-03.png"
         }
     },
@@ -2306,6 +2415,7 @@
             "master_category": 2,
             "product_category": 3,
             "product_sub_category": 9,
+            "clearance": 2,
             "image": "w-sht-04.png"
         }
     },
@@ -2327,6 +2437,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "w-sh-01.png"
         }
     },
@@ -2348,6 +2459,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "w-sh-03.png"
         }
     },
@@ -2369,6 +2481,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 10,
+            "clearance": 2,
             "image": "w-sh-04.png"
         }
     },
@@ -2390,6 +2503,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "w-sh-02.png"
         }
     },
@@ -2411,6 +2525,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "w-sh-05.png"
         }
     },
@@ -2432,6 +2547,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 11,
+            "clearance": 2,
             "image": "w-sh-06.png"
         }
     },
@@ -2453,6 +2569,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "w-sh-07.png"
         }
     },
@@ -2474,6 +2591,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "w-sh-08.png"
         }
     },
@@ -2495,6 +2613,7 @@
             "master_category": 2,
             "product_category": 4,
             "product_sub_category": 12,
+            "clearance": 2,
             "image": "w-sh-09.png"
         }
     },
@@ -2516,6 +2635,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 13,
+            "clearance": 2,
             "image": "e-glo-01.png"
         }
     },
@@ -2537,6 +2657,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 13,
+            "clearance": 2,
             "image": "e-glo-02.png"
         }
     },
@@ -2558,6 +2679,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 13,
+            "clearance": 2,
             "image": "e-glo-03.png"
         }
     },
@@ -2579,6 +2701,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-01.png"
         }
     },
@@ -2600,6 +2723,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-02.png"
         }
     },
@@ -2621,6 +2745,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-03.png"
         }
     },
@@ -2642,6 +2767,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-04.png"
         }
     },
@@ -2663,6 +2789,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-05.png"
         }
     },
@@ -2684,6 +2811,7 @@
             "master_category": 3,
             "product_category": 5,
             "product_sub_category": 14,
+            "clearance": 2,
             "image": "e-hat-06.png"
         }
     },
@@ -2705,6 +2833,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 15,
+            "clearance": 2,
             "image": "e-sb-01.png"
         }
     },
@@ -2726,6 +2855,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 15,
+            "clearance": 2,
             "image": "e-sb-02.png"
         }
     },
@@ -2747,6 +2877,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 15,
+            "clearance": 2,
             "image": "e-sb-03.png"
         }
     },
@@ -2768,6 +2899,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 16,
+            "clearance": 2,
             "image": "e-sm-01.png"
         }
     },
@@ -2789,6 +2921,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 16,
+            "clearance": 2,
             "image": "e-sm-02.png"
         }
     },
@@ -2810,6 +2943,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 16,
+            "clearance": 2,
             "image": "e-sm-03.png"
         }
     },
@@ -2831,6 +2965,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 17,
+            "clearance": 2,
             "image": "e-ten-01.png"
         }
     },
@@ -2852,6 +2987,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 17,
+            "clearance": 2,
             "image": "e-ten-02.png"
         }
     },
@@ -2873,6 +3009,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 17,
+            "clearance": 2,
             "image": "e-ten-03.png"
         }
     },
@@ -2894,6 +3031,7 @@
             "master_category": 3,
             "product_category": 6,
             "product_sub_category": 17,
+            "clearance": 2,
             "image": "e-ten-04.png"
         }
     },
@@ -2915,6 +3053,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 18,
+            "clearance": 2,
             "image": "e-ruck-01.png"
         }
     },
@@ -2936,6 +3075,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 18,
+            "clearance": 2,
             "image": "e-ruck-02.png"
         }
     },
@@ -2957,6 +3097,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 18,
+            "clearance": 2,
             "image": "e-ruck-03.png"
         }
     },
@@ -2978,6 +3119,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 18,
+            "clearance": 2,
             "image": "e-ruck-04.png"
         }
     },
@@ -2999,6 +3141,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 19,
+            "clearance": 2,
             "image": "e-duff-01.png"
         }
     },
@@ -3020,6 +3163,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 19,
+            "clearance": 2,
             "image": "e-duff-02.png"
         }
     },
@@ -3041,6 +3185,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 19,
+            "clearance": 2,
             "image": "e-duff-03.png"
         }
     },
@@ -3062,6 +3207,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 20,
+            "clearance": 2,
             "image": "e-wp-01.png"
         }
     },
@@ -3083,6 +3229,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 20,
+            "clearance": 2,
             "image": "e-wp-02.png"
         }
     },
@@ -3104,6 +3251,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 20,
+            "clearance": 2,
             "image": "e-wp-03.png"
         }
     },
@@ -3125,6 +3273,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 20,
+            "clearance": 2,
             "image": "e-wp-04.png"
         }
     },
@@ -3146,6 +3295,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 21,
+            "clearance": 2,
             "image": "e-watb-01.png"
         }
     },
@@ -3167,6 +3317,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 21,
+            "clearance": 2,
             "image": "e-watb-02.png"
         }
     },
@@ -3188,6 +3339,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 21,
+            "clearance": 2,
             "image": "e-watb-03.png"
         }
     },
@@ -3209,6 +3361,7 @@
             "master_category": 3,
             "product_category": 7,
             "product_sub_category": 21,
+            "clearance": 2,
             "image": "e-watb-04.png"
         }
     }

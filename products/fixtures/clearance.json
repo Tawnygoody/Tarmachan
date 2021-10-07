@@ -1,0 +1,18 @@
+[
+    {
+        "model": "products.clearance",
+        "pk": 1,
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
+        }
+    },
+    {
+        "model": "products.clearance",
+        "pk": 2,
+        "fields": {
+            "name": "not_in_clearance",
+            "friendly_name": "Not in Clearance"
+        }
+    }
+]

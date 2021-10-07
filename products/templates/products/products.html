@@ -13,7 +13,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-4">
-                {% if current_product_sub_category %}
+                {% if current_clearance %}
+                    {% for c in current_clearance %}
+                        <h2 class="title-text text-uppercase">{{ c.friendly_name }}</h2>
+                    {% endfor %}
+                {% elif current_product_sub_category %}
                     {% for c in current_product_sub_category %}
                         <h2 class="title-text text-uppercase">{{ c.friendly_name }}</h2>
                     {% endfor%}
@@ -58,6 +62,11 @@
                             <div class="product-image-container">
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    {% if product.clearance and product.clearance_price %}
+                                    <div class="top-right-sale pe-1">
+                                        <img width="50" height="50" class="widget-image" src="{{MEDIA_URL}}sale-logo.png" alt="Sale Logo">
+                                    </div>
+                                    {% endif %}
                                 </a>
                                 <a href="{% url 'product_detail' product.id %}" class="unstyled d-none d-lg-block d-xl-bloc">
                                     <div class="overlay my-auto d-none d-lg-block d-xl-block">

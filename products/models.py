@@ -60,6 +60,22 @@ class ProductSubCategory(models.Model):
         return self.friendly_name
 
 
+class Clearance(models.Model):
+    """
+    This allows the grouping of products for
+    product sub categories
+    """
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_clearance_name(self):
+        return self.friendly_name
+
+
 class Product(models.Model):
     """
     Product Model contains the detailed product information
@@ -104,10 +120,12 @@ class Product(models.Model):
         max_digits=6,
         decimal_places=2
     )
-    clearance = models.BooleanField(
-        default=False,
+    clearance = models.ForeignKey(
+        'Clearance',
         null=True,
-        blank=True
+        blank=True,
+        default=2,
+        on_delete=models.SET_NULL,
     )
     clearance_price = models.DecimalField(
         max_digits=6,
