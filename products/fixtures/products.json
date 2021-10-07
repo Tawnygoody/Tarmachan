@@ -5,7 +5,6 @@
         "fields": {
             "sku": "MTEENA01",
             "name": "Cairn Gorm Tee",
-            "colour": "Navy",
             "description1": "A high performace technical tee.",
             "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -27,7 +26,6 @@
         "fields": {
             "sku": "MTEEGR02",
             "name": "Cairn Gorm Tee",
-            "colour": "Grey",
             "description1": "A high performace technical tee.",
             "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -49,7 +47,6 @@
         "fields": {
             "sku": "MTEENA03",
             "name": "Cairn Gorm LS Tee",
-            "colour": "Navy",
             "description1": "A long sleeve high performace zip tee.",
             "description2": "This versatile and fast drying zip tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -71,7 +68,6 @@
         "fields": {
             "sku": "MTEELB04",
             "name": "Cairn Gorm LS Tee",
-            "colour": "Light Blue",
             "description1": "A long sleeve high performace zip tee.",
             "description2": "This versatile and fast drying zip tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -93,7 +89,6 @@
         "fields": {
             "sku": "MTEERE05",
             "name": "Ben Lomond LS Tee",
-            "colour": "Orange & Navy",
             "description1": "A lightweight, stretchy and comfortable LS tee perfect all year round.",
             "description2": "This comfortable long sleeve tee is perfect for all conditions. Use it as an inside layer on colder days, or a top layer during the summer. Ultrasoft drirelease Lyocell fabric makes this tee soft yet durable.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -115,7 +110,6 @@
         "fields": {
             "sku": "MTEEMO06",
             "name": "Three Peaks Tee",
-            "colour": "Charcoal",
             "description1": "A comfy cotton tee for everyday wear.",
             "description2": "Using 100% organic cotton, there isn't a softer tee going. Utilising HeiQ Fresh technology this tee is ideal for urban exploration whilst ensuring long lasting odour control",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -137,7 +131,6 @@
         "fields": {
             "sku": "MTEEBL07",
             "name": "Breadalbane Tee",
-            "colour": "Blue",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -159,7 +152,6 @@
         "fields": {
             "sku": "MTEELG07",
             "name": "Breadalbane Tee",
-            "colour": "Light Grey",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -181,7 +173,6 @@
         "fields": {
             "sku": "MTEEOR09",
             "name": "Breadalbane Tee",
-            "colour": "Orange",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -203,7 +194,6 @@
         "fields": {
             "sku": "MTEEGR07",
             "name": "Breadalbane Tee",
-            "colour": "Grey",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -225,7 +215,6 @@
         "fields": {
             "sku": "MPULNA01",
             "name": "Arrochar Hooded Pullover",
-            "colour": "Navy",
             "description1": "A close fitting hooded zip jumper provides an ideal mid-layer for all year round climbing.",
             "description2": "The Arrochar Pullover is a specialist piece designed for the serious mountaineer. Pontetorto Tecnostretch fleece provides warmth whilst maintaining quik drying. The hood with full face protection works on it's own or under a helmet.",
             "spec1": "The Tecnostretch® line from Pontetorto is the answer to the market request for fabrics with a technical outer surface, high elasticity, and high thermal insulation",
@@ -247,7 +236,6 @@
         "fields": {
             "sku": "MPULGR02",
             "name": "Arrochar Hooded Pullover",
-            "colour": "Stone",
             "description1": "A close fitting hooded zip jumper provides an ideal mid-layer for all year round climbing.",
             "description2": "The Arrochar Pullover is a specialist piece designed for the serious mountaineer. Pontetorto Tecnostretch fleece provides warmth whilst maintaining quik drying. The hood with full face protection works on it's own or under a helmet.",
             "spec1": "The Tecnostretch® line from Pontetorto is the answer to the market request for fabrics with a technical outer surface, high elasticity, and high thermal insulation",
@@ -269,7 +257,6 @@
         "fields": {
             "sku": "MPULOR03",
             "name": "Torridon Pullover",
-            "colour": "Orange",
             "description1": "Close fitting and lightweight mid layer for hiking and mountaineering.",
             "description2": "The Torridon Pullover is an ideal mid-layer for the everyday rambler. Air pockets trap air without compromising breathability, so you stay warm without getting sweaty. Perfect for layering with a waterproof on those wet days.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -291,7 +278,6 @@
         "fields": {
             "sku": "MPULNA04",
             "name": "Dumyat Pullover",
-            "colour": "Navy",
             "description1": "A midweight jumper with casual styling for everyday wear.",
             "description2": "The Dumyat pullover is timeless combining Thermic™ Fleece for casual styling with mountain performance. This is an ideal mid-layer for urban exploration.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -313,7 +299,6 @@
         "fields": {
             "sku": "MPULST05",
             "name": "Dumyat Pullover",
-            "colour": "Stone",
             "description1": "A midweight jumper with casual styling for everyday wear.",
             "description2": "The Dumyat pullover is timeless combining Thermic™ Fleece for casual styling with mountain performance. This is an ideal mid-layer for urban exploration.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -335,7 +320,6 @@
         "fields": {
             "sku": "MPULGR06",
             "name": "Ailsa Craig Pullover",
-            "colour": "Grey",
             "description1": "Versatile and stretchy this half-length zip pullover can be used in all seasons.",
             "description2": "Made with Thermic™ stretch fleece, The Ailsa Craig Pullover is warm, wicking and offers excellent mobility. Ideal for all mountain activities including climbing, hiking, and skiing, it is a hardworking and packable layer.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -357,7 +341,6 @@
         "fields": {
             "sku": "MPULGO07",
             "name": "Ailsa Craig Pullover",
-            "colour": "Gold",
             "description1": "Versatile and stretchy this half-length zip pullover can be used in all seasons.",
             "description2": "Made with Thermic™ stretch fleece, The Ailsa Craig Pullover is warm, wicking and offers excellent mobility. Ideal for all mountain activities including climbing, hiking, and skiing, it is a hardworking and packable layer.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -379,7 +362,6 @@
         "fields": {
             "sku": "MFLENA01",
             "name": "Aonach Mor Fleece",
-            "colour": "Royal Blue",
             "description1": "An incredibly warm berber style fleece for high mountain insulation.",
             "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -401,7 +383,6 @@
         "fields": {
             "sku": "MFLEGR02",
             "name": "Aonach Mor Fleece",
-            "colour": "Grey",
             "description1": "An incredibly warm berber style fleece for high mountain insulation.",
             "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -423,7 +404,6 @@
         "fields": {
             "sku": "MFLENA03",
             "name": "Knoydart Fleece",
-            "colour": "Navy",
             "description1": "An very warm yet amazingly packable fleece for all occasions.",
             "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -445,7 +425,6 @@
         "fields": {
             "sku": "MFLETE04",
             "name": "Knoydart Fleece",
-            "colour": "Teal",
             "description1": "An very warm yet amazingly packable fleece for all occasions.",
             "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -467,7 +446,6 @@
         "fields": {
             "sku": "MFLERU05",
             "name": "Trotternish Fleece",
-            "colour": "Rust",
             "description1": "This shearling style heavy weight midlayer combines retro charm with 21st century performance.",
             "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -489,7 +467,6 @@
         "fields": {
             "sku": "MFLEGR06",
             "name": "Trotternish Fleece",
-            "colour": "Green",
             "description1": "This shearling style heavy weight midlayer combines retro charm with 21st century performance.",
             "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -511,7 +488,6 @@
         "fields": {
             "sku": "MSOSBL01",
             "name": "St Kilda Soft Shell",
-            "colour": "Black",
             "description1": "A highly breathable soft shell ideal for spring alpine excursions.",
             "description2": "The St Kilda is a classic soft shell. A highly versatile jacket with a water repellent finish and windproofing technology mean it has light weather protection. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -533,7 +509,6 @@
         "fields": {
             "sku": "MSOSBG02",
             "name": "St Kilda Soft Shell",
-            "colour": "Black & Grey",
             "description1": "A highly breathable soft shell ideal for spring alpine excursions.",
             "description2": "The St Kilda is a classic soft shell. A highly versatile jacket with a water repellent finish and windproofing technology mean it has light weather protection. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -555,7 +530,6 @@
         "fields": {
             "sku": "MSOSBL03",
             "name": "Scalpay Soft Shell",
-            "colour": "Black",
             "description1": "A lightweight packable soft shell for protection across the spectrum of alpine environments.",
             "description2": "The Scalpay has the benefit of an integrated hood for additional weather protection, and affords total mobility and unhindered breathability. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -577,7 +551,6 @@
         "fields": {
             "sku": "MSOSGO04",
             "name": "Scalpay Soft Shell",
-            "colour": "Gold",
             "description1": "A lightweight packable soft shell for protection across the spectrum of alpine environments.",
             "description2": "The Scalpay has the benefit of an integrated hood for additional weather protection, and affords total mobility and unhindered breathability. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -599,7 +572,6 @@
         "fields": {
             "sku": "MSOSRE05",
             "name": "Ben Nevis Mountain Rescue Soft Shell",
-            "colour": "Black & Red",
             "description1": "A limited edition Mountain Rescue specific soft shell.",
             "description2": "The Ben Nevis Mountain Rescue jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction and 3M® reflective detailing. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -621,7 +593,6 @@
         "fields": {
             "sku": "MSOSBC06",
             "name": "Ben Nevis Soft Shell",
-            "colour": "Stone & Charcoal",
             "description1": "A warmer weight softshell jacket and perfect for cooler conditions of those who run cold.",
             "description2": "The Ben Nevis jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -643,7 +614,6 @@
         "fields": {
             "sku": "MSOSRE07",
             "name": "Ben Nevis Soft Shell",
-            "colour": "Red",
             "description1": "A warmer weight softshell jacket and perfect for cooler conditions of those who run cold.",
             "description2": "The Ben Nevis jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -665,7 +635,6 @@
         "fields": {
             "sku": "MINSBL01",
             "name": "Marsco Insulated",
-            "colour": "Royal Blue & Charcoal",
             "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
             "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -687,7 +656,6 @@
         "fields": {
             "sku": "MINSRE02",
             "name": "Marsco Insulated",
-            "colour": "Red & Black",
             "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
             "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -709,7 +677,6 @@
         "fields": {
             "sku": "MINSGO03",
             "name": "Glen Clova Insulated",
-            "colour": "Gold",
             "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
             "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
             "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
@@ -731,7 +698,6 @@
         "fields": {
             "sku": "MINSBL04",
             "name": "Glen Clova Insulated",
-            "colour": "Blue",
             "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
             "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
             "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
@@ -753,7 +719,6 @@
         "fields": {
             "sku": "MGILBL01",
             "name": "Lochnagar Gilet",
-            "colour": "Black",
             "description1": "Need a lightweight Gilet everyday activities? Look no further than the Lochnagar Gilet.",
             "description2": "Using full stretch, double weave Soft Shell; fabric the Frontier Vest balances exceptional breathability against protection from freezing wind for early starts on north facing walls. Our Active fit layers perfectly over a base layer or lightweight fleece.",
             "spec1": "EXOLITE 210 stretch double weave Soft Shell fabric",
@@ -775,7 +740,6 @@
         "fields": {
             "sku": "MGILBL02",
             "name": "Rannoch Gilet",
-            "colour": "Black",
             "description1": "Our Rannoch Gilet is a stylish midlayer that'll keep you cosy in cooler hiking conditions",
             "description2": "High fill, Responsible Down Standard (RDS) goose down delivers extreme and consistent warmth in seriously cold weather. With an internal chest pocket and zipped hand pockets, youll have space for all your accessories.",
             "spec1": "DRILITE® Loft 20D outer fabric; totally windproof and highly water resistant",
@@ -797,7 +761,6 @@
         "fields": {
             "sku": "MGILBL03",
             "name": "Badenoch Gilet",
-            "colour": "Black",
             "description1": "A hybrid Gilet with an insulated front and microfleece back for fast moving mountain sports.",
             "description2": "Highly breathable and fast drying POLARTEC® Alpha® insulation is combined with our lightweight 20D RS shell fabric in the front of the body for wind resistance. Pontetorto® Tecnostretch 187 panels in the back and sides minimise bulk and dry even faster after a strenuous ascent.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -819,7 +782,6 @@
         "fields": {
             "sku": "MWATBL01",
             "name": "Assynt Waterproof",
-            "colour": "Navy",
             "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
             "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -841,7 +803,6 @@
         "fields": {
             "sku": "MWATGO02",
             "name": "Assynt Waterproof",
-            "colour": "Gold",
             "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
             "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -863,7 +824,6 @@
         "fields": {
             "sku": "MWATOR03",
             "name": "Suilven Waterproof",
-            "colour": "Orange",
             "description1": "The Suilven jacket is a serious off-piste hard shell for full throttle Big Mountain adventure.",
             "description2": "The Suilven jacket is designed for cold, deep winter powder. Constructed from a hybrid of hardwearing, fully recycled 3-layer GORE-TEX® Pro fabrics, it combines durable waterproof performance with extreme breathability for outstanding weather protection and comfort.",
             "spec1": "3-layer GORE-TEX® PRO 80D fabric throughout",
@@ -885,7 +845,6 @@
         "fields": {
             "sku": "MWATGR04",
             "name": "Suilven Waterproof",
-            "colour": "Green",
             "description1": "The Suilven jacket is a serious off-piste hard shell for full throttle Big Mountain adventure.",
             "description2": "The Suilven jacket is designed for cold, deep winter powder. Constructed from a hybrid of hardwearing, fully recycled 3-layer GORE-TEX® Pro fabrics, it combines durable waterproof performance with extreme breathability for outstanding weather protection and comfort.",
             "spec1": "3-layer GORE-TEX® PRO 80D fabric throughout",
@@ -907,7 +866,6 @@
         "fields": {
             "sku": "MTROCH01",
             "name": "Canisp Rain Pant",
-            "colour": "Charcoal",
             "description1": "A lightweight, packable waterproof mountain trouser.",
             "description2": "These trousers are an unobtrussive packable pant, ideal as a back up plan for the unexpected deluge. They are easy to slip on and off thanks to their full length side zips.",
             "spec1": "DRILITE® Plus 50D fabric; totally windproof and fully water resistant",
@@ -929,7 +887,6 @@
         "fields": {
             "sku": "MTROBB02",
             "name": "Liathach Insulated Pant",
-            "colour": "Black & Brown",
             "description1": "Take a belt and braces approach for high altitude trekking and polar travel.",
             "description2": "Whether you're hitting the slopes in deep powder or experiencing arctic conditions the Liathach pant meets all needs. Reinforced kickpatches stand up well to scuffs with boots, poles and bindings.",
             "spec1": "DRILITE® Loft 40D outer fabric; totally windproof and highly water resistant",
@@ -951,7 +908,6 @@
         "fields": {
             "sku": "MTROGR03",
             "name": "Atholl Pant",
-            "colour": "Grey",
             "description1": "These lightweight technical pants are functional, stetchy and durable.",
             "description2": "If you like the freedom to stretch, leap and scramble, these technical trousers could have your name on them. With an active fit these fast drying pants offer all-day comfort when clocking up the miles. ",
             "spec1": "Ascender fabric; light, tough and fast drying",
@@ -973,7 +929,6 @@
         "fields": {
             "sku": "MTROBL04",
             "name": "Eagach Pant",
-            "colour": "Black",
             "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
             "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -995,7 +950,6 @@
         "fields": {
             "sku": "MTROLB05",
             "name": "Eagach Pant",
-            "colour": "Light Blue",
             "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
             "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -1017,7 +971,6 @@
         "fields": {
             "sku": "MTROOL06",
             "name": "Ben Cruachan Pant",
-            "colour": "Olive Green",
             "description1": "Built for severe weather conditions, the Ben Cruachan pant delivers serious alpine performance.",
             "description2": "These full spec mountaineering pants give total protection and mobility in the worst conditions imaginable. Using GORE-TEX® Pro 80D fabric throughout they easily resist abrasion in ice choked chimneys and further reinforcement protects against cuts from racked screws.",
             "spec1": "3-layer GORE-TEX® Pro 80D fabric throughout",
@@ -1039,7 +992,6 @@
         "fields": {
             "sku": "MSHOBR01",
             "name": "Ben Fhada Shorts",
-            "colour": "Brown",
             "description1": "Stretchy, tough soft shell shorts for adventurous trekking and scrambling on warmer days in the mountains.",
             "description2": "Exolite 210 stretch double weave fabric give robust, comfortable performance and drys fast after a summer downpour. Four zipped pockets secure the essentials whether on the trail or travelling through mountain towns and an integrated belt sits comfortably under a pack.",
             "spec1": "EXOLITE 210 stretch double weave Soft Shell fabric",
@@ -1061,7 +1013,6 @@
         "fields": {
             "sku": "MSHOGR02",
             "name": "Ben Fhada Shorts",
-            "colour": "Grey",
             "description1": "Stretchy, tough soft shell shorts for adventurous trekking and scrambling on warmer days in the mountains.",
             "description2": "Exolite 210 stretch double weave fabric give robust, comfortable performance and drys fast after a summer downpour. Four zipped pockets secure the essentials whether on the trail or travelling through mountain towns and an integrated belt sits comfortably under a pack.",
             "spec1": "EXOLITE 210 stretch double weave Soft Shell fabric",
@@ -1083,7 +1034,6 @@
         "fields": {
             "sku": "MSHOBL03",
             "name": "Storr Shorts",
-            "colour": "Blue",
             "description1": "Our lightest stretch woven shorts for multi-day summer enchainments and year round training sessions.",
             "description2": "These superlight, stretchy shorts are perfect for hot conditions. With an unrestrictive fit and fast drying time they're ideal for long sun baked ascents to high cirques or double session training days in preparation for big projects. A streamlined waist is comfortable wet or dry and won't chafe under a pack.",
             "spec1": "EXOLITE 100 stretch double weave Soft Shell fabric",
@@ -1105,7 +1055,6 @@
         "fields": {
             "sku": "MSHOYE03",
             "name": "Storr Shorts",
-            "colour": "Yellow",
             "description1": "Our lightest stretch woven shorts for multi-day summer enchainments and year round training sessions.",
             "description2": "These superlight, stretchy shorts are perfect for hot conditions. With an unrestrictive fit and fast drying time they're ideal for long sun baked ascents to high cirques or double session training days in preparation for big projects. A streamlined waist is comfortable wet or dry and won't chafe under a pack.",
             "spec1": "EXOLITE 100 stretch double weave Soft Shell fabric",
@@ -1127,7 +1076,6 @@
         "fields": {
             "sku": "MWBOBG01",
             "name": "Canna Boots",
-            "colour": "Grey & Turquoise",
             "description1": "A 2-3 season walking boot ideal for hiking, walks through the woods and on trails.",
             "description2": "The Canna boots has a 1.8mm suede leather upper with Gore-Tex Performance Comfort lining. With the new Vibram Energy II sole, these boots are the perfect solution for three-season hiking, and is ideal for rainy days.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1149,7 +1097,6 @@
         "fields": {
             "sku": "MWBOBL02",
             "name": "Ben Alder Boots",
-            "colour": "Black",
             "description1": "Terrain proof. Element proof. Excuse proof. Built for traction, pace and protection in all conditions.",
             "description2": "The durable membrane is wind- and waterproof. Two types of mesh in the mid- and forefoot enhance stability and breathability. The high collar is made for movement and, like the tongue, is reinforced with padding. The rubberized mudguard is tough but light and flexible – the ideal blend of speed and shield.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1171,7 +1118,6 @@
         "fields": {
             "sku": "MWBOBG03",
             "name": "Morenish Boots",
-            "colour": "Black & Grey",
             "description1": "Move forward with fluidity in these Quest-worthy hiking boots.",
             "description2": "The leather material is naturally water resistant, but is further backed by a waterproof GORE-TEX membrane that keeps your feet dry from the outside to the inside. Designed for challenging expeditions and arduous conditions, the resilient Morenish Hiking Boot gets a thumbs up from us for grip on rock-strewn terrain.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1193,7 +1139,6 @@
         "fields": {
             "sku": "MWSHNO01",
             "name": "Ben Vane Shoes",
-            "colour": "Navy & Orange",
             "description1": "Speed and protection merge seamlessly in the Ben Vane shoes to strike a balance between trail running and light hiking support.",
             "description2": "The Rush was designed to handle a variety of fast and light trail objectives, from high mileage days on rugged trails to day hikes to fast-packing. Gore-tex Extended Comfort provides lasting protection from wetgrass and puddles and the lightweight uppers dry quickly.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1215,7 +1160,6 @@
         "fields": {
             "sku": "MWSHBG02",
             "name": "Ben Ledi Shoes",
-            "colour": "Black & Grey",
             "description1": "Get ready to power through uphills and descents with the Ben Ledi hiking shoes.",
             "description2": "The Ben Ledi was designed to handle a variety of fast and light trail objectives, from high mileage days on rugged trails to day hikes to fast-packing. Gore-tex Extended Comfort provides lasting protection from wetgrass and puddles and the lightweight uppers dry quickly.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1237,7 +1181,6 @@
         "fields": {
             "sku": "MWSHGR03",
             "name": "Campsie Shoes",
-            "colour": "Grey & Red",
             "description1": "The Campsie shoes are sturdy and supportive shoe that is ideal for lightweight treks over trails and tracks.",
             "description2": "It features a GoreTex lining for excellent breathable, waterproof protection while the Vibram TC5+ outsole is durable and grippy across a range of different terrains. It offers excellent underfoot support thanks to the molded nylon arch shank and the EVA contoured footbed",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -1259,7 +1202,6 @@
         "fields": {
             "sku": "MRSHBW01",
             "name": "Sidlaw Running Shoes",
-            "colour": "Black & White",
             "description1": "The Sidlaw running shoes are designed to let you run steadily without weighing you down.",
             "description2": "The outsole is created using Contagrip® MA outsole offers you the grip you need on your adventure. With an 8mm drop in the sole, you'll literally be on your toes throughout the whole journey. Mesh material in the upper allows your feet to breathe while the padded tongue makes your run more comfortable.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -1281,7 +1223,6 @@
         "fields": {
             "sku": "MRSHBY02",
             "name": "Mount Keen Running Shoes",
-            "colour": "Black & Yellow",
             "description1": "A mountain running endurance shoe with great shock absorption, designed for long distance trails and Ultra-Marathons.",
             "description2": "With the cushion and profile of a mountain running shoe combined with the lacing and sole of an approach shoe, this innovative design will be ideal for climbers, guides and any mountain enthusiast looking for the ultimate performance with support, climability and durability.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -1303,7 +1244,6 @@
         "fields": {
             "sku": "MRSHBW03",
             "name": "Cairnwell Running Shoes",
-            "colour": "Black & White",
             "description1": "The perfect performance shoe for all day, every day wear. Urban adventure just became unmissable.",
             "description2": "The Cairnwell has an unmatched step-in feel, thanks to its blend of soft-touch fabrics. The breathable antimicrobial upper ventilates and keeps you feeling fresh. While soft, no-sew reinforcements support the perfect fit.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -1325,7 +1265,6 @@
         "fields": {
             "sku": "WTEEOR01",
             "name": "Cairn Gorm Women's Tee",
-            "colour": "Orange",
             "description1": "A high performace technical tee.",
             "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer.",
@@ -1347,7 +1286,6 @@
         "fields": {
             "sku": "WTEENA02",
             "name": "Cairn Gorm Women's Tee",
-            "colour": "Navy",
             "description1": "A high performace technical tee.",
             "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -1369,7 +1307,6 @@
         "fields": {
             "sku": "WTEELB03",
             "name": "Cairn Gorm Women's Tee",
-            "colour": "Light Blue",
             "description1": "A high performace technical tee.",
             "description2": "Close fitting, stretchy, lightweight and fast drying the Cairn Gorm Tee is purpose built for those hot days on the fells. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -1391,7 +1328,6 @@
         "fields": {
             "sku": "WTEEGR04",
             "name": "Breadalbane Women's Tee",
-            "colour": "Grey & Charcoal",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -1413,7 +1349,6 @@
         "fields": {
             "sku": "WTEEPI05",
             "name": "Breadalbane Women's Tee",
-            "colour": "Pink",
             "description1": "A next-to-skin technical short sleeve tee, designed for comfort and freshness during active use.",
             "description2": "This lightweight baselayer has soft stitching and low profile seams for extra comfort on long hot days. With HeiQ Fresh odour control treatment to keep you fresh even as temperatures rise, the Breadalbane Tee offers both comfort and style.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -1435,7 +1370,6 @@
         "fields": {
             "sku": "WTEEGB06",
             "name": "Cairn Gorm LS Women's Tee",
-            "colour": "Green & Black",
             "description1": "A long sleeve high performace tee.",
             "description2": "This versatile and fast drying tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -1457,7 +1391,6 @@
         "fields": {
             "sku": "WTEEGG07",
             "name": "Cairn Gorm LS Women's Tee",
-            "colour": "Gold & Grey",
             "description1": "A long sleeve high performace tee.",
             "description2": "This versatile and fast drying tee can be used year round as a base layer or long sleeve tee. Made with Polygiene technology for effective odour control.",
             "spec1": "Polygiene® technology make sure garments, footwear, gear and textiles stay fresh and last longer",
@@ -1479,7 +1412,6 @@
         "fields": {
             "sku": "WPULNA01",
             "name": "Torridon Women's Pullover",
-            "colour": "Navy",
             "description1": "Close fitting and lightweight mid layer for hiking and mountaineering.",
             "description2": "The Torridon Pullover is an ideal mid-layer for the everyday rambler. Air pockets trap air without compromising breathability, so you stay warm without getting sweaty. Perfect for layering with a waterproof on those wet days.",
             "spec1": "Drierlease® Lyocell fabric lets you move comfortably – by natural wicking, drying, cooling and freshening – as you pursue your passions",
@@ -1501,7 +1433,6 @@
         "fields": {
             "sku": "WPULDG02",
             "name": "Ailsa Craig Women's Pullover",
-            "colour": "Dark Green",
             "description1": "Versatile and stretchy this quarter-length zip pullover can be used in all seasons.",
             "description2": "Made with Thermic™ stretch fleece, The Ailsa Craig Pullover is warm, wicking and offers excellent mobility. Ideal for all mountain activities including climbing, hiking, and skiing, it is a hardworking and packable layer.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1523,7 +1454,6 @@
         "fields": {
             "sku": "WPULLG03",
             "name": "Ailsa Craig Women's Pullover",
-            "colour": "Light Green",
             "description1": "Versatile and stretchy this quarter-length zip pullover can be used in all seasons.",
             "description2": "Made with Thermic™ stretch fleece, The Ailsa Craig Pullover is warm, wicking and offers excellent mobility. Ideal for all mountain activities including climbing, hiking, and skiing, it is a hardworking and packable layer.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1545,7 +1475,6 @@
         "fields": {
             "sku": "WPULPI04",
             "name": "Dumyat Women's Pullover",
-            "colour": "Pink",
             "description1": "A midweight jumper with casual styling for everyday wear.",
             "description2": "The Dumyat pullover is timeless combining Thermic™ Fleece for casual styling with mountain performance. This is an ideal mid-layer for urban exploration.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1567,7 +1496,6 @@
         "fields": {
             "sku": "WPULNA05",
             "name": "Dumyat Women's Pullover",
-            "colour": "Navy",
             "description1": "A midweight jumper with casual styling for everyday wear.",
             "description2": "The Dumyat pullover is timeless combining Thermic™ Fleece for casual styling with mountain performance. This is an ideal mid-layer for urban exploration.",
             "spec1": "Thermic™ Fleece - A diverse variety of knitting techniques create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1589,7 +1517,6 @@
         "fields": {
             "sku": "WPULLB06",
             "name": "Arrochar Hooded Women's Pullover",
-            "colour": "Light Blue",
             "description1": "A close fitting hooded jumper provides an ideal mid-layer for all year round climbing.",
             "description2": "The Arrochar Pullover is a specialist piece designed for the serious mountaineer. Pontetorto Tecnostretch fleece provides warmth whilst maintaining quik drying. The hood works on it's own or under a helmet.",
             "spec1": "The Tecnostretch® line from Pontetorto is the answer to the market request for fabrics with a technical outer surface, high elasticity, and high thermal insulation",
@@ -1611,7 +1538,6 @@
         "fields": {
             "sku": "WPULPI07",
             "name": "Arrochar Hooded Women's Pullover",
-            "colour": "Pink",
             "description1": "A close fitting hooded jumper provides an ideal mid-layer for all year round climbing.",
             "description2": "The Arrochar Pullover is a specialist piece designed for the serious mountaineer. Pontetorto Tecnostretch fleece provides warmth whilst maintaining quik drying. The hood works on it's own or under a helmet.",
             "spec1": "The Tecnostretch® line from Pontetorto is the answer to the market request for fabrics with a technical outer surface, high elasticity, and high thermal insulation",
@@ -1633,7 +1559,6 @@
         "fields": {
             "sku": "WFLERE01",
             "name": "Knoydart Women's Fleece",
-            "colour": "Red",
             "description1": "An very warm yet amazingly packable fleece for all occasions.",
             "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1655,7 +1580,6 @@
         "fields": {
             "sku": "WFLENA02",
             "name": "Knoydart Women's Fleece",
-            "colour": "Navy",
             "description1": "An very warm yet amazingly packable fleece for all occasions.",
             "description2": "Whether you're looking for a warm boost on the cold mornings, a throw on piece for post climb or a warm mid-layer the Knoydart Fleece covers all aspects. Designed to work seamlessly between a technical base layer and a weatherproof shell.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1677,7 +1601,6 @@
         "fields": {
             "sku": "WFLEGR03",
             "name": "Aonach Mor Women's Fleece",
-            "colour": "Green",
             "description1": "An incredibly warm berber style fleece for high mountain insulation.",
             "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1699,7 +1622,6 @@
         "fields": {
             "sku": "WFLEGR04",
             "name": "Aonach Mor Women's Fleece",
-            "colour": "Grey",
             "description1": "An incredibly warm berber style fleece for high mountain insulation.",
             "description2": "The Aonach Mor Fleece provides extreme warmth and durability whether skiing or winter climbing. There are large hand warmer pockets and a high collar to protect the neck line during cooler months.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1721,7 +1643,6 @@
         "fields": {
             "sku": "WFLERE05",
             "name": "Trotternish Women's Fleece",
-            "colour": "Red",
             "description1": "This shearling style heavy weight midlayer combines retro charm with 21st century performance.",
             "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1743,7 +1664,6 @@
         "fields": {
             "sku": "WFLETU06",
             "name": "Trotternish Women's Fleece",
-            "colour": "Turquoise",
             "description1": "This shearling style heavy weight midlayer combines retro charm with 21st century performance.",
             "description2": "Our vintage style Trotternish Fleece works perfectly whether hauling skis over that final rise or sumitting a winter Munro. An integrated hood provides extra protection on the coldest days.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -1765,7 +1685,6 @@
         "fields": {
             "sku": "WSOSBL01",
             "name": "St Kilda Women's Soft Shell",
-            "colour": "Black",
             "description1": "A highly breathable soft shell ideal for spring alpine excursions.",
             "description2": "The St Kilda is a classic soft shell. A highly versatile jacket with a water repellent finish and windproofing technology mean it has light weather protection. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -1787,7 +1706,6 @@
         "fields": {
             "sku": "WSOSRE02",
             "name": "St Kilda Women's Soft Shell",
-            "colour": "Red",
             "description1": "A highly breathable soft shell ideal for spring alpine excursions.",
             "description2": "The St Kilda is a classic soft shell. A highly versatile jacket with a water repellent finish and windproofing technology mean it has light weather protection. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -1809,7 +1727,6 @@
         "fields": {
             "sku": "WSOSLB03",
             "name": "Scalpay Women's Soft Shell",
-            "colour": "Light Blue",
             "description1": "A lightweight packable soft shell for protection across the spectrum of alpine environments.",
             "description2": "The Scalpay has the benefit of an integrated hood for additional weather protection, and affords total mobility and unhindered breathability. Stretch Nylon Woven Proflex™ panels in the hip, arm, shoulders and hood to cope with the abrasion and exposure of tough, technical climbs.",
             "spec1": "Stretch Nylon Woven Proflex™ fabric - Constructed from a highly flexible hydrophilic membrane positioned between two high gauge, knitted layers",
@@ -1831,7 +1748,6 @@
         "fields": {
             "sku": "WSOSNA04",
             "name": "Ben Nevis Women's Soft Shell",
-            "colour": "Navy",
             "description1": "A warmer weight softshell jacket and perfect for cooler conditions of those who run cold.",
             "description2": "The Ben Nevis jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -1853,7 +1769,6 @@
         "fields": {
             "sku": "WSOSGR05",
             "name": "Ben Nevis Women's Soft Shell",
-            "colour": "Grey",
             "description1": "A warmer weight softshell jacket and perfect for cooler conditions of those who run cold.",
             "description2": "The Ben Nevis jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -1875,7 +1790,6 @@
         "fields": {
             "sku": "WSOSRE06",
             "name": "Ben Nevis Mountain Rescue Soft Shell",
-            "colour": "Black & Red",
             "description1": "A limited edition Mountain Rescue specific soft shell.",
             "description2": "The Ben Nevis Mountain Rescue jacket comes with a full GORE-TEX INFINIUM™ Soft Shell construction and 3M® reflective detailing. The hood is fully adjustable to allow for helmet's and is fully windproof and highly water resistent.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -1897,7 +1811,6 @@
         "fields": {
             "sku": "WINSOR01",
             "name": "Ben Avon Women's Insulated",
-            "colour": "Orange",
             "description1": "A leading light in modern alpinism; the Ben Avon is designed for uncompromisingly fast and light mountaineering goals.",
             "description2": "A lightweight and water resistant down jacket; perfect for fast and light winter sports when not being burdened by a heavy load is a primary concern. Designed around a tailored active alpine cut and a grown-on Half Dome hood to give complete upper body insulation.",
             "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
@@ -1919,7 +1832,6 @@
         "fields": {
             "sku": "WINSGO02",
             "name": "Glen Clova Women's Insulated",
-            "colour": "Gold",
             "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
             "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
             "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
@@ -1941,7 +1853,6 @@
         "fields": {
             "sku": "WINSGR03",
             "name": "Glen Clova Women's Insulated",
-            "colour": "Green",
             "description1": "A serious down jacket, the perfect solution for climbers pushing hard on remote cold peaks.",
             "description2": "Whether your chosen form of suffering is tackling the toughest peaks in the height of winter or remote arctic journeys the Glen Clova jacket will at least keep you warm. Made with DRILITE® Loft 30D outer fabric, this jacket is totally windproof and highly water resistent.",
             "spec1": "DRILITE® Loft 30D outer fabric; totally windproof and highly water resistant",
@@ -1963,7 +1874,6 @@
         "fields": {
             "sku": "WINSNA04",
             "name": "Dalnamein Women's Insulated Parka",
-            "colour": "Navy",
             "description1": "With a longer length this protective down jacket offers maximum warmth with the minimum of weight..",
             "description2": "With its longer cut, DRILITE® Loft 20D fabric and high quality down fill the Dalnamein offers exceptional warmth and protection for its minimal weight. Whether carried for extra warmth on long trekking trips or simply relied on as a daily winter essential this is a versatile refuge from freezing conditions",
             "spec1": "DRILITE® Loft 20D outer fabric; totally windproof and highly water resistant",
@@ -1985,7 +1895,6 @@
         "fields": {
             "sku": "WINSPU05",
             "name": "Marsco Women's Insulated",
-            "colour": "Purple",
             "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
             "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -2007,7 +1916,6 @@
         "fields": {
             "sku": "WINSNA06",
             "name": "Marsco Women's Insulated",
-            "colour": "Navy",
             "description1": "This high performance jacket is a popular choice for extended use in sub-zero conditions.",
             "description2": "The Marso jacket is designed for winter climbing and mountaineering and made from GORE-TEX INFINIUM™ WINDSTOPPER® fabric. Highly breathable, windproof and water repellent with a soft feel, this jacket is perfect for high energy ascents.",
             "spec1": "GORE-TEX INFINIUM™ 290 Soft Shell fabric; completely windproof and highly water resistant",
@@ -2029,7 +1937,6 @@
         "fields": {
             "sku": "WGILBL01",
             "name": "Rannoch Women's Gilet",
-            "colour": "Black",
             "description1": "Our Rannoch Gilet is a stylish midlayer that'll keep you cosy in cooler hiking conditions",
             "description2": "High fill, Responsible Down Standard (RDS) goose down delivers extreme and consistent warmth in seriously cold weather. With an internal chest pocket and zipped hand pockets, youll have space for all your accessories.",
             "spec1": "DRILITE® Loft 20D outer fabric; totally windproof and highly water resistant",
@@ -2051,7 +1958,6 @@
         "fields": {
             "sku": "WGILBL02",
             "name": "Badenoch Women's Gilet",
-            "colour": "Black",
             "description1": "A hybrid Gilet with an insulated front and microfleece back for fast moving mountain sports.",
             "description2": "Highly breathable and fast drying POLARTEC® Alpha® insulation is combined with our lightweight 20D RS shell fabric in the front of the body for wind resistance. Pontetorto® Tecnostretch 187 panels in the back and sides minimise bulk and dry even faster after a strenuous ascent.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -2073,7 +1979,6 @@
         "fields": {
             "sku": "WGILNA03",
             "name": "Badenoch Women's Gilet",
-            "colour": "Navy",
             "description1": "A hybrid Gilet with an insulated front and microfleece back for fast moving mountain sports.",
             "description2": "Highly breathable and fast drying POLARTEC® Alpha® insulation is combined with our lightweight 20D RS shell fabric in the front of the body for wind resistance. Pontetorto® Tecnostretch 187 panels in the back and sides minimise bulk and dry even faster after a strenuous ascent.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -2095,7 +2000,6 @@
         "fields": {
             "sku": "WWATRE01",
             "name": "Assynt Women's Waterproof",
-            "colour": "Red",
             "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
             "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -2117,7 +2021,6 @@
         "fields": {
             "sku": "WWATPU02",
             "name": "Assynt Women's Waterproof",
-            "colour": "Purple",
             "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection.",
             "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -2139,7 +2042,6 @@
         "fields": {
             "sku": "WWATNA03",
             "name": "Assynt Women's Waterproof",
-            "colour": "Navy",
             "description1": "The Assynt jacket defies expectations with the highest level of waterproof protection",
             "description2": "This 3 layer DRILITE® fabric provides serious waterproof protection partnered with POLARTEC® Thermal Pro® fabric makes this technical jacket ideal for mountaineers needing more than just a packable back up plan.",
             "spec1": "POLARTEC® Thermal Pro® fabric create unique surface structures without sacrificing performance. The adapted look and feel still delivers the warmth and comfort of classic fleece",
@@ -2161,7 +2063,6 @@
         "fields": {
             "sku": "WWATGO04",
             "name": "Suilven Women's Waterproof",
-            "colour": "Gold",
             "description1": "The Suilven jacket is a serious off-piste hard shell for full throttle Big Mountain adventure.",
             "description2": "The Suilven jacket is designed for cold, deep winter powder. Constructed from a hybrid of hardwearing, fully recycled 3-layer GORE-TEX® Pro fabrics, it combines durable waterproof performance with extreme breathability for outstanding weather protection and comfort.",
             "spec1": "3-layer GORE-TEX® PRO 80D fabric throughout",
@@ -2183,7 +2084,6 @@
         "fields": {
             "sku": "WTROBL01",
             "name": "Ben Cruachan Women's Pant",
-            "colour": "Black",
             "description1": "Built for severe weather conditions, the Ben Cruachan pant delivers serious alpine performance.",
             "description2": "These full spec mountaineering pants give total protection and mobility in the worst conditions imaginable. Using GORE-TEX® Pro 80D fabric throughout they easily resist abrasion in ice choked chimneys and further reinforcement protects against cuts from racked screws.",
             "spec1": "3-layer GORE-TEX® Pro 80D fabric throughout",
@@ -2205,7 +2105,6 @@
         "fields": {
             "sku": "WTROBL02",
             "name": "Glen Lyon Women's Leggings",
-            "colour": "Royal Blue",
             "description1": "Soft and stretchy leggings for total mobility and comfort during long training sessions.",
             "description2": "Offering a supportive fit with great next to skin comfort, these full stretch leggings excel on strenuous routes requiring delicate, decisive moves. With an extremely comfortable and deep waistband and purposefully simple silhouette the Glen Lyon Women's Leggings offer effortless all day comfort.",
             "spec1": "Stretch Nylon fabric with a wide stretch waistband",
@@ -2227,7 +2126,6 @@
         "fields": {
             "sku": "WTROSO03",
             "name": "Glen Lyon Women's Leggings",
-            "colour": "Sherbet Orange",
             "description1": "Soft and stretchy leggings for total mobility and comfort during long training sessions.",
             "description2": "Offering a supportive fit with great next to skin comfort, these full stretch leggings excel on strenuous routes requiring delicate, decisive moves. With an extremely comfortable and deep waistband and purposefully simple silhouette the Glen Lyon Women's Leggings offer effortless all day comfort.",
             "spec1": "Stretch Nylon fabric with a wide stretch waistband",
@@ -2249,7 +2147,6 @@
         "fields": {
             "sku": "WTROOR04",
             "name": "Liathach Women's Insulated Pant",
-            "colour": "Orange",
             "description1": "Highly protective down pants with exceptional mobility for Alpine style climbing at altitude and fast moving Polar journeys.",
             "description2": "Originally developed for hard climbing on 7000m peaks these light and exceptionally weather resistant down pants are equally at home on minimalist Polar expeditions. GORE-TEX INFINIUM™ shell fabric resists wind and snow whilst aiding thermal efficiency, and an active cut ensures a full range of movement in hostile conditions.",
             "spec1": "GORE-TEX INFINIUM™ 10D shell is durably weather resistant",
@@ -2271,7 +2168,6 @@
         "fields": {
             "sku": "WTROGR05",
             "name": "Atholl Women's Pant",
-            "colour": "Grey",
             "description1": "These lightweight technical pants are functional, stetchy and durable.",
             "description2": "If you like the freedom to stretch, leap and scramble, these technical trousers could have your name on them. With an active fit these fast drying pants offer all-day comfort when clocking up the miles. ",
             "spec1": "Ascender fabric; light, tough and fast drying",
@@ -2293,7 +2189,6 @@
         "fields": {
             "sku": "WTROBL06",
             "name": "Eagach Pant",
-            "colour": "Black",
             "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
             "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -2315,7 +2210,6 @@
         "fields": {
             "sku": "WTROBL07",
             "name": "Eagach Pant",
-            "colour": "BLUE",
             "description1": "Durable and weather resistant, these soft shell pants are excellent for hiking in all conditions.",
             "description2": "Lightweight EXOLITE 125 fabric is stretchy, wind resistant and fast drying to make it perfect for long approaches and mountain crags. Our Active fit with slim ankle excels when moving rapidly on technical terrain and ensures unhindered movement when climbing hard pitches.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -2337,7 +2231,6 @@
         "fields": {
             "sku": "WSHORE01",
             "name": "Ben More Women's Skort",
-            "colour": "Red",
             "description1": "A technical, fast drying stretch Skort for the fastest moving trekking and training.",
             "description2": "With Exolite 100 stretch soft shell outer fabric and elasticated inner shorts the Dynamo Women's Skort is perfect for use in the mountains. A concealed zipped rear pocket keeps essentials secure and an integrated waist drawcord offers adjustment on the run.",
             "spec1": "EXOLITE 100 stretch double weave soft shell fabric",
@@ -2359,7 +2252,6 @@
         "fields": {
             "sku": "WSHOGR02",
             "name": "Ben Fhada Women's Shorts",
-            "colour": "Grey",
             "description1": "Stretchy, tough soft shell shorts for adventurous trekking and scrambling on warmer days in the mountains.",
             "description2": "Exolite 210 stretch double weave fabric give robust, comfortable performance and drys fast after a summer downpour. Four zipped pockets secure the essentials whether on the trail or travelling through mountain towns and an integrated belt sits comfortably under a pack.",
             "spec1": "EXOLITE 210 stretch double weave Soft Shell fabric",
@@ -2381,7 +2273,6 @@
         "fields": {
             "sku": "WSHOGR03",
             "name": "Storr Women's Shorts",
-            "colour": "Grey",
             "description1": "Our lightest stretch woven shorts for multi-day summer enchainments and year round training sessions.",
             "description2": "These superlight, stretchy shorts are perfect for hot conditions. With an unrestrictive fit and fast drying time they're ideal for long sun baked ascents to high cirques or double session training days in preparation for big projects. A streamlined waist is comfortable wet or dry and won't chafe under a pack.",
             "spec1": "EXOLITE 100 stretch double weave Soft Shell fabric",
@@ -2403,7 +2294,6 @@
         "fields": {
             "sku": "WSHOGR04",
             "name": "Ardlui Women's Shorts",
-            "colour": "Grey",
             "description1": "Soft, stretchy and close fitting shorts for hot days on the rock and big indoor training sessions.",
             "description2": "With a supportive fit and great next to skin comfort these full stretch shorts are at their best on steep ground, whether at the crag or on your board at home. With a deep waistband and fast drying fabric Ardlui Shorts give effortless all day comfort.",
             "spec1": "Stretch Nylon fabric with a wide stretch waistband",
@@ -2425,7 +2315,6 @@
         "fields": {
             "sku": "WWBOBL01",
             "name": "Ben Alder Women's Boots",
-            "colour": "Black",
             "description1": "Terrain proof. Element proof. Excuse proof. Built for traction, pace and protection in all conditions.",
             "description2": "The durable membrane is wind- and waterproof. Two types of mesh in the mid- and forefoot enhance stability and breathability. The high collar is made for movement and, like the tongue, is reinforced with padding. The rubberized mudguard is tough but light and flexible – the ideal blend of speed and shield.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2447,7 +2336,6 @@
         "fields": {
             "sku": "WWBOBG02",
             "name": "Canna Womens Boots",
-            "colour": "Grey & Black",
             "description1": "A 2-3 season walking boot ideal for hiking, walks through the woods and on trails.",
             "description2": "The Canna boots has a 1.8mm suede leather upper with Gore-Tex Performance Comfort lining. With the new Vibram Energy II sole, these boots are the perfect solution for three-season hiking, and is ideal for rainy days.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2469,7 +2357,6 @@
         "fields": {
             "sku": "WWBOBR03",
             "name": "Merrick Womens Boots",
-            "colour": "Brown",
             "description1": "The Merrick is a durable and sturdy walking boot that offers excellent protection across rugged terrain",
             "description2": "Perfect for long distance paths as well as trails, hills and dales, the ActivFit technology ensures a luxurious fit at all times. The absence of stitching on the inner cuff also enhances comfort and reduces the chance of any chafing while the lacing is positioned in such a way that allows the leather upper to wrap around the contours of your foot for support without hindering fluid movement.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2491,7 +2378,6 @@
         "fields": {
             "sku": "WWSHBB01",
             "name": "Ben Ledi Women's Shoes",
-            "colour": "Black & Blue",
             "description1": "Get ready to power through uphills and descents with the Ben Ledi hiking shoes.",
             "description2": "The Ben Ledi was designed to handle a variety of fast and light trail objectives, from high mileage days on rugged trails to day hikes to fast-packing. Gore-tex Extended Comfort provides lasting protection from wetgrass and puddles and the lightweight uppers dry quickly.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2513,7 +2399,6 @@
         "fields": {
             "sku": "WWSHGR02",
             "name": "Campsie Women's Shoes",
-            "colour": "Black",
             "description1": "The Campsie shoes are sturdy and supportive shoe that is ideal for lightweight treks over trails and tracks.",
             "description2": "It features a GoreTex lining for excellent breathable, waterproof protection while the Vibram TC5+ outsole is durable and grippy across a range of different terrains. It offers excellent underfoot support thanks to the molded nylon arch shank and the EVA contoured footbed",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2535,7 +2420,6 @@
         "fields": {
             "sku": "WWSHGR03",
             "name": "Ben Vane Women's Shoes",
-            "colour": "Grey",
             "description1": "Speed and protection merge seamlessly in the Ben Vane shoes to strike a balance between trail running and light hiking support.",
             "description2": "The Rush was designed to handle a variety of fast and light trail objectives, from high mileage days on rugged trails to day hikes to fast-packing. Gore-tex Extended Comfort provides lasting protection from wetgrass and puddles and the lightweight uppers dry quickly.",
             "spec1": "Gore-Tex technology refers to the use of a special microporous membrane (ePTFE), bonded to fabrics to make them durably waterproof, but still breathable",
@@ -2557,7 +2441,6 @@
         "fields": {
             "sku": "WRSHBB01",
             "name": "Mount Keen Women's Running Shoes",
-            "colour": "Black & Blue",
             "description1": "A mountain running endurance shoe with great shock absorption, designed for long distance trails and Ultra-Marathons.",
             "description2": "With the cushion and profile of a mountain running shoe combined with the lacing and sole of an approach shoe, this innovative design will be ideal for climbers, guides and any mountain enthusiast looking for the ultimate performance with support, climability and durability.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -2579,7 +2462,6 @@
         "fields": {
             "sku": "WRSHNA02",
             "name": "Cairnwell Women's Running Shoes",
-            "colour": "Navy",
             "description1": "The perfect performance shoe for all day, every day wear. Urban adventure just became unmissable.",
             "description2": "The Cairnwell has an unmatched step-in feel, thanks to its blend of soft-touch fabrics. The breathable antimicrobial upper ventilates and keeps you feeling fresh. While soft, no-sew reinforcements support the perfect fit.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -2601,7 +2483,6 @@
         "fields": {
             "sku": "WRSHBB03",
             "name": "Sidlaw Women's Running Shoes",
-            "colour": "Black & Blue",
             "description1": "The Sidlaw running shoes are designed to let you run steadily without weighing you down.",
             "description2": "The outsole is created using Contagrip® MA outsole offers you the grip you need on your adventure. With an 8mm drop in the sole, you'll literally be on your toes throughout the whole journey. Mesh material in the upper allows your feet to breathe while the padded tongue makes your run more comfortable.",
             "spec1": "The Contagrip® MA outsole grabs the terrain, even when it’s wet or slippery, giving you more control especially on descents",
@@ -2623,7 +2504,6 @@
         "fields": {
             "sku": "EGLOGR01",
             "name": "Ben Macdui Gloves",
-            "colour": "Grey & Black",
             "description1": "Our warmest gloves, suitable for the coldest corners of the globe.",
             "description2": "The Ben Macdui Gloves has been extensively proven on the highest mountains and the most serious Polar expeditions. 800 fill power down is combined with PrimaLoft® insulation and our DRILITE® Loft shell to offer exceptional warmth and protection. A pre-curved mitt and thumb ensure a secure grip on an axe or poles.",
             "spec1": "DRILITE® Loft 30D outer; totally windproof and highly water resistant",
@@ -2645,7 +2525,6 @@
         "fields": {
             "sku": "EGLOBL02",
             "name": "Cairnsmore Gloves",
-            "colour": "Black",
             "description1": "With touch-screen compatible finger and thumb, this soft and stretchy glove is a winter essential.",
             "description2": "Light, warm and fast drying these stretchy fleece gloves should always be in your pack. A silicone print palm gives excellent grip whilst a touch screen compatible index finger and thumb allow the use of a phone or GPS. Providing surprising insulation for a thin glove these are essential year round kit.",
             "spec1": "POLARTEC® Power Stretch® provides a close fit and fabulous warmth",
@@ -2667,7 +2546,6 @@
         "fields": {
             "sku": "EGLOBG03",
             "name": "Glentrool Gloves",
-            "colour": "Black & Grey",
             "description1": "A super precise Soft Shell climbing glove for the hardest and most committing leads.",
             "description2": "The Glentrool uses a stretch woven Soft Shell back and two part leather palm for durability with exceptional grip. A high loft fleece lining on the back of the hand maximises warmth whilst a microfleece palm lining ensures the best possible grip on ice tools and critical protection.",
             "spec1": "EXOLITE 210 stretch double weave Soft Shell outer",
@@ -2689,7 +2567,6 @@
         "fields": {
             "sku": "EHATBL01",
             "name": "Lochranza Headband",
-            "colour": "Black",
             "description1": "Low profile stretch-fit headband for minimalist ear protection.",
             "description2": "A versatile technical headband for long hikes, backpacking, trail running and mountain training, the Lochranza provides warmth and moisture management in cooler conditions. ",
             "spec1": "POLARTEC® Power Stretch® provides a close fit and fabulous warmth",
@@ -2711,7 +2588,6 @@
         "fields": {
             "sku": "EHATBL02",
             "name": "Lochranza Beanie",
-            "colour": "Black",
             "description1": "Low profile stretch-fit beanie. Functional, warm and highly wind resistant.",
             "description2": "A versatile technical beanie for long hikes, backpacking, trail running and mountain training, the Lochranza provides warmth and moisture management in cooler conditions. ",
             "spec1": "POLARTEC® Power Stretch® provides a close fit and fabulous warmth",
@@ -2733,7 +2609,6 @@
         "fields": {
             "sku": "EHATNA03",
             "name": "Knapdale Cap",
-            "colour": "Navy",
             "description1": "Super lightweight and highly breathable soft shell cap.",
             "description2": "Designed for mountain training across a range of conditions, the Knapdale Cap provides sun protection, water resistance, and moisture management on the move. The EXOLITE 125 fabric is light, air permeable, and wicks moisture.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -2755,7 +2630,6 @@
         "fields": {
             "sku": "EHATLB04",
             "name": "Knapdale Cap",
-            "colour": "Ligh Blue",
             "description1": "Super lightweight and highly breathable soft shell cap.",
             "description2": "Designed for mountain training across a range of conditions, the Knapdale Cap provides sun protection, water resistance, and moisture management on the move. The EXOLITE 125 fabric is light, air permeable, and wicks moisture.",
             "spec1": "EXOLITE 125 stretch double weave soft shell fabric",
@@ -2777,7 +2651,6 @@
         "fields": {
             "sku": "EHATPO05",
             "name": "Jura Bobble",
-            "colour": "Purple & Orange",
             "description1": "With its statement Pom this warm and stylish beanie will help you stand apart from any crowds.",
             "description2": "Rib-knitted hat in soft, warm lambswool. Robust, two-layer knitting with wide folded edge. Embroidered Tarmachan emblem on the side.",
             "spec1": "Chunky knit with internal fleece headband",
@@ -2799,7 +2672,6 @@
         "fields": {
             "sku": "EHATGR06",
             "name": "Jura Bobble",
-            "colour": "Grey",
             "description1": "With its statement Pom this warm and stylish beanie will help you stand apart from any crowds.",
             "description2": "Rib-knitted hat in soft, warm lambswool. Robust, two-layer knitting with wide folded edge. Embroidered Tarmachan emblem on the side.",
             "spec1": "Chunky knit with internal fleece headband",
@@ -2821,7 +2693,6 @@
         "fields": {
             "sku": "ESLBPU01",
             "name": "Mamore 700",
-            "colour": "Purple",
             "description1": "For higher trekking peaks and those camping in the depths of winter this more generously sized bag offers oodles of warmth and protection.",
             "description2": "The Mamore 700 sleeping bag is a hi-weight sleeping bag, designed for when the night temperatures drop below freezing. It's constructed from a DRILITE® LOFT™ II ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides great warmth even when damp.",
             "spec1": "DRILITE® LOFT™ II outer shell is lightweight, breathable and water resistant",
@@ -2843,7 +2714,6 @@
         "fields": {
             "sku": "ESLBNA02",
             "name": "Cluanie 1000",
-            "colour": "Navy",
             "description1": "Incredibly warm and one of only a handful of bags to make use of our roomier Expedition fit, it is well suited to nights on ice.",
             "description2": "The Cluanie 1000 sleeping bag is a hi-weight sleeping bag, designed for arctic conditions. It's constructed from a DRILITE® LOFT™ II ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides great warmth even when damp.",
             "spec1": "DRILITE® LOFT™ II outer shell is lightweight, breathable and water resistant",
@@ -2865,7 +2735,6 @@
         "fields": {
             "sku": "ESLBBL03",
             "name": "Kintail 500",
-            "colour": "Blue",
             "description1": "Spacious and comfortable, a perfect all-round bag for use during the Spring, Summer and Autumn in temperate climates.",
             "description2": "The Mamore 700 sleeping bag is a low-weight sleeping bag. It's constructed from a HELIUM™ 40 ripstop polyester and filled with Tarmachan's 100% recycled polyester Stratus insulation, which provides warmth during more temperate months.",
             "spec1": "HELIUM™ 40 outer shell is lightweight and breathable",
@@ -2887,7 +2756,6 @@
         "fields": {
             "sku": "ESLMBL01",
             "name": "Monadhliath Double Airbed",
-            "colour": "Blue",
             "description1": "Inflates in minutes to make camping feel more like home.",
             "description2": "This Monadhliath Airbed is ideal for car based camping or as an extremely stowable spare bed at home, this simple flock top air mattress inflates in minutes to provide a comfortable night's sleep for a couple.",
             "spec1": "Coil beam construction",
@@ -2909,7 +2777,6 @@
         "fields": {
             "sku": "ESLMBL02",
             "name": "Benula Camping Mat",
-            "colour": "Blue",
             "description1": "A great entry level mat for camping.",
             "description2": "Whether you're at a campsite, a festival or on a multi-day hike, a sleeping mat will make all the difference after a long day, providing comfort and insulation while supporting high contact areas. Non-slip grip prevents any moving around in the night.",
             "spec1": "3cm foam with diamond cut outs reduces weight",
@@ -2931,7 +2798,6 @@
         "fields": {
             "sku": "ESLMYE03",
             "name": "Morvich Camping Mat",
-            "colour": "Yellow",
             "description1": "The Morvich Sleeping Mat is both warm and lightweight making this perfect for your next adventure.",
             "description2": "Featuring ThermaCapture technology that traps heat and a new WingLock Valve for easier infaltion and deflation. You can relax knowing that this sleeping mat comes with a repair kit, so if the worst happens you can guarantee you will be prepared.",
             "spec1": "ThermaCapture technology",
@@ -2953,7 +2819,6 @@
         "fields": {
             "sku": "ETENGR01",
             "name": "Carnach 2 Person Tent",
-            "colour": "Green",
             "description1": "The Carnach is perfect for those backpacking and trekking, weighing in at just over 2kg.",
             "description2": "It utilises a lightweight, single hooped structure and also features Vingo’s TBS II Tension Band System for extra stability. The Carnach pitches quickly and, through careful design, provides more internal volume and less weight than similar styles.",
             "spec1": "Vango TBS II Tension Band System",
@@ -2975,7 +2840,6 @@
         "fields": {
             "sku": "ETENGR02",
             "name": "Sleat 3 Person Tent",
-            "colour": "Green",
             "description1": "The Sleat tunnel tents offer a high degree of strength and durability for severe environments and snow conditions.",
             "description2": "The super streamlined profile of these three pole tunnel designs provides the perfect wind cheating shape for wintry environments. 8 chain zips are provided for extra durability and V angle alloy pegs for a more secure hold.",
             "spec1": "Fabric - Outer: Watershed, 6000mm - Groundsheet: Waterbloc 10000mm",
@@ -2997,7 +2861,6 @@
         "fields": {
             "sku": "ETENGR03",
             "name": "Shiel 2 Person Tent",
-            "colour": "Green",
             "description1": "The Shiel Tent is an incredibly lightweight, self-supporting two-persontent.",
             "description2": "Featuring front and rear flysheet hoods for great ventilation and its stable shape has been designed for use in poor weather. Compatible with Tarmachan's Fastpack system so if you want to trim weight further when conditions permit, you can use the flysheet with the fastpack groundsheet.",
             "spec1": "Packed dimensions: 40 x 15cm",
@@ -3019,7 +2882,6 @@
         "fields": {
             "sku": "ETENGR04",
             "name": "Morar 3 Person Tent",
-            "colour": "Green",
             "description1": "The Morar Tent from Vango is a fantastic three-person tent for enthusiastic newcomers to the world of camping.",
             "description2": "The tunnel design uses just two poles and can be erected in a matter of minutes to give you more time to enjoy the great outdoors and everything it has to offer. The inner tent is made from a breathable polyester fabric that allows water vapour to exit to ensure a comfortable night's sleep.",
             "spec1": "Packed dimensions: 52 x 17cm",
@@ -3041,7 +2903,6 @@
         "fields": {
             "sku": "ERUCBL01",
             "name": "Glen Lui Rucksack",
-            "colour": "Black",
             "description1": "Our largest rucksack, this durable, highly weather-resistant yet lightweight climbing pack is optimised for winter climbing.",
             "description2": "Designed for dynamic body movement, the Glen Lui Rucksack is a streamlined top-loader for light-and-fast overnights or committing day trips. Ideal for a variety of activities, this lightweight pack features trekking pole and ice axe attachment points as well as a reservoir sleeve.",
             "spec1": "PACT™ 300 & 100 R² fabrics; durable, lightweight and water resistant",
@@ -3063,7 +2924,6 @@
         "fields": {
             "sku": "ERUCRE02",
             "name": "Glen Lui Rucksack",
-            "colour": "Red",
             "description1": "Our largest rucksack, this durable, highly weather-resistant yet lightweight climbing pack is optimised for winter climbing.",
             "description2": "Designed for dynamic body movement, the Glen Lui Rucksack is a streamlined top-loader for light-and-fast overnights or committing day trips. Ideal for a variety of activities, this lightweight pack features trekking pole and ice axe attachment points as well as a reservoir sleeve.",
             "spec1": "PACT™ 300 & 100 R² fabrics; durable, lightweight and water resistant",
@@ -3085,7 +2945,6 @@
         "fields": {
             "sku": "ERUCBL03",
             "name": "Inveray Stuffpack",
-            "colour": "Black",
             "description1": "A replacement waterproof rolltop stuff-sack for your sleeping bag.",
             "description2": "Ideal for keeping your sleeping bag dry, or as a waterproof sack when wading through rivers.",
             "spec1": "Air-release eyelet for easier compression",
@@ -3107,7 +2966,6 @@
         "fields": {
             "sku": "ERUCGO04",
             "name": "Sgarsoch Rucksack",
-            "colour": "Gold",
             "description1": "An outstanding and versatile all-round mountaineering pack that's ideal for the biggest days.",
             "description2": "The Sgarsoch Rucksack is a rucksack for many uses such as day hiking, running or even cycling. It is a lightweight rucksack consisting of Tarmachan's fabric technology making it extremely comfortable along with having a shoulder harness and hip belt.",
             "spec1": "A35 litre optimum capacity",
@@ -3129,7 +2987,6 @@
         "fields": {
             "sku": "EDUFRE01",
             "name": "Tomintoul Duffel",
-            "colour": "Red",
             "description1": "This duffel has all the features you need to keep your gear organised and secure.",
             "description2": "Zip your phone and wallet into the side pocket for instant access, and use the zipped mesh pocket in the main compartment to keep everything neat and tidy. Wear it on your shoulder using the ergonomic straps or carry it in comfort with the padded handles.",
             "spec1": "Dimensions: 28 x 45 x 28 cm",
@@ -3151,7 +3008,6 @@
         "fields": {
             "sku": "EDUFBL02",
             "name": "Tomintoul Duffel",
-            "colour": "Black",
             "description1": "This duffel has all the features you need to keep your gear organised and secure.",
             "description2": "Zip your phone and wallet into the side pocket for instant access, and use the zipped mesh pocket in the main compartment to keep everything neat and tidy. Wear it on your shoulder using the ergonomic straps or carry it in comfort with the padded handles.",
             "spec1": "Dimensions: 28 x 45 x 28 cm",
@@ -3173,7 +3029,6 @@
         "fields": {
             "sku": "EDUFYE03",
             "name": "Tomintoul Duffel",
-            "colour": "Yellow",
             "description1": "This duffel has all the features you need to keep your gear organised and secure.",
             "description2": "Zip your phone and wallet into the side pocket for instant access, and use the zipped mesh pocket in the main compartment to keep everything neat and tidy. Wear it on your shoulder using the ergonomic straps or carry it in comfort with the padded handles.",
             "spec1": "Dimensions: 28 x 45 x 28 cm",
@@ -3195,7 +3050,6 @@
         "fields": {
             "sku": "EWAPBL01",
             "name": "Ben Lawers Walking Poles",
-            "colour": "Black & White",
             "description1": "Ideal for longer days on the mountains, these dual walking poles are ideal for people seeking stability.",
             "description2": "The Ben Lawers Walking Poles are sturdy with highly functional stability and safety reserves but with less weight. Recomended for people up to 180cm height and/ or 75kg.",
             "spec1": "Material: Aluminium HTS 6.5",
@@ -3217,7 +3071,6 @@
         "fields": {
             "sku": "EWAPSI02",
             "name": "Ben Challum Aergomed Walking Pole",
-            "colour": "Silver",
             "description1": "The Ben Challum is a hiking pole made from high-strength aluminium for universal use.",
             "description2": "Whether on hard or soft surfaces: the carbide tip or rubber tip offer you grip and safety on any terrain. The Aergomed grip ensures comfort. Thanks to the TÜV-tested Speed Lock 2 system, you can adjust it easily from 63 cm to 120 cm.",
             "spec1": "Material: Aluminium HTS 6.5",
@@ -3239,7 +3092,6 @@
         "fields": {
             "sku": "EWAPSI03",
             "name": "Ben Challum Anatomic Walking Pole",
-            "colour": "Silver",
             "description1": "The Ben Challum is a hiking pole made from high-strength aluminium for universal use.",
             "description2": "Whether on hard or soft surfaces: the carbide tip or rubber tip offer you grip and safety on any terrain. The Anataomically shaped grip ensures comfort. Thanks to the TÜV-tested Speed Lock 2 system, you can adjust it easily from 63 cm to 120 cm.",
             "spec1": "Material: Aluminium HTS 6.5",
@@ -3261,7 +3113,6 @@
         "fields": {
             "sku": "EWAPBR04",
             "name": "Braemar Walking Poles",
-            "colour": "Black & Red",
             "description1": "Get all the support you need with this anti-shock twin pack which use dampers near the tip to provide a smoother ride.",
             "description2": "The sturdy aircraft-grade aluminium pole is teamed with a light EVA handle for a comfortable grip, which extend down for varied grip on uphill terrain. Adjust height quickly and easily with the fast-lock mechanism.",
             "spec1": "Aluminium construction with damping",
@@ -3283,7 +3134,6 @@
         "fields": {
             "sku": "EWABBL01",
             "name": "Cairn Toul Water Bottle",
-            "colour": "Blue",
             "description1": "The Cairn Toul 21oz with Flex Cap is one of the most versatile water bottles available.",
             "description2": "With a convenient capacity and a generous opening, it is great for sports drinks or thicker liquids, and can happily accomodate ice cubes. Whether it's for a hot cup of tea on a mountain side or a refreshing gulp of water mid work-out, this flask will have your hydration needs covered.",
             "spec1": "Materials: 18/8 Pro Grade Stainless Steel",
@@ -3305,7 +3155,6 @@
         "fields": {
             "sku": "EWABBL02",
             "name": "Cairn Toul Water Bottle",
-            "colour": "Black",
             "description1": "The Cairn Toul 21oz with Flex Cap is one of the most versatile water bottles available.",
             "description2": "With a convenient capacity and a generous opening, it is great for sports drinks or thicker liquids, and can happily accomodate ice cubes. Whether it's for a hot cup of tea on a mountain side or a refreshing gulp of water mid work-out, this flask will have your hydration needs covered.",
             "spec1": "Materials: 18/8 Pro Grade Stainless Steel",
@@ -3327,7 +3176,6 @@
         "fields": {
             "sku": "EWABSI03",
             "name": "Glenfeshie Water Bottle",
-            "colour": "Silver",
             "description1": "The Swiss original in a classic design. Made from a single piece of high-quality aluminum, making it light and strong.",
             "description2": "It keeps a tight seal, even with carbonated drinks. The highly elastic interior coating is resistant against fruit acids, is tasteless and free from BPA and phthalates. The practical screw cap enables comfortable carrying with just one finger.",
             "spec1": "Materials: Aliminium",
@@ -3349,7 +3197,6 @@
         "fields": {
             "sku": "EWABRE04",
             "name": "Glenfeshie Water Bottle",
-            "colour": "Red",
             "description1": "The Swiss original in a classic design. Made from a single piece of high-quality aluminum, making it light and strong.",
             "description2": "It keeps a tight seal, even with carbonated drinks. The highly elastic interior coating is resistant against fruit acids, is tasteless and free from BPA and phthalates. The practical screw cap enables comfortable carrying with just one finger.",
             "spec1": "Materials: Aliminium",
