@@ -11,14 +11,16 @@
 
 {% block content %}
     <div class="container-fluid px-0">
-        <div class="row no-gutters">
-            <div class="col-12 px-0 about-us-image-container">
-                <img src="{{ blog.image1.url }}" class="about-us-image" alt="{{ blog.title }}">
-                {% if blog.image_caption1 %}
-                    <p class="content-text text-muted text-end me-4 me-xl-5 pt-2"><em>Image above: {{ blog.image_caption1 }}</em></p>
-                {% endif %}
+        {% if blog.image1 %}
+            <div class="row no-gutters">
+                <div class="col-12 px-0 about-us-image-container">
+                    <img src="{{ blog.image1.url }}" class="about-us-image" alt="{{ blog.title }}">
+                    {% if blog.image_caption1 %}
+                        <p class="content-text text-muted text-end me-4 me-xl-5 pt-2"><em>Image above: {{ blog.image_caption1 }}</em></p>
+                    {% endif %}
+                </div>
             </div>
-        </div>
+        {% endif %}
         <div class="row mt-4">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 <h3 class="title-text mb-4">{{ blog.title }}</h3>
@@ -44,13 +46,13 @@
         </div>
         {% if blog.image2 %}
             <div class="blog-parallax my-4" style="background-image: url('{{ blog.image2.url }}');"></div>
-        {% endif %}
-        {% if blog.image_caption2 %}
-            <div class="row">
-                <div class="col-12 px-0">
-                    <p class="content-text text-muted text-end me-4 mb-4 me-xl-5"><em>Image above: {{ blog.image_caption2 }}</em></p>
+            {% if blog.image_caption2 %}
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <p class="content-text text-muted text-end me-4 mb-4 me-xl-5"><em>Image above: {{ blog.image_caption2 }}</em></p>
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         {% endif %}
         {% if blog.para2 %}
             <div class="row mt-0">

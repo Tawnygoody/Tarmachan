@@ -22,7 +22,7 @@ class Blog(models.Model):
     para8 = models.TextField(blank=True, null=True)
     subheading9 = models.CharField(max_length=40, blank=True, null=True)
     para9 = models.TextField(blank=True, null=True)
-    image1 = models.ImageField(null=False, blank=False)
+    image1 = models.ImageField(null=True, blank=True)
     image_caption1 = models.CharField(max_length=40, blank=True, null=True)
     image2 = models.ImageField(null=True, blank=True)
     image_caption2 = models.CharField(max_length=40, blank=True, null=True)

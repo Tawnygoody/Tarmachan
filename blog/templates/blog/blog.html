@@ -22,7 +22,15 @@
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 my-4">
                     <div class="card w-100 rounded-0 border-0 blog-card box-shadow">
                         <a href="{% url 'blog_detail' blog.id %}">
-                            <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image1.url }}" alt="{{ blog.title }}">
+                            {% if blog.image1 %}
+                                <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image1.url }}" alt="{{ blog.title }}">
+                            {% elif blog.image2 %}
+                                <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image2.url }}" alt="{{ blog.title }}">
+                            {% elif blog.image3 %}
+                                <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image3.url }}" alt="{{ blog.title }}">
+                            {% else %}
+                                <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ MEDIA_URL }}default-product-image.png" alt="{{ blog.title }}">
+                            {% endif %}
                         </a>
                         <div class="card-body">
                             <div class="blog-title">
