@@ -338,6 +338,12 @@ html, body {
     transform: translate3d(0px, 146px, 0px) !important;
 }
 
+.sale-bg {
+    background: url('/media/product-background-2.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+}
+
 /*--- Home Page Ends ---*/
 
 /*--- About Us ---*/
@@ -899,6 +905,9 @@ html, body {
     .main-popup {
         height: calc(100vh - 125px);
         width: 100%;
+    }
+    .sale-bg {
+        background: #fff;
     }
 }
 

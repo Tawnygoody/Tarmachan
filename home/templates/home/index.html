@@ -38,7 +38,7 @@
 
 <section class="my-3 mx-2">
     <div class="container-fluid">
-        <div class="row mb-3 no-gutters">
+        <div class="row my-5 no-gutters">
             <div class="col-lg-3 col-md-6 col-sm-12 my-2 product-container">
                 <img src="/media/waterproof-index-r.png" class="featured-image" alt="Waterproofs">
                 <div class="top-left">
@@ -104,8 +104,25 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"></div>
     </div>
 </section>
+
+<div class="parallax"></div>
+
+<div class="section sale-bg">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-sm-8 offset-sm-2 col-md-5 offset-md-1 text-center px-3">
+                <a href="{% url 'products' %}?clearance=clearance">
+                    <img class="widget-image img-fluid" src="{{MEDIA_URL}}sale-home.png" alt="Sale Logo">
+                </a>
+            </div>
+            <div class="col-12 col-md-5 my-auto text-center py-3">
+                <h1 class="title-text text-uppercase color-text">sale now on!!</h1>
+                <h3 class="content-text discount-text">Up to 50% off</h3>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
