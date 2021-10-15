@@ -199,7 +199,12 @@
                         <p class="mb-1"><i class="fas fa-user"></i><span class="ps-2">{{comment.user}}</span></p>
                         <p><i class="fas fa-calendar-day"></i><span class="ps-2">{{comment.create_at}}</span></p>
                         <p>{{ comment.comment }}</p>
-                        <a class="btn content-text delete-button text-uppercase fs-6 mb-2" href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
+                        {% if comment.user == request.user or request.user.is_superuser %}
+                            <small>
+                                <a class="text-danger pointer" data-toggle="modal" data-target="#deleteCommentModal" data-id="{{ comment.subject }}" data-url="{% url 'delete_comment' comment.id %}"><i class="fas fa-minus-circle"></i></a>
+                            </small>
+                        {% endif %}
+
                         <hr>
                     {% endfor %}
                 {% else %}
@@ -244,7 +249,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header title-text text-center">
@@ -260,7 +265,27 @@
           </div>
         </div>
       </div>
-    
+
+      <div class="modal fade" id="deleteCommentModal" tabindex="-1" aria-labelledby="deleteCommentModal"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header title-text text-center">
+                      <h5 class="modal-title" id="exampleModalLabel">Delete Review</h5>
+                  </div>
+                  <div class="modal-body content-text text-center">
+                      <p>Are you sure you want to delete <strong><span id="modalCommentName"></span></strong>?</p>
+                  </div>
+                  <div class="modal-footer text-center">
+                      <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2"
+                          data-dismiss="modal">Cancel</button>
+                      <a class="btn content-text delete-button text-uppercase fs-6 mb-2"
+                          href="" id="deleteBtn">Delete Review</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
 {% endblock %}
 
@@ -295,6 +320,11 @@
                 popup.style.display = 'none';
             }, 500)
         }
+    })
+
+    $('#deleteCommentModal').on('shown.bs.modal', function(event) {
+        $("#modalCommentName").text($(event.relatedTarget).data('id'));
+        $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
     })
 
     
