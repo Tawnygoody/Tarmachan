@@ -546,6 +546,10 @@ html, body {
     cursor: pointer;
 }
 
+.review-input {
+    width: 100%;
+}
+
 @keyframes slide-in {
     0% {
         transform: translateX(100%);

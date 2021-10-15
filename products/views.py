@@ -6,9 +6,12 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance
+    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance,
+    Comment
 )
-from .forms import ProductForm
+from .forms import ProductForm, CommentForm
+
+from django.http import HttpResponseRedirect
 # Create your views here.
 
 
@@ -105,6 +108,7 @@ def product_detail(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = Comment.objects.filter(product_id=product_id)
     savings = None
     percentage_savings = None
 
@@ -117,7 +121,8 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'savings': savings,
-        'percentage_savings': percentage_savings
+        'percentage_savings': percentage_savings,
+        'comments': comments
     }
     return render(request, 'products/product_detail.html', context)
 
@@ -147,6 +152,27 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+
+def add_comment(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == "POST":
+        form = CommentForm(request.POST, request.FILES)
+        data = Comment()
+        data.subject = form['subject'].value()
+        data.comment = form['comment'].value()
+        data.rating = form.instance.rating
+        data.product_id = product_id
+        current_user = request.user
+        data.user_id = current_user.id
+        data.save()
+        messages.success(request, 'Successfully added comment!')
+        return HttpResponseRedirect(url)
+    else:
+        form = CommentForm()
+
+    return HttpResponseRedirect(url)
+
 
 
 @login_required

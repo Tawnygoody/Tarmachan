@@ -1,4 +1,7 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
+
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -168,3 +171,16 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Comment(models.Model):
+    """ This model contains product comment information"""
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=50, null=False, blank=False)
+    comment = models.TextField(max_length=250, null=False, blank=False)
+    rating = models.IntegerField(default=1, validators=[MaxValueValidator(5), MinValueValidator(1)])
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.subject

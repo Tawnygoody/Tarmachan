@@ -1,6 +1,6 @@
 from django import forms
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance)
+    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance, Comment)
 from .widgets import CustomClearableFileInput
 
 
@@ -30,3 +30,10 @@ class ProductForm(forms.ModelForm):
         self.fields['clearance'].choices = clearance_friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'product-style-input'
+
+
+class CommentForm(forms.ModelForm):
+
+    class Meta:
+        model = Comment
+        fields = ('subject', 'comment', 'rating')
