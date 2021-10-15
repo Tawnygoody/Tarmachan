@@ -189,43 +189,57 @@
         <hr class="d-none d-md-block d-lg-block d-xl-block mb-3">
     </div>
     <div class="container">
-        <div class="row my-4">
-            <div class="col-12 col-lg-6">
-                {% for comment in comments %}
-                    <h1>{{ comment.subject }}</h1>
-                    <p>{{ comment.comment }}</p>
-                    <p>{{ comment.create_at }}</p>
-                    <p>{{comment.rating}}</p>
-                {% endfor %}
+        <div class="row my-1">
+            <div class="col-12 col-md-6 px-4 content-text my-5">
+                <h4 class="title-text text-center">Product Reviews</h4>
+                <hr>
+                {% if comments %}
+                    {% for comment in comments %}
+                        <p class="mb-2">{% include 'products/includes/comment_stars.html' %}<span class="ps-3"><strong>{{ comment.subject }}</strong></span></p>
+                        <p class="mb-1"><i class="fas fa-user"></i><span class="ps-2">{{comment.user}}</span></p>
+                        <p><i class="fas fa-calendar-day"></i><span class="ps-2">{{comment.create_at}}</span></p>
+                        <p>{{ comment.comment }}</p>
+                        <a class="btn content-text delete-button text-uppercase fs-6 mb-2" href="{% url 'delete_comment' comment.id %}">Delete Comment</a>
+                        <hr>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-center">This product has not received any reviews yet.</p>
+                {% endif %}
             </div>
-            <div class="col-12 col-lg-6 content-text">
+            <div class="col-12 col-md-6 px-4 content-text my-5">
                 <h4 class="title-text text-center mb-3">Write a Review</h4>
-                <form class="form mb-2" action="{% url 'add_comment' product.id%}" method="POST">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" class="product-style-input review-input">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="comment" rows="4" placeholder="Review" class="product-style-input review-input"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="rating" >Rating 
-                            (<i class="fas fa-star checked-star"></i>
-                            <i class="fas fa-star checked-star"></i>
-                            <i class="fas fa-star checked-star"></i>
-                            <i class="fas fa-star checked-star"></i>
-                            <i class="fas fa-star checked-star"></i>)
-                        </label>
-                        <select class="form-control product-style-input" id="rating">
-                          <option name="rating" value="1">1 Star</option>
-                          <option name="rating" value="2">2 Stars</option>
-                          <option name="rating" value="3">3 Stars</option>
-                          <option name="rating" value="4">4 Stars</option>
-                          <option name="rating" value="5">5 Stars</option>
-                        </select>
-                      </div>
-                    <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2">Submit</button>
-                </form>
+                <hr>
+                {% if user.is_authenticated %}
+                    <form class="form mb-2" action="{% url 'add_comment' product.id%}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" class="product-style-input review-input" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="comment" rows="4" placeholder="Review" class="product-style-input review-input" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating" >Rating 
+                                (<i class="fas fa-star checked-star"></i>
+                                <i class="fas fa-star checked-star"></i>
+                                <i class="fas fa-star checked-star"></i>
+                                <i class="fas fa-star checked-star"></i>
+                                <i class="fas fa-star checked-star"></i>)
+                            </label>
+                            <select class="form-control product-style-input" name="rating">
+                            <option name="rating" value="1">1 Star</option>
+                            <option name="rating" value="2">2 Stars</option>
+                            <option name="rating" value="3">3 Stars</option>
+                            <option name="rating" value="4">4 Stars</option>
+                            <option name="rating" value="5">5 Stars</option>
+                            </select>
+                        </div>
+                        <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2">Submit</button>
+                    </form>
+                {% else %}
+                    <p class="text-center">Please <a href="{% url 'account_login' %}" class="unstyled-color text-black"><strong>Login</strong></a> or <a href="{% url 'account_signup' %}" class="unstyled-color text-black"><strong>Sign Up</strong></a> if you wish to leave a review.</p>
+
+                {% endif %}
             </div>
         </div>
     </div>

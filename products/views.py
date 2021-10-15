@@ -154,6 +154,7 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def add_comment(request, product_id):
     url = request.META.get('HTTP_REFERER')
     if request.method == "POST":
@@ -161,7 +162,7 @@ def add_comment(request, product_id):
         data = Comment()
         data.subject = form['subject'].value()
         data.comment = form['comment'].value()
-        data.rating = form.instance.rating
+        data.rating = form['rating'].value()
         data.product_id = product_id
         current_user = request.user
         data.user_id = current_user.id
@@ -173,6 +174,25 @@ def add_comment(request, product_id):
 
     return HttpResponseRedirect(url)
 
+
+@login_required
+def delete_comment(request, comment_id):
+    """ Delete an exisiting Comment """
+
+    comment = get_object_or_404(Comment, pk=comment_id)
+    url = request.META.get('HTTP_REFERER')
+
+    if request.user == comment.user:
+        comment.delete()
+        messages.success(request, f'Review {comment.subject} has been deleted!')
+        return HttpResponseRedirect(url)
+    elif request.user.is_superuser:
+        comment.delete()
+        messages.success(request, f'Review {comment.subject} has been deleted!')
+        return HttpResponseRedirect(url)
+    else:
+        messages.error(request, "Only the team at Tarmachan and the reviewer can access this.")
+        return HttpResponseRedirect(url)
 
 
 @login_required
