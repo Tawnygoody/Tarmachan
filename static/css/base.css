@@ -550,6 +550,17 @@ html, body {
     width: 100%;
 }
 
+.product-detail-tabs {
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    background-color: #177373;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+}
+
 @keyframes slide-in {
     0% {
         transform: translateX(100%);
@@ -944,6 +955,13 @@ html, body {
         max-height: 200px;
         overflow-y: auto;
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product-detail-tabs {
+        width: 110px;
+        margin-left: 12px;
     }
 }
 

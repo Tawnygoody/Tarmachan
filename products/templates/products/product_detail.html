@@ -72,55 +72,56 @@
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     {% with product.sizes as s %}
-                    {% if s and product.product_category.friendly_name == 'Shoes' and product.master_category.name == 'mens' %}
-                    <p class="content-text"><strong>UK Size:</strong></p>
-                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                        <option value="7">7</option>
-                        <option value="7.5">7.5</option>
-                        <option value="8" selected>8</option>
-                        <option value="8.5">8.5</option>
-                        <option value="9">9</option>
-                        <option value="9.5">9.5</option>
-                        <option value="10">10</option>
-                        <option value="10.5">10.5</option>
-                        <option value="11">11</option>
-                        <option value=11.5">11.5</option>
-                        <option value="12">12</option>
-                        <option value="12.5">12.5</option>
-                    </select>
-                    <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
-                    <hr>
-                    {% elif s and product.product_category.friendly_name == 'Shoes' and product.master_category.name == 'womens' %}
-                    <p class="content-text"><strong>UK Size:</strong></p>
-                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                        <option value="3">3</option>
-                        <option value="3.5">3.5</option>
-                        <option value="4" selected>4</option>
-                        <option value="4.5">4.5</option>
-                        <option value="5">5</option>
-                        <option value="5.5">5.5</option>
-                        <option value="6">6</option>
-                        <option value="6.5">6.5</option>
-                        <option value="7">7</option>
-                        <option value="7.5">7.5</option>
-                        <option value="8">8</option>
-                        <option value="8.5">8.5</option>
-                    </select>
-                    <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
-                    <hr>
-                    {% elif s %}
-                    <p class="content-text"><strong>Size:</strong></p>
-                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m" selected>M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                        <option value="xxl">XXL</option>
-                    </select>
-                    <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
-                    <hr>
-                    {% endif %}
+                        {% if s and product.product_category.friendly_name == 'Shoes' and product.master_category.name == 'mens' %}
+                            <p class="content-text"><strong>UK Size:</strong></p>
+                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8" selected>8</option>
+                                <option value="8.5">8.5</option>
+                                <option value="9">9</option>
+                                <option value="9.5">9.5</option>
+                                <option value="10">10</option>
+                                <option value="10.5">10.5</option>
+                                <option value="11">11</option>
+                                <option value=11.5">11.5</option>
+                                <option value="12">12</option>
+                                <option value="12.5">12.5</option>
+                            </select>
+                            <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
+                            <hr>
+                        {% elif s and product.product_category.friendly_name == 'Shoes' and product.master_category.name == 'womens' %}
+                            <p class="content-text"><strong>UK Size:</strong></p>
+                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                <option value="3">3</option>
+                                <option value="3.5">3.5</option>
+                                <option value="4" selected>4</option>
+                                <option value="4.5">4.5</option>
+                                <option value="5">5</option>
+                                <option value="5.5">5.5</option>
+                                <option value="6">6</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7">7</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8">8</option>
+                                <option value="8.5">8.5</option>
+                            </select>
+                            <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
+                            <hr>
+                        {% elif s %}
+                            <p class="content-text"><strong>Size:</strong></p>
+                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m" selected>M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                            <p class="content-text pt-2 fs-6" id="sizing-chart"><small>Sizing chart <i class="fas fa-arrow-right px-2"></i></small></p>
+                            <hr>
+                        {% endif %}
+                    {% endwith %}
                     <div class="form-row">
                         <div class="col-12">
                             <p class="mt-3 content-text"><strong>Quantity:</strong></p>
@@ -154,11 +155,25 @@
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
-                    {% endwith %}
                 </form>
             </div>
         </div>
-        <div class="row mt-3">
+        <div>
+            <div class="row content-text text-uppercase pt-3 pt-md-5 text-center">
+                <div class="col-6 product-detail-tabs px-0">
+                    <div id="details-tab">
+                        <p class="mb-0"><strong>Details</strong></p>
+                    </div>
+                </div>
+                <div class="col-6 product-detail-tabs px-0">
+                    <div id="reviews-tab">
+                        <p class="mb-0"><strong>Reviews</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-0">
+        <div class="row mt-3" id="details-section">
             <div class="col-sm-12 col-md-6 px-3 px-sm-5 py-3 py-md-5">
                 <p class="content-text fs-4" id="description">{{ product.description1 }}</p>
                 {% if product.description2 %}
@@ -186,11 +201,10 @@
                 {% endif %}
             </div>
         </div>
-        <hr class="d-none d-md-block d-lg-block d-xl-block mb-3">
     </div>
-    <div class="container">
+    <div class="container d-none" id="reviews-section">
         <div class="row my-1">
-            <div class="col-12 col-md-6 px-4 content-text my-5">
+            <div class="col-12 col-md-6 px-4 content-text py-3 py-md-5">
                 <h4 class="title-text text-center">Product Reviews</h4>
                 <hr>
                 {% if comments %}
@@ -211,7 +225,7 @@
                     <p class="text-center">This product has not received any reviews yet.</p>
                 {% endif %}
             </div>
-            <div class="col-12 col-md-6 px-4 content-text my-5">
+            <div class="col-12 col-md-6 px-4 content-text py-3 py-md-5">
                 <h4 class="title-text text-center mb-3">Write a Review</h4>
                 <hr>
                 {% if user.is_authenticated %}
@@ -294,6 +308,16 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
+
+    $('#reviews-tab').click(function() {
+        $('#reviews-section').removeClass('d-none');
+        $('#details-section').addClass('d-none');
+    })
+
+    $('#details-tab').click(function() {
+        $('#reviews-section').addClass('d-none');
+        $('#details-section').removeClass('d-none');
+    })
 
     //thanks to https://www.youtube.com/watch?v=_oVBA15MdoI
     let open_btn = document.querySelector("#sizing-chart")
