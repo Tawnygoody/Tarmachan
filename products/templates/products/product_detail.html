@@ -38,9 +38,20 @@
             <div class="col-sm-12 col-md-6 col-lg-4 px-3 px-sm-5 py-3 py-md-5 order-lg-first">
                 <p class="content-text text-muted">{{ product.sku }}</p>
                 <h2 class="title-text text-uppercase">{{ product.name }}</h2>
-                {% if product.rating %}
-                    <p class="content-text">{% include 'products/includes/stars.html' %} <small class="px-2">{{ product.rating }}/5</small></p>
-                {% endif %}
+                <p class="content-text">{% include 'products/includes/stars.html' %} 
+                    <small class="px-2">
+                        {% if rating %}
+                            <strong>{{ rating }}</strong>  ({{ ratings }} 
+                                {% if ratings > 1 %}
+                                    Reviews
+                                {% else %}
+                                    Review
+                                {% endif %})
+                        {% else %}
+                            No Reviews
+                        {% endif %}
+                    </small>
+                </p>
                 {% if request.user.is_superuser %}
                     <small>
                         <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
@@ -160,12 +171,12 @@
         </div>
         <div>
             <div class="row content-text text-uppercase pt-3 pt-md-5 text-center">
-                <div class="col-6 product-detail-tabs px-0">
+                <div class="col-6 product-detail-tabs px-0" id="details-div">
                     <div id="details-tab">
                         <p class="mb-0"><strong>Details</strong></p>
                     </div>
                 </div>
-                <div class="col-6 product-detail-tabs px-0">
+                <div class="col-6 product-detail-tabs-2 px-0" id="reviews-div">
                     <div id="reviews-tab">
                         <p class="mb-0"><strong>Reviews</strong></p>
                     </div>
@@ -311,12 +322,21 @@
 
     $('#reviews-tab').click(function() {
         $('#reviews-section').removeClass('d-none');
+        $('#reviews-div').addClass('product-detail-tabs').removeClass('product-detail-tabs-2');
         $('#details-section').addClass('d-none');
+        $('#details-div').addClass('product-detail-tabs-2').removeClass('product-detail-tabs');
     })
 
     $('#details-tab').click(function() {
         $('#reviews-section').addClass('d-none');
+        $('#reviews-div').removeClass('product-detail-tabs').addClass('product-detail-tabs-2')
         $('#details-section').removeClass('d-none');
+        $('#details-div').removeClass('product-detail-tabs-2').addClass('product-detail-tabs')
+    })
+
+    $('#deleteCommentModal').on('shown.bs.modal', function(event) {
+        $("#modalCommentName").text($(event.relatedTarget).data('id'));
+        $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
     })
 
     //thanks to https://www.youtube.com/watch?v=_oVBA15MdoI
@@ -344,11 +364,6 @@
                 popup.style.display = 'none';
             }, 500)
         }
-    })
-
-    $('#deleteCommentModal').on('shown.bs.modal', function(event) {
-        $("#modalCommentName").text($(event.relatedTarget).data('id'));
-        $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
     })
 
     

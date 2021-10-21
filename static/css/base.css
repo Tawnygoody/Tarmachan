@@ -561,6 +561,19 @@ html, body {
     cursor: pointer;
 }
 
+.product-detail-tabs-2 {
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    background-color: #fff;
+    color: #177373;
+    line-height: 30px;
+    border: 1px solid #c5c4c4;
+    border-bottom: none;
+    cursor: pointer;
+}
+
 @keyframes slide-in {
     0% {
         transform: translateX(100%);
@@ -960,6 +973,10 @@ html, body {
 
 @media screen and (max-width: 400px) {
     .product-detail-tabs {
+        width: 110px;
+        margin-left: 12px;
+    }
+    .product-detail-tabs-2 {
         width: 110px;
         margin-left: 12px;
     }

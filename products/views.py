@@ -3,7 +3,7 @@ from django.shortcuts import (
 )
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 from .models import (
     Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance,
@@ -109,6 +109,16 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     comments = Comment.objects.filter(product_id=product_id)
+    if comments:
+        ratings = comments.count()
+        rating_avg = comments.aggregate(Avg('rating'))
+        rating = round(rating_avg.get('rating__avg'), 2)
+        product.rating = rating
+        product.save()
+    else:
+        ratings = 0
+        rating = 0
+
     savings = None
     percentage_savings = None
 
@@ -122,7 +132,9 @@ def product_detail(request, product_id):
         'product': product,
         'savings': savings,
         'percentage_savings': percentage_savings,
-        'comments': comments
+        'comments': comments,
+        'ratings': ratings,
+        'rating': rating
     }
     return render(request, 'products/product_detail.html', context)
 
@@ -180,14 +192,21 @@ def delete_comment(request, comment_id):
     """ Delete an exisiting Comment """
 
     comment = get_object_or_404(Comment, pk=comment_id)
+    product = get_object_or_404(Product, pk=comment.product_id)
     url = request.META.get('HTTP_REFERER')
 
-    if request.user == comment.user:
+    if request.user == comment.user or request.user.is_superuser:
         comment.delete()
-        messages.success(request, f'Review {comment.subject} has been deleted!')
-        return HttpResponseRedirect(url)
-    elif request.user.is_superuser:
-        comment.delete()
+        reviews = Comment.objects.filter(product=product)
+        if reviews:
+            rating_avg = reviews.aggregate(Avg("rating"))
+            rating = round(rating_avg.get('rating__avg'), 2)
+            product.rating = rating
+        else:
+            product.rating = 0
+        
+        product.save()
+
         messages.success(request, f'Review {comment.subject} has been deleted!')
         return HttpResponseRedirect(url)
     else:
