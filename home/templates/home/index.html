@@ -107,9 +107,9 @@
     </div>
 </section>
 
-<div class="parallax"></div>
+<div class="parallax box-shadow"></div>
 
-<div class="section sale-bg">
+<div class="section sale-bg box-shadow">
     <div class="container">
         <div class="row py-5">
             <div class="col-12 col-sm-8 offset-sm-2 col-md-5 offset-md-1 text-center px-3">
@@ -125,4 +125,55 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row my-5">
+        <div class="col-12">
+            <h4 class="title-text text-uppercase text-center">Latest from Tarmachan</h4>
+        </div>
+        {% for blog in blogs %}
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 my-4">
+                <div class="card w-100 rounded-0 border-0 blog-card box-shadow">
+                    <a href="{% url 'blog_detail' blog.id %}">
+                        {% if blog.image1 %}
+                            <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image1.url }}" alt="{{ blog.title }}">
+                        {% elif blog.image2 %}
+                            <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image2.url }}" alt="{{ blog.title }}">
+                        {% elif blog.image3 %}
+                            <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ blog.image3.url }}" alt="{{ blog.title }}">
+                        {% else %}
+                            <img class="card-img-top img-fluid blog-img-top rounded-0" src="{{ MEDIA_URL }}default-product-image.png" alt="{{ blog.title }}">
+                        {% endif %}
+                    </a>
+                    <div class="card-body">
+                        <div class="blog-title">
+                            <h5 class="card-title title-text">{{ blog.title }}</h5>
+                        </div>
+                        <p class="content-text text-muted"><small>By: {{ blog.author }} | {{ blog.date }}</small></p>
+                        <div class="module line-clamp">
+                            <p class="card-text content-text">{{ blog.para1 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-0">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-none d-lg-none mb-0">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-md-block d-lg-block d-xl-none mb-0">
+                    <hr>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
 {% endblock %}
+

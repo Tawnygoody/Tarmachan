@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from blog.models import Blog
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -9,7 +10,13 @@ def index(request):
     """
     A view to return the index page
     """
-    return render(request, 'home/index.html')
+
+    blogs = Blog.objects.order_by('-date')[:4]
+
+    context = {
+        'blogs': blogs,
+    }
+    return render(request, 'home/index.html', context)
 
 
 def about_us(request):

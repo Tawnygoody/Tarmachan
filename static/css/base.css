@@ -346,6 +346,8 @@ html, body {
 
 /*--- Home Page Ends ---*/
 
+
+
 /*--- About Us ---*/
 
 .about-us-image {
@@ -420,7 +422,7 @@ html, body {
 }
 
 .box-shadow {
-    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
 }
 
 .text-align-man {

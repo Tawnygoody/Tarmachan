@@ -204,7 +204,7 @@ def delete_comment(request, comment_id):
             product.rating = rating
         else:
             product.rating = 0
-        
+
         product.save()
 
         messages.success(request, f'Review {comment.subject} has been deleted!')
