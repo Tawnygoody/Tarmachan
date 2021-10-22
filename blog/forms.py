@@ -4,6 +4,9 @@ from .widgets import CustomClearableFileInput, CustomClearableFileInput2, Custom
 
 
 class BlogForm(forms.ModelForm):
+    """
+    Create a form for superusers to add a blog
+    """
 
     class Meta:
         model = Blog

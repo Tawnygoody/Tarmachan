@@ -1,16 +1,14 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from blog.models import Blog
 from django.contrib.auth.decorators import login_required
-
-# Create your views here.
+from blog.models import Blog
 
 
 def index(request):
     """
     A view to return the index page
     """
-
+    # Returns the 4 latest blogs
     blogs = Blog.objects.order_by('-date')[:4]
 
     context = {
@@ -32,7 +30,10 @@ def product_management(request):
     A view to return product Managment Page
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry! Only the team at Tarmachan can access this.')
+        messages.error(
+            request,
+            'Sorry! Only the team at Tarmachan can access this.'
+        )
         return redirect(reverse('home'))
 
     return render(request, 'home/product-management.html')

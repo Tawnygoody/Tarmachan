@@ -1,21 +1,26 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+import json
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404,
+    HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-from .forms import OrderForm
-from .models import Order, OrderLineItem
+import stripe
 from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
-import stripe
-import json
+from .models import Order, OrderLineItem
+from .forms import OrderForm
 
 
 @require_POST
 def cache_checkout_data(request):
     try:
+        # Splits the client secret to get the paymentIntent Id
         pid = request.POST.get('client_secret').split('_secret')[0]
+        # Sets up stripe secret key so the paymentIntent can be modified
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
@@ -36,6 +41,7 @@ def checkout(request):
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
+        # Creates a dictionary with the data from the form
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -47,16 +53,21 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
+        # Creates an instance of the form from the dictionary
         order_form = OrderForm(form_data)
         if order_form.is_valid():
+            # Create an order but dont save to the database
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
+            # Now save to the database
             order.save()
+            # Iterate through the bag to create each OrderLineItem
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
+                    # For products without sizes
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -64,8 +75,9 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
+                    # For products with sizes
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data["items_by_size"].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -75,21 +87,32 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your bag wasn't found in our \
+                            database."
                         "Please call us for assistance!")
                     )
+                    # delete the empty order
                     order.delete()
                     return redirect(reverse('view_bag'))
-
+            # Save the info to the user's profile
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse(
+                    'checkout_success',
+                    args=[order.order_number]
+                )
+            )
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
+    # GET request
     else:
+        # Get the bag from the session if it exists
+        # or initialize it to an empty dict if not
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(
+                request, "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -101,9 +124,11 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
+        # Prefills the OrderForm with any info saved to the 
+        # user's profile
         if request.user.is_authenticated:
             try:
-                profile=UserProfile.objects.get(user=request.user)
+                profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
@@ -147,8 +172,9 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
+        # Save the user's info if box was checked
         if save_info:
+            # dictionary keys match the fields on user profile model
             profile_data = {
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
@@ -166,6 +192,7 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
+    # Empty the shopping bag
     if 'bag' in request.session:
         del request.session['bag']
 

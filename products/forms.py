@@ -1,6 +1,7 @@
 from django import forms
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance, Comment)
+    Product, MasterCategory, ProductCategory, ProductSubCategory,
+    Clearance, Comment)
 from .widgets import CustomClearableFileInput
 
 
@@ -19,10 +20,15 @@ class ProductForm(forms.ModelForm):
         product_sub_category = ProductSubCategory.objects.all()
         clearance = Clearance.objects.all()
 
-        master_category_friendly_names = [(mc.id, mc.get_master_friendly_name()) for mc in master_category]
-        product_category_friendly_names = [(pc.id, pc.get_product_friendly_name()) for pc in product_category]
-        product_sub_category_friendly_names = [(sc.id, sc.get_product_sub_friendly_name()) for sc in product_sub_category]
-        clearance_friendly_names = [(cl.id, cl.get_clearance_name()) for cl in clearance]
+        master_category_friendly_names = [(
+            mc.id, mc.get_master_friendly_name()) for mc in master_category]
+        product_category_friendly_names = [(
+            pc.id, pc.get_product_friendly_name()) for pc in product_category]
+        product_sub_category_friendly_names = [(
+            sc.id,
+            sc.get_product_sub_friendly_name()) for sc in product_sub_category]
+        clearance_friendly_names = [(
+            cl.id, cl.get_clearance_name()) for cl in clearance]
 
         self.fields['master_category'].choices = master_category_friendly_names
         self.fields['product_category'].choices = product_category_friendly_names

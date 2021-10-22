@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Blog(models.Model):
+    """
+    Blog model contains information relating to each blog post
+    """
     title = models.CharField(max_length=60, blank=False, null=False, unique=True)
     subheading1 = models.CharField(max_length=40, blank=True, null=True)
     para1 = models.TextField(blank=False, null=False, default="Paragraph 1")

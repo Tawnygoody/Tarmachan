@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import (
-    Product, MasterCategory, ProductCategory, ProductSubCategory, Clearance, Comment
+    Product, MasterCategory, ProductCategory, ProductSubCategory,
+    Clearance, Comment
 )
 
 

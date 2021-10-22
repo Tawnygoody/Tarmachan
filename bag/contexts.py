@@ -3,14 +3,20 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def bag_contents(request):
 
     bag_items = []
     total = 0
     product_count = 0
+
+    # Get the bag from the session if it exists
+    # or initialize it to an empty dict if not
     bag = request.session.get('bag', {})
 
+    # Gets all products from the bag
     for item_id, item_data in bag.items():
+        # Products without Sizes
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
             if product.clearance and product.clearance_price:
@@ -23,6 +29,7 @@ def bag_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
+        # Products with sizes
         else:
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
@@ -44,9 +51,9 @@ def bag_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'bag_items': bag_items,
         'total': total,

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row no-gutters">
@@ -188,5 +189,10 @@
     </div>
 </div>
 
-{% endblock %}
+<div class="owl-carousel owl-theme">
+    {% for blog in blogs%}
+    <div>content</div>
+    {% endfor %}
+</div>
 
+{% endblock %}
