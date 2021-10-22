@@ -21,6 +21,8 @@
                 <h2 class="title-text text-uppercase">Checkout</h2>
                 <hr class="w-50 mb-4 mx-auto">
             </div>
+
+            <!--Order Summary-->
             <div class="col-12 col-lg-6 order-lg-last mb-4">
                 <p class="text-muted title-text">Order Summary ({{ product_count }})</p>
                 <div class="row title-text">
@@ -71,6 +73,8 @@
                 </div>
                 <hr class="d-lg-none d-xl-none">
             </div>
+
+            <!--Checkout Form-->
             <div class="col-12 col-lg-6">
                 <div class="col text-center d-none d-lg-block">
                     <h2 class="title-text text-uppercase">Checkout</h2>
@@ -105,6 +109,8 @@
 							{% endif %}
 						</div>
                     </fieldset>
+
+                    <!--Stripe Card Field-->
                     <fieldset class="px-3 content-text">
                         <legend class="fieldset-label small px-2 w-auto title-text">Payment</legend>
                         <div class="mb-3" id="card-element"></div>
@@ -112,6 +118,7 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
+
                     <div class="submit-button text-end mt-5 mb-4 px-3">                    
 						<a href="{% url 'view_bag' %}" class="btn content-text text-white buttons-general text-uppercase mb-1 px-2 fs-6">
 							<span>
@@ -136,6 +143,8 @@
             </div>
         </div>
     </div>
+
+    <!--Loading overlay when payment submitted-->>
     <div id="loading-overlay">
         <div class="loading-spinner">
             <img src="/media/loading-icon-r.gif" class="loading-icon" alt="Loading Icon">

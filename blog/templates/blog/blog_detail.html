@@ -11,6 +11,7 @@
 
 {% block content %}
     <div class="container-fluid px-0">
+        <!--Main Blog Image-->
         {% if blog.image1 %}
             <div class="row no-gutters">
                 <div class="col-12 px-0 about-us-image-container">
@@ -21,6 +22,7 @@
                 </div>
             </div>
         {% endif %}
+        <!--Blog Info & first 3 paragraphs-->
         <div class="row mt-4">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 <h3 class="title-text mb-4">{{ blog.title }}</h3>
@@ -44,6 +46,8 @@
                 {% endif %}
             </div>
         </div>
+
+        <!--Main Blog Image-->
         {% if blog.image2 %}
             <div class="blog-parallax my-4" style="background-image: url('{{ blog.image2.url }}');"></div>
             {% if blog.image_caption2 %}
@@ -54,28 +58,30 @@
                 </div>
             {% endif %}
         {% endif %}
-        {% if blog.para2 %}
-            <div class="row mt-0">
-                <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
-                    {% if blog.subheading4 %}
-                        <h6 class="title-text mt-1">{{ blog.subheading4 }}</h6>
-                    {% endif %}
-                    <p class="content-text">{{ blog.para4 }}</p>
-                    {% if blog.subheading5 %}
-                        <h6 class="title-text mt-1">{{ blog.subheading5 }}</h6>
-                    {% endif %}
-                    {% if blog.para5 %}
-                        <p class="content-text">{{ blog.para5 }}</p>
-                    {% endif %}
-                    {% if blog.subheading6 %}
-                        <h6 class="title-text mt-1">{{ blog.subheading6 }}</h6>
-                    {% endif %}
-                    {% if blog.para6 %}
-                        <p class="content-text">{{ blog.para6 }}</p>
-                    {% endif %}
-                </div>
+
+        <!--Paragraphs 4-6-->
+        <div class="row mt-0">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
+                {% if blog.subheading4 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading4 }}</h6>
+                {% endif %}
+                <p class="content-text">{{ blog.para4 }}</p>
+                {% if blog.subheading5 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading5 }}</h6>
+                {% endif %}
+                {% if blog.para5 %}
+                    <p class="content-text">{{ blog.para5 }}</p>
+                {% endif %}
+                {% if blog.subheading6 %}
+                    <h6 class="title-text mt-1">{{ blog.subheading6 }}</h6>
+                {% endif %}
+                {% if blog.para6 %}
+                    <p class="content-text">{{ blog.para6 }}</p>
+                {% endif %}
             </div>
-        {% endif %}
+        </div>
+
+        <!--Blog content Image-->
         {% if blog.image3 %}
             <div class="row">
                 <div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-4 px-4 my-4">
@@ -86,6 +92,8 @@
                 </div>
             </div>
         {% endif %}
+
+        <!--Paragraphs 7-9-->
         <div class="row mt-0 mb-4">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 {% if blog.subheading7 %}
@@ -113,6 +121,7 @@
         </div>
     </div>
 
+    <!--Delete Blog Modal-->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">

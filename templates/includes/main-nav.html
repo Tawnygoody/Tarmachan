@@ -142,6 +142,8 @@
           <a href="{% url 'products' %}?master_category=equipment" class="title-text mx-4 unstyled text-uppercase">All Equipment</a>
           <div class="dropdown-divider"></div>
           <div class="row no-gutters">
+
+            <!--Large Devices-->
             <div class="col-lg-3 mx-2 content-text d-none d-lg-block">
               <a class="dropdown-item my-2 title-text text-uppercase" href="{% url 'products' %}?master_category=equipment&product_category=accessories">Accessories</a>
               <a class="dropdown-item my-2" href="{% url 'products' %}?master_category=equipment&product_category=accessories&product_sub_category=gloves">Gloves</a>
@@ -164,6 +166,7 @@
               <a class="dropdown-item my-2 title-text text-uppercase" href="{% url 'products' %}?master_category=equipment&clearance=clearance">Clearance</a>
             </div>
 
+            <!--Small Devices-->
             <div class="col-5 px-4 my-3 d-lg-none content-text">
                 <a class="dropdown-item title-text text-uppercase unstyled" href="{% url 'products' %}?master_category=equipment&product_category=accessories">Accessories</a>
                 <a class="dropdown-item" href="{% url 'products' %}?master_category=equipment&product_category=accessories&product_sub_category=gloves">Gloves</a>
@@ -185,6 +188,8 @@
           </div>
         </div>
       </li>
+
+      <!--Large Devices-->
       <li class="nav-item dropdown px-1 mt-sm-3 mt-lg-0 d-none d-lg-block">
         <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="companyDropdown">
@@ -201,6 +206,8 @@
           </div>
         </div>
       </li>
+
+      <!--Small Devices-->
       {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
           <li class="nav-item px-1 d-lg-none">

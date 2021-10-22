@@ -43,14 +43,20 @@
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
+
+        // displays image name when image selected
         $('#new-image').change(function() {
             let file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
+
+        // displays image name when second image selected
         $('#new-image2').change(function() {
             let file = $('#new-image2')[0].files[0];
             $('#filename2').text(`Image will be set to: ${file.name}`);
         });
+
+        // displays image name when third image selected
         $('#new-image3').change(function() {
             let file = $('#new-image3')[0].files[0];
             $('#filename3').text(`Image will be set to: ${file.name}`);

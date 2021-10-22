@@ -44,36 +44,42 @@
           <h5 class="text-white content-text my-0">Free delivery on orders over £{{ free_delivery_threshold }}!</h5>
         </div>
         <div class="col-lg-3 my-auto d-none d-lg-block">
+          <!--Delivery Banner Icons-->
           <ul class="list-inline list-unstyled text-white my-1 align-right">
             {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-                <li class="list-inline-item">
-                  <a href="{% url 'product_management' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Product Management">
-                      <i class="icon fas fa-user-cog fa-lg"></i>
-                  </a>
-                </li>
-              {% endif %}
-              <li class="list-inline-item px-lg-3">
-                <a href="{% url 'profile' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="My Profile">
-                    <i class="icon fas fa-user fa-lg"></i>
-                </a>
-              </li>
-              <li class="list-inline-item pe-lg-4">
-                <a href="{% url 'account_logout' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Log Out">
-                    <i class="icon fas fa-sign-out-alt fa-lg"></i>
-                </a>
-              </li>
+            {% if request.user.is_superuser %}
+            <li class="list-inline-item">
+              <a href="{% url 'product_management' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
+                title="Product Management">
+                <i class="icon fas fa-user-cog fa-lg"></i>
+              </a>
+            </li>
+            {% endif %}
+            <li class="list-inline-item px-lg-3">
+              <a href="{% url 'profile' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
+                title="My Profile">
+                <i class="icon fas fa-user fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item pe-lg-4">
+              <a href="{% url 'account_logout' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
+                title="Log Out">
+                <i class="icon fas fa-sign-out-alt fa-lg"></i>
+              </a>
+            </li>
             {% else %}
-              <li class="list-inline-item px-lg-3">
-                <a href="{% url 'account_login' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Log In">
-                    <i class="icon fas fa-sign-in-alt fa-lg"></i>
-                </a>
-              </li>
-              <li class="list-inline-item pe-lg-4">
-                <a href="{% url 'account_signup' %}" class="text-white" data-toggle="tooltip" data-placement="bottom" title="Sign Up">
-                    <i class="icon fas fa-user-plus fa-lg"></i>
-                </a>
-              </li>
+            <li class="list-inline-item px-lg-3">
+              <a href="{% url 'account_login' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
+                title="Log In">
+                <i class="icon fas fa-sign-in-alt fa-lg"></i>
+              </a>
+            </li>
+            <li class="list-inline-item pe-lg-4">
+              <a href="{% url 'account_signup' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
+                title="Sign Up">
+                <i class="icon fas fa-user-plus fa-lg"></i>
+              </a>
+            </li>
             {% endif %}
           </ul>
         </div>
@@ -87,10 +93,7 @@
                 <i class="fas fa-bars fa-lg"></i>
               </span>
             </button>
-            <!--Product Links-->
-            
             {% include 'includes/main-nav.html' %}
-
           </nav>
         </div>
         <!--Logo Image-->
@@ -145,6 +148,7 @@
       </div>
     </header>
 
+    <!--Message Toasts-->
     {% if messages %}
     <div class="message-container">
       {% for message in messages %}

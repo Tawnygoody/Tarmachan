@@ -1,4 +1,5 @@
 {% with product.sizes as s %}
+    <!--Mens Tops-->
     {% if s and product.product_category.name == 'tops' and product.master_category.name == 'mens' %}
         <p class="content-text text-center">Men's Tops</p>
         <hr class="mb-3">
@@ -50,6 +51,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Mens Jackets-->
     {% elif s and product.product_category.name == 'jackets' and product.master_category.name == 'mens' %}
         <p class="content-text text-center">Men's Jackets</p>
         <hr class="mb-3">
@@ -101,6 +104,8 @@
                 </tr>
             </tbody>
         </table>
+    
+    <!--Mens Legwear-->
     {% elif s and product.product_category.name == 'legwear' and product.master_category.name == 'mens' %}
         <p class="content-text text-center">Men's Legwear</p>
         <hr class="mb-3">
@@ -152,6 +157,8 @@
                 </tr>
             </tbody>
         </table>
+    
+    <!--Mens Shoes-->
     {% elif s and product.product_category.name == 'shoes' and product.master_category.name == 'mens' %}
         <p class="content-text text-center">Men's Shoes</p>
         <hr class="mb-3">
@@ -239,6 +246,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Womens Tops-->
     {% elif s and product.product_category.name == 'tops' and product.master_category.name == 'womens' %}
         <p class="content-text text-center">Women's Tops</p>
         <hr class="mb-3">
@@ -290,6 +299,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Womens Jackets-->
     {% elif s and product.product_category.name == 'jackets' and product.master_category.name == 'womens' %}
         <p class="content-text text-center">Women's Jackets</p>
         <hr class="mb-3">
@@ -341,6 +352,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Womens Legwear-->
     {% elif s and product.product_category.name == 'legwear' and product.master_category.name == 'womens' %}
         <p class="content-text text-center">Women's Legwear</p>
         <hr class="mb-3">
@@ -392,6 +405,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Womens Shoes-->
     {% elif s and product.product_category.name == 'shoes' and product.master_category.name == 'womens' %}
         <p class="content-text text-center">Women's Shoes</p>
         <hr class="mb-3">
@@ -479,6 +494,8 @@
                 </tr>
             </tbody>
         </table>
+
+    <!--Hat's and Cap's-->
     {% elif s and product.product_sub_category.name == 'hats_and_caps' %}
         <p class="content-text text-center">Hats & Caps</p>
         <hr class="mb-3">
@@ -520,6 +537,52 @@
                     <td>XXL</td>
                     <td>25.2-26</td>
                     <td>63-65</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <!--Gloves-->
+    {% elif s and product.product_sub_category.name == 'gloves' %}
+        <p class="content-text text-center">Gloves</p>
+        <hr class="mb-3">
+        <table class="table text-center">
+            <thead>
+                <tr class="title-text">
+                    <th scope="col">Size</th>
+                    <th scope="col">Inches</th>
+                    <th scope="col">Centimetres</th>
+                </tr>
+            </thead>
+            <tbody class="content-text">
+                <tr class="py-2">
+                    <td>XS</td>
+                    <td>7</td>
+                    <td>18</td>
+                </tr>
+                <tr class="py-2">
+                    <td>S</td>
+                    <td>7.5-8</td>
+                    <td>20</td>
+                </tr>
+                <tr class="py-2">
+                    <td>M</td>
+                    <td>8-8.5</td>
+                    <td>23</td>
+                </tr>
+                <tr class="py-2">
+                    <td>L</td>
+                    <td>8.5-9</td>
+                    <td>25</td>
+                </tr>
+                <tr class="py-2">
+                    <td>XL</td>
+                    <td>9-9.5</td>
+                    <td>27</td>
+                </tr>
+                <tr class="py-2">
+                    <td>XXL</td>
+                    <td>9.5-10</td>
+                    <td>29</td>
                 </tr>
             </tbody>
         </table>

@@ -11,6 +11,8 @@
 
 {% block content %}
     <div class="container-fluid">
+
+        <!--Title based on filters-->
         <div class="row">
             <div class="col text-center mt-4">
                 {% if current_clearance %}
@@ -35,7 +37,10 @@
                 <hr class="w-50 mb-1 mx-auto">
             </div>
         </div>
+
         <div class="row mt-4 mb-2">
+
+            <!--Sorting option-->
             <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end px-5">
                 <select id="sort-selector" class="custom-select custom-select-sm border-0 box-shadow content-text">
                     <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -47,6 +52,8 @@
                     <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                 </select>
             </div>
+
+            <!--Results Returned-->
             <div class="col-12 col-md-6 order-md-first text-align-man px-5">
                 <p class="text-muted mt-3 content-text">
                     {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
@@ -54,18 +61,22 @@
             </div>
         </div>
         <hr>
+
+        <!--Displays each product-->
         <div class="row">
             {% for product in products %}
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 text-center my-2">
                     <div class="card border-0">
+                        <!--Product Image-->
                         {% if product.image %}
                             <div class="product-image-container">
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <!--Sale icon-->
                                     {% if product.clearance and product.clearance_price %}
-                                    <div class="top-right-sale pe-1">
-                                        <img width="50" height="50" class="widget-image" src="{{MEDIA_URL}}sale-logo.png" alt="Sale Logo">
-                                    </div>
+                                        <div class="top-right-sale pe-1">
+                                            <img width="50" height="50" class="widget-image" src="{{MEDIA_URL}}sale-logo.png" alt="Sale Logo">
+                                        </div>
                                     {% endif %}
                                 </a>
                                 <a href="{% url 'product_detail' product.id %}" class="unstyled d-none d-lg-block d-xl-bloc">
@@ -79,6 +90,8 @@
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}default-product-image.png" alt="{{ product.name }}">
                             </a>
                         {% endif %}
+
+                        <!--Product Information-->
                         <div class="product-card-body card-body bg-white pb-0">
                             <p class="title-text text-uppercase mb-1">{{ product.name }}</p>
                         </div>
@@ -110,6 +123,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Adds an 'hr' dependant on screen sizes-->
                 {% if forloop.counter|divisibleby:1 %}
                     <div class="col-12 d-sm-none mb-4">
                         <hr>
@@ -133,12 +148,15 @@
             {% endfor %}
         </div>
     </div>
+
+    <!--Back to top arrow-->
     <div class="btt-button">
         <a class="btt-link d-flex h-100 unstyled">
             <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
         </a>	
     </div>
 
+    <!--Delete Product Modal-->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -162,18 +180,27 @@
     {{ block.super }}
 
     <script type="text/javascript">
+
+        // Takes the user to top of the page when arrow is clicked
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 
-        // thanks to https://stackoverflow.com/questions/42441574/passing-information-to-modal-in-for-loop
+        /* 
+            When the delete modal is opened it takes the product ID and URL
+            so the correct product is deleted.
+            Thanks to https://stackoverflow.com/questions/42441574/passing-information-to-modal-in-for-loop
+        */
         $('#deleteModal').on('shown.bs.modal', function(event) {
             $("#modalProductName").text($(event.relatedTarget).data('id'));
             $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
         })
+
 	</script>
 
     <script type="text/javascript">
+        
+        // Allows for sorting of products from the sort selector
         $('#sort-selector').change(function() {
             let selector = $(this);
             let currentUrl = new URL(window.location);
