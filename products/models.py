@@ -166,6 +166,7 @@ class Product(models.Model):
         null=True,
         blank=True
     )
+    user_wishlist = models.ManyToManyField(User, blank=True)
 
     def __str__(self):
         return self.name

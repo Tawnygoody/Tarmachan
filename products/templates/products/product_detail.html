@@ -186,6 +186,23 @@
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn content-text text-white buttons-general text-uppercase mb-1 px-2 fs-6" role="button"><i class="fas fa-chevron-left pe-2"></i>Keep Shopping</a>
                             <input type="submit" class="btn content-text buttons-general-2 text-uppercase mb-1 px-2 fs-6" value="Add to Bag">
+                            {% if request.user.is_authenticated %}
+                                {% if in_wishlist %}
+                                    <div class="mb-3">
+                                        <a href="{% url 'add_to_wishlist' product.id %}" class="btn content-text buttons-general-2 text-uppercase mb-1 px-2 fs-6">
+                                            <i class="fas fa-heart pe-3"></i>
+                                            Remove from Wishlist
+                                        </a>
+                                    </div>
+                                {% else %}
+                                    <div class="mb-3">
+                                        <a href="{% url 'add_to_wishlist' product.id %}" class="btn content-text buttons-general-2 text-uppercase mb-1 px-2 fs-6">
+                                            <i class="fas fa-heart pe-3"></i>
+                                            Add to Wishlist
+                                        </a>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
@@ -359,6 +376,9 @@
 
 <script type="text/javascript">
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
     /*
         When the reviews tab is clicked is changes the tabs colors, hides the 
         product information section and displays the review section

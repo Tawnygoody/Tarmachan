@@ -208,6 +208,20 @@
       </li>
 
       <!--Small Devices-->
+      <li class="nav-item dropdown px-1 d-lg-none">
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle" id="clearanceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clearance</a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="clearanceDropdown">
+          <a href="{% url 'products' %}?clearance=clearance" class="title-text mx-4 unstyled text-uppercase">All Clearance</a>
+          <div class="dropdown-divider"></div>
+          <div class="row no-gutters">
+            <div class="col-12 px-4 my-3 d-lg-none content-text">
+                <a class="dropdown-item" href="{% url 'products' %}?master_category=mens&clearance=clearance">Men's Clearance</a>
+                <a class="dropdown-item" href="{% url 'products' %}?master_category=womens&clearance=clearance">Women's Clearance</a>
+                <a class="dropdown-item" href="{% url 'products' %}?master_category=equipment&clearance=clearance">Equipment Clearance</a>
+            </div>
+          </div>
+        </div>
+      </li>
       {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
           <li class="nav-item px-1 d-lg-none">

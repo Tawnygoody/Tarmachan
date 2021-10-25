@@ -135,13 +135,17 @@ def product_detail(request, product_id):
             ) * 100
             percentage_savings = round(percentage_savings_dec, 0)
 
+    in_wishlist = product.user_wishlist.filter(id=request.user.id).exists()
+
     context = {
         'product': product,
         'savings': savings,
         'percentage_savings': percentage_savings,
         'comments': comments,
         'ratings': ratings,
-        'rating': rating
+        'rating': rating,
+        'in_wishlist': in_wishlist
+
     }
     return render(request, 'products/product_detail.html', context)
 
