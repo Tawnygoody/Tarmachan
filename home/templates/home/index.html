@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block extra_js %}
+    <!-- Owl carousel JS -->
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
 {% endblock %}
 
@@ -51,7 +52,7 @@
 
 <!--Featured Category Links-->
 <section class="my-3 mx-2">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row my-5 no-gutters">
 
             <!--Featured Jackets-->
@@ -191,6 +192,8 @@
     {{ block.super }}
 
     <script type="text/javascript">
+
+        // Owl carousel properties
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
                 loop:true,

@@ -833,7 +833,11 @@ html, body {
 
 
 /*--- Media Queries ---*/
-
+@media screen and (max-width: 1200px) {
+    .featured-image {
+        height: 300px;
+    }
+}
 @media screen and (min-width: 992px) {
     .product-image-container:hover .card-img-top {
         opacity: 0.2;
