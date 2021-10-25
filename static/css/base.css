@@ -344,6 +344,10 @@ html, body {
     width: 100vw;
 }
 
+.owl-item {
+    padding: 10px !important;
+}
+
 /*--- Home Page Ends ---*/
 
 

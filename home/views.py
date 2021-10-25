@@ -8,8 +8,8 @@ def index(request):
     """
     A view to return the index page
     """
-    # Returns the 4 latest blogs
-    blogs = Blog.objects.order_by('-date')[:4]
+    # Returns the 8 latest blogs
+    blogs = Blog.objects.order_by('-date')[:8]
 
     context = {
         'blogs': blogs,
