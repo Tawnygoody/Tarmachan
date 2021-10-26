@@ -348,6 +348,26 @@ html, body {
     padding: 10px !important;
 }
 
+.subscribe-input {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin-bottom: 20px;
+}
+  
+.subscribe-input:focus,
+.subscribe-input:active {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+  
+.subscribe-input::placeholder {
+    color: #5a5a5a;
+}
+
 /*--- Home Page Ends ---*/
 
 
@@ -630,6 +650,24 @@ html, body {
     border-radius: 0;
     transition: .5s linear;
 }
+
+.subscribe-button {
+    background-color: #fff;
+    color: #003838;
+    border: 1px solid #000;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
+.subscribe-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    transition: .5s linear;
+}
+
+
 
 .delete-button {
     background-color: #fff;

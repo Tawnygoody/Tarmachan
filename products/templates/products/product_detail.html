@@ -42,20 +42,22 @@
             <div class="col-sm-12 col-md-6 col-lg-4 px-3 px-sm-5 py-3 py-md-5 order-lg-first">
                 <p class="content-text text-muted">{{ product.sku }}</p>
                 <h2 class="title-text text-uppercase">{{ product.name }}</h2>
-                <p class="content-text">{% include 'products/includes/stars.html' %} 
-                    <small class="px-2">
-                        {% if rating %}
-                            <strong>{{ rating }}</strong>  ({{ ratings }} 
-                                {% if ratings > 1 %}
-                                    Reviews
-                                {% else %}
-                                    Review
-                                {% endif %})
-                        {% else %}
-                            No Reviews
-                        {% endif %}
-                    </small>
-                </p>
+                <a href="#reviews-section" class="unstyled fs-6" id="review-link">
+                    <p class="content-text">{% include 'products/includes/stars.html' %} 
+                        <small class="px-2">
+                            {% if rating %}
+                                <strong>{{ rating }}</strong>  ({{ ratings }} 
+                                    {% if ratings > 1 %}
+                                        Reviews
+                                    {% else %}
+                                        Review
+                                    {% endif %})
+                            {% else %}
+                                Write a Review
+                            {% endif %}
+                        </small>
+                    </p>
+                </a>
                 {% if request.user.is_superuser %}
                     <small>
                         <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
@@ -63,7 +65,7 @@
                     </small>
                 {% endif %}
                 <p class="content-text mt-5 fs-4">{{ product.description1 }}</p>
-                <a href="#description" class="unstyled">
+                <a href="#details-section" class="unstyled" id="read-more-link">
                     <p class="content-text text-black">Read More  <i class="fas fa-arrow-right px-2"></i></p>
                 </a>
             </div>
@@ -202,6 +204,8 @@
                                         </a>
                                     </div>
                                 {% endif %}
+                            {% else %}
+                                <p class="content-text mt-2"><small>Please <a href="{% url 'account_login' %}" class="unstyled-color text-black"><strong>Login</strong></a> or <a href="{% url 'account_signup' %}" class="unstyled-color text-black"><strong>Sign Up</strong></a> if you wish to create a Wishlist.</small></p>
                             {% endif %}
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -383,7 +387,7 @@
         When the reviews tab is clicked is changes the tabs colors, hides the 
         product information section and displays the review section
     */
-    $('#reviews-tab').click(function() {
+    $('#reviews-tab, #review-link').click(function() {
         $('#reviews-section').removeClass('d-none');
         $('#reviews-div').addClass('product-detail-tabs').removeClass('product-detail-tabs-2');
         $('#details-section').addClass('d-none');
@@ -394,7 +398,7 @@
         When the details tab is clicked is changes the tabs colors, hides the 
         review section section and displays the product information section
     */
-    $('#details-tab').click(function() {
+    $('#details-tab, #read-more-link').click(function() {
         $('#reviews-section').addClass('d-none');
         $('#reviews-div').removeClass('product-detail-tabs').addClass('product-detail-tabs-2')
         $('#details-section').removeClass('d-none');

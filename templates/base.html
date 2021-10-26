@@ -182,8 +182,18 @@
     <footer class="bg-dark-green w-100">
       <div class="container-fluid">
         <div class="row no-gutters pt-4">
-          <div class="col-lg-5 col-md-6 col-sm-12 pt-3">
-            <p class="title-text"></p>
+          <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-12 pt-3 px-4 center-text-medium">
+            <p class="title-text text-white text-uppercase">Stay up to date with the Tarmachan</p>
+            <hr class="text-white">
+            <p class="content-text text-white">Be the first to know about exclusive offers and news stories from Tarmachan. Simply enter your email below.</p>
+            <form method="POST" action="{% url 'newsletter_register' %}" class="form mb-2 content-text">
+              {% csrf_token %}
+              {{ newsletter_form|crispy }}
+              <div class="mb-2">
+                  <button class="btn content-text subscribe-button text-uppercase fs-6 mb-2">Subscribe</button>
+              </div>
+            </form>
+            <p class="content-text text-white">To unsubscribe, please click <a href="" class="unstyled-color text-white"><strong>here.</strong></a></p>
           </div>
           <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-12 pt-3 center-text-medium">
             <p class="title-text text-white text-uppercase">Shop</p>
