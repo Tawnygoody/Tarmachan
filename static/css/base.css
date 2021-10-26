@@ -363,7 +363,7 @@ html, body {
 .subscribe-input:focus,
 .subscribe-input:active {
     box-shadow: 0 1px 3px 0 #cfd7df;
-    background-color: transparent;
+    background-color: #fff;
     color: #000;
 }
   

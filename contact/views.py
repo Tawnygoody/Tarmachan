@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .forms import NewsletterForm
@@ -41,5 +41,20 @@ def newsletter_register(request):
 
 def newsletter_unsubscribe(request):
     template = 'contact/newsletter_unsubscribe.html'
+    newsletter_form = NewsletterForm(request.POST)
+    if newsletter_form.is_valid():
+        if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
+            email = request.POST.get('email')
+            NewsletterSubscription.objects.filter(email=request.POST.get("email")).delete()
+            messages.success(
+                request,
+                f'{email} has been removed from our mailing list'
+            )
+            return redirect(reverse('home'))
+        else:
+            messages.error(
+                request,
+                'Sorry! This email is not in our mailing list.'
+            )
 
     return render(request, template)
