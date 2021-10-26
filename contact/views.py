@@ -9,8 +9,8 @@ def newsletter_register(request):
     """
     A view to get the email address from the NewsletterForm.
     Checks whether the user has already subscribed, and
-    redirects them to the page they were on if they have. 
-    If not a confirm message and email is issued to the 
+    redirects them to the page they were on if they have.
+    If not a confirm message and email is issued to the
     user.
     """
 
@@ -39,5 +39,7 @@ def newsletter_register(request):
         return HttpResponseRedirect(url)
 
 
+def newsletter_unsubscribe(request):
+    template = 'contact/newsletter_unsubscribe.html'
 
-    
+    return render(request, template)

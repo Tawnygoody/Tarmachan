@@ -351,21 +351,24 @@ html, body {
 .subscribe-input {
     box-sizing: border-box;
     padding: 10px 12px;
-    border: 1px solid transparent;
+    border: 1px solid #000;
     border-radius: 0px;
-    background-color: white;
+    background-color: #fff;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
     margin-bottom: 20px;
+    color: #000;
 }
   
 .subscribe-input:focus,
 .subscribe-input:active {
     box-shadow: 0 1px 3px 0 #cfd7df;
+    background-color: transparent;
+    color: #000;
 }
   
 .subscribe-input::placeholder {
-    color: #5a5a5a;
+    color: #aab7c4;
 }
 
 /*--- Home Page Ends ---*/

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row no-gutters">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5 min-height">
+        <div class="row">
+            <div class="col text-center mb-3">
+                <h2 class="title-text text-uppercase">Confirm Unsubscription</h2>
+                <hr class="w-50 mb-4 mx-auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3 text-center">
+                <h5 class="title-text mb-4">You will be missed!</h5>
+                <p class="content-text">Thank you for being part of the Tarmachan mailing list.</p>
+                <p class="content-text">Please fill out the form with the email address you subscribed with and you will be removed from our mailing list.</p>
+                <form method="POST" action="{% url 'newsletter_unsubscribe' %}" class="form mb-2 content-text">
+                    {% csrf_token %}
+                    {{ newsletter_form|crispy }}
+                    <div class="mb-2">
+                        <a href="{% url 'home' %}" class="btn content-text text-white buttons-general text-uppercase mb-2 px-2 fs-6" role="button">Cancel</a>
+                        <button class="btn content-text buttons-general-2 text-uppercase fs-6 mb-2">Unsubscribe</button>
+                    </div>
+                </form>
+                <p class="content-text mb-4"><small>Please note you can re-subscribe at any point in the future.</small></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
