@@ -222,7 +222,7 @@
                 <a href="{% url 'about_us' %}" class="unstyled-white">About Us</a>
               </li>
               <li class="my-2">
-                <a href="" class="unstyled-white">Contact Us</a>
+                <a href="{% url 'contact' %}" class="unstyled-white">Contact Us</a>
               </li>
               {% if request.user.is_authenticated %}
                 <li class="my-2">
@@ -268,7 +268,9 @@
         </div>
         <div class="row no-gutters">
           <div class="col-12 text-center my-4">
-            <img src="/media/logo-white.png" class="logo" alt="Tarmachan Logo">
+            <a href="{% url 'home' %}">
+              <img src="/media/logo-white.png" class="logo" alt="Tarmachan Logo">
+            </a>
           </div>
         </div>
         <div class="row no-gutters bg-darker-green py-3">

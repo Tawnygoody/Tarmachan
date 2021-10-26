@@ -1,8 +1,37 @@
 from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .forms import NewsletterForm
+from .forms import NewsletterForm, ContactForm
 from .models import NewsletterSubscription
+
+
+def contact(request):
+    """
+    A view to display the contact us page and contact form
+    """
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = request.POST.get('subject')
+            name = request.POST.get('name')
+            form.save()
+            messages.success(
+                request,
+                f'Thanks {name}! {subject} has been sent to the \
+                    Tarmachan team.'
+            )
+        else:
+            messages.error(
+                request,
+                "Failed to send message, please ensure all fields are correct"
+            )
+
+    form = ContactForm()
+
+    context = {
+        "form": form
+    }
+    return render(request, 'contact/contact.html', context)
 
 
 def newsletter_register(request):

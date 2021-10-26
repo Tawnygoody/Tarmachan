@@ -835,7 +835,7 @@ html, body {
   
 .product-style-input:focus,
 .product-style-input:active {
-    box-shadow: 0 1px 3px 0 #cfd7df;
+    box-shadow: 0 1px 3px 0 #177373;
 }
   
 .product-style-input::placeholder {
@@ -987,6 +987,12 @@ html, body {
     }
     .sale-bg {
         background: #fff;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .center-text-small {
+        text-align: center !important;
     }
 }
 
