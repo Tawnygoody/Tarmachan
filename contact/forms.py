@@ -20,6 +20,24 @@ class NewsletterForm(forms.ModelForm):
         self.fields["email"].label = False
 
 
+class NewsletterUnsubscribeForm(forms.ModelForm):
+    """
+    Create a form for any user to unsubscribe to the company
+    newsletter
+    """
+
+    class Meta:
+        model = NewsletterSubscription
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields["email"].widget.attrs["placeholder"] = "Email *"
+        self.fields["email"].widget.attrs['class'] = "product-style-input"
+        self.fields["email"].label = False
+
+
 class ContactForm(forms.ModelForm):
     """
     Create a form for any user to contact the company

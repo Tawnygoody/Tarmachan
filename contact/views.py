@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .forms import NewsletterForm, ContactForm
+from .forms import NewsletterForm, ContactForm, NewsletterUnsubscribeForm
 from .models import NewsletterSubscription
 
 
@@ -70,20 +70,33 @@ def newsletter_register(request):
 
 def newsletter_unsubscribe(request):
     template = 'contact/newsletter_unsubscribe.html'
-    newsletter_form = NewsletterForm(request.POST)
-    if newsletter_form.is_valid():
-        if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
-            email = request.POST.get('email')
-            NewsletterSubscription.objects.filter(email=request.POST.get("email")).delete()
-            messages.success(
-                request,
-                f'{email} has been removed from our mailing list'
-            )
-            return redirect(reverse('home'))
+    if request.method == "POST":
+        unsubscribe_form = NewsletterUnsubscribeForm(request.POST)
+        if unsubscribe_form.is_valid():
+            if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
+                email = request.POST.get('email')
+                NewsletterSubscription.objects.filter(email=request.POST.get("email")).delete()
+                messages.success(
+                    request,
+                    f'{email} has been removed from our mailing list'
+                )
+                return redirect(reverse('home'))
+            else:
+                messages.error(
+                    request,
+                    'Sorry! This email is not in our mailing list.'
+                )
         else:
             messages.error(
-                request,
-                'Sorry! This email is not in our mailing list.'
-            )
+                    request,
+                    "Failed to unsubscribe. Please ensure the email you've entered is \
+                    valid"
+                )
 
-    return render(request, template)
+    unsubscribe_form = NewsletterUnsubscribeForm()
+
+    context = {
+        "unsubscribe_form": unsubscribe_form
+    }
+
+    return render(request, template, context)

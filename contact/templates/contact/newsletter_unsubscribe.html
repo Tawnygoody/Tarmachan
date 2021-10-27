@@ -29,7 +29,7 @@
                 <p class="content-text">Please fill out the form with the email address you subscribed with and you will be removed from our mailing list.</p>
                 <form method="POST" action="{% url 'newsletter_unsubscribe' %}" class="form mb-2 content-text">
                     {% csrf_token %}
-                    {{ newsletter_form|crispy }}
+                    {{ unsubscribe_form|crispy }}
                     <div class="mb-2">
                         <a href="{% url 'home' %}" class="btn content-text text-white buttons-general text-uppercase mb-2 px-2 fs-6" role="button">Cancel</a>
                         <button class="btn content-text buttons-general-2 text-uppercase fs-6 mb-2">Unsubscribe</button>

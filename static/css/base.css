@@ -351,20 +351,20 @@ html, body {
 .subscribe-input {
     box-sizing: border-box;
     padding: 10px 12px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 0px;
-    background-color: #fff;
+    background-color: transparent;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
     margin-bottom: 20px;
-    color: #000;
+    color: #fff;
 }
   
 .subscribe-input:focus,
 .subscribe-input:active {
     box-shadow: 0 1px 3px 0 #cfd7df;
-    background-color: #fff;
-    color: #000;
+    background-color: transparent;
+    color: #fff;
 }
   
 .subscribe-input::placeholder {
@@ -655,22 +655,20 @@ html, body {
 }
 
 .subscribe-button {
-    background-color: #fff;
-    color: #003838;
-    border: 1px solid #000;
-    border-radius: 0;
-    transition: .5s linear;
-}
-
-.subscribe-button:hover {
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 0;
     transition: .5s linear;
 }
 
-
+.subscribe-button:hover {
+    background-color: #fff;
+    color: #003838;
+    border: 1px solid #fff;
+    border-radius: 0;
+    transition: .5s linear;
+}
 
 .delete-button {
     background-color: #fff;
