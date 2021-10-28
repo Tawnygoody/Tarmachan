@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-12">
-                {% if contacts %}
+            {% if contacts %}
+                <div class="col-12 d-none d-sm-block">
                     <table class="table table-striped text-center">
                         <thead class="title-text text-uppercase">
                             <tr>
@@ -39,11 +39,23 @@
                                 </tr>
                             {% endfor %}
                         </tbody>
-                    </table>
-                {% else %}
+                    </table>    
+                </div>
+                <div class="col-12 d-block d-sm-none text-center content-text">
+                    <hr>
+                    {% for contact in contacts %}
+                        <p><span class="text-muted pe-3">Name:</span><a href="{% url 'contact_detail' contact.id %}" class="unstyled fs-6"><strong>{{ contact.name }}</strong></a</p>
+                        <p><span class="text-muted pe-3">Email:</span>{{ contact.email }}</p>
+                        <p><span class="text-muted pe-3">Subject:</span>{{ contact.subject }}</p>
+                        <a data-toggle="modal" data-target="#deleteContactModal" data-id="{{ contact.subject }}" data-url="{% url 'delete_contact' contact.id %}" class="btn content-text buttons-general text-white text-uppercase fs-6">Replied</a>
+                        <hr>
+                    {% endfor %}
+                </div>
+            {% else %}
+            <div class="col-12">
                 <p class="text-center content-text">There are no contact messages to respond to.</p>
-                {% endif %}
             </div>
+            {% endif %}
         </div>
     </div>
 
