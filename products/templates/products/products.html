@@ -110,7 +110,22 @@
                                     {% endif %}
                                     {% if product.rating %}
                                         {% include 'products/includes/stars.html' %}
-                                        <p class="content-text small text-muted">(Rating: {{ product.rating }}/5)</p>
+                                        <p class="content-text small text-muted mb-1">(Rating: {{ product.rating }}/5)</p>
+                                    {% endif %}
+                                    {% if request.user.is_authenticated %}
+                                        {% if request.user in product.user_wishlist.all %}
+                                            <div class="my-3 text-center">
+                                                <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Remove from Wishlist">
+                                                    <i class="fas fa-heart fa-2x"></i>
+                                                </a>
+                                            </div>
+                                        {% else %}
+                                            <div class="my-3 text-center">
+                                                <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Add to Wishlist">
+                                                    <i class="far fa-heart fa-2x"></i>
+                                                </a>
+                                            </div>
+                                        {% endif %}
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                         <small>
@@ -185,6 +200,10 @@
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
+
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
 
         /* 
             When the delete modal is opened it takes the product ID and URL
