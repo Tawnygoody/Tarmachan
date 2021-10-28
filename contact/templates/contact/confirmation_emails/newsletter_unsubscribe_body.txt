@@ -1,0 +1,10 @@
+This is to confirm that {{ email }} has been removed from our mailing list. 
+
+Thank you for being part of the Tarmachan mailing list.
+
+Please note you can re-subscribe at any point. 
+
+If you have any questions feel free to contact us at {{ tarmachan_email }}
+
+Sincerly,
+Tarmachan

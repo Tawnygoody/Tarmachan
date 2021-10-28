@@ -59,7 +59,8 @@ def newsletter_register(request):
             newsletter_form.save()
             messages.success(
                 request,
-                "You are now subscribed to the Tarmachan newsletter."
+                "You are now subscribed to the Tarmachan newsletter. \
+                    We have sent an email confirmation to you."
             )
             # Sending email confirmation of subscription
             data = newsletter_form.save()
@@ -70,7 +71,7 @@ def newsletter_register(request):
             body = render_to_string(
                 'contact/confirmation_emails/newsletter_subscription_body.txt',
                 {'data': data,
-                'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+                 'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
             )
             send_mail(
                 subject,
@@ -99,6 +100,20 @@ def newsletter_unsubscribe(request):
                 messages.success(
                     request,
                     f'{email} has been removed from our mailing list'
+                )
+                subject = render_to_string(
+                    'contact/confirmation_emails/newsletter_unsubscribe_subject.txt'
+                )
+                body = render_to_string(
+                    'contact/confirmation_emails/newsletter_unsubscribe_body.txt',
+                    {'email': email,
+                     'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+                )
+                send_mail(
+                    subject,
+                    body,
+                    settings.DEFAULT_FROM_EMAIL,
+                    email,
                 )
                 return redirect(reverse('home'))
             else:
