@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect
+from django.conf import settings
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 from .forms import NewsletterForm, ContactForm, NewsletterUnsubscribeForm
 from .models import NewsletterSubscription
 
@@ -57,6 +60,23 @@ def newsletter_register(request):
             messages.success(
                 request,
                 "You are now subscribed to the Tarmachan newsletter."
+            )
+            # Sending email confirmation of subscription
+            data = newsletter_form.save()
+            subscriber_email = data.email
+            subject = render_to_string(
+                'contact/confirmation_emails/newsletter_subscription_subject.txt',
+            )
+            body = render_to_string(
+                'contact/confirmation_emails/newsletter_subscription_body.txt',
+                {'data': data,
+                'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+            )
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [subscriber_email],
             )
             return HttpResponseRedirect(url)
     else:

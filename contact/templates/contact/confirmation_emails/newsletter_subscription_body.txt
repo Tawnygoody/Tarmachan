@@ -1,0 +1,11 @@
+Hello {{ data.email }},
+
+Thank you for signing up to the Taramchan Newsletter!
+
+We will send out a newsletter at the beginning of every month containing exlusive offers, deals, news and more! 
+
+Sincerly,
+
+Tarmachan
+
+Note: If you did not subscribe or subscribed in error please visit https://tarmachan.herokuapp.com/contact/newsletter_unsubscribe/ to be removed from our mailing list. 
