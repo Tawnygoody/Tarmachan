@@ -17,11 +17,29 @@ def contact(request):
         if form.is_valid():
             subject = request.POST.get('subject')
             name = request.POST.get('name')
+            email = request.POST.get('email')
             form.save()
             messages.success(
                 request,
                 f'Thanks {name}! {subject} has been sent to the \
                     Tarmachan team.'
+            )
+            # Email confirmation of contact message
+            data = form.save()
+            subject = render_to_string(
+                'contact/confirmation_emails/contact_message_subject.txt',
+                {'data': data}
+            )
+            body = render_to_string(
+                'contact/confirmation_emails/contact_message_body.txt',
+                {'data': data,
+                 'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+            )
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [email],
             )
         else:
             messages.error(
@@ -99,8 +117,9 @@ def newsletter_unsubscribe(request):
                 NewsletterSubscription.objects.filter(email=request.POST.get("email")).delete()
                 messages.success(
                     request,
-                    f'{email} has been removed from our mailing list'
+                    f'{email} has been removed from our mailing list.'
                 )
+                # Email confirmation for newsletter unsubscription
                 subject = render_to_string(
                     'contact/confirmation_emails/newsletter_unsubscribe_subject.txt'
                 )
@@ -113,7 +132,7 @@ def newsletter_unsubscribe(request):
                     subject,
                     body,
                     settings.DEFAULT_FROM_EMAIL,
-                    email,
+                    [email],
                 )
                 return redirect(reverse('home'))
             else:
