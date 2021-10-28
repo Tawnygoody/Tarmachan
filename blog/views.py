@@ -7,8 +7,9 @@ from .forms import BlogForm
 
 def blog(request):
     """ A view to display all blogs """
-    # Get all the blog posts in the database
-    blogs = Blog.objects.all()
+    # Get all the blog posts in the database and order
+    # so latest blogs appear first
+    blogs = Blog.objects.all().order_by('-date')
 
     context = {
         'blogs': blogs,

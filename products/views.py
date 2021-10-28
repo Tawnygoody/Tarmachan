@@ -109,7 +109,8 @@ def product_detail(request, product_id):
     # Gets the product from the database
     product = get_object_or_404(Product, pk=product_id)
     # Gets the comments attached to the product from the database
-    comments = Comment.objects.filter(product_id=product_id)
+    # and order so the latest comment appears first
+    comments = Comment.objects.filter(product_id=product_id).order_by('-create_at')
     # Check to see if there are any comments and updates
     # the product rating based on the average rating
     if comments:
