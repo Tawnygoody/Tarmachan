@@ -8,7 +8,7 @@ The message you sent us was:
 
 Our team aim to respond to all queries within 24 hours. 
 
-If you have any further questions feel free to contact us at {{ tarmachan_email }}
+If you have any further questions feel free to contact us at tarmachan@gmail.com
 
 Sincerly,
 Tarmachan

@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container mt-4 min-height">
+    <div class="container mt-5 min-height">
         <div class="row">
             <div class="col text-center mb-3">
                 <h2 class="title-text text-uppercase">Site Management</h2>
@@ -20,15 +20,20 @@
         <div class="row my-4">
 
             <!--Add Product Link-->
-            <div class="col-12 col-sm-6 text-center">
+            <div class="col-12 col-sm-6 col-md-4 text-center">
                 <a href="{% url 'add_product' %}"><i class="fas fa-plus-circle fa-10x icon color-text"></i></a>
                 <p class="content-text fs-3 mt-3">Add a Product</p>
             </div>
 
             <!--Add Blog Link-->
-            <div class="col-12 col-sm-6 text-center">
+            <div class="col-12 col-sm-6 col-md-4 text-center">
                 <a href="{% url 'add_blog' %}"><i class="fas fa-plus-circle fa-10x icon color-text"></i></a>
                 <p class="content-text fs-3 mt-3">Add a Blog</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 text-center">
+                <a href="{% url 'contact_management' %}"><i class="fas fa-tasks fa-10x icon color-text"></i></a>
+                <p class="content-text fs-3 mt-3">Manage Contact Messages</p>
             </div>
         </div>
     </div>

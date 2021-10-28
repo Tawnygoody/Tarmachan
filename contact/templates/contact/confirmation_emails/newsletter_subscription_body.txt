@@ -4,7 +4,7 @@ Thank you for signing up to the Tarmachan Newsletter!
 
 We will send out a newsletter at the beginning of every month containing exclusive offers, deals, news and more! 
 
-If you have any questions feel free to contact us at {{ tarmachan_email }}
+If you have any questions feel free to contact us at tarmachan@gmail.com
 
 Sincerly,
 Tarmachan

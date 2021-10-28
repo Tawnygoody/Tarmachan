@@ -32,8 +32,7 @@ def contact(request):
             )
             body = render_to_string(
                 'contact/confirmation_emails/contact_message_body.txt',
-                {'data': data,
-                 'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+                {'data': data}
             )
             send_mail(
                 subject,
@@ -88,8 +87,7 @@ def newsletter_register(request):
             )
             body = render_to_string(
                 'contact/confirmation_emails/newsletter_subscription_body.txt',
-                {'data': data,
-                 'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+                {'data': data}
             )
             send_mail(
                 subject,
@@ -125,8 +123,7 @@ def newsletter_unsubscribe(request):
                 )
                 body = render_to_string(
                     'contact/confirmation_emails/newsletter_unsubscribe_body.txt',
-                    {'email': email,
-                     'tarmachan_email': settings.DEFAULT_FROM_EMAIL}
+                    {'email': email}
                 )
                 send_mail(
                     subject,

@@ -4,7 +4,7 @@ Thank you for being part of the Tarmachan mailing list.
 
 Please note you can re-subscribe at any point. 
 
-If you have any questions feel free to contact us at {{ tarmachan_email }}
+If you have any questions feel free to contact us at tarmachan@gmail.com
 
 Sincerly,
 Tarmachan
