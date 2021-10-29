@@ -22,7 +22,7 @@ def about_us(request):
     """
     A view to return the about us page
     """
-    return render(request, 'home/about-us.html')
+    return render(request, 'home/about_us.html')
 
 
 @login_required
@@ -37,7 +37,7 @@ def product_management(request):
         )
         return redirect(reverse('home'))
 
-    return render(request, 'home/product-management.html')
+    return render(request, 'home/product_management.html')
 
 
 @login_required
@@ -64,6 +64,13 @@ def contact_management(request):
 @login_required
 def contact_detail(request, contact_id):
     """A view to display the contact message"""
+    if not request.user.is_superuser:
+        messages.error(
+            request,
+            'Sorry! Only the team at Tarmachan can access this.'
+        )
+        return redirect(reverse('home'))
+    
     contact = get_object_or_404(Contact, pk=contact_id)
 
     context = {
