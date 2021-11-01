@@ -64,45 +64,48 @@ def newsletter_register(request):
     """
 
     url = request.META.get('HTTP_REFERER')
-    newsletter_form = NewsletterForm(request.POST)
-    if newsletter_form.is_valid():
-        if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
-            messages.info(
-                request,
-                "This email address is already subscribed to the Tarmachan \
-                    newsletter.")
-            return HttpResponseRedirect(url)
+    if request.method == "POST":
+        newsletter_form = NewsletterForm(request.POST)
+        if newsletter_form.is_valid():
+            if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
+                messages.info(
+                    request,
+                    "This email address is already subscribed to the Tarmachan \
+                        newsletter.")
+                return HttpResponseRedirect(url)
+            else:
+                newsletter_form.save()
+                messages.success(
+                    request,
+                    "You are now subscribed to the Tarmachan newsletter. \
+                        We have sent an email confirmation to you."
+                )
+                # Sending email confirmation of subscription
+                data = newsletter_form.save()
+                subscriber_email = data.email
+                subject = render_to_string(
+                    'contact/confirmation_emails/newsletter_subscription_subject.txt',
+                )
+                body = render_to_string(
+                    'contact/confirmation_emails/newsletter_subscription_body.txt',
+                    {'data': data}
+                )
+                send_mail(
+                    subject,
+                    body,
+                    settings.DEFAULT_FROM_EMAIL,
+                    [subscriber_email],
+                )
+                return HttpResponseRedirect(url)
         else:
-            newsletter_form.save()
-            messages.success(
+            messages.error(
                 request,
-                "You are now subscribed to the Tarmachan newsletter. \
-                    We have sent an email confirmation to you."
-            )
-            # Sending email confirmation of subscription
-            data = newsletter_form.save()
-            subscriber_email = data.email
-            subject = render_to_string(
-                'contact/confirmation_emails/newsletter_subscription_subject.txt',
-            )
-            body = render_to_string(
-                'contact/confirmation_emails/newsletter_subscription_body.txt',
-                {'data': data}
-            )
-            send_mail(
-                subject,
-                body,
-                settings.DEFAULT_FROM_EMAIL,
-                [subscriber_email],
+                "Failed to subscribe. Please ensure the email you've entered is \
+                    valid"
             )
             return HttpResponseRedirect(url)
     else:
-        messages.error(
-            request,
-            "Failed to subscribe. Please ensure the email you've entered is \
-                valid"
-        )
-        return HttpResponseRedirect(url)
+        newsletter_form = NewsletterForm()
 
 
 def newsletter_unsubscribe(request):
