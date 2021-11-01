@@ -63,8 +63,7 @@ class ProductSubCategory(models.Model):
 
 class Clearance(models.Model):
     """
-    This allows the grouping of products for
-    product sub categories
+    This allows the grouping of products that are in clearance
     """
 
     name = models.CharField(max_length=254)

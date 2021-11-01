@@ -4,7 +4,7 @@ from contact.models import NewsletterSubscription, Contact
 
 
 class TestContactViews(TestCase):
-    """Testing Home Views"""
+    """Testing Contact Views"""
 
     def test_contact_view_get(self):
         """
@@ -127,7 +127,7 @@ class TestContactViews(TestCase):
         existing_subscribers = NewsletterSubscription.objects.filter(
             id=subscriber.id)
         self.assertEqual(len(existing_subscribers), 0)
-    
+
     def test_newsletter_unsubscribe_post_not_subscribed(self):
         """
         Tests the unsubscribe page and ensures that existing_subscribers
