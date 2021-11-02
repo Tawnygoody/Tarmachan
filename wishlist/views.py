@@ -5,7 +5,6 @@ from django.contrib import messages
 from products.models import Product
 
 
-@login_required
 def wishlist(request):
     """
     A view to return products which have been added
@@ -25,7 +24,6 @@ def wishlist(request):
     return render(request, 'wishlist/wishlist.html', context)
 
 
-@login_required
 def add_to_wishlist(request, product_id):
     """
     Allows registered users to add and remove products from their wishlist
