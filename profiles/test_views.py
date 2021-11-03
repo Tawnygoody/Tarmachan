@@ -44,7 +44,7 @@ class TestProfileViews(TestCase):
         self.assertEqual(
             str(messages[0]),
             "Profile updated successfully!")
-    
+
     def test_user_profile_invalid_form(self):
         user = User.objects.create_user(
             username='testuser',
