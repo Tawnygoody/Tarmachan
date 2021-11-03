@@ -91,6 +91,82 @@ class TestProductViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/add_product.html')
 
+    def test_add_product_if_superuser_post(self):
+        admin = User.objects.create_superuser(
+            username='adminuser',
+            email='adminuser@email.com',
+            password='adminuserpassword',
+        )
+        self.client.login(username='adminuser', password='adminuserpassword')
+        clearance = Clearance.objects.create(
+            name='test_clearance'
+        )
+        master_category = MasterCategory.objects.create(
+            name='test_master_category'
+        )
+        product_category = ProductCategory.objects.create(
+            name='test_product_category'
+        )
+        product_sub_category = ProductSubCategory.objects.create(
+            name='test_product_sub_category'
+        )
+        form_data = {
+                'name': 'test product',
+                'description1': 'test description',
+                'price': 45.99,
+                'clearance': 1,
+                'master_category': 1,
+                'product_category': 1,
+                'product_sub_category': 1,
+            }
+        response = self.client.post(
+            '/products/add/', form_data
+        )
+        product = Product.objects.get(name='test product')
+        self.assertRedirects(response, f'/products/{product.id}/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            "Successfully added product!"
+        )
+
+    def test_add_product_if_superuser_post_invalid(self):
+        admin = User.objects.create_superuser(
+            username='adminuser',
+            email='adminuser@email.com',
+            password='adminuserpassword',
+        )
+        self.client.login(username='adminuser', password='adminuserpassword')
+        clearance = Clearance.objects.create(
+            name='test_clearance'
+        )
+        master_category = MasterCategory.objects.create(
+            name='test_master_category'
+        )
+        product_category = ProductCategory.objects.create(
+            name='test_product_category'
+        )
+        product_sub_category = ProductSubCategory.objects.create(
+            name='test_product_sub_category'
+        )
+        form_data = {
+                'name': 'test product',
+                'description1': 'test description',
+                'price': '',
+                'clearance': 1,
+                'master_category': 1,
+                'product_category': 1,
+                'product_sub_category': 1,
+            }
+        response = self.client.post(
+            '/products/add/', form_data
+        )
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            "Failed to add product. Please ensure the form is valid."
+        )
+
     def test_add_product_not_superuser(self):
         """
         Tests the add product page for a 302 status code when a regular
@@ -126,6 +202,94 @@ class TestProductViews(TestCase):
         response = self.client.get(f'/products/edit/{product.id}')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/edit_product.html')
+
+    def test_edit_product_if_superuser_post(self):
+        admin = User.objects.create_superuser(
+            username='adminuser',
+            email='adminuser@email.com',
+            password='adminuserpassword',
+        )
+        self.client.login(username='adminuser', password='adminuserpassword')
+        clearance = Clearance.objects.create(
+            name='test_clearance'
+        )
+        master_category = MasterCategory.objects.create(
+            name='test_master_category'
+        )
+        product_category = ProductCategory.objects.create(
+            name='test_product_category'
+        )
+        product_sub_category = ProductSubCategory.objects.create(
+            name='test_product_sub_category'
+        )
+        product = Product.objects.create(
+            name="test product",
+            description1="test description",
+            price="49.99",
+            clearance=clearance,
+        )
+        response = self.client.post(
+            f'/products/edit/{product.id}',
+            {
+                'name': 'test product edit',
+                'description1': 'test description',
+                'price': '29.99',
+                'clearance': 1,
+                'master_category': 1,
+                'product_category': 1,
+                'product_sub_category': 1,
+            }
+        )
+        edit_product = Product.objects.get(name='test product edit')
+        self.assertEqual(edit_product.name, 'test product edit')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            "Successfully updated product!"
+        )
+    
+    def test_edit_product_if_superuser_post_invalid(self):
+        admin = User.objects.create_superuser(
+            username='adminuser',
+            email='adminuser@email.com',
+            password='adminuserpassword',
+        )
+        self.client.login(username='adminuser', password='adminuserpassword')
+        clearance = Clearance.objects.create(
+            name='test_clearance'
+        )
+        master_category = MasterCategory.objects.create(
+            name='test_master_category'
+        )
+        product_category = ProductCategory.objects.create(
+            name='test_product_category'
+        )
+        product_sub_category = ProductSubCategory.objects.create(
+            name='test_product_sub_category'
+        )
+        product = Product.objects.create(
+            name="test product",
+            description1="test description",
+            price="49.99",
+            clearance=clearance,
+        )
+        response = self.client.post(
+            f'/products/edit/{product.id}',
+            {
+                'name': '',
+                'description1': 'test description',
+                'price': '',
+                'clearance': 1,
+                'master_category': 1,
+                'product_category': 1,
+                'product_sub_category': 1,
+            }
+        )
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            "Failed to update product. Please ensure the form is valid."
+        )
 
     def test_edit_product_not_superuser(self):
         user = User.objects.create_user(

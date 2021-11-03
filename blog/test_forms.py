@@ -4,7 +4,7 @@ from blog.forms import BlogForm
 
 
 class TestBlogForms(TestCase):
-    """Testing Blog views"""
+    """Testing Blog forms"""
 
     def test_blog_form(self):
         admin = User.objects.create_superuser(
