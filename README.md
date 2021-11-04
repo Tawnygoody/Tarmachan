@@ -1,5 +1,11 @@
 <h1 align="center">Tarmachan</h1>
 
+![Mock-Up](documentation/wireframes/mock-up/mock_up.png)
+
+View the repository in GitHub [here](https://github.com/Tawnygoody/Tarmachan)
+
+View the live project [here](https://tarmachan.herokuapp.com/)
+
 # Contents
 
 1. [User Experience (UX)](#user-experience-(ux))
@@ -16,7 +22,7 @@
 5. [Database Creation](#database-creation)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
-8. [Acknowledgments]
+8. [Acknowledgments](#acknowledgments)
 
 
 # User Experience (UX)
@@ -232,3 +238,58 @@ Fixtures were created for the following:
 - Product
 
 Using JSON files enabled the large amount of product and category data to be loaded easily into both the database in development and the database in production. 
+
+# Technologies Used
+
+## Languages Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/)
+
+## Libraries & Integrations
+- [Django](https://www.djangoproject.com/)
+    - This was the primary framework used for the project
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - This has been used to render the forms on the site.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html)
+    - This has been used for user authentication on the site.
+- [Django Countries](https://pypi.org/project/django-countries/)
+    - Used to populate the countries select field on the order form and profile form
+- [Coverage](https://pypi.org/project/coverage/)
+    - Used to produce a testing report
+- [Stripe](https://stripe.com/gb)
+    - This has been used to handle payments.
+- [Bootstrap](https://getbootstrap.com/)
+    - Used as a framework for styling and to make the site responsive
+- [Amazon Web Services](https://aws.amazon.com/)
+    - Used to store all static files and images
+- [SQLite](https://www.sqlite.org/index.html)
+    - Database used in development
+- [PostgreSQL](https://www.postgresql.org/)
+    - Database used in production
+- [Heroku](https://id.heroku.com/login)
+    - Online Cloud Platform used to deploy the live site
+- [Gunicorn](https://gunicorn.org/)
+    - Used for deploying the project to Heroku
+- [Fontawesome](https://fontawesome.com/)
+    - Fontawesome has been used for icons across the website. 
+- [Google Fonts](https://fonts.google.com/)
+    - Google Fonts has been used to import "Cinzel" & "Montserrat" fonts used across the website. 
+- [jQuery](https://jquery.com/)
+    - Has been used to ease DOM manipulation. 
+- [Balsamiq](https://balsamiq.com/)
+    - This has been used to create the wireframes for the project. 
+- [Canva](https://www.canva.com/)
+    - Canva has been used to design the websites logo.
+- [Photopea](https://www.photopea.com/)
+    - This has been used to make changes to the product images.
+- [Dbdiagram](https://dbdiagram.io/home) 
+    - Used to create the database schema illustration.
+- [Techsini](https://techsini.com/multi-mockup/)
+    - Techsini has been used to generate mock images on different devices, and help with responsiveness.
+- [Github](https://github.com/)
+    - GitHub is used to store the project code after being pushed from Git.
+- [Git](https://git-scm.com/) 
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
