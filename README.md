@@ -109,3 +109,34 @@ The wireframes have been created using Balsamiq and show for Desktop, iPad and i
     - [Desktop](documentation/wireframes/blog-story-page/blog-story-desktop-r.png)
     - [iPad](documentation/wireframes/blog-story-page/blog-story-ipad-r.png)
     - [iPhone](documentation/wireframes/blog-story-page/blog-story-iphone-r.png)
+
+## Surface
+
+### Design
+
+#### Colour Scheme
+
+- Inspiration for my colour scheme has been taken from [Rab's website](https://rab.equipment/uk/mens/fleece-midlayer). I've decided to go for a slighter darker green to allow further contrast for the white text. As Tarmachan is an outdoors store this colour choice reflects the link between products sold and the Scottish countryside. 
+
+- From there I have used complimentary shades of green to create a softer pallette highlighting different sections of the site. 
+
+- I have decided to use a white background throughout the majority of the site. This is to keep the visual design clean and means the emphasis is on the products and imagery to bring vibrance to the site. This design follows that of similar Mountain equipment retailers such as [Rab](https://rab.equipment/uk/mens/fleece-midlayer), [North Face](https://www.thenorthface.co.uk/) and [Mountain Equipment](https://www.mountain-equipment.co.uk/). 
+
+![Chosen Colour Scheme](documentation/colour-scheme/colour_scheme.png)
+
+- (#002929) - Used for Delivery Banner and footer credits
+- (#003838) - Used accross the site, primarily seen in the footer, on buttons, tooltips, color text etc.
+- (#177373) - Used on product details tabs, icons and stars. 
+- (#ffffff) - Used throughout the site as a background, and white text. 
+
+
+#### Additional Colours Used
+
+- (#0DCAF0) - Used for information toasts
+- (#198754) - Used for success toasts
+- (#FFC107) - Used for warning toasts
+- (#DC3545) - Used for danger toasts and delete icons
+- (#1b7945) - Used for discount text
+- (#AAB7C4) - Used a placeholder text colour
+- (#CCCCCC) - Used for unchecked stars
+- (#B1B1B1) - Used for Box shadows

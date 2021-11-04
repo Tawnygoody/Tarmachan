@@ -67,14 +67,28 @@ class TestProductViews(TestCase):
         Tests for a 200 status code on the product detail page
         and that the correct template is rendered
         """
+        user = User.objects.create_user(
+            username='testuser',
+            email='test@gmail.com',
+            password='testpassword'
+        )
+        self.client.login(username='testuser', password='testpassword')
         clearance = Clearance.objects.create(
             name='test clearance'
         )
         product = Product.objects.create(
             name="test product",
             description1="test description",
-            price="49.99",
-            clearance=clearance
+            price=49.99,
+            clearance=clearance,
+            clearance_price=29.99
+        )
+        comment = Comment.objects.create(
+            product=product,
+            user=user,
+            subject="test subject",
+            comment="test comment",
+            rating=3
         )
         response = self.client.get(f'/products/{product.id}/')
         self.assertEqual(response.status_code, 200)
@@ -392,6 +406,43 @@ class TestProductViews(TestCase):
             'Successfully added comment!'
         )
 
+    def test_delete_comment_with_additional_comments(self):
+        user = User.objects.create_user(
+            username='testuser',
+            email='test@gmail.com',
+            password='testpassword'
+        )
+        self.client.login(username='testuser', password='testpassword')
+        clearance = Clearance.objects.create(
+            name='test clearance'
+        )
+        product = Product.objects.create(
+            name="test product",
+            description1="test description",
+            price="49.99",
+            clearance=clearance
+        )
+        comment = Comment.objects.create(
+            product=product,
+            user=user,
+            subject="test subject",
+            comment="test comment",
+            rating=3
+        )
+        second_comment = Comment.objects.create(
+            product=product,
+            user=user,
+            subject="test subject 2",
+            comment="test comment 2",
+            rating=2
+        )
+        response = self.client.get(f'/products/delete_comment/{comment.id}')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            'Review test subject has been deleted!'
+        )
+
     def test_delete_comment(self):
         user = User.objects.create_user(
             username='testuser',
@@ -420,4 +471,39 @@ class TestProductViews(TestCase):
         self.assertEqual(
             str(messages[0]),
             'Review test subject has been deleted!'
+        )
+
+    def test_delete_comment_not_reviewer(self):
+        user = User.objects.create_user(
+            username='testuser',
+            email='test@gmail.com',
+            password='testpassword'
+        )
+        self.client.login(username='testuser', password='testpassword')
+        user2 = User.objects.create_user(
+            username='testuser2',
+            email='test2@gmail.com',
+            password='testpassword2'
+        )
+        clearance = Clearance.objects.create(
+            name='test clearance'
+        )
+        product = Product.objects.create(
+            name="test product",
+            description1="test description",
+            price="49.99",
+            clearance=clearance
+        )
+        comment = Comment.objects.create(
+            product=product,
+            user=user2,
+            subject="test subject",
+            comment="test comment",
+            rating=3
+        )
+        response = self.client.get(f'/products/delete_comment/{comment.id}')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[0]),
+            'Only the team at Tarmachan and the reviewer can access this.'
         )
