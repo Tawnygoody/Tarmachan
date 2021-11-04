@@ -140,3 +140,25 @@ The wireframes have been created using Balsamiq and show for Desktop, iPad and i
 - (#AAB7C4) - Used a placeholder text colour
 - (#CCCCCC) - Used for unchecked stars
 - (#B1B1B1) - Used for Box shadows
+
+#### Typography
+
+- I have used Cantata One as the logo font which has been used throughout the whole site. This was dictated when deciding what font to use on the products themselves. I wanted a font which was bold yet readable and looked uniform when it's formatted to be uppercase. The same font has therefore been used for headings, subheadings and some buttons. 
+
+![Cantata One](documentation/typography/cantata.png)
+
+- I have used Crimson Text throughout the rest of the site for longer passages of text and paragraph use. Two font weights have been used to allow for emphasise at certain points on the site. This text is the same text used on the [Mountain Equipment](https://www.mountain-equipment.co.uk/) which was used as an inspiration for my site. 
+
+![Crimson Text](documentation/typography/crimson.png)
+
+#### Imagery
+
+- Due to the nature of the products sold I have had to rely on other retailers products and modify them for use on my site. For the most part product images have come from [Mountain Equipment](https://www.mountain-equipment.co.uk/) and other online retailers (credited in the credits section).
+
+- I have used a hero image on the home page to the give the site a dramatic appearance. Category images have been used for the featured products section on the home page to give a visual representation of what the companies products are intended for. Parallax images and product detail background images are in keeping with the company name. 
+
+- Image credits can be found in the credit section of the README.
+
+#### Icons
+
+- Ive made use of icons in various section on the site. They have been used for navigation (on larger devices), social media links, wishlist, product tags and stars. All icons have been obtained from FontAwesome. 
