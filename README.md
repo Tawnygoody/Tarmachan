@@ -8,7 +8,9 @@
     - [Structure](#structure)
     - [Skeleton](#skeleton)
     - [Surface](#surface)
-2. [Database Schema](#database-schema)
+2. [Information Architecture](#information-architecture)
+    - [Database](#database)
+    - [Data Model](#data-model)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
 5. [Database Creation](#database-creation)
@@ -162,3 +164,71 @@ The wireframes have been created using Balsamiq and show for Desktop, iPad and i
 #### Icons
 
 - Ive made use of icons in various section on the site. They have been used for navigation (on larger devices), social media links, wishlist, product tags and stars. All icons have been obtained from FontAwesome. 
+
+# Information Architecture
+
+## Database
+
+- SQLite relational database management system (pre-installed with Django) has been used in development to store the data for this project. 
+- PostgreSQL relational database management system has been used in production. 
+- Note: The user model is provided by [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html).
+
+## Data Model
+
+The following Entity-Relationship diagram shows the relationships between the models. 
+
+![DBDiagram](documentation/data-model/database_model.png)
+
+### Blog App
+- Blog Model
+    - Contains the details of the blog post and is linked to the User model by the 'author' field. 
+
+### Checkout App
+- Order Model
+    - Contains details of the of the user's orders, their delivery details, and the items they've order. It is linked to the UserProfile Model by the 'user_profile' field
+
+- OrderLineItem Model
+    - Contains details for the customer order, quantity and product total. It is linked to the Order Model by the 'order' field and the Product Model by the 'product field'.
+### Products App
+- MasterCategory
+    - Contains Master Categories options for products. It is linked to the Product Model using a foreign key.
+
+- ProductCategory
+    - Contains Product Categories options for products. It is linked to the Product Model using a foreign key.
+
+- ProductSubCategory
+    - Contains Product Sub Categories options for products. It is linked to the Product Model using a foreign key.
+
+- Clearance
+    - Contains clearance options for products. Currently only 2 options, but further options could be added such as "Limited time offer" etc. It is linked to the Product Model using a foreign key.
+
+- Product
+    - Contains detailed product information for each product. 
+
+- Comment
+    - Contains the review information for each product. It is linked to the Product Model by the 'product' field and the User Model by the 'user' field. The rating field also updates the product rating each time a review is left. 
+### Contact App
+- NewsletterSubscription
+    - Contains the email of users who have signed up to the newsletter
+- Contact
+    - Contains the details of users and their queries from the contact form. 
+### Profiles App
+- UserProfile
+    - Contains the user's details for future orders. 
+### Wishlist App
+- user_wishlist
+    - Although this is not a Model, I have built a one-to-one link between the User Model and Product Model, which creates a "link table" allowing user's to add products to their wishlist. 
+### Django Allauth
+- User
+    - The User model is provided by default from Django Allauth and contains the username, email, and password for each user. 
+
+### Fixtures
+
+Fixtures were created for the following:
+- MasterCategory
+- ProductCategory
+- ProductSubCategory
+- Clearance
+- Product
+
+Using JSON files enabled the large amount of product and category data to be loaded easily into both the database in development and the database in production. 
