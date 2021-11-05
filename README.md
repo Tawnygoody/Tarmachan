@@ -69,6 +69,37 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 
 ## Scope
 
+The key features of the website were developed based on the user stories
+
+### For any site user: 
+- Home page, with dramatic imagery and to quickly help user's understand the purpose of the site.
+- Products Page, where users can view all the products, or products based on filtering criteria. 
+- Product Detail Page, detailing information about the product. From here user's can read reviews from other customers and add products to their bags. 
+- Shopping Bag page, where users can see what products have been added to their bag. 
+- Checkout page, allowing users to purchase products. 
+- Confirmation page, allowing users to see a confirmation of their order. 
+- Blog Page, where users can look at all the blog posts that have been uploaded by the site owner. 
+- Blog Detail Page, where users can find out more information about each blog post.
+- Contact Page, where users can contact the company with any queries.
+- Newsletter Subscriber, available on all pages where users can subscribe to the company newsletter. 
+- Sign Up Page, where users can register to become a registered user. 
+- About Us Page, where users can find out more about the company. 
+
+### For registered users: 
+All of the above plus: 
+- Wishlist page, where users can store products in their wishlist. 
+- Profile Page, where users can update their default delivery information allowing for ease at checkout. 
+- Order History, from the profile page users can see the previous orders they have made. 
+- Product Reviews, on the product detail page, users can leave a rating and a message about a product. 
+- Log Out Page, where users can log out of their account. 
+
+### For Site Admin:
+All of the above plus: 
+- Site management page, where admin users can add products, blog, and review contact messages from other users. 
+- Add Product / Blog page, where admin can add products / blogs. 
+- Edit Product / Blog Page, where admin can update products / blogs. 
+- Product Reviews, admin can delete reviews from any user has left a review. 
+
 ## Structure
 
 ## Skeleton
@@ -293,3 +324,5 @@ Using JSON files enabled the large amount of product and category data to be loa
     - GitHub is used to store the project code after being pushed from Git.
 - [Git](https://git-scm.com/) 
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
+    - This has been used for the home page carousel for the blogs.
