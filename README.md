@@ -326,3 +326,9 @@ Using JSON files enabled the large amount of product and category data to be loa
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
     - This has been used for the home page carousel for the blogs.
+
+# Testing
+
+All testing carried out on the website can be found in the following file: 
+
+## [TESTING.md](TESTING.md)
