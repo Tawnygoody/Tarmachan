@@ -179,6 +179,31 @@
 
 ## Admin & Store Management
 22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
+    - Superuser's will have access to a site management page. Access to this can be found by clicking the icon in the upper right corner which is tooltipped to aid users (larger devices only). On smaller devices the site management page can be accessed via the burger menu. 
+    - From here superusers can add products to the site, by clicking the add product icon and filling in the form. Once the add product button is submitted the user will be redirected to the product detail page for the product they have just added. 
+    - From the product detail page superusers can edit and delete products by clicking on the icons for these options. 
+    - Superusers can also edit and delete products from the products page directly. 
+
+    ![User Story 22](documentation/testing/testing_user_stories/user_story22.gif)
+
+
 23. As a site owner, I want access to an admin section to view and manage orders. 
-24. As a site owner, I want to be able to manage blog posts and products reviews made by the customer.
+    - The admin user has access to the django admin section where they can manage orders. 
+
+    ![User Story 23](documentation/testing/testing_user_stories/user_story23.gif)
+
+24. As a site owner, I want to be able to manage blog posts. 
+    - Superusers are able to add blogs from the site management page.
+    - Once a blog is added the user is redirected to the blog detail page. From this page superusers, are able to edit and delete blogs. These buttons will not be available to regular users. 
+
+    ![User Story 24](documentation/testing/testing_user_stories/user_story24.gif)
+
 25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 
+    - Superusers are able to delete any comments that have been left by other users, by clicking the trash icon on product reviews. 
+
+    ![User Story 25](documentation/testing/testing_user_stories/user_story25.gif)
+
+26. As a site owner, I want to be able to monitor contact messages that have been submitted by site user's and delete them once they have been responded to. 
+    - Superusers are able to manage contact messages on the site management page by cliking the manage contacts icon. From here superusers can monitor messages that have been sent and delete them once the messages have been responded to. 
+
+    ![User Story 26](documentation/testing/testing_user_stories/user_story26.gif)

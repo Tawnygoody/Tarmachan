@@ -63,8 +63,9 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 #### Admin & Store Management
 22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
 23. As a site owner, I want access to an admin section to view and manage orders. 
-24. As a site owner, I want to be able to manage blog posts and products reviews made by the customer. 
+24. As a site owner, I want to be able to manage blog posts.. 
 25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 
+26. As a site owner, I want to be able to monitor contact messages that have been submitted by site user's and delete them once they have been responded to. 
 
 
 ## Scope
