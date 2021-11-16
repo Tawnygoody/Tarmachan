@@ -115,9 +115,27 @@
 
 ## Sorting & Searching
 12. As a site user, I want to be able to see all the products that the company sells. 
+    - User's are able to find an all products link in the footer. 
+    - As the site has a range of products across 3 main categories I have decided against an all products link in the main nav as its unlikely that users will wish to see all products. 
+    - Various links across the site will take the users to an all products page. 
+
+    ![User Story 12](documentation/testing/testing_user_stories/user_story12.gif)
+
 13. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
+    - The mega menu nav bar allows user's to sort products via master categories(mens, womens, equipment), product categories(tops, jackets, legwear etc), and product sub categories(t-shirts, pullover, fleece etc). 
+
+    ![User Story 13](documentation/testing/testing_user_stories/user_story13.gif)
+
 14. As a site user, I want to be able to sort products with various parameters. 
+    - Users are able to sort products on the products page using the sort by dropdown selector. Users have the option to sort the products by Price: high to low or low to high, Rating: high to low or low to high, Name: A-Z or Z-A. 
+    - Note: sorting by rating low to high: products which have not yet received a rating will appear at the top. 
+
+    ![User Story 14](documentation/testing/testing_user_stories/user_story14.gif)
+
 15. As a site user, I want to be able to search for products using keywords.  
+    - Users are able to to click the search icon which will open the the search bar allowing users to search for products using keywords. 
+
+    ![User Story 15](documentation/testing/testing_user_stories/user_story15.gif)
 
 ## Purchasing & Checkout
 16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
