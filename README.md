@@ -103,6 +103,47 @@ All of the above plus:
 
 ## Structure
 
+### Existing Features
+
+#### Base Template
+
+- Delivery Banner - The delivery banner contains information about free delivery and the free delivery threshold. It is fixed to the top of the screen to allow for ease of access and improved user navigation. The links take users to different parts of the site which are as follows:
+    - Unregistered user: 
+        - Login link
+        - Register link
+    - Registered user: 
+        - Wishlist
+        - Profile
+        - Log Out
+    - Superuser:
+        - Site Administration
+        - Wishlist
+        - Profile
+        - Log Out
+
+- Navbar Desktop - The main navbar has a centralised Tarmachan Logo, which will take users to the home page. Main site links are aligned to the left of the logo. Each of these links will open a mega menu which spans the full width of the screen, again to help aid with navigation and to avoid large amount of scrolling with a regular dropdown. The search icon will drop down a search bar below the main nav, and the basket icon will take users to their shopping bag page. 
+
+- Navbar Mobile - The mobile navbar has the same logo image, search and basket links. However rather than links to the left of the logo, a collapsible side nav can be triggered by a burger menu. Scrollable dropdowns allow for all the categories and subcategories to be selected. Also on smaller devices the delivery banner icons are removed and replaced with links within the burger menu. The height of the navbar is also reduced on smaller screen sizes to allow for more screen real estate. The navbar also sticks to the top of the screen on all devices to allow for ease of access to navigation. 
+
+- Footer - The footer is split into different sections. The first column allows all users to sign up to the tarmachan newsletter by filling in the form with their email and clicking the submit button. The second column contains navigational links to take the user to product pages for master categories, clearance and all products. The third column contains navigational links to take the user to pages about the company. This column will also show Logout and profile links depending on whether the user is logged in or not. The fourth column has links to social media sites. An additional logo will take the user back to the home page. 
+
+- Toast Messages - Toast message boxes have been used throughout the site to display feedback to the user when they have made interactions with the site. These messages are colour coded to signify different message types: 
+    - Green: Success
+    - Yellow: Warning
+    - Blue: Informative
+    - Red: Errors
+
+#### Home page
+
+- Users are greated with a full height hero image and a quote which has relevance to the purpose of the site. There are 3 links available to the user which will take the users to products pages for the 3 master categories (Mens, Womens, Equipment). 
+- There are featured cards for the 4 product categories for both mens and womens clothing. On desktop devices, when a user hovers over the card images, the Men's and Women's links will show. On mobile devices when a user clicks on one of the image cards the Men's and Women's links will show. 
+- Large featured section for clearance products advertises the current marketing strategy. The image fulfills expectations as it takes the user to all products that are currently on sale. 
+- Owl Carousel to display the 8 latest blog posts. Clicking the arrows will slide the blogs along by 1. Clicking the dots underneath will slide to the next set of blogs depending on screen size. The blogs will loop round constantly, and allows for touch sliding on smart devices. 
+
+#### Products Page
+
+
+
 ## Skeleton
 
 Below you can find the links for my wireframes, showing how I would like the pages to be structured, and how the site will appear on different device sizes. 

@@ -207,3 +207,22 @@
     - Superusers are able to manage contact messages on the site management page by cliking the manage contacts icon. From here superusers can monitor messages that have been sent and delete them once the messages have been responded to. 
 
     ![User Story 26](documentation/testing/testing_user_stories/user_story26.gif)
+
+# Code Validation
+# Browser Compatibility
+# Functionality Testing
+# Responsive Design
+# Security Testing
+# Unit Testing
+# Solved Bugs
+
+|  #  |  Bug  |  Description  |  Fix  |
+|:---:|------| ---------------- |----------------|
+| 01 | Deleting products on prodcut page | When trying to delete a product on the products page. When I opened to modal to delete a product it wouldn't retrieve the correct product ID in order to delete it. It was only the first product that would get deleted. | I tried to move the delete modal inside the for loop within the template, however this did not resolve the issue. I found a solution on stack overflow which grabbed the data id and url and applied them to the correctly to the delete modal with some javadscript. |
+| 02 | Parallax Container on smaller devices |  |  |
+| 03 | Product review form on smaller devices |  |  |
+
+
+
+# Known Issues
+# Lighthouse
