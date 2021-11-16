@@ -83,26 +83,52 @@
 
 ## Registration & User Accounts
 8. As a site user, I want to be able to sign up and register an account to make future purchases easier. 
+    - One larger devices users can click on the register icon in the upper right corner of the screen which is tooltipped to aid users. 
+    - Alternatively users can sign up via the sign up link in the footer, which takes them to the register page. 
+    - On mobile devices users can sign up via the link in the burger menu, or again in the footer. 
+    - Login links can be found in the same places as the register links but will redirect the users to the login page. 
+    - Once user's have registered they are notified a confirmation email has been sent to their email address. Upon opening this link usr's can confirm their email address and login. 
+
+    ![User Story 8](documentation/testing/testing_user_stories/user_story8.gif)
+
 9. As a site user, I want to be able to have access to a personal profile page where I'm able to see my order history and delivery details. 
-10. As a site user, I want to be able to update my delivery details on my profile page. 
-11. As a site user, I want to be able to leave reviews on products to inform future site users about the business's products. 
-12. As a site user, I want to be able to save items to a Wishlist for ease of purchase on future visits. 
+    - Registered users have access to their profile page by clicking the icon in the upper right corner which is tool tipped to aid users. On smaller screen users can access their profile from the burger menu. Users also have access to their profile by clicking the link in the footer. 
+    - On the profile page user's can update their delivery information. 
+    - Users can also click on previous orders which will take them to their confirmation page for that order, and a message will show to let the user know they are looking at a past order. 
+
+    ![User Story 9](documentation/testing/testing_user_stories/user_story9.gif)
+
+10. As a site user, I want to be able to leave reviews on products to inform future site users about the business's products. 
+    - When a user is logged in they have access to fill in a form on the product detail page under the reviews tab. 
+    - Users must provide a subject, message and rating to inform other users. 
+    - Users will be able to delete any comments they have made, should they wish. 
+    - Once a user has left a review it will update the product rating, and create an average rating based on all the users reviews. 
+
+    ![User Story 10](documentation/testing/testing_user_stories/user_story10.gif)
+
+11. As a site user, I want to be able to save items to a Wishlist for ease of purchase on future visits. 
+    - When a user is logged in they will have access to their wishlist. This can be accessed by the icon in the upper right corner on large devices or via the burger menu on smaller devices. 
+    - On the product pages, each product card will have a heart outline to signify that this product is not currently in the users wishlist. If a product is already in the user's wishlist the heart will have a colour fill. This is tooltipped to aid the user on larger devices. Clicking the heart will either add or remove a product from the users wishlist. 
+    - Simarlarly there is a button on the product detail page which allows users to add or remove a product from a users wishlist. 
+
+    ![User Story 11](documentation/testing/testing_user_stories/user_story11.gif)
 
 ## Sorting & Searching
-13. As a site user, I want to be able to see all the products that the company sells. 
-14. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
-15. As a site user, I want to be able to sort products with various parameters. 
-16. As a site user, I want to be able to search for products using keywords.  
+12. As a site user, I want to be able to see all the products that the company sells. 
+13. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
+14. As a site user, I want to be able to sort products with various parameters. 
+15. As a site user, I want to be able to search for products using keywords.  
 
 ## Purchasing & Checkout
-17. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
-18. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
-19. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
-20. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
-21. As a purchasing user, I want to be able to checkout securely. 
-22. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful.
+16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
+17. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
+18. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
+19. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
+20. As a purchasing user, I want to be able to checkout securely. 
+21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful.
 
 ## Admin & Store Management
-23. As a site owner, I want to be able to add, edit and remove products from the site easily. 
-24. As a site owner, I want access to an admin section to view and manage orders. 
-25. As a site owner, I want to be able to manage blog posts and products reviews made by the customer.
+22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
+23. As a site owner, I want access to an admin section to view and manage orders. 
+24. As a site owner, I want to be able to manage blog posts and products reviews made by the customer.
+25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 

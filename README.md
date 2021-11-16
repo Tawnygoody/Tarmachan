@@ -43,28 +43,28 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 #### Registration & User Accounts
 8. As a site user, I want to be able to sign up and register an account to make future purchases easier. 
 9. As a site user, I want to be able to have access to a personal profile page where I'm able to see my order history and delivery details. 
-10. As a site user, I want to be able to update my delivery details on my profile page. 
-11. As a site user, I want to be able to leave reviews on products to inform future site users about the business's products. 
-12. As a site user, I want to be able to save items to a Wishlist for ease of purchase on future visits. 
+10. As a site user, I want to be able to leave reviews on products to inform future site users about the business's products. 
+11. As a site user, I want to be able to save items to a Wishlist for ease of purchase on future visits. 
 
 #### Sorting & Searching
-13. As a site user, I want to be able to see all the products that the company sells. 
-14. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
-15. As a site user, I want to be able to sort products with various parameters. 
-16. As a site user, I want to be able to search for products using keywords. 
+12. As a site user, I want to be able to see all the products that the company sells. 
+13. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
+14. As a site user, I want to be able to sort products with various parameters. 
+15. As a site user, I want to be able to search for products using keywords. 
 
 #### Purchasing & Checkout
-17. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
-18. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
-19. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
-20. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
-21. As a purchasing user, I want to be able to checkout securely. 
-22. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful. 
+16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
+17. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
+18. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
+19. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
+20. As a purchasing user, I want to be able to checkout securely. 
+21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful. 
 
 #### Admin & Store Management
-23. As a site owner, I want to be able to add, edit and remove products from the site easily. 
-24. As a site owner, I want access to an admin section to view and manage orders. 
-25. As a site owner, I want to be able to manage blog posts and products reviews made by the customer. 
+22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
+23. As a site owner, I want access to an admin section to view and manage orders. 
+24. As a site owner, I want to be able to manage blog posts and products reviews made by the customer. 
+25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 
 
 
 ## Scope
