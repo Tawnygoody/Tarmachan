@@ -139,11 +139,43 @@
 
 ## Purchasing & Checkout
 16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
+    - Users are able to select the site of product using the dropdown provided on products which have sizes. User's can also open a sizing chart to correctly identify what size they require. 
+    - Users are able to select the quantity of items that they wish using the selectors and can choose between 1-99. 
+
+    ![User Story 16](documentation/testing/testing_user_stories/user_story16.gif)
+
 17. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
+    - Users can add items to their bag from the product detail page, allowing them to make more than one purchase
+
+    ![User Story 17](documentation/testing/testing_user_stories/user_story17.gif)
+
 18. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
+    - When a user adds an item to the basket a success toast provides feedback that a product has been added, and gives a summary of the items in the users bag. This message dissapears when a user closes the toast or redirect to another page.
+    - Any time a user adds a product to their bag, the basket icon in the navbar changes colour and updates the price based on whats in the basket (plus delivery if not over the delivery threshold). 
+
+    ![User Story 17](documentation/testing/testing_user_stories/user_story17.gif)
+
 19. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
+    - User's can update and remove products from their bag, on the shopping bag page, which can be accessed by clicking the basket in the navbar. 
+    - User's will be notified whenever they update or remove an item from their shopping bag. 
+
+    ![User Story 19](documentation/testing/testing_user_stories/user_story19.gif)
+
 20. As a purchasing user, I want to be able to checkout securely. 
+    - User's are able to checkout by clicking the secure checkout button on the shopping bag page. 
+    - On the checkout page users can fill in the form. Required fields are indicated with a star in the placeholder. 
+    - Once the form is valid and the user has clicked the complete order button the checkout process is complete. 
+
+    ![User Story 20](documentation/testing/testing_user_stories/user_story20.gif)
+
 21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful.
+    - Once a user has completed the checkout process, they will be shown a confirmation page with details of their order. 
+    - Users will also shown a message letting them know that a confirmation email has been sent to their email address. 
+    - Registered users can find past confirmation orders in their profile. 
+
+    ![User Story 21](documentation/testing/testing_user_stories/user_story21.gif)
+
+    ![User Story 21 email](documentation/testing/testing_user_stories/user_story21-email.png)
 
 ## Admin & Store Management
 22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
