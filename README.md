@@ -142,6 +142,49 @@ All of the above plus:
 
 #### Products Page
 
+- There is a product counter to display how many products are being displayed depending on filtering criteria. This will also display the search term that a user has entered in the search bar. 
+- Sorting dropdown selector allows users to sort the products by various parameters. 
+- I have kept the layout of the products page similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. 
+- Each product card shows a the product image which when hovered over will show the product description and fade the product image. When this is clicked the user is directed to the product detail page, where they can view further details about the product or add it to their shopping bag. 
+- Basic product information is displayed below the product image (product name, price, tag to the category, rating if applicable and the add to / remove from wishlist icon). I didnt want to overload the product card with too much detail. The information provided is enough to give the user an overview of the product. Products that are on sale will have a sale icon in the upper right corner of the product image to clearly identify which products are on sale to the user. 
+- As the amount of products displaying on a page can be plentisome I have added a back to top button which resides in the bottom corner of the screen. I have deliberately made this quite minimalist so focus is not drawn away from the products. 
+
+#### Product Detail Page
+
+- On larger devices the first row is split into 3 sections:
+    - Section 1: In this section there is some basic product information as well as links to take the users to the reviews section and product details section. Admin users are also able to edit and delete products using the icons featured in this section. This section will display below section 2 (product image) on smaller devices. 
+    - Section 2: A centralised product image. On all screen sizes the product image has a site relevant background image behind it. This gives an almost 3D quality to the image and draws the user in. 
+    - Section 3: This section is for purchasing. The user is able to select the quantity of the product they wish to purchase and select sizes (if the product has sizes). Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Keep Shopping" button. Users are able to add and remove product to and from their wishlist by clicking the add to /remove from wishlist button. Users can also click the sizing chart link which will open a pop-out displaying relevant sizing information to the product. This can be closed using the cross in the pop up or by clicking elsewhere on the screen (larger devices only). This section will display below section 2 (product image) on smaller devices. 
+- There are two tabs below the product information, image and purchasing options:
+    - Product Details tab - This shows an extended description of the product along with product specifications. 
+    - A reviews tab allows logged in user to submit reviews, and view any reviews that have been made by other users. 
+
+#### Shopping Bag Page
+
+- The shopping bag page can be broken into 5 parts for each product added to their bag: 
+    - Product - which displays an image of the product the user has added to their bag. 
+    - Product info - displays the name of the product, product sku and the product size (if applicable).
+    - Price - displays the individual product price. 
+    - Quantity - Users are able to update their order using the quantity selectors and the update button. Users can also remove that product from their shopping bag entirely by clicking the remove button. 
+    - Subtotal - displays the subtotal for each product (product price * quantity).
+- Underneath the products that are in the users bag, their is information for bag total, delivery and grand total. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free deivery. 
+- There is a button to take the users back to the all product page, and a "Secure Checkout" button to take the user to the checkout page. 
+- If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed. 
+
+#### Checkout Page
+
+- The Checkout page is split into two columns on larger devices, and 2 rows on smaller devices:
+    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links which will take the user back to the product details page for that product. User's can also see a breakdown of the order total, delivery and grand total. 
+    - Checkout Form - split into 3 sections:
+        - Details - where users are invited to fill out their full name and email address. Email address will be auto populated if a user has logged in and saved this information to their profile. 
+        - Delivery - Users can fill in where they wish their products to be delivered to. These fields will be auto populated if a user has logged in and saved this information to their profile. 
+        - Payment - Users can enter their card details here in order to make payments and purchase their chosen products. 
+- Below the checkout form users can click the "Adjust Bag" button to make adjustments to their shopping bag, or click the "Complete Order" button to make their purchases. Users are informed exactly how much they will be charged with a helpful message directly underneath the "Complete Order" button. 
+    
+
+### Features left to implement
+
+- Option for billing details and delivery details to be different. User's may wish to deliver items to a different address than their card is registered at. This could cause some issues with authentication. For the purposes of this site I'm happy to have this as a known limitation. 
 
 
 ## Skeleton
