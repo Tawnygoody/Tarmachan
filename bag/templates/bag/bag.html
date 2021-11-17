@@ -21,7 +21,50 @@
         <div class="row mt-3 mb-5">
             <div class="col">
                 {% if bag_items %}
-                <div class="table-responsive">
+                <div class="d-block d-md-none">
+                    {% for item in bag_items %}
+                        <div class="row text-center">
+                            <div class="col-12 col-sm-6 mb-3">
+                                {% include 'bag/product-image.html' %}
+                            </div>
+                            <div class="col-12 col-sm-6 content-text my-auto">
+                                {% include 'bag/product-info.html' %}
+                            </div>
+                            <div class="col-12 col-sm-6 content-text">
+                                {% if item.product.clearance and item.product.clearance_price %}
+                                    <p>Price Each: £{{ item.product.clearance_price }}</p>
+                                {% else %}
+                                    <p>Price Each: £{{ item.product.price }}</p>
+                                {% endif %} 
+                                {% if item.product.clearance and item.product.clearance_price %}
+                                    <p class="fs-5"><strong>Subtotal: £{{ item.product.clearance_price | calc_subtotal:item.quantity }}</strong></p>
+                                {% else %}
+                                    <p class="fs-5"><strong>Subtotal: £{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                {% endif %}
+                            </div>
+                            <div class="col-12 col-sm-6 px-5 mt-2">
+                                {% include 'bag/quantity-form.html' %}
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                    {% endfor %}
+                    <div class="row text-end">
+                        <div class="col">
+                            {% include 'bag/bag-total.html' %}
+                        </div>
+                    </div>
+                    <div class="row text-end mt-3">
+                        <div class="col-12">
+                            {% include 'bag/checkout-buttons.html' %}
+                        </div>
+                    </div>
+                    <div class="btt-button">
+                        <a class="btt-link d-flex h-100 unstyled">
+                            <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+                        </a>	
+                    </div>
+                </div>
+                <div class="table-responsive d-none d-md-block">
 
                     <!--Table displaying product information added to bag-->
                     <table class="table table-sm table-borderless">
@@ -38,16 +81,10 @@
                         {% for item in bag_items %}
                             <tr class="content-text text-center">
                                 <td class="w-25 py-3">
-                                    {% if item.product.image %}
-                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                    {% else %}
-                                        <img class="img-fluid" src="{{ MEDIA_URL }}default-product-image.png" alt="{{ item.product.name }}">
-                                    {% endif %}
+                                    {% include 'bag/product-image.html' %}
                                 </td>
                                 <td class="py-3">
-                                    <p class="fs-5"><strong>{{ item.product.name }}</strong></p>
-                                    <p>Size: {% if item.product.sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                    <p class="text-muted">SKU: {{ item.product.sku }}</p>
+                                    {% include 'bag/product-info.html' %}
                                 </td>
                                 <td class="py-3">
                                     {% if item.product.clearance and item.product.clearance_price %}
@@ -70,22 +107,12 @@
                         {% endfor %}
                         <tr>
                             <td colspan="5" class="pt-5 text-end pe-sm-5">
-                                <h6 class="content-text fs-3"><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
-                                <h6 class="content-text fs-4">Delivery: £{{ delivery|floatformat:2 }}</h6>
-                                <h4 class="mt-4 title-text fs-2"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
-                                {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger content-text">
-                                        You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
-                                    </p>
-                                {% endif %}
+                                {% include 'bag/bag-total.html' %}
                             </td>
                         </tr>
                         <tr>
                             <td colspan="5" class="text-end pe-sm-5">
-                                <a href="{% url 'products' %}" class="btn content-text text-white buttons-general text-uppercase mb-1 px-2 fs-6" role="button"><i class="fas fa-chevron-left pe-2"></i>Keep Shopping</a>
-                                <a href="{% url 'checkout' %}" class="btn content-text buttons-general-2 text-uppercase mb-1 px-2 fs-">
-                                        Secure Checkout <i class="fas fa-lock pl-2"></i>
-                                </a>
+                                {% include 'bag/checkout-buttons.html' %}
                             </td>
                         </tr>
                     </table>
@@ -105,6 +132,11 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+    <script type="text/javascript">
+        $('.btt-link').click(function(e) {
+            window.scrollTo(0,0)
+        })
+    </script>
 
     <script type="text/javascript">
         // Update quantity on click
