@@ -31,11 +31,6 @@ html, body {
     background-color: #177373;
 }
 
-.bg-white {
-    background-color: #fff;
-    z-index: -2;
-}
-
 .bg-parallax {
     background-image: url("/media/parallax-image-r.jpeg");
 	background-position: center;

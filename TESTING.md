@@ -225,8 +225,9 @@
 
 
 # Known Issues
-|  #  |  Bug  |  Description  |
+|  #  |  Bug  |  Description  | Example |
 |:---:|------| ---------------- |
-| 01 | Scrolling with Parallax Images | |
+| 01 | Scrolling with Parallax Images | After implementing the fix with parallax images for IOS devices, there is an issue on IOS devices due to IOS bounce effects, so when a user scrolls past the top or bottom of the page the parallax image is revealed before the site snaps back. I have added "overscroll-behavior: none;" to the html and body elements, and this works for chrome and desktop devices, but doesn't work for ipad / iphone. I have tried implementing different solutions but none seem to get the desired effect without disabling scrolling on the entire page. I am happy to accept this as a small drawback to the parallax images. | [View](documentation/testing/known_issues/parallax.gif) |
+| 02 | Sorting by product price with clearance prices | When sorting products by price either high to low or low to high it doesnt take into account the product which has clearance prices on them. It will only sort the product by their original price, and is therefore not giving a true representation. I am happy to accept this as a known limitation. | [View](documentation/testing/known_issues/product_sorting.gif) |
 
 # Lighthouse
