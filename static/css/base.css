@@ -33,6 +33,7 @@ html, body {
 
 .bg-white {
     background-color: #fff;
+    z-index: -2;
 }
 
 .bg-parallax {
@@ -45,7 +46,7 @@ html, body {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-    z-index: -1;
+    z-index: -3;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     pointer-events: none;
@@ -541,6 +542,20 @@ html, body {
 .box-shadow {
     -webkit-box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
             box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+}
+
+.box-shadow-parallax {
+    -webkit-box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+            box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+    position: relative;
+    z-index: 2;
+}
+
+.box-shadow-clearance {
+    -webkit-box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+            box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+    position: relative;
+    z-index: 1;
 }
 
 .text-align-man {

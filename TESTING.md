@@ -219,10 +219,14 @@
 |  #  |  Bug  |  Description  |  Fix  |
 |:---:|------| ---------------- |----------------|
 | 01 | Deleting products on prodcut page | When trying to delete a product on the products page. When I opened to modal to delete a product it wouldn't retrieve the correct product ID in order to delete it. It was only the first product that would get deleted. | I tried to move the delete modal inside the for loop within the template, however this did not resolve the issue. I found a solution on stack overflow which grabbed the data id and url and applied them to the correctly to the delete modal with some javadscript. |
-| 02 | Parallax Container on smaller devices |  |  |
+| 02 | Parallax Container on smaller devices | I originally found the css code for creating a parallax image on w3schools. However when testing the device on smaller devices (ipad and iphone) the parallax image was zoomed in and not was not in a fixed position as it is on desktop devices. | After some research I found the issue was stemming from the "background-attachment: fixed;" property. This does not appear to be compatible on IOS devices. I found a solution on stack overflow which was to set the background image for the whole page and give it a lower z-index, so that the parallax image only appears in the parallax container, and then set the remaining page background to white.  |
 | 03 | Product review form on smaller devices |  |  |
 
 
 
 # Known Issues
+|  #  |  Bug  |  Description  |
+|:---:|------| ---------------- |
+| 01 | Scrolling with Parallax Images | |
+
 # Lighthouse
