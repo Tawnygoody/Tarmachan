@@ -31,6 +31,41 @@ html, body {
     background-color: #177373;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-parallax {
+    background-image: url("/media/parallax-image-r.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+    z-index: -1;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    pointer-events: none;
+}
+
+.bg-parallax-blog {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+    z-index: -1;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    pointer-events: none;
+}
+
 /*--- Backgrounds Ends ---*/
 
 /*--- Text ---*/
@@ -454,12 +489,7 @@ html, body {
 
 /** thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax **/
 .parallax {
-    background-image: url("/media/parallax-image-r.jpeg");
     min-height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /*--- About Us Ends ---*/
@@ -867,10 +897,6 @@ html, body {
 
 .blog-parallax {
     min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .blog-image3 {

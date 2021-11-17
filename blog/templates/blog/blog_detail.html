@@ -10,10 +10,13 @@
 {% endblock %}
 
 {% block content %}
+    {% if blog.image2 %}
+        <div class="bg-parallax-blog py-4" style="background-image: url('{{ blog.image2.url }}');"></div>
+    {% endif %}
     <div class="container-fluid px-0">
         <!--Main Blog Image-->
         {% if blog.image1 %}
-            <div class="row no-gutters">
+            <div class="row no-gutters bg-white">
                 <div class="col-12 px-0 about-us-image-container">
                     <img src="{{ blog.image1.url }}" class="about-us-image" alt="{{ blog.title }}">
                     {% if blog.image_caption1 %}
@@ -23,7 +26,7 @@
             </div>
         {% endif %}
         <!--Blog Info & first 3 paragraphs-->
-        <div class="row mt-4">
+        <div class="row py-4 bg-white">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 <h3 class="title-text mb-4">{{ blog.title }}</h3>
                 <p class="content-text mb-1 fs-5">By: {{ blog.author }}</p>
@@ -49,9 +52,9 @@
 
         <!--Parallax image-->
         {% if blog.image2 %}
-            <div class="blog-parallax my-4" style="background-image: url('{{ blog.image2.url }}');"></div>
+            <div class="blog-parallax"></div>
             {% if blog.image_caption2 %}
-                <div class="row">
+                <div class="row bg-white pt-2">
                     <div class="col-12 px-0">
                         <p class="content-text text-muted text-end me-4 mb-4 me-xl-5"><em>Image above: {{ blog.image_caption2 }}</em></p>
                     </div>
@@ -60,7 +63,7 @@
         {% endif %}
 
         <!--Paragraphs 4-6-->
-        <div class="row mt-0">
+        <div class="row mt-0 bg-white">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 {% if blog.subheading4 %}
                     <h6 class="title-text mt-1">{{ blog.subheading4 }}</h6>
@@ -83,7 +86,7 @@
 
         <!--Blog content Image-->
         {% if blog.image3 %}
-            <div class="row">
+            <div class="row bg-white">
                 <div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-4 px-4 my-4">
                     <img src="{{ blog.image3.url }}" class="blog-image3" alt="{{ blog.title }}">
                     {% if blog.image_caption3 %}
@@ -94,7 +97,7 @@
         {% endif %}
 
         <!--Paragraphs 7-9-->
-        <div class="row mt-0 mb-4">
+        <div class="row mt-0 pb-4 bg-white">
             <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-3 px-4">
                 {% if blog.subheading7 %}
                     <h6 class="title-text mt-1">{{ blog.subheading7 }}</h6>
