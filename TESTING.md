@@ -213,6 +213,8 @@
 # Functionality Testing
 # Responsive Design
 # Security Testing
+
+
 # Unit Testing
 
 ## Django Testing Framework
@@ -284,6 +286,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 02 | Parallax Container on smaller devices | I originally found the css code for creating a parallax image on w3schools. However when testing the device on smaller devices (ipad and iphone) the parallax image was zoomed in and not was not in a fixed position as it is on desktop devices. | After some research I found the issue was stemming from the "background-attachment: fixed;" property. This does not appear to be compatible on IOS devices. I found a solution on stack overflow which was to set the background image for the whole page and give it a lower z-index, so that the parallax image only appears in the parallax container, and then set the remaining page background to white.  |
 | 03 | Product review form on smaller devices |  |  |
 | 04 | Quantity Selectors | When I refactored the shopping bag page so that on smaller devices rather than a table displaying (which would require side scrolling), it displayed a grid, there was an issue with the quantity selectors on larger devices. This is because the quantity form is used twice, and hides either the table or the grid depending on screen size. However as the quantity form uses an ID to identify itself, only the first element within the HTML with that ID is picked up. | To combat this problem i have made changes to the quantity input script. I have put a check in place to see if the quantity is more than 2, to allow for decremental functionality. Simarlarly I have put a check in place to see if the quantity is less then 99, to allow for incremental functionality.  |
+| 03 | Blog Cards first paragraph |  |  |
 
 
 

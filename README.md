@@ -125,7 +125,7 @@ All of the above plus:
 
 - Navbar Mobile - The mobile navbar has the same logo image, search and basket links. However rather than links to the left of the logo, a collapsible side nav can be triggered by a burger menu. Scrollable dropdowns allow for all the categories and subcategories to be selected. Also on smaller devices the delivery banner icons are removed and replaced with links within the burger menu. The height of the navbar is also reduced on smaller screen sizes to allow for more screen real estate. The navbar also sticks to the top of the screen on all devices to allow for ease of access to navigation. 
 
-- Footer - The footer is split into different sections. The first column allows all users to sign up to the tarmachan newsletter by filling in the form with their email and clicking the submit button. The second column contains navigational links to take the user to product pages for master categories, clearance and all products. The third column contains navigational links to take the user to pages about the company. This column will also show Logout and profile links depending on whether the user is logged in or not. The fourth column has links to social media sites. An additional logo will take the user back to the home page. 
+- Footer - The footer is split into different sections. The first column allows all users to sign up to the tarmachan newsletter by filling in the form with their email and clicking the submit button. There is also a link to the newsletter unsubscribe page which allows users to unsubcribe from the newsletter by filling in their email address. Confirmation emails will be issued to the user whenever they either sign up or unsubscribe from the newsletter. The second column contains navigational links to take the user to product pages for master categories, clearance and all products. The third column contains navigational links to take the user to pages about the company. This column will also show Logout and profile links depending on whether the user is logged in or not. The fourth column has links to social media sites. An additional logo will take the user back to the home page. 
 
 - Toast Messages - Toast message boxes have been used throughout the site to display feedback to the user when they have made interactions with the site. These messages are colour coded to signify different message types: 
     - Green: Success
@@ -180,6 +180,42 @@ All of the above plus:
         - Delivery - Users can fill in where they wish their products to be delivered to. These fields will be auto populated if a user has logged in and saved this information to their profile. 
         - Payment - Users can enter their card details here in order to make payments and purchase their chosen products. 
 - Below the checkout form users can click the "Adjust Bag" button to make adjustments to their shopping bag, or click the "Complete Order" button to make their purchases. Users are informed exactly how much they will be charged with a helpful message directly underneath the "Complete Order" button. 
+
+#### Checkout Success Page 
+- When a user successfully checks out a success toast will be shown to the user with the order number and a confirmation email will be sent to the user with some of the details of their order. 
+- The checkout success page itself is split into two sections:
+    - Order information which details the order info, delivery details and the billing info. 
+    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links which will take the user back to the product details page for that product.
+- More products link which will take the user back to the all products page encouraging the user to make more purchases. 
+
+#### About Us Page
+- Users can find out more about the company by clicking the about us link under the company dropdown (on larger devices), or within the burger menu. 
+- Users are greeted with a hero image with the company mantra about the products. 
+- The page is split into two sections - Our story where users can read about how the company was found and Our Philosophy where users can read about the companies efforts to use responsibly sourced materials. These are split by a site relevant parallax image. 
+
+#### Contact Us Page
+- Users can find different ways to contact the company on the contact page. Details for the company address, telephone, email and opening times can be found here. 
+- The next section on this page allows users to contact the company using the form provided. Once the user submits a valid form a success message is displayed to the user to provide feedback and an email confirmation is sent to the user to let them know that we have received their query. 
+- Contact messages can be located on the site administration page (for superusers only). 
+
+#### Blog Page
+- On the Blog page users can find snippets of all the blogs that have been uploaded to the site. The layout for this page is similar to that of the products in that on extra large devices 4 blog posts will show in a row, 3 on a large device, 2 on small and medium devices and 1 on extra small devices. 
+- Each blog card has an image relevant to the blog, some information about the user who uploaded it and the date that it was uploaded. Blogs are ordered so that the most recent blogs display first. 
+- Clicking anywhere on each blog card will take the user to the blog detail page for that blog. 
+
+#### Blog Detail Page
+- The blog detail page will appear differently for different blogs as not all fields are required to submit a blog. If all fields have been filled out it will display as follows: 
+    - Full width hero image with an image caption underneath. 
+    - Blog title, author and date the blog was uploaded followed by the first 3 paragraphs of which only the first paragraph is required. 
+    - When a second image is added this will act as the parallax image between the 3rd and 4th paragraphs, and will have an image caption beneath. 
+    - Paragraphs 4-6 will then display of which only paragraph 4 is required. 
+    - When a third image is added this will act as a text break between paragraphs 6 and 7. An image caption will display below the image. 
+    - Pragraphs 7-9 will then display of which only paragraph 7 is required. 
+- I have deliberately made it that paragraphs 1, 4 and 7 are required so that there is text between each of the images. 
+- On larger devices I have used an offset column so there is plenty of white space making text more readable and less condensed. 
+- For regular users there is a link to take the user back to the blogs page. 
+- For super users there are links to edit and delete the blog. 
+
     
 
 ### Features left to implement
