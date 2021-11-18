@@ -218,7 +218,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Purpose  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |----------------|
-| 01 | Logo in Navbar | Takes the user to the home page | (- [x]) |
+| 01 | Logo in Navbar | Takes the user to the home page | ✓ |
 
 # Responsive Design
 # Security Testing
