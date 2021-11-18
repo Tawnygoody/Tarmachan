@@ -217,8 +217,28 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 ## Navigation
 
 |  Test  |  Purpose  |  Expected Result  |  Pass  |
-|:---:|------| ---------------- |----------------|
+|:---:|------| ---------------- |:---:|
 | 01 | Logo in Navbar | Takes the user to the home page | ✓ |
+| 02 | Men's Link | Opens the mega menu for men's products. All subsequent product links working | ✓ |
+| 03 | Women's Link | Opens the mega menu for women's products. All subsequent product links working | ✓ |
+| 04 | Equipment Link | Opens the mega menu for equipment products. All subsequent product links working | ✓ |
+| 05 | Company Link | Opens the mega menu for company links (on larger screens only). All subsequent product links working | ✓ |
+| 06 | Search Icon | Opens the search bar underneath the main nav | ✓ |
+| 07 | Basket Icon | Takes the user to their shopping bag page | ✓ |
+| 08 | Log Out Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to the log out page | ✓ |
+| 09 | Profile Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to their profile page | ✓ |
+| 09 | Wishlist Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to their wishlist | ✓ |
+| 10 | Site Management (When Super User logged in & large screens) | On hover tooltip shows describing the link and takes the user to the site management page | ✓ |
+| 11 | Burger menu | Burger menu opens and all the corresponding links work in accordance with what type of user is logged in | ✓ |
+| 12 | Shop Links in footer | Takes the user to the products page with the correct filters applied | ✓ |
+| 13 | Company Links | Takes the user to the correct company pages and shows the relevant links when a user is logged in / not logged in. | ✓ |
+| 14 | Facebook Icon | Opens facebook in a new tab | ✓ |
+| 15 | Instagram Icon | Opens Instagram in a new tab | ✓ |
+| 16 | Twitter Icon | Opens Twitter in a new tab | ✓ |
+| 17 | Linkedin Icon | Opens Linkedin in a new tab | ✓ |
+| 18 | Footer Logo | Takes the user to the home page | ✓ |
+| 19 | Github icon | Opens the github repository for the site in a new tab | ✓ |
+
 
 # Responsive Design
 # Security Testing
