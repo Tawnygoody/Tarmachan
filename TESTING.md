@@ -214,6 +214,27 @@
 # Responsive Design
 # Security Testing
 # Unit Testing
+
+## Django Testing Framework
+
+The site has been tested using the Django Testing framework which uses the TestCase class which is an extension of the Python standard library module called Unit Tests. Tests have been written to test the Models, Forms and the Views for each app.
+
+To run the tests, in the terminal you can type the following command: 
+- ```
+    python3 manage.py test
+  ```
+A successful test will be indicated with a '.', and an unsuccessful test will result in an 'E' or 'F'. 
+
+To show how much of the code has actually been tested I have used "Coverage".
+
+To install coverage, in the terminal you can type the following command:
+- ```
+    pip3 install coverage
+  ```
+
+
+
+
 # Solved Bugs
 
 |  #  |  Bug  |  Description  |  Fix  |
