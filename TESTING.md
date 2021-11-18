@@ -211,6 +211,15 @@
 # Code Validation
 # Browser Compatibility
 # Functionality Testing
+
+Funcionality testing has been carried out on all browsers listed in the browser compatibility section. 
+
+## Navigation
+
+|  Test  |  Purpose  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |----------------|
+| 01 | Logo in Navbar | Takes the user to the home page | - [x] |
+
 # Responsive Design
 # Security Testing
 
@@ -286,7 +295,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 02 | Parallax Container on smaller devices | I originally found the css code for creating a parallax image on w3schools. However when testing the device on smaller devices (ipad and iphone) the parallax image was zoomed in and not was not in a fixed position as it is on desktop devices. | After some research I found the issue was stemming from the "background-attachment: fixed;" property. This does not appear to be compatible on IOS devices. I found a solution on stack overflow which was to set the background image for the whole page and give it a lower z-index, so that the parallax image only appears in the parallax container, and then set the remaining page background to white.  |
 | 03 | Product review form on smaller devices |  |  |
 | 04 | Quantity Selectors | When I refactored the shopping bag page so that on smaller devices rather than a table displaying (which would require side scrolling), it displayed a grid, there was an issue with the quantity selectors on larger devices. This is because the quantity form is used twice, and hides either the table or the grid depending on screen size. However as the quantity form uses an ID to identify itself, only the first element within the HTML with that ID is picked up. | To combat this problem i have made changes to the quantity input script. I have put a check in place to see if the quantity is more than 2, to allow for decremental functionality. Simarlarly I have put a check in place to see if the quantity is less then 99, to allow for incremental functionality.  |
-| 03 | Blog Cards first paragraph |  |  |
+| 03 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
 
 
 
