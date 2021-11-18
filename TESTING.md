@@ -232,6 +232,47 @@ To install coverage, in the terminal you can type the following command:
     pip3 install coverage
   ```
 
+To run coverage for the whole site:
+- ```
+    coverage run --source=. manage.py test
+  ```
+
+To run coverage for individual apps:
+- ```
+    coverage run --source=<app name> manage.py test
+  ```
+
+To view the report in the terminal type the following command:
+- ```
+    coverage report
+  ```
+
+To create an interactive HTML report type the following command:
+- ```
+    coverage html
+  ```
+followed by 
+- ```
+    python3 -m http.server
+  ```
+
+## Test Coverage
+
+|  App  |  Views  |  Models  |  Forms  |  Overall  |
+|-------|------|-------|-------|-------|
+| Bag | 29% | 100% | N/A | 53% |
+| Blog | 79% | 100% | 100% | 94% |
+| Checkout | 47% | 96% | 100% | 64% |
+| Contact | 98% | 100% | 100% | 99% |
+| Home | 100% | 100% | N/A | 100% |
+| Products | 92% | 100% | 100% | 98% |
+| Profiles | 100% | 100% | 100% | 100% |
+| Wishlist | 100% | 100% | N/A | 100% |
+| Tarmachan | N/A | N/A | N/A | 87% |
+
+### Review
+
+For the purposes of this site I am reasonably happy with the tests that have been written and percentage of the app that is covered by tests. Given this is the first time I have written unit tests I am happy to accept that 87% of the site is covered by tests. I would certainly like to revisit tests for the bag and checkout app in particular to try and increase the percentage of the app covered by tests to as close to 100% as possible. 
 
 
 
