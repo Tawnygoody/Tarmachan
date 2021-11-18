@@ -216,11 +216,34 @@ All of the above plus:
 - For regular users there is a link to take the user back to the blogs page. 
 - For super users there are links to edit and delete the blog. 
 
+#### Profile Page 
+The user profile page is split into two parts: 
+- Firstly users can update their default delivery information by filling in the form and clicking the update information button allowing for easier purchasing at checkout. 
+- The second column has information about a users past orders. Users are able to click on the order number to take them to the checkout success page. Going to the confirmation page from the users profile, rather than a keep shopping link there is a link for the user to take them back to their profile. A message to inform the user that this is a past order confirmation is displayed to avoid confusion. 
+
+#### User Wishlist Page
+- This page will only be accessible to logged in users. If a user has not added any products to their wishlist then the user will be informed of this and a link to the all products page will be displayed. 
+- When a user has added products to their wishlist they will be displayed here in the same format as the products page. Users will have all the same functionality as the products page from here. 
+
+### Allauth features
+- The sign up, register, password reset, email confirmation pages etc, have all been provided by Django allauth and formatted to suit the needs of the site. 
+
+### Admin Features
+
+- Admin will have access to additional features accross the site. Firsty admin members will have an additional icon in the delivery banner (on larger devices) or link in the burger menu (on smaller devices) to take the user to the site admin page. Here the admin user will have access to:
+    - Add a product page link - Will take the admin user to the add product page. Here the user can fill in the form to add a product to the site. Once added the admin user will be taken to the product detail page for the product added. 
+    - Add a blog link - Will take the admin user to the add blog page. Here the user can fill in the form to the add a blog to the site. Once added the admin user will be taken to the blog detail page for the blog added. 
+    - Manage Contact Messages - Will take the admin user to the contact management page. Here admin users will be displyed with all the queries that have been submitted by other users. Admin users can view details of these messages by clicking on the name in the table. On both the contact management page and the contact detail page admin users are able to delete the messages once they have responded to the user. This will trigger a modal to make sure the user is happy to delete the message. 
+- On the product page and product detail page admin users will have access to the edit and delete product icons. The edit icon will take the user to the edit product form, where they can make changes to a product (i.e put in the clearance category). The delete icon will trigger a modal to make sure the user wishes to delete the product and avoid accidental deletions. 
+
     
 
 ### Features left to implement
 
 - Option for billing details and delivery details to be different. User's may wish to deliver items to a different address than their card is registered at. This could cause some issues with authentication. For the purposes of this site I'm happy to have this as a known limitation. 
+- A welcome or discount offer for new customers, such as 20% off their first order, to encourage more registrations. 
+- Social Media signup options. 
+- Additional payment options such as apple pay or paypal for ease of purchasing. 
 
 
 ## Skeleton
