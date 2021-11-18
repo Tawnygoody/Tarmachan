@@ -216,7 +216,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 ## Navigation
 
-|  Test  |  Purpose  |  Expected Result  |  Pass  |
+|  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 | 01 | Logo in Navbar | Takes the user to the home page | ✓ |
 | 02 | Men's Link | Opens the mega menu for men's products. All subsequent product links working | ✓ |
@@ -238,6 +238,40 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 17 | Linkedin Icon | Opens Linkedin in a new tab | ✓ |
 | 18 | Footer Logo | Takes the user to the home page | ✓ |
 | 19 | Github icon | Opens the github repository for the site in a new tab | ✓ |
+| 20 | Newsletter Subscriber | Ensure when a user enters a valid email a success messages is displayed confirming the user of their subscription and an email is sent to the user to confirm their subscription. | ✓ |
+| 21 | Newsletter Unsubscribe link | Takes the user newsletter unsubscribe page | ✓ |
+
+## Home Page
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Men's Hero Image Link | Takes the user to products page, with all products in the "mens" master category  | ✓ |
+| 02 | Women's Hero Image Link | Takes the user to products page, with all products in the "womens" master category  | ✓ |
+| 03 | Equipment Hero Image Link | Takes the user to products page, with all products in the "equipment" master category  | ✓ |
+| 04 | Hovering over featured products | Scales in the images and transitions in the links for the mens and womens of that product category | ✓ |
+| 05 | Mens and womens featured product links | Takes the user to the products page, with the correct filters applied for master category and product category | ✓ |
+| 06 | Clearance Image | Takes the user to products page, with all products in the clearance category  | ✓ |
+| 07 | Owl carousel | Next and Previous arrows slide the carousel along by 1. Dots slide the carousel to the next set of blogs. Touch sliding enabled on smart devices | ✓ |
+| 08 | Blog Cards | Clicking the blog cards takes the user to the blog detail for that card. Hovering on the cards scales the cards in | ✓ |
+
+## Products Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Product Count | Product Count updates in accordance with how many products are being displayed and search term displays if a user has enter a search query  | ✓ |
+| 02 | Sort By Dropdown | Sort by dropdown displays all the options available and sorts the products in accordance with the selection | ✓ |
+| 03 | Product Image Hover | Hovering over the product image will fade the image and show the product description for that product | ✓ (Large devices only) |
+| 04 | Product Cards | Ensure Product image, title, price and tag are showing for each product | ✓ |
+| 05 | Clearance products | Ensure products that are currently in the clearance are displaying the clearance icon image and that the clearance price is rendered and original price is scored through | ✓ |
+| 06 | Products with Ratings | Ensure products with ratings that stars appear and are filled in accordance with their rating and the actual rating displays below | ✓ |
+| 07 | Wishlist Icon (When user logged in) | Ensure when a user is logged in the Wishlist icon is displayed | ✓ |
+| 08 | In Wishlist Icon | Ensure when a product is in the users wishlist the wishlist icon has a colour fill | ✓ |
+| 09 | Not in Wishlist Icon | Ensure when a product is not in the users wishlist only the outline shows for the wishlist icon | ✓ |
+| 10 | Edit Product Icon (When Super User is logged in) | Ensure the edit icon displays and when clicked takes the superuser to the edit product form | ✓ |
+| 11 | Delete Product Icon (When Super User is logged in) | Ensure the delete icon displays and when clicked opens the delete product model | ✓ |
+| 12 | Delete Product Modal (Cancel Button) | Ensure that when the cancel button is clicked it closes the modal and no further action is taken to delete the product | ✓ |
+| 13 | Delete Product Modal (Delete Button) | Ensure that when the delete product button is clicked it deletes the products and no longer displays on the site | ✓ |
+| 14 | Product Tags Link | Ensure when the tags link is clicked it takes the user to the products page for that master category and product sub category | ✓ |
+
 
 
 # Responsive Design
