@@ -339,23 +339,41 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 | 01 | Toast success message | Ensure when redirected to the checkout success page a confirmation toast with the order number and a message to let the user know a confirmation email has been sent to their email is displayed | ✓ |
-| 02 | Order Summary | Ensure order summary information renders correctly with a row for each product. | ✓ |
-| 03 | Order Info | Ensure the order info matches the information entered on the checkout form and that the totals are correct | ✓ |
-| 04 | Keep Shopping link | Ensure the keep shopping link redirects the user to the all products page | ✓ |
-| 05 | Back to profile link (when looking at past orders) | Ensure the back to profile link displays when users are looking at past orders from their profile, and when clicked it redirect the user back to their profile | ✓ |
+| 02 | Confirmation Email | Ensure the user receives a confirmation email to the address that they entered on the checkout page | ✓ |
+| 03 | Order Summary | Ensure order summary information renders correctly with a row for each product. | ✓ |
+| 04 | Order Info | Ensure the order info matches the information entered on the checkout form and that the totals are correct | ✓ |
+| 05 | Keep Shopping link | Ensure the keep shopping link redirects the user to the all products page | ✓ |
+| 06 | Back to profile link (when looking at past orders) | Ensure the back to profile link displays when users are looking at past orders from their profile, and when clicked it redirect the user back to their profile | ✓ |
 
 ## About Us Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Ensure the about us page is rendering correctly on all device sizes | ✓ |
+| 01 | Correct Rendering | Ensure the about us page is rendering correctly on all device sizes | ✓ |
 
 ## Contact Us Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 
+| 01 | Form Validation | Ensure that the form cannot be submitted without all the required fields being completed | ✓ |
+| 02 | Cancel Button | Ensure the cancel button redirects the user back to the home page | ✓ |
+| 03 | Submitting Form | Ensure when a valid form is submitted that the form is cleared and a success message displays to inform the user that their message has been sent | ✓ |
+| 04 | Confirmation Email | Ensure that a confirmation email is sent to the user when a form is submitted detailing their message | ✓ |
+| 05 | Admin View (Superuser Only) | Ensure that when a contact message is sent it displays on the contact management page for admin users to respond to | ✓ |
 
+## Blog Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Blog Cards | Ensure that the blog cards are rendering correctly, are ordered with the latest blog post appearing first and with the right information and that only the first the lines of the first paragraph are displaying on the blog cards | ✓ |
+| 02 | Blog Cards hovering (desktop only) | Ensure when the blog cards are hovered over the scale in. | ✓ |
+| 03 | Blog Cards | Ensure that clicking anywhere on the blog card redirect the user to the blog detail for that blog | ✓ |
+
+## Blog Detail Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
 
 
 
@@ -475,6 +493,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 04 | Quantity Selectors | When I refactored the shopping bag page so that on smaller devices rather than a table displaying (which would require side scrolling), it displayed a grid, there was an issue with the quantity selectors on larger devices. This is because the quantity form is used twice, and hides either the table or the grid depending on screen size. However as the quantity form uses an ID to identify itself, only the first element within the HTML with that ID is picked up. | To combat this problem i have made changes to the quantity input script. I have put a check in place to see if the quantity is more than 2, to allow for decremental functionality. Simarlarly I have put a check in place to see if the quantity is less then 99, to allow for incremental functionality.  |
 | 05 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
 | 06 | Bug in testing file | I had problems with my gitpod workspace where I was unable to save any of the changes I was making to the TESTING.md file. It was essentially crashing the workspace as I could not open any additional files | I think this was stemming from trying to render the gifs for the user stories. I created a new testing files and created links to the user stories gifs rather than rendering them. The workspace no longers breaks when making changes |
+| 07 | 500 server error on checkout success page | When testing purchasing on iphone and ipad I was getting a 500 server error. The error was showing on Stripe as "Webhook received: payment_intent.succeeded | ERROR: value too long for type character varying(2)" | After some research I initially thought the error was stemming from the country field due to the character value too long being 2. However after discussing this with tutor support they advised that the site was running on an old version and that by clearing the cache and history this will bring the site up to date | There have been no more errors like this since |
 
 
 
