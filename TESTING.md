@@ -206,7 +206,7 @@
 26. As a site owner, I want to be able to monitor contact messages that have been submitted by site user's and delete them once they have been responded to. 
     - Superusers are able to manage contact messages on the site management page by cliking the manage contacts icon. From here superusers can monitor messages that have been sent and delete them once the messages have been responded to. 
 
-    [User Story 26](documentation/testing/testing_user_stories/user_story26.gif)o. 
+    [User Story 26](documentation/testing/testing_user_stories/user_story26.gif)
 
 
 # Code Validation
@@ -276,7 +276,44 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 
 
-# Responsive Design
+# Responsive 
+
+Responsinator and Google Developer tools have been used to test responsiveness. These tools have been utilised throughout the development of the project.
+
+Reponsinator examples can only show pages where a user is not logged in. 
+
+Responsinator provides landscape and portrait views for: 
+
+- Iphone X
+- Android (Pixel 2)
+- iPhone 6-8
+- iPad
+
+1. [Home Page](https://www.responsinator.com/?url=https%3A%2F%2Ftarmachan.herokuapp.com%2F)
+2. [Products Page](http://www.responsinator.com/?url=tarmachan.herokuapp.com%2Fproducts%2F)
+3. [Product Detail Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fproducts%2F16%2F)
+4. [Shopping Bag Page](http://www.responsinator.com/?url=tarmachan.herokuapp.com%2Fbag%2F)
+5. [About Us Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fabout_us%2F)
+6. [Contact Us Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fcontact%2F)
+7. [Blog Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fblog%2F)
+8. [Blog Detail Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fblog%2F1%2F)
+9. [Newsletter Unsubscribe Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Fcontact%2Fnewsletter_unsubscribe%2F)
+10. [Login Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Faccounts%2Flogin%2F)
+11. [Register Page](http://www.responsinator.com/?url=http%3A%2F%2Ftarmachan.herokuapp.com%2Faccounts%2Fsignup%2F)
+
+Responsiveness has been manually tested on: 
+
+- Iphone 8
+- Ipad 8th Generation
+- Macbook Air
+- LG 22inch desktop monitor
+
+The site has also been extensively tested for responsiveness on google developer tools. The smallest device tested was a Galaxy Fold device which the site works well on. 
+
+### Note on Responsiveness
+
+The website has been designed for optimize usage in portrait mode on smaller devices. Website still functions in landscape for mobile devices however the navbar takes up a lot of screen real estate. The website functions well in both portrait and landscape for tablets and larger. 
+
 # Security Testing
 
 
@@ -351,7 +388,8 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 02 | Parallax Container on smaller devices | I originally found the css code for creating a parallax image on w3schools. However when testing the device on smaller devices (ipad and iphone) the parallax image was zoomed in and not was not in a fixed position as it is on desktop devices. | After some research I found the issue was stemming from the "background-attachment: fixed;" property. This does not appear to be compatible on IOS devices. I found a solution on stack overflow which was to set the background image for the whole page and give it a lower z-index, so that the parallax image only appears in the parallax container, and then set the remaining page background to white.  |
 | 03 | Product review form on smaller devices | The product review form was not rendering correctly on mobile devices. It worked as expected on desktop devices however there wouldn't be a box for the subject and comment fields. | As there is no context for the add comment view I was unable to render the form as a crispy field, which i believe was where the issue was stemming from. Having looked on dev tools at the classes applied to crispy fields I could see there was a few classes missing from the fields for the review fields. After adding these to the subject and comment inputs the form was rendering as expected on all fields. |
 | 04 | Quantity Selectors | When I refactored the shopping bag page so that on smaller devices rather than a table displaying (which would require side scrolling), it displayed a grid, there was an issue with the quantity selectors on larger devices. This is because the quantity form is used twice, and hides either the table or the grid depending on screen size. However as the quantity form uses an ID to identify itself, only the first element within the HTML with that ID is picked up. | To combat this problem i have made changes to the quantity input script. I have put a check in place to see if the quantity is more than 2, to allow for decremental functionality. Simarlarly I have put a check in place to see if the quantity is less then 99, to allow for incremental functionality.  |
-| 03 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
+| 05 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
+| 06 | Bug in testing file | I had problems with my gitpod workspace where I was unable to save any of the changes I was making to the TESTING.md file. It was essentially crashing the workspace as I could not open any additional files | I think this was stemming from trying to render the gifs for the user stories. I created a new testing files and created links to the user stories gifs rather than rendering them. The workspace no longers breaks when making changes |
 
 
 
