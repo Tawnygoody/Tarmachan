@@ -240,6 +240,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 19 | Github icon | Opens the github repository for the site in a new tab | ✓ |
 | 20 | Newsletter Subscriber | Ensure when a user enters a valid email a success messages is displayed confirming the user of their subscription and an email is sent to the user to confirm their subscription. | ✓ |
 | 21 | Newsletter Unsubscribe link | Takes the user newsletter unsubscribe page | ✓ |
+| 22 | Sticky top Navbar | Ensure when the user scrolls down the page that the delivery banner and the main navbar stick to the top of the page | ✓ |
 
 ## Home Page
 |  Test  |  Action  |  Expected Result  |  Pass  |
