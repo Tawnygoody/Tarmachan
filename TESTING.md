@@ -12,15 +12,26 @@
 - [Functionality Testing](#functionality-testing)
     - [Navigation](#navigation)
     - [Home Page](#home-page)
-    - [Registration & Log In](#registration-and-log-in)
-    - [Adding A Recipe](#adding-a-recipe)
-    - [Editing A Recipe](#editing-a-recipe)
-    - [Deleting A Recipe](#deleting-a-recipe)
-    - [User Profile](#user-profile)
-    - [Save Recipe to Profile](#save-recipe-to-profile)
-    - [Recipes Search & View](#recipes-search-and-view)
-    - [Recipe Page](#recipe-page)
-    - [Dashboard](#dashboard)
+    - [Products Page](#products-page)
+    - [Product Detail Page](#product-detail-page)
+    - [Shopping Bag Page](#shopping-bag-page)
+    - [Checkout Page](#checkout-page)
+    - [Checkout Success Page](#checkout-success-page)
+    - [About Us Page](#about-us-page)
+    - [Contact Page](#contact-page)
+    - [Blog Page](#blog-page)
+    - [Blog Detail Page](#blog-detail-page)
+    - [Wishlist Page](#wishlist-page)
+    - [Profile Page](#profile-page)
+    - [Site Administration Page](#site-administation-page)
+    - [Add Product Page](#add-product-page)
+    - [Edit Product Page](#edit-product-page)
+    - [Contact Management Page](#contact-management-page)
+    - [Contact Detail Page](#contact-detail-page)
+    - [Log In Page](#log-in-page)
+    - [Log Out Page](#log-out-page)
+    - [Register Page](#register-page)
+- [Stripe Payments](#stripe-payments)
 - [Responsive Design](#responsive-design)
 - [Security Testing](#security-testing)
 - [Unit Testing](#unit-testing)
@@ -273,6 +284,80 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 12 | Delete Product Modal (Cancel Button) | Ensure that when the cancel button is clicked it closes the modal and no further action is taken to delete the product | ✓ |
 | 13 | Delete Product Modal (Delete Button) | Ensure that when the delete product button is clicked it deletes the products and no longer displays on the site | ✓ |
 | 14 | Product Tags Link | Ensure when the tags link is clicked it takes the user to the products page for that master category and product sub category | ✓ |
+
+## Product Detail Page 
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Product Rating link | Ensure when the product rating is clicked it opens the reviews tab and closes the details tab and takes the user to the reviews section | ✓ |
+| 02 | Read More link | Ensure when the read more link is clicked the user is taken to the details section. If the reviews tab is open ensure clicking read more closes the product reviews section and open the details section. | ✓ |
+| 03 | Products tag link | Ensure when the products tag link is clicked is takes the user to the products page with the master category and product sub category filters applied | ✓ |
+| 04 | Size Selector | Ensure the size selector box is functioning properly so users are able to pick different sizes for products | ✓ |
+| 05 | Sizing Chart | Ensure when the sizing chart link is clicked the relevant sizing chart transitions in. Ensure clicking the cross or clicking elsewhere on the product details page (larger devices only) closes the sizing chart. | ✓ |
+| 06 | Quantity Selectors | Ensure users are able to increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
+| 07 | Keep Shopping link | Ensure the link takes the user back to the all products page | | ✓ |
+| 08 | Add to Bag link | Ensure when a product is added to the bag that a toast to confirm this to user is displayed, and the basket icon in the navbar is updated to reflect the price of the items in the basket plus delivery (if applicable) | ✓ |
+| 09 | Log In and Sign Up Links (When not logged in) | Ensure the log in and sign up links are displayed when a user is not logged in and the user is redirected to the relevant page. Check under add to bag button and in reviews section | ✓ |
+| 10 | Wishlist Links (When user logged in) | Ensure the add to wishlist link adds a product to the users wishlist and a toast message displays to confirm this and vice vera when removing products from the wishlist | ✓ |
+| 11 | Details and Reviews tabs | Ensure when the reviews tab is clicked the details section is hidden and vice versa | ✓ |
+| 12 | No product Reviews | Ensure when there are no reviews on a product a message to show this is displayed in the product reviews section | ✓ |
+| 13 | Product Reviews | Ensure product reviews are rendering correctly with the latest reviews at the top | ✓ |
+| 14 | Delete Comment (Superuser and reviewer only) | Ensure that the delete comment icon displays when the review user or superuser is logged in. When clicked ensure the delete comment modal displays to avoid unwanted deletion. When delete comment button is clicked ensure the comment is deleted and the rating is adjusted. | ✓ |
+| 15 | Review Form | Ensure that all fields are filled in, in order to successfully submit the form | ✓ |
+| 16 | Product Rating | Ensure when a new review is added the product rating updates to reflect the average from all the reviews left | ✓ |
+
+## Shopping Bag Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Product Items | Ensure each product is displaying in a separate row and their are different rows for the same product but with different sizes | ✓ |
+| 02 | Quantity Selectors | Ensure users are able to increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
+| 03 | Update Link | Ensure clicking the update link updates the quantity for that product only | ✓ |
+| 04 | Remove Link | Ensure clicking the remove link removes the product from the bag entirely | ✓ |
+| 05 | Totals | Ensure that the subtotal of each product, bag total, and grand total are updated whenever a product is updated to reflect whats in the bag | ✓ |
+| 06 | Delivery Cost | Ensure the delivery cost displays if a user does not meet the minimum delivery threshold | ✓ |
+| 07 | Keep Shopping Button | Ensure whne the keep shopping button is clicked the user is redirected to the all products page | ✓ |
+| 08 | Secure Checkout Button | Ensure when the secure checkout button is clikced the user is taken to the checkout page | ✓ |
+| 09 | No items in bag | Ensure when their are no items in the users shopping bag, that this message is displayed to the user and the keep shopping link is displayed | ✓ |
+
+## Checkout Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Order Summary | Ensure order summary information renders correctly with a row for each product. Ensure the totals match the contents of the bag | ✓ |
+| 02 | Checkout Form | Ensure the form cannot be submitted without all the required fields been filled | ✓ |
+| 03 | Pre-populated fields | Ensure when a user is logged in and they have saved their delivery details to their profile the corresponding fields are pre-populated | ✓ |
+| 04 | Save details checkbox | Ensure when the delivery information checkbox is checked that the user's profile is updated with this information once the form is submitted | ✓ |
+| 05 | Log In and Sign Up Links (When not logged in) | Ensure the log in and sign up links are displayed when a user is not logged in and the user is redirected to the relevant page. | ✓ |
+| 06 | Card errors | Ensure the card errors message displays for any card numbers that are invalid / insufficient funds etc | ✓ |
+| 07 | Adjust Bag button | Ensure the adjust bag button redirects the user back to their shopping bag | ✓ |
+| 08 | Card Charge notification | Ensure the notification to let the user know how much their card will be charged is displaying at that the total matches the total in the order summary section | ✓ |
+| 09 | Complete Order button | Ensure when the complete order button is clicked the loading overlay shows before being redirected to the checkout success page | ✓ |
+
+## Checkout Success Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Toast success message | Ensure when redirected to the checkout success page a confirmation toast with the order number and a message to let the user know a confirmation email has been sent to their email is displayed | ✓ |
+| 02 | Order Summary | Ensure order summary information renders correctly with a row for each product. | ✓ |
+| 03 | Order Info | Ensure the order info matches the information entered on the checkout form and that the totals are correct | ✓ |
+| 04 | Keep Shopping link | Ensure the keep shopping link redirects the user to the all products page | ✓ |
+| 05 | Back to profile link (when looking at past orders) | Ensure the back to profile link displays when users are looking at past orders from their profile, and when clicked it redirect the user back to their profile | ✓ |
+
+## About Us Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Ensure the about us page is rendering correctly on all device sizes | ✓ |
+
+## Contact Us Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+
+
+
+
 
 
 
