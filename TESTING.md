@@ -486,6 +486,32 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 03 | Sign Up Link | Ensure clicking the sign up link when the form is valid takes the user to the verify email address page and a confirmation email is sent to the user | ✓ |
 
 
+# Stripe Payments 
+
+In order to make sure that the stripe payments were proving successful, I have tested the webhooks to make sure they are functioning for both logged in users and unregistered users. 
+
+## Logged In Users
+
+- Confirmation Page:
+
+![Confirmation Page](documentation/testing/stripe/confirmation_user_logged_in.png)
+
+- Stripe Success: 
+
+![Stripe Success](documentation/testing/stripe/stripe_user_logged_in.png)
+
+- Email Confirmation: 
+
+![Email Confirmation](documentation/testing/stripe/email_user_logged_in.png)
+
+- Database Order:
+
+![Database Order](documentation/testing/stripe/order_user_logged_in.png)
+
+- Profile View: 
+
+![Profile View](documentation/testing/stripe/profile_user_logged_in.png)
+
 
 
 
