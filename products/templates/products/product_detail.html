@@ -429,28 +429,34 @@
     let main_popup = document.querySelector(".main-popup")
 
     // Opens the sizing chart
-    open_btn.addEventListener('click', () => {
-        popup.style.display = 'flex';
-        main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
-    });
+    if (open_btn) {
+        open_btn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+            main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
+        });
+    };
 
     // Closes the sizing chart
-    close_btn.addEventListener('click', () => {
-        main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
-        setTimeout(() => {
-            popup.style.display = 'none';
-        }, 500)
-    })
-
-    // Closes the sizing chart when user clicks elsewhere on the screen
-    window.addEventListener('click', (e) => {
-        if (e.target == document.querySelector('.popup-overlay')) {
+    if (open_btn) {
+        close_btn.addEventListener('click', () => {
             main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
             setTimeout(() => {
                 popup.style.display = 'none';
             }, 500)
-        }
-    })
+        });
+    };
+
+    // Closes the sizing chart when user clicks elsewhere on the screen
+    if (open_btn) {
+        window.addEventListener('click', (e) => {
+            if (e.target == document.querySelector('.popup-overlay')) {
+                main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 500)
+            }
+        });
+    };
 
     
 </script>

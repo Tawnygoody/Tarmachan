@@ -357,7 +357,6 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-
 | 01 | Form Validation | Ensure that the form cannot be submitted without all the required fields being completed | ✓ |
 | 02 | Cancel Button | Ensure the cancel button redirects the user back to the home page | ✓ |
 | 03 | Submitting Form | Ensure when a valid form is submitted that the form is cleared and a success message displays to inform the user that their message has been sent | ✓ |
@@ -415,7 +414,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 02 | Required Fields | Ensure trying to add a product without the required fields doesn't add a product to the database and the user is informed of which fields are required | ✓ |
 | 03 | Dropdown Fields | Ensure all the categories/clearance/sizes options are appearing in the dropdown fields | ✓ |
 | 04 | Image Selector | Ensure clicking the select image link allows the user to upload an image from their device, and a message displays to the user what the image will be set too | ✓ |
-| 05 | Cancel Link | Ensure clicking the cancel button takes the user back to the home page | ✓ |
+| 05 | Cancel Link | Ensure clicking the cancel button takes the user back to the products page | ✓ |
 | 06 | Add Product Link | Ensure clicking the add product link takes the user to the product detail page for the new product and the information is rendering correctly | ✓ |
 
 ## Edit Product Page
@@ -423,18 +422,26 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 | 01 | Form Fields | Ensure the form fields are pre-populated with the product information stored in the database | ✓ |
-| 02 | Cancel Link | Ensure clicking the cancel button takes the user back to the home page | ✓ |
+| 02 | Cancel Link | Ensure clicking the cancel button takes the user back to the products page | ✓ |
 | 03 | Update Product Link | Ensure when the user updates any of the product information and clicks the update product link that this is displayed on the product detail page when the user is redirected | ✓ |
 
 ## Add Blog Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
+| 01 | Form Rendering | Ensure all the form fields are rendering correctly  | ✓ |
+| 02 | Required Fields | Ensure trying to add a blog without the required fields doesn't add a blog to the database and the user is informed of which fields are required | ✓ |
+| 03 | Image Selectors | Ensure clicking the select image buttons allows the user to upload an image from their device, and a message displays to the user what the image will be set too | ✓ |
+| 04 | Cancel Link | Ensure clicking the cancel button takes the user back to the blogs page | ✓ |
+| 05 | Add Blog Link | Ensure clicking the add blog button takes the user to the blog detail page for the new blog and the information is rendering correctly | ✓ |
 
 ## Edit Blog Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
+| 01 | Form Fields | Ensure the form fields are pre-populated with the blog information stored in the database | ✓ |
+| 02 | Cancel Link | Ensure clicking the cancel button takes the user back to the blogs page | ✓ |
+| 03 | Update Blog Link | Ensure when the user updates any of the blog information and clicks the update blog button that this is displayed on the blog detail page when the user is redirected | ✓ |
 
 ## Contact Management Page 
 
@@ -597,6 +604,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 05 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
 | 06 | Bug in testing file | I had problems with my gitpod workspace where I was unable to save any of the changes I was making to the TESTING.md file. It was essentially crashing the workspace as I could not open any additional files | I think this was stemming from trying to render the gifs for the user stories. I created a new testing files and created links to the user stories gifs rather than rendering them. The workspace no longers breaks when making changes |
 | 07 | 500 server error on checkout success page | When testing purchasing on iphone and ipad I was getting a 500 server error. The error was showing on Stripe as "Webhook received: payment_intent.succeeded | ERROR: value too long for type character varying(2)" | After some research I initially thought the error was stemming from the country field due to the character value too long being 2. However after discussing this with tutor support they advised that the site was running on an old version and that by clearing the cache and history this will bring the site up to date | There have been no more errors like this since |
+| 08 | Console error for products without sizes | When on the products pages for products which did not have sizes, and more specifically items which do not have a sizing chart, I was getting a "Uncaught TypeError: Cannot read properties of null". | This was affecting the performance of the site on lighthouse. The error was stemming from the javascript for opening and closing the sizing charts. By checking firstly to see if their was a sizing chart before adding event listeners this has resolved the error in the console. (e.g: if (open_btn) { "event listener here" }|
 
 
 
