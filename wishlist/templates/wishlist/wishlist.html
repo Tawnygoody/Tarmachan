@@ -71,13 +71,13 @@
                                         {% if request.user.is_authenticated %}
                                             {% if request.user in product.user_wishlist.all %}
                                                 <div class="my-3 text-center">
-                                                    <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Remove from Wishlist">
+                                                    <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Remove from Wishlist" aria-label="Remove From Wishlist">
                                                         <i class="fas fa-heart fa-2x"></i>
                                                     </a>
                                                 </div>
                                             {% else %}
                                                 <div class="my-3 text-center">
-                                                    <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Add to Wishlist">
+                                                    <a href="{% url 'add_to_wishlist' product.id %}" class="unstyled-color-icon" data-toggle="tooltip" data-placement="bottom" title="Add to Wishlist" aria-label="Add to Wishlist">
                                                         <i class="far fa-heart fa-2x"></i>
                                                     </a>
                                                 </div>
@@ -85,8 +85,8 @@
                                         {% endif %}
                                         {% if request.user.is_superuser %}
                                             <small>
-                                                <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
-                                                <a class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal" data-id="{{ product.name }}" data-url="{% url 'delete_product' product.id %}"><i class="fas fa-minus-circle"></i></a>
+                                                <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}" aria-label="Edit Product"><i class="far fa-edit"></i></a>
+                                                <button class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal" data-id="{{ product.name }}" data-url="{% url 'delete_product' product.id %}" aria-label="Delete Product"><i class="fas fa-minus-circle"></i></button>
                                             </small>
                                         {% endif %}
                                     </div>

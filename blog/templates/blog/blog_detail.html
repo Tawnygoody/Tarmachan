@@ -118,7 +118,7 @@
                 <a href="{% url 'blog' %}" class="btn content-text text-white buttons-general text-uppercase my-2 px-4" role="button"><i class="fas fa-chevron-left pe-2"></i>All Blogs</a>
                 {% if request.user.is_superuser %}
                     <a href="{% url 'edit_blog' blog.id %}" class="btn content-text buttons-general-2 text-uppercase my-2 px-4" role="button">Edit Blog</a>
-                    <a class="btn content-text delete-button text-uppercase fs-6 my-2 px-4" data-toggle="modal" data-target="#deleteModal">Delete Blog</a>
+                    <button class="btn content-text delete-button text-uppercase fs-6 my-2 px-4 pointer" data-toggle="modal" data-target="#deleteModal">Delete Blog</button>
                 {% endif %}
             </div>
         </div>

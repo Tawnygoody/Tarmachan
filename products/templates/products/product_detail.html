@@ -60,8 +60,8 @@
                 </a>
                 {% if request.user.is_superuser %}
                     <small>
-                        <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}"><i class="far fa-edit"></i></a>
-                        <a class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-minus-circle"></i></a>
+                        <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}" aria-label="Edit Product"><i class="far fa-edit"></i></a>
+                        <span class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-minus-circle"></i></span>
                     </small>
                 {% endif %}
                 <p class="content-text mt-5 fs-4">{{ product.description1 }}</p>
@@ -161,7 +161,7 @@
                                     <!--Decrement Quantity-->
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn" 
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="Decrement Button">
                                             <span class="icon">
                                                 <i class="fas fa-minus text-white"></i>
                                             </span>
@@ -173,7 +173,7 @@
                                     <!--Increment Quantity-->
                                     <div class="input-group-append">
                                         <button class="increment-qty btn"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" aria-label="Increment Button">
                                             <span class="icon">
                                                 <i class="fas fa-plus text-white"></i>
                                             </span>
@@ -282,7 +282,7 @@
                         <p>{{ comment.comment }}</p>
                         {% if comment.user == request.user or request.user.is_superuser %}
                             <small>
-                                <a class="text-danger pointer" data-toggle="modal" data-target="#deleteCommentModal" data-id="{{ comment.subject }}" data-url="{% url 'delete_comment' comment.id %}"><i class="fas fa-minus-circle"></i></a>
+                                <span class="text-danger pointer" data-toggle="modal" data-target="#deleteCommentModal" data-id="{{ comment.subject }}" data-url="{% url 'delete_comment' comment.id %}"><i class="fas fa-minus-circle"></i></span>
                             </small>
                         {% endif %}
 
@@ -335,41 +335,43 @@
     <!--Delete Product Modal-->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header title-text text-center">
-              <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+            <div class="modal-content">
+                <div class="modal-header title-text text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+                </div>
+                <div class="modal-body content-text text-center">
+                    <p>Are you sure you want to delete <strong>{{ product.name }}</strong>?</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2"
+                        data-dismiss="modal">Cancel</button>
+                    <a class="btn content-text delete-button text-uppercase fs-6 mb-2"
+                        href="{% url 'delete_product' product.id %}">Delete Product</a>
+                </div>
             </div>
-            <div class="modal-body content-text text-center">
-                <p>Are you sure you want to delete <strong>{{ product.name }}</strong>?</p>
-            </div>
-            <div class="modal-footer text-center">
-                <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2" data-dismiss="modal">Cancel</button>
-                <a class="btn content-text delete-button text-uppercase fs-6 mb-2" href="{% url 'delete_product' product.id %}">Delete Product</a>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <!--Delete Review Modal-->
-      <div class="modal fade" id="deleteCommentModal" tabindex="-1" aria-labelledby="deleteCommentModal"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                  <div class="modal-header title-text text-center">
-                      <h5 class="modal-title" id="exampleModalLabel">Delete Review</h5>
-                  </div>
-                  <div class="modal-body content-text text-center">
-                      <p>Are you sure you want to delete <strong><span id="modalCommentName"></span></strong>?</p>
-                  </div>
-                  <div class="modal-footer text-center">
-                      <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2"
-                          data-dismiss="modal">Cancel</button>
-                      <a class="btn content-text delete-button text-uppercase fs-6 mb-2"
-                          href="" id="deleteBtn">Delete Review</a>
-                  </div>
-              </div>
-          </div>
-      </div>
+    <!--Delete Review Modal-->
+    <div class="modal fade" id="deleteCommentModal" tabindex="-1" aria-labelledby="deleteCommentModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header title-text text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Review</h5>
+                </div>
+                <div class="modal-body content-text text-center">
+                    <p>Are you sure you want to delete <strong><span id="modalCommentName"></span></strong>?</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn content-text buttons-general text-white text-uppercase fs-6 mb-2"
+                        data-dismiss="modal">Cancel</button>
+                    <a class="btn content-text delete-button text-uppercase fs-6 mb-2 pointer" id="deleteBtn">Delete
+                        Review</a>
+                </div>
+            </div>
+        </div>
+    </div>
       
 
 {% endblock %}

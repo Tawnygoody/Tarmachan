@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scottish based mountain climbing online store">
     {% endblock %}
 
     {% block extra_meta %}
@@ -50,39 +51,39 @@
               {% if request.user.is_superuser %}
               <li class="list-inline-item px-lg-3">
                 <a href="{% url 'product_management' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                  title="Site Management">
+                  title="Site Management" aria-label="Site Management">
                   <i class="icon fas fa-user-cog fa-lg"></i>
                 </a>
               </li>
               {% endif %}
             <li class="list-inline-item">
               <a href="{% url 'wishlist' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                title="Wishlist">
+                title="Wishlist" aria-label="Wishlist">
                 <i class="icon fas fa-heart fa-lg"></i>
               </a>
             </li>
             <li class="list-inline-item px-lg-3">
               <a href="{% url 'profile' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                title="My Profile">
+                title="My Profile" aria-label="User Profile">
                 <i class="icon fas fa-user fa-lg"></i>
               </a>
             </li>
             <li class="list-inline-item pe-lg-4">
               <a href="{% url 'account_logout' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                title="Log Out">
+                title="Log Out" aria-label="Log Out">
                 <i class="icon fas fa-sign-out-alt fa-lg"></i>
               </a>
             </li>
             {% else %}
             <li class="list-inline-item px-lg-3">
               <a href="{% url 'account_login' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                title="Log In">
+                title="Log In" aria-label="Log In">
                 <i class="icon fas fa-sign-in-alt fa-lg"></i>
               </a>
             </li>
             <li class="list-inline-item pe-lg-4">
               <a href="{% url 'account_signup' %}" class="text-white" data-toggle="tooltip" data-placement="bottom"
-                title="Sign Up">
+                title="Sign Up" aria-label="Sign Up">
                 <i class="icon fas fa-user-plus fa-lg"></i>
               </a>
             </li>
@@ -112,12 +113,12 @@
         <div class="col-lg-5 col-sm-4 col-4 px-1 px-md-3 px-lg-4 basket-padding content-text">
           <ul class="list-inline list-unstyled align-right my-auto color-text">
             <li class="list-inline-item mx-0 mx-sm-1 border-right">
-              <a href="" class="color-text unstyled-color" id="search-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="color-text unstyled-color pointer" id="search-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                   <div><i class="fas fa-search"></i></div>
                     <p class="my-0 small-font">Search</p>
                 </div>
-              </a>
+              </span>
               <div class="dropdown-menu border-0 p-3 rounded-0 search-field" aria-labelledby="search-bar">
                 <form class="form" method="GET" action="{% url 'products' %}">
                   <div class="input-group w-100">
@@ -276,7 +277,7 @@
         <div class="row no-gutters bg-darker-green py-3">
           <div class="col-12 text-center">
             <p class="text-white content-text my-auto">&copy 2021 created by Christopher Goodfellow  
-              <a href="https://github.com/Tawnygoody/Tarmachan" class="unstyled-white mx-1" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></p></a>
+              <a href="https://github.com/Tawnygoody/Tarmachan" class="unstyled-white mx-1" target="_blank" rel="noreferrer" aria-label="Github Icon"><i class="fab fa-github"></i></p></a>
           </div>
         </div>
       </div>

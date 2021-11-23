@@ -504,3 +504,30 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 | 02 | Sorting by product price with clearance prices | When sorting products by price either high to low or low to high it doesnt take into account the product which has clearance prices on them. It will only sort the product by their original price, and is therefore not giving a true representation. I am happy to accept this as a known limitation. | [View](documentation/testing/known_issues/product_sorting.gif) |
 
 # Lighthouse
+
+The website's performance has been tested using Google Lighthouse
+
+|  Page  |  Performance  |  Accessibility  | Best Practices | SEO | Comments |
+|----|----|----|----|----|-----------|
+| Home | 77 | 92 | 100 | 100 | To improve Accessibility: "Buttons do not have a discernible name". These are being rendered by the owl carousel for the dots to change slides, therefore cannot change. To improve Performance: Re-size images - For the purposes of this site I'm happy to accept this as a limitation, as I do not want to reduce the image quality any further than they already have been. |
+| Products | 61 | 100 | 100 | 90 | To Improve performance: Suggestions to serve images in next gen formats. As I require a transparent background for the product detail page of the products images, the images need to be served as png. Performance greatly improves when there are less products displayed, and as most users will want to display cetain catgeories of products this will improve the performance of this page. A future fix to this could be to paginate the page so only a limited number of products appear per page. Happy to accept this as a know limitation for the purposes of this project. To improve SEO: Links are not crawlable. The delete product link in the delete modal does not have an 'href' attribute directly in the html, but this is populated by javascript and is therefore a known limitation. |
+| Product Detail | 82 | 92 | 100 | 90 | To Improve performance: Serve images in next gen formats (not applicable for this site as previously discussed). To Improve Accessibility: Form elements do not have associated labels - This is for the quantity selector and is not needed. To improve SEO: Links are not crawlable - href pulled by javascript as previously discussed. |
+| Shopping Bag | 95 | 90 | 100 | 100 | To improve accessibility: "id" attributes on focusable element are not unique - justified use as elements with the same ID are hidden on different devices sizes | 
+| Checkout | 99 | 94 | 100 | 100 | N/A |
+| Checkout Success | 99 | 98 | 100 | 100 | N/A |
+| About Us | 96 | 100 | 100 | 100 | N/A |
+| Contact | 99 | 97 | 100 | 100 | N/A |
+| Blog | 88 | 99 | 100 | 100 | To improve Performance: Re-size images - For the purposes of this site I'm happy to accept this as a limitation, as I do not want to reduce the image quality any further than they already have been. |
+| Blog Detail | 97 | 100 | 100 | 100 | N/A |
+| Wishlist | 97 | 100 | 100 | 100 | N/A |
+| Profile | 98 | 100 | 100 | 100 | N/A |
+| Site Management | 97 | 100 | 100 | 100 | N/A |
+| Add Product | 99 | 92 | 100 | 100 | To improve accessibility: Heading elements not in a sequential order. Not needed for aesthetics of the site. |
+| Add Blog | 99 | 92 | 100 | 100 | To improve accessibility: Heading elements not in a sequential order. Not needed for aesthetics of the site. |
+| Contact Management | 99 | 98 | 100 | 90 | To improve SEO: Links are not crawlable. The delete contact link in the delete modal does not have an 'href' attribute directly in the html, but this is populated by javascript and is therefore a known limitation.  |
+| Contact Detail | 98 | 99 | 100 | 100 | N/A |
+| Edit Product | 97 | 92 | 100 | 100 | N/A |
+| Edit Blog | 98 | 92 | 100 | 100 | N/A |
+| Log Out | 99 | 100 | 100 | 100 | N/A |
+| Sign In | 100 | 100 | 100 | 100 | N/A |
+| Sign Up | 98 | 93 | 100 | 100 | N/A |
