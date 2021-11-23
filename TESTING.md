@@ -23,9 +23,11 @@
     - [Blog Detail Page](#blog-detail-page)
     - [Wishlist Page](#wishlist-page)
     - [Profile Page](#profile-page)
-    - [Site Administration Page](#site-administation-page)
+    - [Site Management Page](#site-management-page)
     - [Add Product Page](#add-product-page)
     - [Edit Product Page](#edit-product-page)
+    - [Add Blog Page](#add-blog-page)
+    - [Edit Blog Page](#edit-blog-page)
     - [Contact Management Page](#contact-management-page)
     - [Contact Detail Page](#contact-detail-page)
     - [Log In Page](#log-in-page)
@@ -374,6 +376,107 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
+| 01 | Page Layout | Ensure the page layout renders correctly when different inputs have been filled | ✓ |
+| 02 | All Blogs Link | Ensure the all blogs link takes the user back to the main blog page | ✓ |
+| 03 | Edit Blog Link (When superuser is logged in) | Ensure the edit blog link takes the superuser to the edit blog page | ✓ |
+| 04 | Delete Blog Link | Ensure that the delete blog link opens the delete blog modal. Ensure cancelling closes the delete and clicking delete, removes the blog from the database | ✓ |
+
+## Wishlist Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | No Products in Wishlist | Ensure when a user hasn't added any products to their wishlist that this is displayed to the user and an all products link takes the user back to the all products page | ✓ |
+| 02 | Product Cards | Ensure product cards are displaying as they would of the products page, once an item is added to the wishlist | ✓ |
+| 03 | Remove from wishlist | Ensure when the remove from wishlist link is clicked that the product is removed from the user wishlist and the user is notified with a toast message | ✓ |
+| 04 | Product Detail Link | Ensure clicking the product image takes the user to the product detail page | ✓ |
+
+## Profile Page 
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Delivery Information Form | Ensure that the users delivery information is displaying in the relevant fields if theyu have previously made an order and clicked the save to profile checkbox | ✓ |
+| 02 | Update Information | Ensure that updating the delivery information and clicking the update information button will save those changes to the user's profile and a success message displays to confirm this to the user | ✓ |
+| 03 | Previous orders | Ensure previous order information displays in the order history column and displays with the latest order at the top | ✓ |
+| 04 | Previous order confirmation | Ensure clicking the order number takes the user to the checkout success page for that order | ✓ |
+
+## Site Management Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Add Product Link (Accessible to superusers only) | Ensure clicking the add product link takes the user to the add product page  | ✓ |
+| 02 | Add Blog Link (Accessible to superusers only) | Ensure clicking the add blog link takes the user to the add blog page  | ✓ |
+| 03 | Manage Contact Messages (Accessible to superusers only) | Ensure clicking the manage contact messages takes the user to the contact management page  | ✓ |
+
+## Add Product Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Form Rendering | Ensure all the form fields are rendering correctly  | ✓ |
+| 02 | Required Fields | Ensure trying to add a product without the required fields doesn't add a product to the database and the user is informed of which fields are required | ✓ |
+| 03 | Dropdown Fields | Ensure all the categories/clearance/sizes options are appearing in the dropdown fields | ✓ |
+| 04 | Image Selector | Ensure clicking the select image link allows the user to upload an image from their device, and a message displays to the user what the image will be set too | ✓ |
+| 05 | Cancel Link | Ensure clicking the cancel button takes the user back to the home page | ✓ |
+| 06 | Add Product Link | Ensure clicking the add product link takes the user to the product detail page for the new product and the information is rendering correctly | ✓ |
+
+## Edit Product Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Form Fields | Ensure the form fields are pre-populated with the product information stored in the database | ✓ |
+| 02 | Cancel Link | Ensure clicking the cancel button takes the user back to the home page | ✓ |
+| 03 | Update Product Link | Ensure when the user updates any of the product information and clicks the update product link that this is displayed on the product detail page when the user is redirected | ✓ |
+
+## Add Blog Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+
+## Edit Blog Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+
+## Contact Management Page 
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Table rendering | Ensure when a contact message is sent to the company that is displays in the table (on larger devices) or row (on smaller devices) | ✓ |
+| 02 | Contact Detail Link | Ensure clicking the name field takes the user to the contact detail page for that contact message | ✓ |
+| 03 | Replied Link | Ensure clicking the replied link opens the delete contact modal | ✓ |
+| 04 | Cancel Link (Modal) | Ensure clicking the cancel link in the delete contact modal closes the modal | ✓ |
+| 05 | Delete Contact Link | Ensure clicking the delete contact button removes the contact from the database | ✓ |
+
+## Contact Detail Page 
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Contact Details | Ensure the contact details are rendering correctly | ✓ |
+| 02 | All Contacts Link | Ensure clicking the all contact link takes the user back to the contact management page | ✓ |
+| 03 | Delete Contact Link | Ensure clicking the delete contact link opens the delete contact modal to aviod unwanted/accidental deletions | ✓ |
+| 04 | Delete Contact Confirmation | Ensure clicking the delete contact link in the modal removes the contact from the database and takes the user back to the contact management page. | ✓ |
+
+## Log In Page 
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Sign Up Link | Ensure the sign up link takes the user to the sign up page | ✓ |
+| 02 | Home Link | Ensure the home link takes the user to the home page | ✓ |
+| 03 | Forgot Password Link | Ensure the forgot password link takes the user to Password Reset page | ✓ |
+| 04 | Sign In Link | Ensure when a user signs in with the correct details they are redirected to the home page | ✓ |
+
+## Log Out Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Sign Out button | Ensure clicking the sign out button signs the user out of their account and redirects the user to the home page | ✓ |
+
+## Register Page
+
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Sign In Link | Ensure the sign in link takes the user to the sign in page | ✓ |
+| 02 | Back to Login Link | Ensure the back to login link takes the user to the sign in page | ✓ |
+| 03 | Sign Up Link | Ensure clicking the sign up link when the form is valid takes the user to the verify email address page and a confirmation email is sent to the user | ✓ |
 
 
 

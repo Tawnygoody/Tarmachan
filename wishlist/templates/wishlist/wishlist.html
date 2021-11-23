@@ -83,12 +83,6 @@
                                                 </div>
                                             {% endif %}
                                         {% endif %}
-                                        {% if request.user.is_superuser %}
-                                            <small>
-                                                <a class="unstyled-color-icon me-4" href="{% url 'edit_product' product.id %}" aria-label="Edit Product"><i class="far fa-edit"></i></a>
-                                                <button class="text-danger mx-1 pointer" data-toggle="modal" data-target="#deleteModal" data-id="{{ product.name }}" data-url="{% url 'delete_product' product.id %}" aria-label="Delete Product"><i class="fas fa-minus-circle"></i></button>
-                                            </small>
-                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
