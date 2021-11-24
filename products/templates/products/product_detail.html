@@ -339,7 +339,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header title-text text-center">
-                    <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+                    <h5 class="modal-title">Delete Product</h5>
                 </div>
                 <div class="modal-body content-text text-center">
                     <p>Are you sure you want to delete <strong>{{ product.name }}</strong>?</p>
@@ -360,7 +360,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header title-text text-center">
-                    <h5 class="modal-title" id="exampleModalLabel">Delete Review</h5>
+                    <h5 class="modal-title">Delete Review</h5>
                 </div>
                 <div class="modal-body content-text text-center">
                     <p>Are you sure you want to delete <strong><span id="modalCommentName"></span></strong>?</p>
@@ -382,7 +382,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

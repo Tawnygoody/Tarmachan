@@ -113,12 +113,12 @@
         <div class="col-lg-5 col-sm-4 col-4 px-1 px-md-3 px-lg-4 basket-padding content-text">
           <ul class="list-inline list-unstyled align-right my-auto color-text">
             <li class="list-inline-item mx-0 mx-sm-1 border-right">
-              <span class="color-text unstyled-color pointer" id="search-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="color-text unstyled-color pointer" id="search-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="search">
                 <div class="text-center">
                   <div><i class="fas fa-search"></i></div>
                     <p class="my-0 small-font">Search</p>
                 </div>
-              </span>
+              </div>
               <div class="dropdown-menu border-0 p-3 rounded-0 search-field" aria-labelledby="search-bar">
                 <form class="form" method="GET" action="{% url 'products' %}">
                   <div class="input-group w-100">
@@ -276,15 +276,15 @@
         </div>
         <div class="row no-gutters bg-darker-green py-3">
           <div class="col-12 text-center">
-            <p class="text-white content-text my-auto">&copy 2021 created by Christopher Goodfellow  
-              <a href="https://github.com/Tawnygoody/Tarmachan" class="unstyled-white mx-1" target="_blank" rel="noreferrer" aria-label="Github Icon"><i class="fab fa-github"></i></p></a>
+            <p class="text-white content-text my-auto">&copy; 2021 created by Christopher Goodfellow  
+              <a href="https://github.com/Tawnygoody/Tarmachan" class="unstyled-white mx-1" target="_blank" rel="noreferrer" aria-label="Github Icon"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
     {% block postloadjs %}
-      <script type="text/javascript">
+      <script>
         $('.toast').toast('show');
 
         $(function () {

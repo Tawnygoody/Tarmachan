@@ -39,10 +39,12 @@
                 <div class="order-history table-responsive-sm">
                     <table class="table table-sm table-borderless">
                         <thead class="content-text bolder">
-                            <th>Order Number</th>
-                            <th>Date</th>
-                            <th>Items</th>
-                            <th>Order Total</th>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Order Total</th>
+                            </tr>
                         </thead>
                         <tbody class="content-text">
                             {% for order in orders %}
@@ -74,6 +76,6 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+    <script src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
 

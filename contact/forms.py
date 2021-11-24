@@ -14,9 +14,9 @@ class NewsletterForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
         self.fields["email"].widget.attrs["placeholder"] = "Email *"
         self.fields["email"].widget.attrs['class'] = "subscribe-input"
+        self.fields["email"].widget.attrs['id'] = "newsletter-email"
         self.fields["email"].label = False
 
 

@@ -223,6 +223,34 @@
 
 
 # Code Validation
+
+## HTML
+
+|  Test  |  Result  |  Noting Points  |
+|-----| ----- |---------------|
+| index.html | No Errors: [View](documentation/testing/code_validation/html/index_html.png) | N/A |
+| products.html | No Errors: [View](documentation/testing/code_validation/html/products_html.png) | N/A |
+| product_detail.html | No Errors: [View](documentation/testing/code_validation/html/product_detail_html.png) | N/A |
+| bag.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/bag_html.png) | This is a result of the increment and decrement quantity selectors. As one or another is hidden depending on screen sizes this is justified use |
+| checkout.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/checkout_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
+| checkout_success.html | No Errors: [View](documentation/testing/code_validation/html/checkout_success_html.png) | N/A |
+| about_us.html | No Errors: [View](documentation/testing/code_validation/html/about_us_html.png) | N/A |
+| contact_us.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/contact_us_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
+| blog.html | No Errors: [View](documentation/testing/code_validation/html/blog_html.png) | N/A |
+| blog_detail.html | No Errors: [View](documentation/testing/code_validation/html/blog_detail_html.png) | N/A |
+| wishlist.html | No Errors: [View](documentation/testing/code_validation/html/products_html.png) | N/A |
+| profile.html | No Errors: [View](documentation/testing/code_validation/html/profile_html.png) | N/A |
+| add_product.html | No Errors: [View](documentation/testing/code_validation/html/add_product_html.png) | N/A |
+| edit_product.html | No Errors: [View](documentation/testing/code_validation/html/edit_product_html.png) | N/A |
+| add_blog.html | No Errors: [View](documentation/testing/code_validation/html/add_blog_html.png) | N/A |
+| edit_blog.html | No Errors: [View](documentation/testing/code_validation/html/edit_blog_html.png) | N/A |
+| contact_management.html | No Errors: [View](documentation/testing/code_validation/html/contact_management_html.png) | N/A |
+| contact_detail.html | No Errors: [View](documentation/testing/code_validation/html/contact_detail_html.png) | N/A |
+| login.html | No Errors: [View](documentation/testing/code_validation/html/log_in_html.png) | N/A |
+| logout.html | No Errors: [View](documentation/testing/code_validation/html/log_out_html.png) | N/A |
+| sign_up.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/sign_up_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
+
+
 # Browser Compatibility
 # Functionality Testing
 
@@ -538,7 +566,7 @@ In order to make sure that the stripe payments were proving successful, I have t
 
 - Test Card that has expired:
 
-![Expired Card](documentation/testing/stripe/insufficient_funds.png)
+![Expired Card](documentation/testing/stripe/expired.png)
 
 - Test Card with processing error: 
 
@@ -673,6 +701,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 |:---:|------| ---------------- | --------- |
 | 01 | Scrolling with Parallax Images | After implementing the fix with parallax images for IOS devices, there is an issue on IOS devices due to IOS bounce effects, so when a user scrolls past the top or bottom of the page the parallax image is revealed before the site snaps back. I have added "overscroll-behavior: none;" to the html and body elements, and this works for chrome and desktop devices, but doesn't work for ipad / iphone. I have tried implementing different solutions but none seem to get the desired effect without disabling scrolling on the entire page. I am happy to accept this as a small drawback to the parallax images. | [View](documentation/testing/known_issues/parallax.gif) |
 | 02 | Sorting by product price with clearance prices | When sorting products by price either high to low or low to high it doesnt take into account the product which has clearance prices on them. It will only sort the product by their original price, and is therefore not giving a true representation. I am happy to accept this as a known limitation. | [View](documentation/testing/known_issues/product_sorting.gif) |
+| 03 | Duplicate ID's for email DIV's | On the contact page, unsubscribe page and checkout page I am getting a duplicate ID error, when checking the HTML files, as a result of crispy forms being rendered. This is due to "email" field being used in all the models and the newsletter form being available on all pages. I have tried to update the div ID using crispy-forms FormHelper class, but I'm unable change the div id. After consulting with tutor support I agreed to leave this as a known issue, as changing the models, forms, views, tests etc could lead to more issues at this stage of the project. | | 
 
 # Lighthouse
 
