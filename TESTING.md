@@ -226,6 +226,8 @@
 
 ## HTML
 
+The sites html has been tested using [W3C Markup Validator](https://validator.w3.org/). By getting the source code for each page ("ctrl + option + u" for mac) and copying into the validator I was able to identify any errors/warnings for each page. Results are outlined below:
+
 |  Test  |  Result  |  Noting Points  |
 |-----| ----- |---------------|
 | index.html | No Errors: [View](documentation/testing/code_validation/html/index_html.png) | N/A |
@@ -250,6 +252,22 @@
 | logout.html | No Errors: [View](documentation/testing/code_validation/html/log_out_html.png) | N/A |
 | sign_up.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/sign_up_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
 
+## CSS
+
+The sites CSS files have been validated using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Results are outlined below
+
+|  Test  |  Result  |
+|-----| ----- |
+| base.css | No errors: [View](documentation/testing/code_validation/css/base_css.png) |
+| owl.carousel.min.css | No errors: [View](documentation/testing/code_validation/css/owl_carousel_css.png) |
+| own.theme.default.min.css | No errors: [View](documentation/testing/code_validation/css/owl_carousel_theme_css.png) |
+| profile.css | No errors: [View](documentation/testing/code_validation/css/profile_css.png) |
+| checkout.css | No errors: [View](documentation/testing/code_validation/css/checkout_css.png) |
+
+## Javascript
+
+|  Test  |  Result  |  Noting Points  |
+|-----| ----- |---------------|
 
 # Browser Compatibility
 # Functionality Testing

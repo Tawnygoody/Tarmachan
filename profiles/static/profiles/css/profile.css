@@ -1,19 +1,49 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .profile-style-input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
   border: 1px solid transparent;
   border-radius: 0px;
   background-color: white;
-  box-shadow: 0 1px 3px 0 #b1b1b1;
+  -webkit-box-shadow: 0 1px 3px 0 #b1b1b1;
+          box-shadow: 0 1px 3px 0 #b1b1b1;
   -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  -o-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
   margin-bottom: 10px;
 }
 
 .profile-style-input:focus,
 .profile-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.profile-style-input::-webkit-input-placeholder {
+  color: #aab7c4;
+}
+
+.profile-style-input::-moz-placeholder {
+  color: #aab7c4;
+}
+
+.profile-style-input:-ms-input-placeholder {
+  color: #aab7c4;
+}
+
+.profile-style-input::-ms-input-placeholder {
+  color: #aab7c4;
 }
 
 .profile-style-input::placeholder {
@@ -35,6 +65,22 @@
 
 #profile-form-input .form-control {
     color: #000;
+}
+
+#profile-form-input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+#profile-form-input::-moz-placeholder {
+    color: #aab7c4;
+}
+
+#profile-form-input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+#profile-form-input::-ms-input-placeholder {
+    color: #aab7c4;
 }
 
 #profile-form-input::placeholder {
