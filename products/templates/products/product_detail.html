@@ -383,10 +383,6 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script>
-
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
     /*
         When the reviews tab is clicked is changes the tabs colors, hides the 
         product information section and displays the review section
@@ -396,7 +392,7 @@
         $('#reviews-div').addClass('product-detail-tabs').removeClass('product-detail-tabs-2');
         $('#details-section').addClass('d-none');
         $('#details-div').addClass('product-detail-tabs-2').removeClass('product-detail-tabs');
-    })
+    });
 
     /*
         When the details tab is clicked is changes the tabs colors, hides the 
@@ -404,10 +400,10 @@
     */
     $('#details-tab, #read-more-link').click(function() {
         $('#reviews-section').addClass('d-none');
-        $('#reviews-div').removeClass('product-detail-tabs').addClass('product-detail-tabs-2')
+        $('#reviews-div').removeClass('product-detail-tabs').addClass('product-detail-tabs-2');
         $('#details-section').removeClass('d-none');
-        $('#details-div').removeClass('product-detail-tabs-2').addClass('product-detail-tabs')
-    })
+        $('#details-div').removeClass('product-detail-tabs-2').addClass('product-detail-tabs');
+    });
 
     /* 
         When the delete review modal is opened it takes the comment ID and URL
@@ -416,17 +412,17 @@
     $('#deleteCommentModal').on('shown.bs.modal', function(event) {
         $("#modalCommentName").text($(event.relatedTarget).data('id'));
         $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
-    })
+    });
 
     /* 
         This allows the sizing chart to slide in and out on clicking 
         the sizing chart link.
         Thanks to https://www.youtube.com/watch?v=_oVBA15MdoI
     */
-    let open_btn = document.querySelector("#sizing-chart")
-    let close_btn = document.querySelector(".close-btn")
-    let popup = document.querySelector(".popup")
-    let main_popup = document.querySelector(".main-popup")
+    let open_btn = document.querySelector("#sizing-chart");
+    let close_btn = document.querySelector(".close-btn");
+    let popup = document.querySelector(".popup");
+    let main_popup = document.querySelector(".main-popup");
 
     // Opens the sizing chart
     if (open_btn) {
@@ -434,7 +430,7 @@
             popup.style.display = 'flex';
             main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
         });
-    };
+    }
 
     // Closes the sizing chart
     if (open_btn) {
@@ -442,9 +438,9 @@
             main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
             setTimeout(() => {
                 popup.style.display = 'none';
-            }, 500)
+            }, 500);
         });
-    };
+    }
 
     // Closes the sizing chart when user clicks elsewhere on the screen
     if (open_btn) {
@@ -453,11 +449,9 @@
                 main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
                 setTimeout(() => {
                     popup.style.display = 'none';
-                }, 500)
+                }, 500);
             }
         });
-    };
-
-    
+    }
 </script>
 {% endblock %}

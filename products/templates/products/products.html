@@ -194,16 +194,9 @@
 {% block postloadjs %}
     {{ block.super }}
 
+    <script src="{% static 'js/scroll.js' %}"></script>
+
     <script>
-
-        // Takes the user to top of the page when arrow is clicked
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
 
         /* 
             When the delete modal is opened it takes the product ID and URL
@@ -213,7 +206,7 @@
         $('#deleteModal').on('shown.bs.modal', function(event) {
             $("#modalProductName").text($(event.relatedTarget).data('id'));
             $("#deleteBtn").attr('href', $(event.relatedTarget).data('url'));
-        })
+        });
 
 	</script>
 
@@ -228,7 +221,6 @@
             if(selectedVal != "reset"){
                 let sort = selectedVal.split("_")[0];
                 let direction = selectedVal.split("_")[1];
-                console.log(sort)
 
                 currentUrl.searchParams.set("sort", sort);
                 currentUrl.searchParams.set("direction", direction);
@@ -240,7 +232,7 @@
 
                 window.location.replace(currentUrl);
             }
-        })
+        });
     </script>
 
 {% endblock %}

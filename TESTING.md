@@ -266,8 +266,24 @@ The sites CSS files have been validated using [W3C CSS Validator](https://jigsaw
 
 ## Javascript
 
+The sites JS files and scripts have been validated using [JSHint](https://jshint.com/). Results are outlined below
+
 |  Test  |  Result  |  Noting Points  |
 |-----| ----- |---------------|
+| blog_images.js | No errors: [View](documentation/testing/code_validation/js/blog_images_js.png)| 
+| scroll.js | No errors: [View](documentation/testing/code_validation/js/scroll_js.png)| 
+| bag.html script | No errors: [View](documentation/testing/code_validation/js/bag_html_script.png) | 
+| stripe_elements.js | No errors: [View](documentation/testing/code_validation/js/stripe_elements_js.png) | 
+| contact_management.html script | No Errors: [View](documentation/testing/code_validation/js/contact_management_html_script.png) | 
+| index.html script | No errors: [View](documentation/testing/code_validation/js/index_html_script.png) |
+| countryfield.js | No errors: [View](documentation/testing/code_validation/js/countryfield_js.png) |
+| base.html script | No errors: [View](documentation/testing/code_validation/js/base_html_script.png) |
+| products.html script 1 | No errors: [View](documentation/testing/code_validation/js/products_html_script1.png) |
+| products.html script 2 | No errors: [View](documentation/testing/code_validation/js/products_html_script2.png) |
+| product_detail.html script | No errors: [View](documentation/testing/code_validation/js/product_detail_html_script.png) |
+| add_product.html script | No errors: [View](documentation/testing/code_validation/js/add_product_html_script.png) |
+| edit_product.html script | No errors: [View](documentation/testing/code_validation/js/edit_product_html_script.png) |
+| quantity_input_script.html | No errors: [View](documentation/testing/code_validation/js/quantity_input_script.png) |
 
 # Browser Compatibility
 # Functionality Testing
@@ -719,7 +735,7 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 |:---:|------| ---------------- | --------- |
 | 01 | Scrolling with Parallax Images | After implementing the fix with parallax images for IOS devices, there is an issue on IOS devices due to IOS bounce effects, so when a user scrolls past the top or bottom of the page the parallax image is revealed before the site snaps back. I have added "overscroll-behavior: none;" to the html and body elements, and this works for chrome and desktop devices, but doesn't work for ipad / iphone. I have tried implementing different solutions but none seem to get the desired effect without disabling scrolling on the entire page. I am happy to accept this as a small drawback to the parallax images. | [View](documentation/testing/known_issues/parallax.gif) |
 | 02 | Sorting by product price with clearance prices | When sorting products by price either high to low or low to high it doesnt take into account the product which has clearance prices on them. It will only sort the product by their original price, and is therefore not giving a true representation. I am happy to accept this as a known limitation. | [View](documentation/testing/known_issues/product_sorting.gif) |
-| 03 | Duplicate ID's for email DIV's | On the contact page, unsubscribe page and checkout page I am getting a duplicate ID error, when checking the HTML files, as a result of crispy forms being rendered. This is due to "email" field being used in all the models and the newsletter form being available on all pages. I have tried to update the div ID using crispy-forms FormHelper class, but I'm unable change the div id. After consulting with tutor support I agreed to leave this as a known issue, as changing the models, forms, views, tests etc could lead to more issues at this stage of the project. | | 
+| 03 | Duplicate ID's for email DIV's | On the contact page, unsubscribe page and checkout page I am getting a duplicate ID error, when checking the HTML files, as a result of crispy forms being rendered. This is due to "email" field being used in all the models and the newsletter form being available on all pages. I have tried to update the div ID using crispy-forms FormHelper class, but I'm unable change the div id. After consulting with tutor support I agreed to leave this as a known issue, as changing the models, forms, views, tests etc could lead to more issues at this stage of the project. | [View](documentation/testing/code_validation/html/checkout_html.png)| 
 
 # Lighthouse
 
