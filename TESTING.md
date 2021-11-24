@@ -512,7 +512,41 @@ In order to make sure that the stripe payments were proving successful, I have t
 
 ![Profile View](documentation/testing/stripe/profile_user_logged_in.png)
 
+## Unregistered Users
 
+- Confirmation Page:
+
+![Confirmation Page](documentation/testing/stripe/confirmation_unregistered.png)
+
+- Stripe Success: 
+
+![Stripe Success](documentation/testing/stripe/stripe_unregistered.png)
+
+- Email Confirmation: 
+
+![Email Confirmation](documentation/testing/stripe/email_unregistered.png)
+
+- Database Order:
+
+![Database Order](documentation/testing/stripe/order_unregistered.png)
+
+## Testing Card Errors
+
+- Test Card with insufficient Funds:
+
+![Insufficient Funds](documentation/testing/stripe/insufficient_funds.png)
+
+- Test Card that has expired:
+
+![Expired Card](documentation/testing/stripe/insufficient_funds.png)
+
+- Test Card with processing error: 
+
+![Processing Error](documentation/testing/stripe/processing_error.png)
+
+- Stripe Success with failed payments
+
+![Stripe failures](documentation/testing/stripe/stripe_failures.png)
 
 
 # Responsive 
