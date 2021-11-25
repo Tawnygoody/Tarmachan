@@ -19,10 +19,9 @@ View the live project [here](https://tarmachan.herokuapp.com/)
     - [Data Model](#data-model)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
-5. [Database Creation](#database-creation)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
-8. [Acknowledgments](#acknowledgments)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+7. [Acknowledgments](#acknowledgments)
 
 
 # User Experience (UX)
@@ -476,3 +475,104 @@ Using JSON files enabled the large amount of product and category data to be loa
 All testing carried out on the website can be found in the following file: 
 
 ## [TESTING.md](TESTING.md)
+
+# Deployment
+
+## Deployment to Heroku
+
+1. Create a Heroku app: 
+    - Navigate to [Heroku](https://www.heroku.com/) and log in or sign up. 
+    - From the dashboard click on new app and give the app a name and choose the region closest to you. 
+    - On the resources tab provision a new postgres database by typing in heroku postgres.
+2. To use Postgres dj_database_url & psycopg2 need to be installed. 
+    - In the terminal type the following commands:
+        - ```
+            pip3 install dj_database_url
+            ```
+        - ```
+            pip3 install psycopg2-binary
+            ```
+3. Make sure Heroku installs all our apps requirements when we deploy it using the following command in the terminal:
+    - ```
+        pip3 freeze > requirements.txt
+        ```
+4. To setup the websites new database navigate to settings.py import dj_database_url & comment out the default database configuration and replace the default database with a call to dj_database_url.parse. 
+    - ```
+        import dj_database_url
+        DATABASES = {
+            'default': dj_database_url.parse("your Postgres database URL in heroku")
+        }
+        ```
+5. We need to run all migrations to the new Postgres database by entering the following in the terminal:
+    - ```
+        python3 manage.py migrate
+        ```
+6. We need to load the product data from the fixtures file into the new database: 
+    - ```
+        python3 manage.py loaddata master_categories
+        python3 manage.py loaddata product_categories
+        python3 manage.py loaddata product_sub_categories
+        python3 manage.py loaddata clearance
+        python3 manage.py loaddata products
+        ```
+7. A superuser was created with admin rights by typing the following into the terminal:
+    - ```
+        python3 manage.py createsuperuser
+        ```
+    - Follow the commands in the terminal for Username, email address and password
+8. Add an if statement in settings.py for the default database, so that if the app is running on Heroku it connects to the Postgres database, otherwise the app connects to the SQLite3 database: 
+    - ```
+        if 'DATABASE_URL' in os.environ:
+            DATABASES = {
+                'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+            }
+        else:
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.sqlite3',
+                    'NAME': BASE_DIR / 'db.sqlite3',
+                }
+            }
+        ```
+9. Gunicorn (Python WSGI HTTP Server for UNIX) will act as our webserver. To install it type the following into the terminal:
+    - ```
+        pip3 install gunicorn
+        ```
+    - Freeze that into the requirments file using: 
+        - ```
+            pip3 freeze > requirements.txt
+            ```
+10. Create a procfile in the root directory, to tell Heroku to create a web dyno, which will run gunicorn and serve the Django app. Type the following into the procfile: 
+    - ```
+        web: gunicorn tarmachan.wsgi:application
+        ```
+11. After logging in to Heroku at the command line we need to temporarily disable collectstatic so Heroku won't try to collect static files when deployed: 
+    - ```
+        heroku login -i
+        heroku config:set DISABLE_COLLECTSTATIC=1 --app "app name goes here"
+        ```
+12. In settings.py we need to add the hostname of our Heroku app, and allow localhost so gitpod will still work too: 
+    - ```
+        ALLOWED_HOSTS = ['"app name goes here".herokuapp.com', 'localhost']
+        ```
+13. To deploy to Heroku type the following into the command line: 
+    - ```
+        heroku git:remote -a "app name goes here"
+        git push heroku master
+        ```
+14. To set up automatic deployments when we push the code to github, in Heroku:
+    - On the deploy tab set the app to connect to github by searching for the repository and clicking connect.
+    - Click 'Enable Automatic Deploys" 
+15. Using [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) add the secret key to the config variables under the settings tab, which will act as the key for the Heroku app. 
+    - We need to update the settings.py file so that the secret key is collected from the environment, and use an empty string as default: 
+        - ```
+            SECRET_KEY = os.environ.get('SECRET_KEY', '')
+            ```
+    - Additionally set the debug to be true only if there's a variable called "DEVELOPMENT" in the environment. 
+        - ```
+            DEBUG = 'DEVELOPMENT' in os.environ
+            ```
+
+## Storing static files with AWS
+
+        
