@@ -20,8 +20,12 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
+    - [Deployment to Heroku](#deployment-to-heroku)
+    - [Storing Static Files with AWS](#storing-static-files-with-aws)
+    - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
 6. [Credits](#credits)
 7. [Acknowledgments](#acknowledgments)
+
 
 
 # User Experience (UX)
@@ -575,4 +579,204 @@ All testing carried out on the website can be found in the following file:
 
 ## Storing static files with AWS
 
-        
+### Creating a New Bucket
+
+1. Navigate to [Amazon AWS](https://aws.amazon.com/) and log in or sign up. 
+2. From the AWS Management Console search for S3 in the services menu. 
+3. Click the "create bucket" button and enter the following information:
+    - Bucket Name: recommended to be the same name as the Heroku App. 
+    - Region: enter the region that is closest to you.
+    - Uncheck the "Block all public access" checkbox and acknowledge that the Bucket will be public.
+    - Click the "Create bucket" button to create the bucket. 
+4. Set some settings by clicking on the bucket that appears: 
+    - Click the properties tab and turn on static website hosting, which gives a new endpoint to access the bucket from the internet. 
+    - Click the properties tab to make 3 changes:
+        1. Set the CORS configuration to: 
+            - ```
+                [
+                    {
+                        "AllowedHeaders": [
+                            "Authorization"
+                        ],
+                        "AllowedMethods": [
+                            "GET"
+                        ],
+                        "AllowedOrigins": [
+                            "*"
+                        ],
+                        "ExposeHeaders": []
+                    }
+                ]
+                ```
+        2. Create a Security Policy for this Bucket using AWS S3 Bucket Policy generator located in the Bucket Policy tab:
+            - Select the following options:
+                - Policy Type: "S3 Bucket Policy"
+                - Principal: Allow all principals using "*"
+                - Actions: select "GetObject"
+                - ARN: Copy the ARN from the permissions tab
+            - Once the policy is generated copy the JSON document into the Bucket Policy editor. 
+            - Before saving add a "/*" to the end of the resource key to allow access to all resources in this bucket.
+            - Click the "Save" button. 
+        3. Access the "Access Control List" tab, in the "Permissions" tab, and set the list objects permission for everyone under the "Public Access" section.
+
+### Creating AWS Groups, Policies and Users
+
+1. From the services menu search for IAM.
+2. From the Access Management dropdown select 'User Groups'. 
+    - Click the 'Create New Group" button:
+        - Group name: Site relevant name. In this case "manage-tarmachan"
+        - Click next through to create group. 
+3. From the Access Management dropdown select 'Policies'
+    - Click the 'Create Policy' button: 
+        - Go to the JSOn tab and click 'import managed policy':
+            - Search for S3 then select 'AmazonS3FullAccess' and click "import".
+        - Get the ARN from the S3 bucket policy page and paste it in the "Resource" field as a list. Ensure two ARN's are added one for the bucket itself and another for all files and folders in the bucket (denoted by "/*" at the end of the string): 
+            - ```
+                {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Action": [
+                                "s3:*",
+                                "s3-object-lambda:*"
+                            ],
+                            "Resource": [
+                                "arn:aws:s3:::tarmachan",
+                                "arn:aws:s3:::tarmachan/*"
+                            ]
+                        }
+                    ]
+                }
+                ```
+        - Click the "Review Policy" button and give the policy a name and description and click the "create policy" button.
+4. To attach the policy to the relevant group go back to the "User Groups" page:
+    - Click the group you want to attach the policy to. 
+    - Click "Attach Policy" 
+    - Search for the policy that has been created and click the "Attach Policy" button.
+5. From the Access Management dropdown click Users: 
+    - Click the "Add User" button: 
+        - Enter a user name and select the "Programmatic access' checkbox and select next: 
+            - On the next page add the user to the group that was created and click through to create the user. 
+        - Once the user is added download the CSV file which will contain the user's access key and secret access key, which will be used to authenticate the user from the Django App. 
+
+### Connecting Django to S3
+
+1. In order to connect the S3 bucket to django two new packages are required: 
+    - ```
+        pip3 install boto3
+        ```
+    - ```
+        pip3 install django_storages
+        ```
+    - Add the new dependencies to the requirements with the following: 
+        - ```
+            pip3 freeze > requirements.txt
+            ```
+    - Add Django-storages to the list of INSTALLED_APPS in the settings.py file: 
+        - ```
+            INSTALLED_APPS = [
+                'django.contrib.admin',
+                'django.contrib.auth',
+                'django.contrib.contenttypes',
+                'django.contrib.sessions',
+                'django.contrib.messages',
+                'django.contrib.staticfiles',
+                'django.contrib.sites',
+                'allauth',
+                'allauth.account',
+                'allauth.socialaccount',
+                'home',
+                'products',
+                'bag',
+                'checkout',
+                'blog',
+                'profiles',
+                'wishlist',
+                'contact',
+
+                # Other
+                'crispy_forms',
+                'storages',
+            ]
+            ```
+2. To connect Django to S3 we need to update the setting.py file to tell Django which bucket it should be communicating with. We only want to this in the Heroku environment, so we can add an if statement to check if theres an environment variable called USE_AWS in the environment. 
+    - ```
+        if 'USE_AWS' in os.environ:
+            AWS_STORAGE_BUCKET_NAME = 'tarmachan'
+            AWS_S3_REGION_NAME = 'eu-west-1'
+            AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+            AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+            AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+        ```
+    - In Heroku we need to update the config variables: 
+        - |  Key  |  Value  |
+          |-----| ----- |
+          | USE_AWS | True |
+          | AWS_ACCESS_KEY_ID | Found in the CSV file when creating a user is IAM |
+          | AWS_SECRET_ACCESS_KEY | Found in the CSV file when creating a user is IAM |
+        - We need to remove the DISABLE_COLLECTSTATIC variable as django will now collect static files and upload them to S3. 
+3. COLLECTSTATIC was renabled so that in production Django uses S3 to store static files and uploads new product and blog images to the bucket:
+    - To do so create a new file in the root directory called 'custom_storages.py':
+        - ```
+            from django.conf import settings
+            from storages.backends.s3boto3 import S3Boto3Storage
+
+
+            class StaticStorage(S3Boto3Storage):
+                location = settings.STATICFILES_LOCATION
+
+
+            class MediaStorage(S3Boto3Storage):
+                location = settings.MEDIAFILES_LOCATION
+            ```
+    - In settings.py these new storage classes were attached to new variables within the 'USE_AWS' block, so that in production static files are saved in a folder called 'static' and media files are saved in the folder called 'media'. URL's for media and static files have been overwritten using the custom domain and new locations:
+        - ```
+            if 'USE_AWS' in os.environ:
+                # Bucket Config
+                AWS_STORAGE_BUCKET_NAME = 'tarmachan'
+                AWS_S3_REGION_NAME = 'eu-west-1'
+                AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+                AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+                AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+                # Static and media files
+                STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+                STATICFILES_LOCATION = 'static'
+                DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+                MEDIAFILES_LOCATION = 'media'
+
+                # Override static and media URL's in production
+                STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+                MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+            ```
+    - To improve performance for our end users we can tell the browser that it's okay to cache static files for a long time since they don't change very often: 
+        - Inside the 'USE_AWS' code block: 
+            - ```
+                # Cache Control
+                AWS_S3_OBJECT_PARAMETERS = {
+                    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+                    'CacheControl': 'max-age=94608000',
+                }
+                ```
+4. In the S3 bucket create a new folder called 'media'. 
+    - Inside the media folder click upload -> add files and select all the product, blog and site images:
+        - Select 'Grant public read access to these objects' before clicking through to 'upload'. 
+
+## Connecting Stripe to Heroku
+
+1. Log in to [Stripe](https://stripe.com/gb) 
+2. From the dashboard go to "developer" and select API Keys. Copy the publishable and secret keys and add them as config variables in Heroku:
+    - |  Key  |  Value  |
+      |-----| ----- |
+      | STRIPE_PUBLIC_KEY | From Stripe |
+      | STRIPE_SECRET_KEY | From Stripe |
+3. Add a new webhook endpoint by clicking webhooks in the developers menu on stripe and clicking the "add endpoint" button: 
+    - Add the endpoint as the URL for the heroku app followed by "checkout/wh/", and set up to receive all events: 
+        - ```
+            https://tarmachan.herokuapp.com/checkout/wh/
+            ```
+4. Copy the signing secret for the new webhook and add it to the heroku config variables: 
+    - |  Key  |  Value  |
+      |-----| ----- |
+      | STRIPE_WH_SECRET | From Stripe |
