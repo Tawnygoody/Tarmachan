@@ -797,4 +797,6 @@ All testing carried out on the website can be found in the following file:
 | 06 | [Stack Overflow](https://stackoverflow.com/questions/54335384/django-testcase-on-form-validation-fails-even-tough-input-is-valid) | I was having issue testing the views when posting a form with a primary key as one of its fields. This provided the solution |
 | 07 | [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) | Helped with setting up the wishlist app and allowing users to add and remove products from their wishlist |
 | 08 | [Stack Overflow](https://stackoverflow.com/questions/21240465/alternatives-to-background-attachment-fixed) | Aided with the styling for parallax image and replaces "background-attachment:fixed;", which was previously used. This is noted in Solved Bugs in the TESTING.md file |
+| 09 | [Yuksel Celik](https://www.youtube.com/watch?v=OvTs8BMLb7o) | This tutorial has been utilised to allow comments to be added and deleted for each product |
+
 
