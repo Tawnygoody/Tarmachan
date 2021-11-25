@@ -651,6 +651,49 @@ The website has been designed for optimize usage in portrait mode on smaller dev
 
 # Security Testing
 
+## Defensive Programming
+
+I have used a mixture of code and the "login_required" decorators to ensure that certain actions or pages cannot occur by typing URL's directly into the browser.
+
+|  Test  |  User  |  Expected Result  |  Pass  |
+|---|------| ---------------- |---|
+| [Profile Page](https://tarmachan.herokuapp.com/profile/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Wishlist](https://tarmachan.herokuapp.com/wishlist/) | Non logged in user | Error message to tell the user only site users have access to this feature | ✓ |
+| [Add or Remove product to Wishlist](https://tarmachan.herokuapp.com/wishlist/add_to_wishlist/1) | Non logged in user | User gets redirected to the home page, and an error messages displays to tell the user only logged in users can add products to their wishlist | ✓ |
+| [Site Management](https://tarmachan.herokuapp.com/product_management/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Site Management](https://tarmachan.herokuapp.com/product_management/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Add Product](https://tarmachan.herokuapp.com/products/add/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Add Product](https://tarmachan.herokuapp.com/products/add/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Add Blog](https://tarmachan.herokuapp.com/blog/add/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Add Blog](https://tarmachan.herokuapp.com/blog/add/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Contact Management](https://tarmachan.herokuapp.com/contact_management/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Contact Management](https://tarmachan.herokuapp.com/contact_management/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Contact Detail](https://tarmachan.herokuapp.com/contact_detail/7/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Contact Detail](https://tarmachan.herokuapp.com/contact_detail/7/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Edit Product](https://tarmachan.herokuapp.com/products/edit/2) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Edit Product](https://tarmachan.herokuapp.com/products/edit/2) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Edit Blog](https://tarmachan.herokuapp.com/blog/edit/1/) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Edit Blog](https://tarmachan.herokuapp.com/blog/edit/1/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Delete Product](https://tarmachan.herokuapp.com/products/delete/1) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Delete Product](https://tarmachan.herokuapp.com/products/delete/1) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+| [Delete Blog](https://tarmachan.herokuapp.com/blog/delete/7) | Non logged in user | Redirects the user back to the log in page | ✓ |
+| [Delete Blog](https://tarmachan.herokuapp.com/blog/delete/7) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
+
+
+## Passwords & Usernames
+
+I have used Django all auth to handle user administration tasks: 
+- This stores the users password as hashed key for security.
+- Also ensures users are required to confirm their emails as an extra security step. 
+
+I have done some testing to ensure that their can be no duplicate usernames or email address's: 
+- Duplicate Username :
+
+![duplicate username](documentation/testing/security_testing/duplicate_username.png)
+
+- Duplicate Email :
+
+![duplicate email](documentation/testing/security_testing/duplicate_email.png)
 
 # Unit Testing
 
