@@ -24,6 +24,7 @@ View the live project [here](https://tarmachan.herokuapp.com/)
     - [Storing Static Files with AWS](#storing-static-files-with-aws)
     - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
 6. [Credits](#credits)
+    - [Code](#code)
 7. [Acknowledgments](#acknowledgments)
 
 
@@ -700,7 +701,7 @@ All testing carried out on the website can be found in the following file:
                 'storages',
             ]
             ```
-2. To connect Django to S3 we need to update the setting.py file to tell Django which bucket it should be communicating with. We only want to this in the Heroku environment, so we can add an if statement to check if theres an environment variable called USE_AWS in the environment. 
+2. To connect Django to S3 we need to update the setting.py file to tell Django which bucket it should be communicating with. We only want to this in the Heroku, so we can add an if statement to check if theres an environment variable called USE_AWS in the environment. 
     - ```
         if 'USE_AWS' in os.environ:
             AWS_STORAGE_BUCKET_NAME = 'tarmachan'
@@ -713,8 +714,8 @@ All testing carried out on the website can be found in the following file:
         - |  Key  |  Value  |
           |-----| ----- |
           | USE_AWS | True |
-          | AWS_ACCESS_KEY_ID | Found in the CSV file when creating a user is IAM |
-          | AWS_SECRET_ACCESS_KEY | Found in the CSV file when creating a user is IAM |
+          | AWS_ACCESS_KEY_ID | Found in the CSV file when creating a user in IAM |
+          | AWS_SECRET_ACCESS_KEY | Found in the CSV file when creating a user in IAM |
         - We need to remove the DISABLE_COLLECTSTATIC variable as django will now collect static files and upload them to S3. 
 3. COLLECTSTATIC was renabled so that in production Django uses S3 to store static files and uploads new product and blog images to the bucket:
     - To do so create a new file in the root directory called 'custom_storages.py':
@@ -780,3 +781,20 @@ All testing carried out on the website can be found in the following file:
     - |  Key  |  Value  |
       |-----| ----- |
       | STRIPE_WH_SECRET | From Stripe |
+
+
+# Credits
+
+## Code
+
+|  #  |  Source  | Description
+|:---:| ------- | --------------- |
+| 01 | [Code Institute Boutique Ado Walkthrough](https://codeinstitute.net/) | Code institutes Boutique Ado app provided the building blocks for the project and was used as a primary resource |
+| 02 | [Stack Overflow](https://stackoverflow.com/questions/27456919/triggering-a-transition-of-a-element-when-hovered-on-another-element/27457228) | Helped to be able to fade in the buttons on the featured products cards (home page) when hovering over the cards themselves |
+| 03 | [W3Schools](https://www.w3schools.com/howto/howto_css_image_overlay_title.asp) | Helped to get the description as an image overlay on the product cards |
+| 04 | [Stack Overflow](https://stackoverflow.com/questions/42441574/passing-information-to-modal-in-for-loop) | Allowed the correct information to passed to the delete modals within a template for loop | 
+| 05 | [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/) | Built in package to allow the carousel on the home page to function |
+| 06 | [Stack Overflow](https://stackoverflow.com/questions/54335384/django-testcase-on-form-validation-fails-even-tough-input-is-valid) | I was having issue testing the views when posting a form with a primary key as one of its fields. This provided the solution |
+| 07 | [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) | Helped with setting up the wishlist app and allowing users to add and remove products from their wishlist |
+| 08 | [Stack Overflow](https://stackoverflow.com/questions/21240465/alternatives-to-background-attachment-fixed) | Aided with the styling for parallax image and replaces "background-attachment:fixed;", which was previously used. This is noted in Solved Bugs in the TESTING.md file |
+
