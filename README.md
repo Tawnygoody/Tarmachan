@@ -799,4 +799,29 @@ All testing carried out on the website can be found in the following file:
 | 08 | [Stack Overflow](https://stackoverflow.com/questions/21240465/alternatives-to-background-attachment-fixed) | Aided with the styling for parallax image and replaces "background-attachment:fixed;", which was previously used. This is noted in Solved Bugs in the TESTING.md file |
 | 09 | [Yuksel Celik](https://www.youtube.com/watch?v=OvTs8BMLb7o) | This tutorial has been utilised to allow comments to be added and deleted for each product |
 
+## Media
+
+|  #  |  Source  | Description
+|:---:| ------- | --------------- |
+| 01 | [Mountain Equipment](https://www.mountain-equipment.co.uk/) | The majority of the product images have been taken from Mountain Equipment and altered for the needs of the website |
+| 02 | [Cotswold Outdoor](https://www.cotswoldoutdoor.com/) | Additional product images have been taken from Cotswold Outdoor and altered for the needs of the website |
+| 03 | [On Cloud](https://www.on-running.com/) | Additional product images have been taken from On Cloud and altered for the needs of the website |
+| 04 | [Colin Prior](https://colinprior.co.uk/) | About us main image |
+| 05 | [Nayemdevs](https://nayemdevs.com/changing-the-default-thumbnail-placeholder-of-woocommerce-product-is-easy/) | Default product image |
+| 06 | [One Earth](https://www.oneearth.org/ecoregions/interior-alaska-yukon-lowland-taiga/) | Ptarmigan parallax image |
+| 07 | [Yukon News](https://www.yukon-news.com/life/ptarmigan-are-built-to-thrive-in-the-winter/) | Ptarmigan product detail background |
+| 08 | [Unsplash](https://unsplash.com/) | Home page hero image and home page product feature images |
+| 09 | [Ptarmigan Land](https://www.ptarmiganland.com/) | Ptarmigan Logo Image |
+
+## Blog Credits 
+
+|  Title  |  Content  | Main Image | Parallax Image | Content Image |
+| ----- | ------- | --- | --- | --- |
+| A Return to the Highlands | Written by site admin | [Unsplash](https://unsplash.com/photos/sBzOEqqMolA) | [Unsplash](https://unsplash.com/photos/Qi44wGsEqKk) | [Unsplash](https://unsplash.com/photos/H9G9DvlHZDw) |
+| Affric Highlands launched to rewild half a million acres | [Walk Highlands](https://www.walkhighlands.co.uk/news/affric-highlands-launched-to-rewild-half-a-million-acres/) | [The Times](https://www.thetimes.co.uk/article/five-of-the-best-glens-in-scotland-3w36fq0bh) | N/A | N/A |
+
+
+
+
+
 
