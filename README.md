@@ -25,6 +25,8 @@ View the live project [here](https://tarmachan.herokuapp.com/)
     - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
 6. [Credits](#credits)
     - [Code](#code)
+    - [Media](#media)
+    - [Blog Credits](#blog-credits)
 7. [Acknowledgments](#acknowledgments)
 
 
@@ -819,6 +821,9 @@ All testing carried out on the website can be found in the following file:
 | ----- | ------- | --- | --- | --- |
 | A Return to the Highlands | Written by site admin | [Unsplash](https://unsplash.com/photos/sBzOEqqMolA) | [Unsplash](https://unsplash.com/photos/Qi44wGsEqKk) | [Unsplash](https://unsplash.com/photos/H9G9DvlHZDw) |
 | Affric Highlands launched to rewild half a million acres | [Walk Highlands](https://www.walkhighlands.co.uk/news/affric-highlands-launched-to-rewild-half-a-million-acres/) | [The Times](https://www.thetimes.co.uk/article/five-of-the-best-glens-in-scotland-3w36fq0bh) | N/A | N/A |
+| Explore the Highlands but stay safe! | [True Highlands](https://www.truehighlands.com/staying-safe-in-the-hills/) | [Unsplash](https://unsplash.com/photos/zR8cV1l2jLQ) | [Unsplash](https://unsplash.com/photos/ul-j5yOB2o0) | [Unsplash](https://unsplash.com/photos/GYCfL_i_hhU) |
+| Explore the Small Isles | [True Highlands](https://www.truehighlands.com/the-small-isles/) | [Whale Trail](https://whaletrail.org/the-pier-isle-of-canna) | [Wikipedia](https://en.wikipedia.org/wiki/File:Isle_of_Muck_-_Panoramic_view_from_the_sea.jpeg) | N/A |
+
 
 
 
