@@ -237,7 +237,7 @@ The sites html has been tested using [W3C Markup Validator](https://validator.w3
 | checkout.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/checkout_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
 | checkout_success.html | No Errors: [View](documentation/testing/code_validation/html/checkout_success_html.png) | N/A |
 | about_us.html | No Errors: [View](documentation/testing/code_validation/html/about_us_html.png) | N/A |
-| contact_us.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/contact_us_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
+| contact_us.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/contact_us_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the contact form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
 | blog.html | No Errors: [View](documentation/testing/code_validation/html/blog_html.png) | N/A |
 | blog_detail.html | No Errors: [View](documentation/testing/code_validation/html/blog_detail_html.png) | N/A |
 | wishlist.html | No Errors: [View](documentation/testing/code_validation/html/products_html.png) | N/A |
@@ -248,9 +248,10 @@ The sites html has been tested using [W3C Markup Validator](https://validator.w3
 | edit_blog.html | No Errors: [View](documentation/testing/code_validation/html/edit_blog_html.png) | N/A |
 | contact_management.html | No Errors: [View](documentation/testing/code_validation/html/contact_management_html.png) | N/A |
 | contact_detail.html | No Errors: [View](documentation/testing/code_validation/html/contact_detail_html.png) | N/A |
+| newsletter_unsubscribe | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/newsletter_sunsubscribe_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the newsletter unsubscribe form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
 | login.html | No Errors: [View](documentation/testing/code_validation/html/log_in_html.png) | N/A |
 | logout.html | No Errors: [View](documentation/testing/code_validation/html/log_out_html.png) | N/A |
-| sign_up.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/sign_up_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the checkout form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
+| sign_up.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/sign_up_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the sign up form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
 
 ## CSS
 
