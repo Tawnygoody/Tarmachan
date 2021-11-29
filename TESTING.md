@@ -287,6 +287,8 @@ The sites JS files and scripts have been validated using [JSHint](https://jshint
 | quantity_input_script.html | No errors: [View](documentation/testing/code_validation/js/quantity_input_script.png) |
 
 # Browser Compatibility
+
+
 # Functionality Testing
 
 Funcionality testing has been carried out on all browsers listed in the browser compatibility section. 
