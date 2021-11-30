@@ -9,6 +9,10 @@ from checkout.models import Order
 class TestCheckoutViews(TestCase):
 
     def setUp(self):
+        """
+        Help with setup class taken from Mozilla.
+        Credited in README.
+        """
 
         self.client = Client()
         self.checkout = reverse('checkout')
@@ -29,7 +33,6 @@ class TestCheckoutViews(TestCase):
         self.add_to_bag = reverse(
             "add_to_bag",
             kwargs={"item_id": self.product.id})
-
 
     def test_checkout_view_empty_bag(self):
         response = self.client.get(self.checkout)

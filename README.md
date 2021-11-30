@@ -800,6 +800,7 @@ All testing carried out on the website can be found in the following file:
 | 07 | [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) | Helped with setting up the wishlist app and allowing users to add and remove products from their wishlist |
 | 08 | [Stack Overflow](https://stackoverflow.com/questions/21240465/alternatives-to-background-attachment-fixed) | Aided with the styling for parallax image and replaces "background-attachment:fixed;", which was previously used. This is noted in Solved Bugs in the TESTING.md file |
 | 09 | [Yuksel Celik](https://www.youtube.com/watch?v=OvTs8BMLb7o) | This tutorial has been utilised to allow comments to be added and deleted for each product |
+| 10 | [MDN Webdocs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing) | Helped with the set up class for the checkout test_views.py |
 
 ## Media
 

@@ -30,6 +30,7 @@ def product_management(request):
     """
     A view to return product Managment Page
     """
+    # Only superuser's have access to this view
     if not request.user.is_superuser:
         messages.error(
             request,
@@ -45,6 +46,7 @@ def contact_management(request):
     """
     A view to return all messages submitted from users
     """
+    # Only superuser's have access to this view
     if not request.user.is_superuser:
         messages.error(
             request,
@@ -64,13 +66,14 @@ def contact_management(request):
 @login_required
 def contact_detail(request, contact_id):
     """A view to display the contact message"""
+    # Only superuser's have access to this view
     if not request.user.is_superuser:
         messages.error(
             request,
             'Sorry! Only the team at Tarmachan can access this.'
         )
         return redirect(reverse('home'))
-    
+
     contact = get_object_or_404(Contact, pk=contact_id)
 
     context = {
@@ -83,6 +86,7 @@ def contact_detail(request, contact_id):
 @login_required
 def delete_contact(request, contact_id):
     """Delete an existing contact message"""
+    # Only superuser's have access to this view
     if not request.user.is_superuser:
         messages.error(
             request,

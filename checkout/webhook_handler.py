@@ -62,6 +62,7 @@ class StripeWH_Handler:
         # Update profile information if save_info was checked
         profile = None
         username = intent.metadata.username
+        # If the user is logged in
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
@@ -69,13 +70,20 @@ class StripeWH_Handler:
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_street_address1 = (
+                    shipping_details.address.line1
+                )
+                profile.default_street_address2 = (
+                    shipping_details.address.line2
+                )
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
         order_exists = False
         attempt = 1
+        # If running slow and the Order isn't created by the time
+        # the webhook is returned from Stripe, try 5 times before
+        # creating the Order.
         while attempt <= 5:
             try:
                 order = Order.objects.get(
@@ -149,7 +157,6 @@ class StripeWH_Handler:
             content=f'Webhook received: {event["type"]} | SUCCESS: \
                 Created order in webhook',
             status=200)
-
 
     def handle_payment_intent_payment_failed(self, event):
         """

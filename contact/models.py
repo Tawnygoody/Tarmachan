@@ -2,7 +2,7 @@ from django.db import models
 
 
 class NewsletterSubscription(models.Model):
-
+    """Model to subscribe to Newsletter"""
     email = models.EmailField(max_length=100, null=False, blank=False)
 
     def __str__(self):
@@ -10,7 +10,7 @@ class NewsletterSubscription(models.Model):
 
 
 class Contact(models.Model):
-
+    """Model to send a contact message"""
     name = models.CharField(max_length=40, null=False, blank=False)
     email = models.EmailField(max_length=100, null=False, blank=False)
     subject = models.CharField(max_length=50, null=False, blank=False)

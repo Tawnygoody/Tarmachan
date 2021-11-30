@@ -67,7 +67,10 @@ def newsletter_register(request):
     if request.method == "POST":
         newsletter_form = NewsletterForm(request.POST)
         if newsletter_form.is_valid():
-            if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
+            if (
+                NewsletterSubscription.objects.filter(
+                    email=request.POST.get("email")).exists()
+            ):
                 messages.info(
                     request,
                     "This email address is already subscribed to the Tarmachan \
@@ -84,10 +87,12 @@ def newsletter_register(request):
                 data = newsletter_form.save()
                 subscriber_email = data.email
                 subject = render_to_string(
-                    'contact/confirmation_emails/newsletter_subscription_subject.txt',
+                    'contact/confirmation_emails/'
+                    'newsletter_subscription_subject.txt',
                 )
                 body = render_to_string(
-                    'contact/confirmation_emails/newsletter_subscription_body.txt',
+                    'contact/confirmation_emails/'
+                    'newsletter_subscription_body.txt',
                     {'data': data}
                 )
                 send_mail(
@@ -113,19 +118,25 @@ def newsletter_unsubscribe(request):
     if request.method == "POST":
         unsubscribe_form = NewsletterUnsubscribeForm(request.POST)
         if unsubscribe_form.is_valid():
-            if NewsletterSubscription.objects.filter(email=request.POST.get("email")).exists():
+            if (
+                NewsletterSubscription.objects.filter(
+                    email=request.POST.get("email")).exists()
+            ):
                 email = request.POST.get('email')
-                NewsletterSubscription.objects.filter(email=request.POST.get("email")).delete()
+                NewsletterSubscription.objects.filter(
+                    email=request.POST.get("email")).delete()
                 messages.success(
                     request,
                     f'{email} has been removed from our mailing list.'
                 )
                 # Email confirmation for newsletter unsubscription
                 subject = render_to_string(
-                    'contact/confirmation_emails/newsletter_unsubscribe_subject.txt'
+                    'contact/confirmation_emails/'
+                    'newsletter_unsubscribe_subject.txt'
                 )
                 body = render_to_string(
-                    'contact/confirmation_emails/newsletter_unsubscribe_body.txt',
+                    'contact/confirmation_emails/'
+                    'newsletter_unsubscribe_body.txt',
                     {'email': email}
                 )
                 send_mail(

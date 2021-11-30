@@ -2,8 +2,8 @@ from django.test import TestCase
 from profiles.forms import UserProfileForm
 
 
-class TestCheckoutForms(TestCase):
-    """Testing Checkout forms"""
+class TestProfileForms(TestCase):
+    """Testing Profile forms"""
 
     def test_order_form(self):
         form = UserProfileForm(

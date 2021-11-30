@@ -1,6 +1,8 @@
 from django import forms
 from .models import Blog
-from .widgets import CustomClearableFileInput, CustomClearableFileInput2, CustomClearableFileInput3
+from .widgets import (
+    CustomClearableFileInput, CustomClearableFileInput2,
+    CustomClearableFileInput3)
 
 
 class BlogForm(forms.ModelForm):
@@ -12,10 +14,20 @@ class BlogForm(forms.ModelForm):
         model = Blog
         fields = '__all__'
 
-    image1 = forms.ImageField(label='Main Image', required=False, widget=CustomClearableFileInput)
-    image2 = forms.ImageField(label='Parallax Image', required=False, widget=CustomClearableFileInput2)
-    image3 = forms.ImageField(label='Content Image', required=False, widget=CustomClearableFileInput3)
+    image1 = forms.ImageField(
+        label='Main Image',
+        required=False,
+        widget=CustomClearableFileInput)
+    image2 = forms.ImageField(
+        label='Parallax Image',
+        required=False,
+        widget=CustomClearableFileInput2)
+    image3 = forms.ImageField(
+        label='Content Image',
+        required=False,
+        widget=CustomClearableFileInput3)
 
+    # Override the init method to make alterations to fields
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

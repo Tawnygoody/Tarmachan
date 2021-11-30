@@ -7,6 +7,7 @@ from products.models import Product, Clearance
 class TestWishlistViews(TestCase):
 
     def test_wishlist_view_not_signed_in(self):
+        """Tests a non logged in user trying to access a wishlist page"""
         response = self.client.get("/wishlist/")
         self.assertEqual(response.status_code, 302)
         messages = list(get_messages(response.wsgi_request))
@@ -15,6 +16,7 @@ class TestWishlistViews(TestCase):
             "Sorry! Only members can access the wishlist")
 
     def test_wishlist_view_signed_in(self):
+        """Tests the wishlist view with a signed in user"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -26,6 +28,9 @@ class TestWishlistViews(TestCase):
         self.assertTemplateUsed(response, "wishlist/wishlist.html")
 
     def test_add_to_wishlist_not_signed_in(self):
+        """
+        Tests a non logged in user trying to add product to their wishlist
+        """
         clearance = Clearance.objects.create(
             name='test clearance'
         )
@@ -44,6 +49,7 @@ class TestWishlistViews(TestCase):
             "Sorry! Only members can add products to their wishlist")
 
     def test_add_to_wishlist(self):
+        """Tests a logged in user adding a product to their wishlist"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -67,6 +73,7 @@ class TestWishlistViews(TestCase):
             "test product has been added to your wishlist")
 
     def test_remove_from_wishlist(self):
+        """Tests a logged in user removing a product from their wishlist"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',

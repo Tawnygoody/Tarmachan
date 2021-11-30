@@ -1,12 +1,15 @@
 from django.test import TestCase
-from products.models import Product, Clearance, MasterCategory, ProductCategory, ProductSubCategory, Comment
 from django.contrib.auth.models import User
+from products.models import (
+    Product, Clearance, MasterCategory,
+    ProductCategory, ProductSubCategory, Comment)
 
 
 class TestProductModels(TestCase):
     """Testing Contact models"""
 
     def test_master_category_model(self):
+        """Test Master Category"""
         master_category = MasterCategory.objects.create(
             name='test_master_category',
             friendly_name='Test Master Category'
@@ -14,6 +17,7 @@ class TestProductModels(TestCase):
         self.assertEqual(str(master_category), master_category.name)
 
     def test_product_category_model(self):
+        """Test Product Category"""
         product_category = ProductCategory.objects.create(
             name='test_product_category',
             friendly_name='Test Product Category'
@@ -21,6 +25,7 @@ class TestProductModels(TestCase):
         self.assertEqual(str(product_category), product_category.name)
 
     def test_product_sub_category_model(self):
+        """Test Product Sub Category"""
         product_sub_category = ProductSubCategory.objects.create(
             name='test_product_sub_category',
             friendly_name='Test Product Sub Category'
@@ -28,6 +33,7 @@ class TestProductModels(TestCase):
         self.assertEqual(str(product_sub_category), product_sub_category.name)
 
     def test_clearance_model(self):
+        """Test Clearance Model"""
         clearance = Clearance.objects.create(
             name='clearance',
             friendly_name='Clearance'
@@ -35,6 +41,7 @@ class TestProductModels(TestCase):
         self.assertEqual(str(clearance), clearance.name)
 
     def test_product_model(self):
+        """Test Product Model"""
         clearance = Clearance.objects.create(
             name='clearance',
             friendly_name='Clearance'
@@ -63,6 +70,7 @@ class TestProductModels(TestCase):
         self.assertEqual(str(product), product.name)
 
     def test_comment_model(self):
+        """Test Comment Model"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',

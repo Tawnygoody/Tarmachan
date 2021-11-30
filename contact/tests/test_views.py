@@ -18,7 +18,7 @@ class TestContactViews(TestCase):
     def test_contact_view_post(self):
         """
         Tests when the contact form is valid, returns a 200 status
-        code, checks the correct message is displayed and the 
+        code, checks the correct message is displayed and the
         contact objects length is 1.
         """
         response = self.client.post('/contact/', {
@@ -109,7 +109,10 @@ class TestContactViews(TestCase):
         """
         response = self.client.get('/contact/newsletter_unsubscribe/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'contact/newsletter_unsubscribe.html')
+        self.assertTemplateUsed(
+            response,
+            'contact/newsletter_unsubscribe.html'
+        )
 
     def test_newsletter_unsubscribe_post(self):
         """
@@ -119,7 +122,8 @@ class TestContactViews(TestCase):
         subscriber = NewsletterSubscription.objects.create(
             email='testuser@email.com'
         )
-        existing_subscribers = NewsletterSubscription.objects.filter(id=subscriber.id)
+        existing_subscribers = NewsletterSubscription.objects.filter(
+            id=subscriber.id)
         self.assertEqual(len(existing_subscribers), 1)
         response = self.client.post(
             '/contact/newsletter_unsubscribe/',
@@ -141,7 +145,8 @@ class TestContactViews(TestCase):
             '/contact/newsletter_unsubscribe/',
             {'email': 'testuser2@email.com'}
         )
-        existing_subscribers = NewsletterSubscription.objects.filter(id=subscriber.id)
+        existing_subscribers = NewsletterSubscription.objects.filter(
+            id=subscriber.id)
         self.assertEqual(len(existing_subscribers), 1)
 
     def test_newsletter_unsubscribe_post_error(self):

@@ -8,6 +8,7 @@ class TestOrderModels(TestCase):
     """Testing Blog models"""
 
     def test_order_model(self):
+        """Testing Order Model"""
         order = Order.objects.create(
             full_name="Test Order",
             email="test@email.com",
@@ -23,6 +24,7 @@ class TestOrderModels(TestCase):
         self.assertEqual(str(order), order.order_number)
 
     def test_order_line_item_model(self):
+        """Testing Order Line Item Model"""
         order = Order.objects.create(
             full_name="Test Order",
             email="test@email.com",

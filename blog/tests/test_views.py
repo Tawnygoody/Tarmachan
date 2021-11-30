@@ -1,8 +1,7 @@
 from django.test import TestCase
-from django.urls import reverse
+from django.contrib.messages import get_messages
 from django.contrib.auth.models import User
 from blog.models import Blog
-from django.contrib.messages import get_messages
 
 
 class TestBlogViews(TestCase):
@@ -68,8 +67,9 @@ class TestBlogViews(TestCase):
         response = response = self.client.get('/blog/add/')
         self.assertEqual(response.status_code, 302)
         messages = list(get_messages(response.wsgi_request))
-        self.assertEqual(str(messages[0]), 'Sorry! Only the team at Tarmachan can access this.')
-
+        self.assertEqual(
+            str(messages[0]),
+            'Sorry! Only the team at Tarmachan can access this.')
 
     def test_edit_blog_view_superuser(self):
         """

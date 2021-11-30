@@ -1,13 +1,16 @@
 from django.test import TestCase
-from products.forms import ProductForm, CommentForm
 from django.contrib.auth.models import User
-from products.models import Product, Clearance, MasterCategory, ProductCategory, ProductSubCategory
+from products.forms import ProductForm, CommentForm
+from products.models import (
+    Product, Clearance, MasterCategory,
+    ProductCategory, ProductSubCategory)
 
 
 class TestProductForms(TestCase):
     """Testing Product forms"""
 
     def test_product_form(self):
+        """Testing valid product form"""
         clearance = Clearance.objects.create(
             name='test_clearance'
         )
@@ -34,6 +37,7 @@ class TestProductForms(TestCase):
         self.assertTrue(form.is_valid())
 
     def test_comment_form(self):
+        """Testing invalid comment form"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',

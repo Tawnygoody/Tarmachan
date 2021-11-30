@@ -30,6 +30,7 @@
     - [Edit Blog Page](#edit-blog-page)
     - [Contact Management Page](#contact-management-page)
     - [Contact Detail Page](#contact-detail-page)
+    - [Newsletter Unsubscribe Page](#newsletter-unsubscribe-page)
     - [Log In Page](#log-in-page)
     - [Log Out Page](#log-out-page)
     - [Register Page](#register-page)
@@ -269,8 +270,8 @@ The sites CSS files have been validated using [W3C CSS Validator](https://jigsaw
 
 The sites JS files and scripts have been validated using [JSHint](https://jshint.com/). Results are outlined below
 
-|  Test  |  Result  |  Noting Points  |
-|-----| ----- |---------------|
+|  Test  |  Result  | 
+|-----| ----- |
 | blog_images.js | No errors: [View](documentation/testing/code_validation/js/blog_images_js.png)| 
 | scroll.js | No errors: [View](documentation/testing/code_validation/js/scroll_js.png)| 
 | bag.html script | No errors: [View](documentation/testing/code_validation/js/bag_html_script.png) | 
@@ -285,6 +286,107 @@ The sites JS files and scripts have been validated using [JSHint](https://jshint
 | add_product.html script | No errors: [View](documentation/testing/code_validation/js/add_product_html_script.png) |
 | edit_product.html script | No errors: [View](documentation/testing/code_validation/js/edit_product_html_script.png) |
 | quantity_input_script.html | No errors: [View](documentation/testing/code_validation/js/quantity_input_script.png) |
+
+## Python
+
+The sites Python files have been validated using [PEP8 online](http://pep8online.com/). Results are outlined below:
+
+### Bag
+
+|  Test  |  Result  | 
+|-----| ----- |
+| contexts.py | No Error: [View](documentation/testing/code_validation/python/bag/bag_contexts_py.png) |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/bag/bag_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/bag/bag_views_py.png) |
+| bag_tools.py | No Error: [View](documentation/testing/code_validation/python/bag/bag_tools_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/bag/bag_test_views_py.png) |
+
+### Blog
+
+|  Test  |  Result  | 
+|-----| ----- |
+| admin.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_admin_py.png) |
+| forms.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_forms_py.png) |
+| models.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_models_py.png) |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_urls_py.png) | 
+| views.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_views_py.png) |
+| widgets.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_widgets_py.png) |
+| test_forms.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_test_forms_py.png) |
+| test_models.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_test_models_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/blog/blog_test_views_py.png) |
+
+### Checkout
+
+|  Test  |  Result  |  Noting Points  |
+|-----| ----- |---------------|
+| admin.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_admin_py.png) | N/A |
+| apps.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_apps_py.png) | N/A |
+| forms.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_forms_py.png) | N/A |
+| models.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_models_py.png) | N/A |
+| signals.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_signals_py.png) | N/A |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_urls_py.png) | N/A |
+| views.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_views_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors, and tried using online Python Beautifiers but there is no recomendations for this issue. This isn't having an impact on the functionality of the code therefore accepting as a known limitation |
+| webhook_handler.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_webhook_handler_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors, and tried using online Python Beautifiers but there is no recomendations for this issue. This isn't having an impact on the functionality of the code therefore accepting as a known limitation |
+| webhooks.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_webhooks_py.png) | N/A |
+| test_forms.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_test_forms_py.png) | N/A |
+| test_models.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_test_models_py.png) | N/A |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_test_views_py.png) | N/A |
+
+### Contact
+
+|  Test  |  Result  | 
+|-----| ----- |
+| admin.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_admin_py.png) |
+| contexts.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_contexts_py.png) |
+| forms.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_forms_py.png) |
+| models.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_models_py.png) |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_views_py.png) |
+| test_forms.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_test_forms_py.png) |
+| test_models.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_test_models_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/contact/contact_test_views_py.png) |
+
+### Home
+
+|  Test  |  Result  |
+|-----| ----- |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/home/home_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/home/home_views_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/home/home_test_views_py.png) |
+
+### Products
+
+|  Test  |  Result  |
+|-----| ----- |
+| admin.py | No Error: [View](documentation/testing/code_validation/python/products/products_admin_py.png) |
+| forms.py | No Error: [View](documentation/testing/code_validation/python/products/products_forms_py.png) |
+| models.py | No Error: [View](documentation/testing/code_validation/python/products/products_models_py.png) |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/products/products_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/products/products_views_py.png) |
+| widgets.py | No Error: [View](documentation/testing/code_validation/python/products/products_widgets_py.png) |
+| test_forms.py | No Error: [View](documentation/testing/code_validation/python/products/products_test_forms_py.png) |
+| test_models.py | No Error: [View](documentation/testing/code_validation/python/products/products_test_models_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/products/products_test_views_py.png) |
+
+### Profiles
+
+|  Test  |  Result  |
+|-----| ----- |
+| forms.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_forms_py.png) |
+| models.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_models_py.png) |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_views_py.png) |
+| test_forms.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_test_forms_py.png) |
+| test_models.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_test_models_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/profiles/profiles_test_views_py.png) |
+
+### Wishlist
+|  Test  |  Result  |
+|-----| ----- |
+| urls.py | No Error: [View](documentation/testing/code_validation/python/wishlist/wishlist_urls_py.png) |
+| views.py | No Error: [View](documentation/testing/code_validation/python/wishlist/wishlist_views_py.png) |
+| test_views.py | No Error: [View](documentation/testing/code_validation/python/wishlist/wishlist_test_views_py.png) |
+
 
 # Browser Compatibility
 
@@ -541,6 +643,14 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 02 | All Contacts Link | Ensure clicking the all contact link takes the user back to the contact management page | ✓ |
 | 03 | Delete Contact Link | Ensure clicking the delete contact link opens the delete contact modal to aviod unwanted/accidental deletions | ✓ |
 | 04 | Delete Contact Confirmation | Ensure clicking the delete contact link in the modal removes the contact from the database and takes the user back to the contact management page. | ✓ |
+
+## Newsletter Unsubscribe Page
+|  Test  |  Action  |  Expected Result  |  Pass  |
+|:---:|------| ---------------- |:---:|
+| 01 | Cancel Button | Ensure the cancel button takes the user back to the home page | ✓ |
+| 02 | Required Field | Ensure clicking the "unsubscribe" button without the required email field informs the user that the field is required | ✓ |
+| 03 | Unsubscribe Button | Ensure submitting a valid form reloads the page, clears the form, and gives the necessary feedback to the user | ✓ |
+
 
 ## Log In Page 
 

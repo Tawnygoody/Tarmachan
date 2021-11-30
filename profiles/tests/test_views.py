@@ -7,6 +7,7 @@ from checkout.models import Order
 class TestProfileViews(TestCase):
 
     def test_user_profile(self):
+        """Test user profile view when a user is logged in"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -18,10 +19,12 @@ class TestProfileViews(TestCase):
         self.assertTemplateUsed(response, 'profiles/profile.html')
 
     def test_user_profile_not_signed_in(self):
+        """Test user profile view when a user isn't logged in"""
         response = self.client.get('/profile/')
         self.assertRedirects(response, '/accounts/login/?next=/profile/')
 
     def test_user_profile_valid_form(self):
+        """Test updating profile with valid form"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -46,6 +49,7 @@ class TestProfileViews(TestCase):
             "Profile updated successfully!")
 
     def test_user_profile_invalid_form(self):
+        """Test updating profile with invalid form"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -68,8 +72,9 @@ class TestProfileViews(TestCase):
         self.assertEqual(
             str(messages[0]),
             "Update failed. Please ensure the form is valid")
-    
+
     def test_previous_orders_view(self):
+        """Tests the checkout success page from the users profile"""
         user = User.objects.create_user(
             username='testuser',
             email='test@gmail.com',
@@ -88,7 +93,8 @@ class TestProfileViews(TestCase):
             grand_total=60,
             stripe_pid="1234567890",
         )
-        response = self.client.get(f'/profile/order_history/{order.order_number}')
+        response = self.client.get(
+            f'/profile/order_history/{order.order_number}')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'checkout/checkout_success.html')
         messages = list(get_messages(response.wsgi_request))

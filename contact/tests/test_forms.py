@@ -1,10 +1,10 @@
 from django.test import TestCase
-from django.contrib.auth.models import User
-from contact.forms import ContactForm, NewsletterUnsubscribeForm, NewsletterForm
+from contact.forms import (
+    ContactForm, NewsletterUnsubscribeForm, NewsletterForm)
 
 
 class TestContactForms(TestCase):
-    """Testing Blog views"""
+    """Testing Contact forms"""
 
     def test_contact_form(self):
         form = ContactForm(

@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.http import HttpResponseRedirect
-from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from products.models import Product
 
@@ -10,6 +9,8 @@ def wishlist(request):
     A view to return products which have been added
     to the user's wishlist
     """
+    # Thanks to Very Academy (credited in README)
+    # check to make sure only registered users can access this view
     if not request.user.is_authenticated:
         messages.error(
             request,
@@ -28,6 +29,8 @@ def add_to_wishlist(request, product_id):
     """
     Allows registered users to add and remove products from their wishlist
     """
+    # Thanks to Very Academy (credited in README)
+    # check to make sure only registered users can access this view
     if not request.user.is_authenticated:
         messages.error(
             request,
@@ -39,8 +42,10 @@ def add_to_wishlist(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if product.user_wishlist.filter(id=request.user.id).exists():
         product.user_wishlist.remove(request.user)
-        messages.success(request, f'{product.name} has been removed from your wishlist')
+        messages.success(
+            request, f'{product.name} has been removed from your wishlist')
     else:
         product.user_wishlist.add(request.user)
-        messages.success(request, f'{product.name} has been added to your wishlist')
+        messages.success(
+            request, f'{product.name} has been added to your wishlist')
     return HttpResponseRedirect(url)

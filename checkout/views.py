@@ -124,7 +124,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Prefills the OrderForm with any info saved to the 
+        # Prefills the OrderForm with any info saved to the
         # user's profile
         if request.user.is_authenticated:
             try:

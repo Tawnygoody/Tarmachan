@@ -59,7 +59,8 @@ def all_products(request):
             )
 
         if 'product_sub_category' in request.GET:
-            product_sub_category = request.GET['product_sub_category'].split(',')
+            product_sub_category = (
+                request.GET['product_sub_category'].split(','))
             products = products.filter(
                 product_sub_category__name__in=product_sub_category)
             product_sub_category = ProductSubCategory.objects.filter(
@@ -109,7 +110,8 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     # Gets the comments attached to the product from the database
     # and order so the latest comment appears first
-    comments = Comment.objects.filter(product_id=product_id).order_by('-create_at')
+    comments = Comment.objects.filter(
+        product_id=product_id).order_by('-create_at')
     # Check to see if there are any comments and updates
     # the product rating based on the average rating
     if comments:
