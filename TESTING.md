@@ -248,7 +248,7 @@ The sites html has been tested using [W3C Markup Validator](https://validator.w3
 | edit_blog.html | No Errors: [View](documentation/testing/code_validation/html/edit_blog_html.png) | N/A |
 | contact_management.html | No Errors: [View](documentation/testing/code_validation/html/contact_management_html.png) | N/A |
 | contact_detail.html | No Errors: [View](documentation/testing/code_validation/html/contact_detail_html.png) | N/A |
-| newsletter_unsubscribe | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/newsletter_sunsubscribe_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the newsletter unsubscribe form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
+| newsletter_unsubscribe | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/newsletter_unsubscribe_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the newsletter unsubscribe form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
 | login.html | No Errors: [View](documentation/testing/code_validation/html/log_in_html.png) | N/A |
 | logout.html | No Errors: [View](documentation/testing/code_validation/html/log_out_html.png) | N/A |
 | sign_up.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/sign_up_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the sign up form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. |
@@ -288,6 +288,21 @@ The sites JS files and scripts have been validated using [JSHint](https://jshint
 
 # Browser Compatibility
 
+The site has been tested on different web browsers on different devices. 
+
+The 3 main devices used for testing are: 
+- Macbook Air
+- Ipad 8th Generation
+- Iphone 8
+
+The site has been manually tested on these devices with Google Chrome & Safari with no issues. 
+
+[Testing Bot](https://testingbot.com/) has been used to test the site on the following browsers:
+- Opera
+- Firefox
+- Microsoft Edge
+
+Other than some slight styling differences with the browsers default behaviour to select boxes and dropdowns, there are no differences and the site works well on all browsers tested.
 
 # Functionality Testing
 

@@ -47,7 +47,7 @@
                         <p><span class="text-muted pe-3">Name:</span><a href="{% url 'contact_detail' contact.id %}" class="unstyled fs-6"><strong>{{ contact.name }}</strong></a></p>
                         <p><span class="text-muted pe-3">Email:</span>{{ contact.email }}</p>
                         <p><span class="text-muted pe-3">Subject:</span>{{ contact.subject }}</p>
-                        <button data-toggle="modal" data-target="#deleteContactModal" data-id="{{ contact.subject }}" data-url="{% url 'delete_contact' contact.id %}" class="btn content-text buttons-general text-white text-uppercase fs-6">Replied</button>
+                        <button data-toggle="modal" data-target="#deleteContactModal" data-id="{{ contact.name }}" data-url="{% url 'delete_contact' contact.id %}" class="btn content-text buttons-general text-white text-uppercase fs-6">Replied</button>
                         <hr>
                     {% endfor %}
                 </div>
