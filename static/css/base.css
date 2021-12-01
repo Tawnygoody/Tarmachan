@@ -32,6 +32,7 @@ html, body {
     background-color: #177373;
 }
 
+/** thanks to w3schools (credited in README) **/
 .bg-parallax {
     background-image: url("/media/parallax-image-r.jpeg");
 	background-position: center;
@@ -358,7 +359,7 @@ html, body {
     text-align: center;
 }
 
-/** thanks to https://stackoverflow.com/questions/27456919/triggering-a-transition-of-a-element-when-hovered-on-another-element/27457228 **/
+/** thanks to Stack Overflow (credited in README) **/
 .gender-buttons {
     background-color: #000;
     border-radius: 0;
@@ -484,7 +485,6 @@ html, body {
     left: 3%;
 }
 
-/** thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax **/
 .parallax {
     min-height: 300px;
 }
@@ -631,7 +631,7 @@ html, body {
             align-items: center;
 }
 
-/**--- Pop up animation thanks to https://www.youtube.com/watch?v=_oVBA15MdoI ---**/
+/**--- Pop up animation thanks to Web Cifar (Credited in README) ---**/
 
 #sizing-chart {
     cursor: pointer;
@@ -869,7 +869,7 @@ html, body {
        object-fit: cover;
 }
 
-/*- Thanks to https://css-tricks.com/line-clampin/ -*/
+/*- Thanks to CSS Tricks (credited in README) -*/
 
 .module {
     width: 100%;

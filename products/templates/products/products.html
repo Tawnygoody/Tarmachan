@@ -201,7 +201,7 @@
         /* 
             When the delete modal is opened it takes the product ID and URL
             so the correct product is deleted.
-            Thanks to https://stackoverflow.com/questions/42441574/passing-information-to-modal-in-for-loop
+            Thanks to Stack Overflow (Credited in README)
         */
         $('#deleteModal').on('shown.bs.modal', function(event) {
             $("#modalProductName").text($(event.relatedTarget).data('id'));

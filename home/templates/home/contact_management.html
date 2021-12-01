@@ -19,6 +19,7 @@
         </div>
         <div class="row my-4">
             {% if contacts %}
+                <!--Table displays on small devices and larger-->
                 <div class="col-12 d-none d-sm-block">
                     <table class="table table-striped text-center">
                         <thead class="title-text text-uppercase">
@@ -41,6 +42,7 @@
                         </tbody>
                     </table>    
                 </div>
+                <!--Displays on extra small devices-->
                 <div class="col-12 d-block d-sm-none text-center content-text">
                     <hr>
                     {% for contact in contacts %}
@@ -86,7 +88,7 @@
         /* 
             When the delete modal is opened it takes the contact ID and URL
             so the correct contact is deleted.
-            Thanks to https://stackoverflow.com/questions/42441574/passing-information-to-modal-in-for-loop
+            Thanks to Stack Overflow (Credited in README)
         */
         $('#deleteContactModal').on('shown.bs.modal', function(event) {
             $("#modalContactName").text($(event.relatedTarget).data('id'));
