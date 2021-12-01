@@ -8,6 +8,10 @@
     - [Purchasing & Checkout](#purchasing-and-checkout)
     - [Admin & Store Management](#admin-and-store-management)
 - [Code Validation](#code-validation)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [Javascript](#javascript)
+    - [Python](#python)
 - [Browser Compatibility](#browser-compatibility)
 - [Functionality Testing](#functionality-testing)
     - [Navigation](#navigation)
@@ -933,6 +937,7 @@ The website's performance has been tested using Google Lighthouse
 | Contact Detail | 98 | 99 | 100 | 100 | N/A |
 | Edit Product | 97 | 92 | 100 | 100 | N/A |
 | Edit Blog | 98 | 92 | 100 | 100 | N/A |
+| Newsletter Unsubscribe | 99 | 99 | 100 | 100 | N/A |
 | Log Out | 99 | 100 | 100 | 100 | N/A |
 | Sign In | 100 | 100 | 100 | 100 | N/A |
 | Sign Up | 98 | 93 | 100 | 100 | N/A |

@@ -6,6 +6,21 @@ View the repository in GitHub [here](https://github.com/Tawnygoody/Tarmachan)
 
 View the live project [here](https://tarmachan.herokuapp.com/)
 
+# Overview
+
+Tarmachan was built as the 4th milestone project as part of Code Institute's Full Stack Software Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
+
+Tarmachan (Gaelic for Ptarmigan) is a ficticious online ecommerce retailer providing mountain clothing and equipment for consumers. Visitors to the site would be able to browse all products available split into 3 master categories (Men's, Womens's and equipment) and further sub categories, read blog posts uploaded by the site admin, register for an account to view past orders, add products to a personalised wishlist, write product reviews, contact the company with any queries and sign up for the company newsletter. 
+
+Tarmachan features ecommerce functionality, payments system using Stripe, CRUD functionality for admin users to manage, products, blog posts, contact messages and Django's integrated admin section for admin users to access database records. 
+
+Please Note that the website is for educational purposes only. Stripe's credit card payment functionality is real but remains in a "test mode" so that no payments will be taken. Please do not enter any personal credit/debit card numbers whilst using the site. 
+
+To use the Stripe payment system when making purchases please use the following details: 
+- Card Number: 4242 4242 4242 4242
+- Date: Any future date
+- CVC: Any number
+
 # Contents
 
 1. [User Experience (UX)](#user-experience-(ux))
@@ -20,6 +35,7 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
+    - [Local Deployment](#local-deployment)
     - [Deployment to Heroku](#deployment-to-heroku)
     - [Storing Static Files with AWS](#storing-static-files-with-aws)
     - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
@@ -485,6 +501,87 @@ All testing carried out on the website can be found in the following file:
 
 # Deployment
 
+## Local Deployment
+
+Before deploying the project there are some requirements to be set up first.
+
+First ensure the following are set up on your chosen IDE:
+- [PIP3](https://pypi.org/project/pip/) Python package installer. 
+- [Python 3.6](https://www.python.org/downloads/release/python-360/) or higher.
+- [Git](https://git-scm.com/) version control.
+
+Secondly you will need an account with Stripe in order to allow for online purchasing.
+
+To set the project up locally you can follow the following steps: 
+
+1. Navigate to the repository - [Tarmachan Repo](https://github.com/Tawnygoody/Tarmachan)
+
+2. Click the code dropdown button, ensure the HTTPS tab is selected in the dropdown and copy the url. 
+
+3. In your IDE navigate to the desired directory. 
+
+4. Open the terminal and enter the following code: 
+    - ```
+        git clone https://github.com/Tawnygoody/Tarmachan.git
+        ```
+
+Note: Alternatively you can select the "Download Zip" option from the dropdown menu, and extract the zip file to your chosen directory within your IDE. 
+
+5. To install the required dependencies needed to run the application type the following into the terminal: 
+    - ```
+        pip3 install -r requirements.txt
+        ```
+
+6. Environment variables will then need to be set up. This can be done in a couple of ways: 
+    1. Create an env.py file in the root directory, and ensure that it is added to the .gitignore file so that secret keys aren't published to github. Add to the following code to the the env.py file:
+        - ```
+            import os
+            os.enviorn["DEVELOPMENT"] = True
+            os.environ["SECRET_KEY"] = "Your Secret Key"
+            os.environ["STRIPE_PUBLIC_KEY"] = "Your Stripe Public Key"
+            os.environ["STRIPE_SECRET_KEY"] = "Your Stripe Secret Key"
+            os.environ["STRIPE_WH_SECRET"] = "Your Stripe WH Secret Key"
+            ```
+    
+    2. Set the environment variables with your IDE settings (if available):
+        - |  Key  |  Value  |
+          |-----| ----- |
+          | DEVELOPMENT | True |
+          | SECRET_KEY | Your Secret Key |
+          | STRIPE_PUBLIC_KEY | Your Stripe Public Key |
+          | STRIPE_SECRET_KEY | Your Stripe Secret Key |
+          | STRIPE_WH_SECRET | Your Stripe WH Secret Key |
+
+    - Your stripe variables can be located on your stripe dashboard. 
+    - You can generate a secret key at [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+
+7. To set up the database you will need to migrate the database models. To do so type the following into the terminal: 
+    - ```
+        python3 manage.py makemigrations
+        python3 manage.py migrate
+        ```
+
+8. To load the product fixtures into the database type the following into the terminal:
+    - ```
+        python3 manage.py loaddata master_category
+        python3 manage.py loaddata product_category
+        python3 manage.py loaddata product_sub_category
+        python3 manage.py loaddata clearance
+        python3 manage.py loaddata products
+        ```
+
+9. Create a superuser to have access to the django admin section by typing the following: 
+    - ```
+        python3 manage.py createsuperuser
+        ```
+    - Follow the commands in the terminal for the superuser details. 
+
+10. You will then be able to run the app locally using the following command: 
+    - ```
+        python3 manage.py runserver
+        ```
+
+
 ## Deployment to Heroku
 
 1. Create a Heroku app: 
@@ -827,6 +924,16 @@ All testing carried out on the website can be found in the following file:
 | Rob Roy Way: 4 Places You Should Know | [Hill Walk Tours](https://www.hillwalktours.com/walking-hiking-blog/rob-roy-way-4-places-you-should-know/) | [See Loch Lomond](https://www.seelochlomond.co.uk/discover/visit-callander-in-the-trossachs) | [Location Scout](https://www.locationscout.net/united-kingdom/25134-falls-of-dochart)  | [Visit Scotland](https://www.visitscotland.com/destinations-maps/pitlochry/accommodation/) |
 | Torridon | [Steve Carter](http://www.stevecarter.com/ansh/ansh2.htm) | [Trip Advisor](https://www.tripadvisor.co.uk/Attraction_Review-g551819-d519798-Reviews-Glen_Torridon-Shieldaig_Ross_and_Cromarty_Scottish_Highlands_Scotland.html) | [Reddit](https://www.reddit.com/r/EarthPorn/comments/kch331/the_pinnacles_of_liathach_torridon_scotland_oc/) | N/A |
 | 7 Scottish Castles | [Visit Scotland](https://www.visitscotland.com/see-do/attractions/castles/great-scottish-castles/) | [Historic Houses](https://www.historichouses.org/house/dunnottar-castle/visit/) | [Wikimedia](https://commons.wikimedia.org/wiki/File:Eilean_Donan_at_Dusk.jpg) | [John S Pow](https://www.johnspowphotography.com/blog/2021/1/4/the-best-place-to-photograph-stirling-castle) |
+
+## Disclaimer
+
+All images and content sourced for the website are for educational purposes only. 
+
+# Acknowledgements
+
+- Thanks to my mentor Gerard Mcbride for his time and support. 
+- Code Institute's tutor team for support in aiding with minor bug fixes. 
+
 
 
 
