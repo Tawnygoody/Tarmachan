@@ -743,7 +743,7 @@ In order to make sure that the stripe payments were proving successful, I have t
 ![Stripe failures](documentation/testing/stripe/stripe_failures.png)
 
 
-# Responsive 
+# Responsive Design
 
 Responsinator and Google Developer tools have been used to test responsiveness. These tools have been utilised throughout the development of the project.
 

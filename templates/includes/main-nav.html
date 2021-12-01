@@ -1,7 +1,8 @@
 <div class="col-lg-5 col-md-5 col-sm-4 my-auto collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav">
+      <!--Men's Dropdown-->
       <li class="nav-item dropdown px-1 mt-sm-3 mt-lg-0">
-        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link" id="mensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men's</a>
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link remove-outline" id="mensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men's</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="mensDropdown">
           <a href="{% url 'products' %}?master_category=mens" class="title-text px-4 unstyled text-uppercase">All Men's</a>
           <div class="dropdown-divider"></div>
@@ -68,8 +69,9 @@
           </div>
         </div>
       </li>
+      <!--Women's Dropdown-->
       <li class="nav-item dropdown px-1">
-        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle" id="womensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women's</a>
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle remove-outline" id="womensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women's</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="womensDropdown">
           <a href="{% url 'products' %}?master_category=womens" class="title-text mx-4 unstyled text-uppercase">All Women's</a>
           <div class="dropdown-divider"></div>
@@ -136,8 +138,10 @@
           </div>
         </div>
       </li>
+
+      <!--Equipment Dropdown-->
       <li class="nav-item dropdown px-1">
-        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle" id="equipmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Equipment</a>
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle remove-outline" id="equipmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Equipment</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="equipmentDropdown">
           <a href="{% url 'products' %}?master_category=equipment" class="title-text mx-4 unstyled text-uppercase">All Equipment</a>
           <div class="dropdown-divider"></div>
@@ -189,9 +193,9 @@
         </div>
       </li>
 
-      <!--Large Devices-->
+      <!--Company Dropdown-->
       <li class="nav-item dropdown px-1 mt-sm-3 mt-lg-0 d-none d-lg-block">
-        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle first-link remove-outline" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="companyDropdown">
           <div class="row no-gutters">
             <div class="col-lg-4 px-2 content-text text-center">
@@ -207,9 +211,9 @@
         </div>
       </li>
 
-      <!--Small Devices-->
+      <!--Clearance Dropdown-->
       <li class="nav-item dropdown px-1 d-lg-none">
-        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle" id="clearanceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clearance</a>
+        <a href="#" class="title-text text-uppercase unstyled nav-link dropdown-toggle remove-outline" id="clearanceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clearance</a>
         <div class="dropdown-menu dropdown-menu-right dropdown-nav-menu" aria-labelledby="clearanceDropdown">
           <a href="{% url 'products' %}?clearance=clearance" class="title-text mx-4 unstyled text-uppercase">All Clearance</a>
           <div class="dropdown-divider"></div>

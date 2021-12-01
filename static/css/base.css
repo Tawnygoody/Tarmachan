@@ -119,6 +119,10 @@ html, body {
     padding-right: 10px;
 }
 
+.remove-outline:focus {
+    outline:none;
+}
+
 /*--- Icons Ends ---*/
 
 /*--- Toasts ---*/

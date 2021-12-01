@@ -315,6 +315,10 @@ The wireframes have been created using Balsamiq and show for Desktop, iPad and i
     - [iPad](documentation/wireframes/blog-story-page/blog-story-ipad-r.png)
     - [iPhone](documentation/wireframes/blog-story-page/blog-story-iphone-r.png)
 
+### Wireframe Review
+
+The final site has stayed relatively true to the wireframes created from the outset. Additional pages have been added throughout the project such as the wishlist which is almost identical to the products page, a site management page, a newsletter unsubscribe page and the respective add / edit blog and product pages. 
+
 ## Surface
 
 ### Design
@@ -932,7 +936,7 @@ Note: Alternatively you can select the "Download Zip" option from the dropdown m
 
 All images and content sourced for the website are for educational purposes only. 
 
-# Acknowledgements
+# Acknowledgments
 
 - Thanks to my mentor Gerard Mcbride for his time and support. 
 - Code Institute's tutor team for support in aiding with minor bug fixes. 
