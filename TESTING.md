@@ -51,50 +51,50 @@
 ## Viewing & Navigation
 1. As a first time user, I would like to instinctively know what the website is offering. 
     - The home page has numerous references to being a mountain equipment store through imagery.
-    - Call to action buttons give an overview of what kind of products are likely to be available. 
-    - Clearance section shows that there is currently a sale on the site's products. 
+    - Call to action buttons gives an overview of what kind of products are likely to be available. 
+    - The Clearance section shows that there is currently a sale on the site's products. 
 
     [User Story 1](documentation/testing/testing_user_stories/user_story1.gif)
 
 2. As a first time user, I would like an intuitive navigation system to easily move around the site. 
     - Icons in the delivery banner (large devices only) allow easy access to Log In and Sign Up functionality. These are tooltipped to provide further guidance to the user. Icons vary depending on whether a user is logged in and if the user is a superuser. 
-    - There are 4 links on the left side of the logo, which opens up mega menus for user's to filter products and find out more information about the company. 
-    - Search icon opens up search menu and a basket icon allows access to the shopping bag. 
+    - There are 4 links on the left side of the logo, which opens up mega menus for users to filter products and find out more information about the company. 
+    - Search icon opens up the search menu and a basket icon allows access to the shopping bag. 
     - The navigation is fixed to the top of the screen so is always accessible for users. 
     - Additional navigation links are available in the footer. 
     - At various points on the site users can redirect to return to the products / blogs page at the click of a button. 
-    - On mobile devices a burger menu opens up a menu where user's can direct to various pages of the site. Scrollable dropdowns are available to allow for filtering. 
+    - On mobile devices, a burger menu opens up a menu where users can direct to various pages of the site. Scrollable dropdowns are available to allow for filtering. 
 
     [User Story 2](documentation/testing/testing_user_stories/user_story2.gif)
 
 3. As a first time user, I want to be able to view a range of products on the same page. 
-    - The products page shows all the products available on the site. The mega menu options will narrow this down dependant on various categories. 
-    - As nearly all user's may not be necessarily interested in all products gievn that their are products for different genders, there is no all products link in the mega menu, however this can be accessed from the footer. 
+    - The products page shows all the products available on the site. The mega menu options will narrow this down depending on various categories. 
+    - As nearly all users may not be necessarily interested in all products given that there are products for different genders, there is no all products link in the mega menu, however, this can be accessed from the footer. 
 
     [User Story 3](documentation/testing/testing_user_stories/user_story3.gif)
 
 
 4. As a first time user, I want to be able to view individual product detail. 
     - On the products page users can see the product image, name, price and rating (if a product has a rating). When hovering over an image an overlay with the product description can be seen.
-    - When the user clicks a product from the products page they are taken to the product detail page. Here the user can see a variety information about the product, including further descriptions, specifications and reviews. 
+    - When the user clicks a product from the products page they are taken to the product detail page. Here the user can see a variety of information about the product, including further descriptions, specifications and reviews. 
 
     [User Story 4](documentation/testing/testing_user_stories/user_story4.gif)
 
 5. As a first time user, I want to be able to locate any special offers & deals to take advantage of any reduced prices. 
     - From the mega menu there are links for clearance items in each of the three master categories. 
-    - In the footer there is a link for all products in clearance. 
-    - On the home page there is large clearance image, inviting users to take advantage of products on offer. 
-    - On the products page, products which are in clearance are clearly identifiable by the sale logo in the upper right corner of the product card, and by the clearance price displayed. 
+    - In the footer, there is a link for all products in clearance. 
+    - On the home page there is a large clearance image, inviting users to take advantage of products on offer. 
+    - On the products page, products which are in clearance are identifiable by the sale logo in the upper right corner of the product card, and by the clearance price displayed. 
 
     [User Story 5](documentation/testing/testing_user_stories/user_story5.gif)
 
 6. As a first time user, I would like to find out information about the company to see what the business can deliver. 
-    - User's can go to the company tab and look at the about us section which has a breif overview of the company and its philosophy. This can also be accessed in the footer. 
+    - Users can go to the company tab and look at the about us section which has a brief overview of the company and its philosophy. This can also be accessed in the footer. 
 
     [User Story 6](documentation/testing/testing_user_stories/user_story6.gif)
 
 7. As a first time user, I want to be able to contact the business with any queries I may have.
-    - User's are able to find a contact page for the comany on the company tab. Additional a link can be found in the footer. 
+    - User's can find a contact page for the company on the company tab. Additional a link can be found in the footer. 
     - The contact page has company details, opening times and a contact form. Customers are notified by email when a successful contact request has been made. 
 
     [User Story 7](documentation/testing/testing_user_stories/user_story7.gif)
@@ -102,16 +102,16 @@
 ## Registration & User Accounts
 8. As a site user, I want to be able to sign up and register an account to make future purchases easier. 
     - One larger devices users can click on the register icon in the upper right corner of the screen which is tooltipped to aid users. 
-    - Alternatively users can sign up via the sign up link in the footer, which takes them to the register page. 
-    - On mobile devices users can sign up via the link in the burger menu, or again in the footer. 
+    - Alternatively, users can sign up via the sign up link in the footer, which takes them to the register page. 
+    - On mobile devices, users can sign up via the link in the burger menu, or again in the footer. 
     - Login links can be found in the same places as the register links but will redirect the users to the login page. 
-    - Once user's have registered they are notified a confirmation email has been sent to their email address. Upon opening this link usr's can confirm their email address and login. 
+    - Once users have registered they are notified a confirmation email has been sent to their email address. Upon opening this link users can confirm their email address and login. 
 
     [User Story 8](documentation/testing/testing_user_stories/user_story8.gif)
 
 9. As a site user, I want to be able to have access to a personal profile page where I'm able to see my order history and delivery details. 
-    - Registered users have access to their profile page by clicking the icon in the upper right corner which is tool tipped to aid users. On smaller screen users can access their profile from the burger menu. Users also have access to their profile by clicking the link in the footer. 
-    - On the profile page user's can update their delivery information. 
+    - Registered users have access to their profile page by clicking the icon in the upper right corner which is tool tipped to aid users. On smaller screens, users can access their profile from the burger menu. Users also have access to their profile by clicking the link in the footer. 
+    - On the profile page users can update their delivery information. 
     - Users can also click on previous orders which will take them to their confirmation page for that order, and a message will show to let the user know they are looking at a past order. 
 
     [User Story 9](documentation/testing/testing_user_stories/user_story9.gif)
@@ -120,44 +120,44 @@
     - When a user is logged in they have access to fill in a form on the product detail page under the reviews tab. 
     - Users must provide a subject, message and rating to inform other users. 
     - Users will be able to delete any comments they have made, should they wish. 
-    - Once a user has left a review it will update the product rating, and create an average rating based on all the users reviews. 
+    - Once a user has left a review it will update the product rating, and create an average rating based on all the user's reviews. 
 
     [User Story 10](documentation/testing/testing_user_stories/user_story10.gif)
 
 11. As a site user, I want to be able to save items to a Wishlist for ease of purchase on future visits. 
     - When a user is logged in they will have access to their wishlist. This can be accessed by the icon in the upper right corner on large devices or via the burger menu on smaller devices. 
-    - On the product pages, each product card will have a heart outline to signify that this product is not currently in the users wishlist. If a product is already in the user's wishlist the heart will have a colour fill. This is tooltipped to aid the user on larger devices. Clicking the heart will either add or remove a product from the users wishlist. 
-    - Simarlarly there is a button on the product detail page which allows users to add or remove a product from a users wishlist. 
+    - On the product pages, each product card will have a heart outline to signify that this product is not currently in the user's wishlist. If a product is already in the user's wishlist the heart will have a colour fill. This is tooltipped to aid the user on larger devices. Clicking the heart will either add or remove a product from the user's wishlist. 
+    - Similarly there is a button on the product detail page that allows users to add or remove a product from a user's wishlist. 
 
     [User Story 11](documentation/testing/testing_user_stories/user_story11.gif)
 
 ## Sorting & Searching
 12. As a site user, I want to be able to see all the products that the company sells. 
-    - User's are able to find an all products link in the footer. 
-    - As the site has a range of products across 3 main categories I have decided against an all products link in the main nav as its unlikely that users will wish to see all products. 
+    - Users are able to find an all products link in the footer. 
+    - As the site has a range of products across 3 main categories I have decided against an all products link in the main nav as it's unlikely that users will wish to see all products. 
     - Various links across the site will take the users to an all products page. 
 
     [User Story 12](documentation/testing/testing_user_stories/user_story12.gif)
 
 13. As a site user, I want to be able to narrow down the products by categories and sub-categories. 
-    - The mega menu nav bar allows user's to sort products via master categories(mens, womens, equipment), product categories(tops, jackets, legwear etc), and product sub categories(t-shirts, pullover, fleece etc). 
+    - The mega menu nav bar allows the user to sort products via master categories(mens, womens, equipment), product categories(tops, jackets, legwear etc), and product sub-categories(t-shirts, pullover, fleece etc). 
 
     [User Story 13](documentation/testing/testing_user_stories/user_story13.gif)
 
 14. As a site user, I want to be able to sort products with various parameters. 
-    - Users are able to sort products on the products page using the sort by dropdown selector. Users have the option to sort the products by Price: high to low or low to high, Rating: high to low or low to high, Name: A-Z or Z-A. 
-    - Note: sorting by rating low to high: products which have not yet received a rating will appear at the top. 
+    - Users are able to sort products on the products page using the sort by the dropdown selector. Users have the option to sort the products by Price: high to low or low to high, Rating: high to low or low to high, Name: A-Z or Z-A. 
+    - Note: sorting by rating low to high: products that have not yet received a rating will appear at the top. 
 
     [User Story 14](documentation/testing/testing_user_stories/user_story14.gif)
 
 15. As a site user, I want to be able to search for products using keywords.  
-    - Users are able to to click the search icon which will open the the search bar allowing users to search for products using keywords. 
+    - Users are able to click the search icon which will open the search bar allowing users to search for products using keywords. 
 
     [User Story 15](documentation/testing/testing_user_stories/user_story15.gif)
 
 ## Purchasing & Checkout
-16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
-    - Users are able to select the site of product using the dropdown provided on products which have sizes. User's can also open a sizing chart to correctly identify what size they require. 
+16. As a purchasing user, I want to be able to select product sizes (on products that have sizes) and select the quantity of product I wish to purchase. 
+    - Users are able to select the size of the product using the dropdown provided on products that have sizes. Users can also open a sizing chart to correctly identify what size they require. 
     - Users are able to select the quantity of items that they wish using the selectors and can choose between 1-99. 
 
     [User Story 16](documentation/testing/testing_user_stories/user_story16.gif)
@@ -168,27 +168,27 @@
     [User Story 17](documentation/testing/testing_user_stories/user_story17.gif)
 
 18. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
-    - When a user adds an item to the basket a success toast provides feedback that a product has been added, and gives a summary of the items in the users bag. This message dissapears when a user closes the toast or redirect to another page.
-    - Any time a user adds a product to their bag, the basket icon in the navbar changes colour and updates the price based on whats in the basket (plus delivery if not over the delivery threshold). 
+    - When a user adds an item to the basket a success toast provides feedback that a product has been added, and gives a summary of the items in the user's bag. This message disappears when a user closes the toast or redirects to another page.
+    - Any time a user adds a product to their bag, the basket icon in the navbar changes colour and updates the price based on what's in the basket (plus delivery if not over the delivery threshold). 
 
-    [User Story 17](documentation/testing/testing_user_stories/user_story17.gif)
+    [User Story 18](documentation/testing/testing_user_stories/user_story17.gif)
 
 19. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
-    - User's can update and remove products from their bag, on the shopping bag page, which can be accessed by clicking the basket in the navbar. 
-    - User's will be notified whenever they update or remove an item from their shopping bag. 
+    - Users can update and remove products from their bag, on the shopping bag page, which can be accessed by clicking the basket in the navbar. 
+    - Users will be notified whenever they update or remove an item from their shopping bag. 
 
     [User Story 19](documentation/testing/testing_user_stories/user_story19.gif)
 
 20. As a purchasing user, I want to be able to checkout securely. 
-    - User's are able to checkout by clicking the secure checkout button on the shopping bag page. 
+    - Users can checkout by clicking the secure checkout button on the shopping bag page. 
     - On the checkout page users can fill in the form. Required fields are indicated with a star in the placeholder. 
     - Once the form is valid and the user has clicked the complete order button the checkout process is complete. 
 
     [User Story 20](documentation/testing/testing_user_stories/user_story20.gif)
 
-21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful.
+21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is successful.
     - Once a user has completed the checkout process, they will be shown a confirmation page with details of their order. 
-    - Users will also shown a message letting them know that a confirmation email has been sent to their email address. 
+    - Users will also be shown a message letting them know that a confirmation email has been sent to their email address. 
     - Registered users can find past confirmation orders in their profile. 
 
     [User Story 21](documentation/testing/testing_user_stories/user_story21.gif)
@@ -197,7 +197,7 @@
 
 ## Admin & Store Management
 22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
-    - Superuser's will have access to a site management page. Access to this can be found by clicking the icon in the upper right corner which is tooltipped to aid users (larger devices only). On smaller devices the site management page can be accessed via the burger menu. 
+    - Superusers will have access to a site management page. Access to this can be found by clicking the icon in the upper right corner which is tooltipped to aid users (larger devices only). On smaller devices, the site management page can be accessed via the burger menu. 
     - From here superusers can add products to the site, by clicking the add product icon and filling in the form. Once the add product button is submitted the user will be redirected to the product detail page for the product they have just added. 
     - From the product detail page superusers can edit and delete products by clicking on the icons for these options. 
     - Superusers can also edit and delete products from the products page directly. 
@@ -206,23 +206,23 @@
 
 
 23. As a site owner, I want access to an admin section to view and manage orders. 
-    - The admin user has access to the django admin section where they can manage orders. 
+    - The admin user has access to the Django admin section where they can manage orders. 
 
     [User Story 23](documentation/testing/testing_user_stories/user_story23.gif)
 
 24. As a site owner, I want to be able to manage blog posts. 
-    - Superusers are able to add blogs from the site management page.
-    - Once a blog is added the user is redirected to the blog detail page. From this page superusers, are able to edit and delete blogs. These buttons will not be available to regular users. 
+    - Superusers can add blogs from the site management page.
+    - Once a blog is added the user is redirected to the blog detail page. From this page superusers, can edit and delete blogs. These buttons will not be available to regular users. 
 
     [User Story 24](documentation/testing/testing_user_stories/user_story24.gif)
 
 25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 
-    - Superusers are able to delete any comments that have been left by other users, by clicking the trash icon on product reviews. 
+    - Superusers can delete any comments that have been left by other users, by clicking the trash icon on product reviews. 
 
     [User Story 25](documentation/testing/testing_user_stories/user_story25.gif)
 
-26. As a site owner, I want to be able to monitor contact messages that have been submitted by site user's and delete them once they have been responded to. 
-    - Superusers are able to manage contact messages on the site management page by cliking the manage contacts icon. From here superusers can monitor messages that have been sent and delete them once the messages have been responded to. 
+26. As a site owner, I want to be able to monitor contact messages that have been submitted by site users and delete them once they have been responded to. 
+    - Superusers can manage contact messages on the site management page by clicking the manage contacts icon. From here superusers can monitor messages that have been sent and delete them once the messages have been responded to. 
 
     [User Story 26](documentation/testing/testing_user_stories/user_story26.gif)
 
@@ -231,7 +231,7 @@
 
 ## HTML
 
-The sites html has been tested using [W3C Markup Validator](https://validator.w3.org/). By getting the source code for each page ("ctrl + option + u" for mac) and copying into the validator I was able to identify any errors/warnings for each page. Results are outlined below:
+The site's HTML has been tested using [W3C Markup Validator](https://validator.w3.org/). By getting the source code for each page ("ctrl + option + u" for mac) and copying it into the validator I was able to identify any errors/warnings for each page. Results are outlined below:
 
 |  Test  |  Result  |  Noting Points  |
 |-----| ----- |---------------|
@@ -245,7 +245,7 @@ The sites html has been tested using [W3C Markup Validator](https://validator.w3
 | contact_us.html | Duplicate ID error & warnings: [View](documentation/testing/code_validation/html/contact_us_html.png) | This is a result of duplicate ID's being rendered by crispy forms for the email field on the contact form and the email field in the footer for the newsletter subscription. This is noted in the Known Issues section. | 
 | blog.html | No Errors: [View](documentation/testing/code_validation/html/blog_html.png) | N/A |
 | blog_detail.html | No Errors: [View](documentation/testing/code_validation/html/blog_detail_html.png) | N/A |
-| wishlist.html | No Errors: [View](documentation/testing/code_validation/html/products_html.png) | N/A |
+| wishlist.html | No Errors: [View](documentation/testing/code_validation/html/wishlist_html.png) | N/A |
 | profile.html | No Errors: [View](documentation/testing/code_validation/html/profile_html.png) | N/A |
 | add_product.html | No Errors: [View](documentation/testing/code_validation/html/add_product_html.png) | N/A |
 | edit_product.html | No Errors: [View](documentation/testing/code_validation/html/edit_product_html.png) | N/A |
@@ -260,7 +260,7 @@ The sites html has been tested using [W3C Markup Validator](https://validator.w3
 
 ## CSS
 
-The sites CSS files have been validated using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Results are outlined below
+The site's CSS files have been validated using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Results are outlined below:
 
 |  Test  |  Result  |
 |-----| ----- |
@@ -272,7 +272,7 @@ The sites CSS files have been validated using [W3C CSS Validator](https://jigsaw
 
 ## Javascript
 
-The sites JS files and scripts have been validated using [JSHint](https://jshint.com/). Results are outlined below
+The site's JS files and scripts have been validated using [JSHint](https://jshint.com/). Results are outlined below:
 
 |  Test  |  Result  | 
 |-----| ----- |
@@ -293,7 +293,7 @@ The sites JS files and scripts have been validated using [JSHint](https://jshint
 
 ## Python
 
-The sites Python files have been validated using [PEP8 online](http://pep8online.com/). Results are outlined below:
+The site's Python files have been validated using [PEP8 online](http://pep8online.com/). Results are outlined below:
 
 ### Bag
 
@@ -329,8 +329,8 @@ The sites Python files have been validated using [PEP8 online](http://pep8online
 | models.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_models_py.png) | N/A |
 | signals.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_signals_py.png) | N/A |
 | urls.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_urls_py.png) | N/A |
-| views.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_views_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors, and tried using online Python Beautifiers but there is no recomendations for this issue. This isn't having an impact on the functionality of the code therefore accepting as a known limitation |
-| webhook_handler.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_webhook_handler_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors, and tried using online Python Beautifiers but there is no recomendations for this issue. This isn't having an impact on the functionality of the code therefore accepting as a known limitation |
+| views.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_views_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors and tried using online Python Beautifiers but there is no recommendations for this issue. This isn't having an impact on the functionality of the code, therefore, accepting as a known limitation |
+| webhook_handler.py | 1 Error - Line too long [View](documentation/testing/code_validation/python/checkout/checkout_webhook_handler_py.png) | There is a line too long for a "for" block of code. I've tried correcting this myself by using brackets in certain parts of the code but it is creating further errors and tried using online Python Beautifiers but there is no recommendations for this issue. This isn't having an impact on the functionality of the code, therefore, accepting as a known limitation |
 | webhooks.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_webhooks_py.png) | N/A |
 | test_forms.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_test_forms_py.png) | N/A |
 | test_models.py | No Error: [View](documentation/testing/code_validation/python/checkout/checkout_test_models_py.png) | N/A |
@@ -412,7 +412,7 @@ Other than some slight styling differences with the browsers default behaviour t
 
 # Functionality Testing
 
-Funcionality testing has been carried out on all browsers listed in the browser compatibility section. 
+Funcionality testing has been carried out on all browser's listed in the browser compatibility section. 
 
 ## Navigation
 
@@ -425,10 +425,10 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 05 | Company Link | Opens the mega menu for company links (on larger screens only). All subsequent product links working | ✓ |
 | 06 | Search Icon | Opens the search bar underneath the main nav | ✓ |
 | 07 | Basket Icon | Takes the user to their shopping bag page | ✓ |
-| 08 | Log Out Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to the log out page | ✓ |
-| 09 | Profile Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to their profile page | ✓ |
-| 09 | Wishlist Icon (When User logged in & large screens) | On hover tooltip shows describing the link and takes the user to their wishlist | ✓ |
-| 10 | Site Management (When Super User logged in & large screens) | On hover tooltip shows describing the link and takes the user to the site management page | ✓ |
+| 08 | Log Out Icon (When User logged in & large screens) | On hover, tooltip shows describing the link and takes the user to the log out page | ✓ |
+| 09 | Profile Icon (When User logged in & large screens) | On hover, tooltip shows describing the link and takes the user to their profile page | ✓ |
+| 09 | Wishlist Icon (When User logged in & large screens) | On hover, tooltip shows describing the link and takes the user to their wishlist | ✓ |
+| 10 | Site Management (When Super User logged in & large screens) | On hover, tooltip shows describing the link and takes the user to the site management page | ✓ |
 | 11 | Burger menu | Burger menu opens and all the corresponding links work in accordance with what type of user is logged in | ✓ |
 | 12 | Shop Links in footer | Takes the user to the products page with the correct filters applied | ✓ |
 | 13 | Company Links | Takes the user to the correct company pages and shows the relevant links when a user is logged in / not logged in. | ✓ |
@@ -438,18 +438,18 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 17 | Linkedin Icon | Opens Linkedin in a new tab | ✓ |
 | 18 | Footer Logo | Takes the user to the home page | ✓ |
 | 19 | Github icon | Opens the github repository for the site in a new tab | ✓ |
-| 20 | Newsletter Subscriber | Ensure when a user enters a valid email a success messages is displayed confirming the user of their subscription and an email is sent to the user to confirm their subscription. | ✓ |
-| 21 | Newsletter Unsubscribe link | Takes the user newsletter unsubscribe page | ✓ |
+| 20 | Newsletter Subscriber | Ensure when a user enters a valid email a success message is displayed confirming the user of their subscription and an email is sent to the user to confirm their subscription. | ✓ |
+| 21 | Newsletter Unsubscribe link | Takes the user to the newsletter unsubscribe page | ✓ |
 | 22 | Sticky top Navbar | Ensure when the user scrolls down the page that the delivery banner and the main navbar stick to the top of the page | ✓ |
 
 ## Home Page
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Men's Hero Image Link | Takes the user to products page, with all products in the "mens" master category  | ✓ |
-| 02 | Women's Hero Image Link | Takes the user to products page, with all products in the "womens" master category  | ✓ |
-| 03 | Equipment Hero Image Link | Takes the user to products page, with all products in the "equipment" master category  | ✓ |
-| 04 | Hovering over featured products | Scales in the images and transitions in the links for the mens and womens of that product category | ✓ |
-| 05 | Mens and womens featured product links | Takes the user to the products page, with the correct filters applied for master category and product category | ✓ |
+| 01 | Men's Hero Image Link | Takes the user to the products page, with all products in the "mens" master category  | ✓ |
+| 02 | Women's Hero Image Link | Takes the user to the products page, with all products in the "womens" master category  | ✓ |
+| 03 | Equipment Hero Image Link | Takes the user to the products page, with all products in the "equipment" master category  | ✓ |
+| 04 | Hovering over featured products | Scales in the images and transitions in the links for the men's and women's of that product category | ✓ |
+| 05 | Mens and womens featured product links | Takes the user to the products page, with the correct filters applied for the master category and product category | ✓ |
 | 06 | Clearance Image | Takes the user to products page, with all products in the clearance category  | ✓ |
 | 07 | Owl carousel | Next and Previous arrows slide the carousel along by 1. Dots slide the carousel to the next set of blogs. Touch sliding enabled on smart devices | ✓ |
 | 08 | Blog Cards | Clicking the blog cards takes the user to the blog detail for that card. Hovering on the cards scales the cards in | ✓ |
@@ -458,20 +458,20 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Product Count | Product Count updates in accordance with how many products are being displayed and search term displays if a user has enter a search query  | ✓ |
+| 01 | Product Count | Product Count updates in accordance with how many products are being displayed and search term displays if a user has entered a search query  | ✓ |
 | 02 | Sort By Dropdown | Sort by dropdown displays all the options available and sorts the products in accordance with the selection | ✓ |
 | 03 | Product Image Hover | Hovering over the product image will fade the image and show the product description for that product | ✓ (Large devices only) |
 | 04 | Product Cards | Ensure Product image, title, price and tag are showing for each product | ✓ |
-| 05 | Clearance products | Ensure products that are currently in the clearance are displaying the clearance icon image and that the clearance price is rendered and original price is scored through | ✓ |
+| 05 | Clearance products | Ensure products that are currently in the clearance are displaying the clearance icon image and that the clearance price is rendered and the original price is scored through | ✓ |
 | 06 | Products with Ratings | Ensure products with ratings that stars appear and are filled in accordance with their rating and the actual rating displays below | ✓ |
 | 07 | Wishlist Icon (When user logged in) | Ensure when a user is logged in the Wishlist icon is displayed | ✓ |
-| 08 | In Wishlist Icon | Ensure when a product is in the users wishlist the wishlist icon has a colour fill | ✓ |
-| 09 | Not in Wishlist Icon | Ensure when a product is not in the users wishlist only the outline shows for the wishlist icon | ✓ |
+| 08 | In Wishlist Icon | Ensure when a product is in the user's wishlist the wishlist icon has a colour fill | ✓ |
+| 09 | Not in Wishlist Icon | Ensure when a product is not in the user's wishlist only the outline shows for the wishlist icon | ✓ |
 | 10 | Edit Product Icon (When Super User is logged in) | Ensure the edit icon displays and when clicked takes the superuser to the edit product form | ✓ |
 | 11 | Delete Product Icon (When Super User is logged in) | Ensure the delete icon displays and when clicked opens the delete product model | ✓ |
 | 12 | Delete Product Modal (Cancel Button) | Ensure that when the cancel button is clicked it closes the modal and no further action is taken to delete the product | ✓ |
 | 13 | Delete Product Modal (Delete Button) | Ensure that when the delete product button is clicked it deletes the products and no longer displays on the site | ✓ |
-| 14 | Product Tags Link | Ensure when the tags link is clicked it takes the user to the products page for that master category and product sub category | ✓ |
+| 14 | Product Tags Link | Ensure when the tags link is clicked it takes the user to the products page for that master category and product sub-category | ✓ |
 
 ## Product Detail Page 
 
@@ -479,41 +479,41 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 |:---:|------| ---------------- |:---:|
 | 01 | Product Rating link | Ensure when the product rating is clicked it opens the reviews tab and closes the details tab and takes the user to the reviews section | ✓ |
 | 02 | Read More link | Ensure when the read more link is clicked the user is taken to the details section. If the reviews tab is open ensure clicking read more closes the product reviews section and open the details section. | ✓ |
-| 03 | Products tag link | Ensure when the products tag link is clicked is takes the user to the products page with the master category and product sub category filters applied | ✓ |
-| 04 | Size Selector | Ensure the size selector box is functioning properly so users are able to pick different sizes for products | ✓ |
-| 05 | Sizing Chart | Ensure when the sizing chart link is clicked the relevant sizing chart transitions in. Ensure clicking the cross or clicking elsewhere on the product details page (larger devices only) closes the sizing chart. | ✓ |
-| 06 | Quantity Selectors | Ensure users are able to increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
+| 03 | Products tag link | Ensure when the products tag link is clicked is takes the user to the products page with the master category and product sub-category filters applied | ✓ |
+| 04 | Size Selector | Ensure the size selector box is functioning properly so users can pick different sizes for products | ✓ |
+| 05 | Sizing Chart | Ensure when the sizing chart link is clicked the relevant sizing chart transitions in. Ensure clicking the cross or clicking elsewhere on the product details page (larger devices only) close the sizing chart. | ✓ |
+| 06 | Quantity Selectors | Ensure users can increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
 | 07 | Keep Shopping link | Ensure the link takes the user back to the all products page | | ✓ |
-| 08 | Add to Bag link | Ensure when a product is added to the bag that a toast to confirm this to user is displayed, and the basket icon in the navbar is updated to reflect the price of the items in the basket plus delivery (if applicable) | ✓ |
-| 09 | Log In and Sign Up Links (When not logged in) | Ensure the log in and sign up links are displayed when a user is not logged in and the user is redirected to the relevant page. Check under add to bag button and in reviews section | ✓ |
-| 10 | Wishlist Links (When user logged in) | Ensure the add to wishlist link adds a product to the users wishlist and a toast message displays to confirm this and vice vera when removing products from the wishlist | ✓ |
+| 08 | Add to Bag link | Ensure when a product is added to the bag that a toast to confirm this to the user is displayed, and the basket icon in the navbar is updated to reflect the price of the items in the basket plus delivery (if applicable) | ✓ |
+| 09 | Log In and Sign Up Links (When not logged in) | Ensure the log in and sign up links are displayed when a user is not logged in and the user is redirected to the relevant page. Check under add to bag button and in the reviews section | ✓ |
+| 10 | Wishlist Links (When user logged in) | Ensure the add to wishlist link adds a product to the user's wishlist and a toast message displays to confirm this and vice vera when removing products from the wishlist | ✓ |
 | 11 | Details and Reviews tabs | Ensure when the reviews tab is clicked the details section is hidden and vice versa | ✓ |
 | 12 | No product Reviews | Ensure when there are no reviews on a product a message to show this is displayed in the product reviews section | ✓ |
 | 13 | Product Reviews | Ensure product reviews are rendering correctly with the latest reviews at the top | ✓ |
-| 14 | Delete Comment (Superuser and reviewer only) | Ensure that the delete comment icon displays when the review user or superuser is logged in. When clicked ensure the delete comment modal displays to avoid unwanted deletion. When delete comment button is clicked ensure the comment is deleted and the rating is adjusted. | ✓ |
-| 15 | Review Form | Ensure that all fields are filled in, in order to successfully submit the form | ✓ |
+| 14 | Delete Comment (Superuser and reviewer only) | Ensure that the delete comment icon displays when the review user or superuser is logged in. When clicked ensure the delete comment modal displays to avoid unwanted deletion. When the delete comment button is clicked ensure the comment is deleted and the rating is adjusted. | ✓ |
+| 15 | Review Form | Ensure that all fields are filled in, to successfully submit the form | ✓ |
 | 16 | Product Rating | Ensure when a new review is added the product rating updates to reflect the average from all the reviews left | ✓ |
 
 ## Shopping Bag Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Product Items | Ensure each product is displaying in a separate row and their are different rows for the same product but with different sizes | ✓ |
-| 02 | Quantity Selectors | Ensure users are able to increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
+| 01 | Product Items | Ensure each product is displayed in a separate row and there are different rows for the same product but with different sizes | ✓ |
+| 02 | Quantity Selectors | Ensure users can increase the quantity by clicking the plus and minus quantity selectors. Ensure that the quantity cannot be clicked lower than 1 or higher than 99. | ✓ |
 | 03 | Update Link | Ensure clicking the update link updates the quantity for that product only | ✓ |
 | 04 | Remove Link | Ensure clicking the remove link removes the product from the bag entirely | ✓ |
-| 05 | Totals | Ensure that the subtotal of each product, bag total, and grand total are updated whenever a product is updated to reflect whats in the bag | ✓ |
+| 05 | Totals | Ensure that the subtotal of each product, bag total, and grand total are updated whenever a product is updated to reflect what's in the bag | ✓ |
 | 06 | Delivery Cost | Ensure the delivery cost displays if a user does not meet the minimum delivery threshold | ✓ |
-| 07 | Keep Shopping Button | Ensure whne the keep shopping button is clicked the user is redirected to the all products page | ✓ |
-| 08 | Secure Checkout Button | Ensure when the secure checkout button is clikced the user is taken to the checkout page | ✓ |
-| 09 | No items in bag | Ensure when their are no items in the users shopping bag, that this message is displayed to the user and the keep shopping link is displayed | ✓ |
+| 07 | Keep Shopping Button | Ensure when the keep shopping button is clicked the user is redirected to the all products page | ✓ |
+| 08 | Secure Checkout Button | Ensure when the secure checkout button is clicked the user is taken to the checkout page | ✓ |
+| 09 | No items in bag | Ensure when there are no items in the users shopping bag, that this message is displayed to the user and the keep shopping link is displayed | ✓ |
 
 ## Checkout Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 | 01 | Order Summary | Ensure order summary information renders correctly with a row for each product. Ensure the totals match the contents of the bag | ✓ |
-| 02 | Checkout Form | Ensure the form cannot be submitted without all the required fields been filled | ✓ |
+| 02 | Checkout Form | Ensure the form cannot be submitted without all the required fields being filled | ✓ |
 | 03 | Pre-populated fields | Ensure when a user is logged in and they have saved their delivery details to their profile the corresponding fields are pre-populated | ✓ |
 | 04 | Save details checkbox | Ensure when the delivery information checkbox is checked that the user's profile is updated with this information once the form is submitted | ✓ |
 | 05 | Log In and Sign Up Links (When not logged in) | Ensure the log in and sign up links are displayed when a user is not logged in and the user is redirected to the relevant page. | ✓ |
@@ -553,8 +553,8 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Blog Cards | Ensure that the blog cards are rendering correctly, are ordered with the latest blog post appearing first and with the right information and that only the first the lines of the first paragraph are displaying on the blog cards | ✓ |
-| 02 | Blog Cards hovering (desktop only) | Ensure when the blog cards are hovered over the scale in. | ✓ |
+| 01 | Blog Cards | Ensure that the blog cards are rendering correctly, are ordered with the latest blog post appearing first and with the right information, and that only the first three lines of the first paragraph are displaying on the blog cards | ✓ |
+| 02 | Blog Cards hovering (desktop only) | Ensure when the blog cards are hovered over they scale in. | ✓ |
 | 03 | Blog Cards | Ensure that clicking anywhere on the blog card redirect the user to the blog detail for that blog | ✓ |
 
 ## Blog Detail Page
@@ -564,14 +564,14 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 | 01 | Page Layout | Ensure the page layout renders correctly when different inputs have been filled | ✓ |
 | 02 | All Blogs Link | Ensure the all blogs link takes the user back to the main blog page | ✓ |
 | 03 | Edit Blog Link (When superuser is logged in) | Ensure the edit blog link takes the superuser to the edit blog page | ✓ |
-| 04 | Delete Blog Link | Ensure that the delete blog link opens the delete blog modal. Ensure cancelling closes the delete and clicking delete, removes the blog from the database | ✓ |
+| 04 | Delete Blog Link | Ensure that the delete blog link opens the delete blog modal. Ensure canceling closes the delete and clicking delete, removes the blog from the database | ✓ |
 
 ## Wishlist Page
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
 | 01 | No Products in Wishlist | Ensure when a user hasn't added any products to their wishlist that this is displayed to the user and an all products link takes the user back to the all products page | ✓ |
-| 02 | Product Cards | Ensure product cards are displaying as they would of the products page, once an item is added to the wishlist | ✓ |
+| 02 | Product Cards | Ensure product cards are displaying as they would on the products page, once an item is added to the wishlist | ✓ |
 | 03 | Remove from wishlist | Ensure when the remove from wishlist link is clicked that the product is removed from the user wishlist and the user is notified with a toast message | ✓ |
 | 04 | Product Detail Link | Ensure clicking the product image takes the user to the product detail page | ✓ |
 
@@ -579,7 +579,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Delivery Information Form | Ensure that the users delivery information is displaying in the relevant fields if theyu have previously made an order and clicked the save to profile checkbox | ✓ |
+| 01 | Delivery Information Form | Ensure that the users delivery information is displaying in the relevant fields if they have previously made an order and clicked the save to profile checkbox | ✓ |
 | 02 | Update Information | Ensure that updating the delivery information and clicking the update information button will save those changes to the user's profile and a success message displays to confirm this to the user | ✓ |
 | 03 | Previous orders | Ensure previous order information displays in the order history column and displays with the latest order at the top | ✓ |
 | 04 | Previous order confirmation | Ensure clicking the order number takes the user to the checkout success page for that order | ✓ |
@@ -633,7 +633,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 |  Test  |  Action  |  Expected Result  |  Pass  |
 |:---:|------| ---------------- |:---:|
-| 01 | Table rendering | Ensure when a contact message is sent to the company that is displays in the table (on larger devices) or row (on smaller devices) | ✓ |
+| 01 | Table rendering | Ensure when a contact message is sent to the company that it displays in the table (on larger devices) or row (on smaller devices) | ✓ |
 | 02 | Contact Detail Link | Ensure clicking the name field takes the user to the contact detail page for that contact message | ✓ |
 | 03 | Replied Link | Ensure clicking the replied link opens the delete contact modal | ✓ |
 | 04 | Cancel Link (Modal) | Ensure clicking the cancel link in the delete contact modal closes the modal | ✓ |
@@ -645,7 +645,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 |:---:|------| ---------------- |:---:|
 | 01 | Contact Details | Ensure the contact details are rendering correctly | ✓ |
 | 02 | All Contacts Link | Ensure clicking the all contact link takes the user back to the contact management page | ✓ |
-| 03 | Delete Contact Link | Ensure clicking the delete contact link opens the delete contact modal to aviod unwanted/accidental deletions | ✓ |
+| 03 | Delete Contact Link | Ensure clicking the delete contact link opens the delete contact modal to avoid unwanted/accidental deletions | ✓ |
 | 04 | Delete Contact Confirmation | Ensure clicking the delete contact link in the modal removes the contact from the database and takes the user back to the contact management page. | ✓ |
 
 ## Newsletter Unsubscribe Page
@@ -662,7 +662,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 |:---:|------| ---------------- |:---:|
 | 01 | Sign Up Link | Ensure the sign up link takes the user to the sign up page | ✓ |
 | 02 | Home Link | Ensure the home link takes the user to the home page | ✓ |
-| 03 | Forgot Password Link | Ensure the forgot password link takes the user to Password Reset page | ✓ |
+| 03 | Forgot Password Link | Ensure the forgot password link takes the user to the Password Reset page | ✓ |
 | 04 | Sign In Link | Ensure when a user signs in with the correct details they are redirected to the home page | ✓ |
 
 ## Log Out Page
@@ -682,7 +682,7 @@ Funcionality testing has been carried out on all browsers listed in the browser 
 
 # Stripe Payments 
 
-In order to make sure that the stripe payments were proving successful, I have tested the webhooks to make sure they are functioning for both logged in users and unregistered users. 
+To make sure that the stripe payments were proving successful, I have tested the webhooks to make sure they are functioning for both logged in users and unregistered users. 
 
 ## Logged In Users
 
@@ -791,7 +791,7 @@ I have used a mixture of code and the "login_required" decorators to ensure that
 |---|------| ---------------- |---|
 | [Profile Page](https://tarmachan.herokuapp.com/profile/) | Non logged in user | Redirects the user back to the log in page | ✓ |
 | [Wishlist](https://tarmachan.herokuapp.com/wishlist/) | Non logged in user | Error message to tell the user only site users have access to this feature | ✓ |
-| [Add or Remove product to Wishlist](https://tarmachan.herokuapp.com/wishlist/add_to_wishlist/1) | Non logged in user | User gets redirected to the home page, and an error messages displays to tell the user only logged in users can add products to their wishlist | ✓ |
+| [Add or Remove product to Wishlist](https://tarmachan.herokuapp.com/wishlist/add_to_wishlist/1) | Non logged in user | User gets redirected to the home page, and an error message displays to tell the user only logged in users can add products to their wishlist | ✓ |
 | [Site Management](https://tarmachan.herokuapp.com/product_management/) | Non logged in user | Redirects the user back to the log in page | ✓ |
 | [Site Management](https://tarmachan.herokuapp.com/product_management/) | Logged in user | Redirects the user back to the home page and an error message displays to tell the user only Tarmachan team members have access to this page | ✓ |
 | [Add Product](https://tarmachan.herokuapp.com/products/add/) | Non logged in user | Redirects the user back to the log in page | ✓ |
@@ -815,7 +815,7 @@ I have used a mixture of code and the "login_required" decorators to ensure that
 ## Passwords & Usernames
 
 I have used Django all auth to handle user administration tasks: 
-- This stores the users password as hashed key for security.
+- This stores the users password as a hashed key for security.
 - Also ensures users are required to confirm their emails as an extra security step. 
 
 I have done some testing to ensure that their can be no duplicate usernames or email address's: 
@@ -831,7 +831,7 @@ I have done some testing to ensure that their can be no duplicate usernames or e
 
 ## Django Testing Framework
 
-The site has been tested using the Django Testing framework which uses the TestCase class which is an extension of the Python standard library module called Unit Tests. Tests have been written to test the Models, Forms and the Views for each app.
+The site has been tested using the Django Testing framework which uses the TestCase class which is an extension of the Python standard library module called Unit Tests. Tests have been written to test the Models, Forms and Views for each app.
 
 To run the tests, in the terminal you can type the following command: 
 - ```
@@ -894,13 +894,13 @@ For the purposes of this site I am reasonably happy with the tests that have bee
 
 |  #  |  Bug  |  Description  |  Fix  |
 |:---:|------| ---------------- |----------------|
-| 01 | Deleting products on prodcut page | When trying to delete a product on the products page. When I opened to modal to delete a product it wouldn't retrieve the correct product ID in order to delete it. It was only the first product that would get deleted. | I tried to move the delete modal inside the for loop within the template, however this did not resolve the issue. I found a solution on stack overflow which grabbed the data id and url and applied them to the correctly to the delete modal with some javadscript. |
+| 01 | Deleting products on prodcut page | When trying to delete a product on the products page. When I opened the modal to delete a product it wouldn't retrieve the correct product ID to delete it. It was only the first product that would get deleted. | I tried to move the delete modal inside the for loop within the template, however this did not resolve the issue. I found a solution on stack overflow which grabbed the data id and url and applied them to the correctly to the delete modal with some javadscript. |
 | 02 | Parallax Container on smaller devices | I originally found the css code for creating a parallax image on w3schools. However when testing the device on smaller devices (ipad and iphone) the parallax image was zoomed in and not was not in a fixed position as it is on desktop devices. | After some research I found the issue was stemming from the "background-attachment: fixed;" property. This does not appear to be compatible on IOS devices. I found a solution on stack overflow which was to set the background image for the whole page and give it a lower z-index, so that the parallax image only appears in the parallax container, and then set the remaining page background to white.  |
 | 03 | Product review form on smaller devices | The product review form was not rendering correctly on mobile devices. It worked as expected on desktop devices however there wouldn't be a box for the subject and comment fields. | As there is no context for the add comment view I was unable to render the form as a crispy field, which i believe was where the issue was stemming from. Having looked on dev tools at the classes applied to crispy fields I could see there was a few classes missing from the fields for the review fields. After adding these to the subject and comment inputs the form was rendering as expected on all fields. |
 | 04 | Quantity Selectors | When I refactored the shopping bag page so that on smaller devices rather than a table displaying (which would require side scrolling), it displayed a grid, there was an issue with the quantity selectors on larger devices. This is because the quantity form is used twice, and hides either the table or the grid depending on screen size. However as the quantity form uses an ID to identify itself, only the first element within the HTML with that ID is picked up. | To combat this problem i have made changes to the quantity input script. I have put a check in place to see if the quantity is more than 2, to allow for decremental functionality. Simarlarly I have put a check in place to see if the quantity is less then 99, to allow for incremental functionality.  |
-| 05 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | In order to fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
+| 05 | Blog Cards first paragraph | When creating the cards for each blog on the blogs page I had some styling issues. As I have included the first paragraph on the blog cards, this meant that each card could be vastly different in height due to the length of paragraph 1 and make the overall appearance of the page look messy and disjointed.  | To fix this I added a line-clamp class to each of the cards for this paragraph. This meant that only the first 3 lines would be displayed with a '...' at the end. This made the cards more uniform and gave the site a better appearance. |
 | 06 | Bug in testing file | I had problems with my gitpod workspace where I was unable to save any of the changes I was making to the TESTING.md file. It was essentially crashing the workspace as I could not open any additional files | I think this was stemming from trying to render the gifs for the user stories. I created a new testing files and created links to the user stories gifs rather than rendering them. The workspace no longers breaks when making changes |
-| 07 | 500 server error on checkout success page | When testing purchasing on iphone and ipad I was getting a 500 server error. The error was showing on Stripe as "Webhook received: payment_intent.succeeded | ERROR: value too long for type character varying(2)" | After some research I initially thought the error was stemming from the country field due to the character value too long being 2. However after discussing this with tutor support they advised that the site was running on an old version and that by clearing the cache and history this will bring the site up to date | There have been no more errors like this since |
+| 07 | 500 server error on checkout success page | When testing purchasing on iphone and ipad I was getting a 500 server error. The error was showing on Stripe as "Webhook received: payment_intent.succeeded / ERROR: value too long for type character varying(2)" | After some research I initially thought the error was stemming from the country field due to the character value too long being 2. However after discussing this with tutor support they advised that the site was running on an old version and that by clearing the cache and history this will bring the site up to date | There have been no more errors like this since |
 | 08 | Console error for products without sizes | When on the products pages for products which did not have sizes, and more specifically items which do not have a sizing chart, I was getting a "Uncaught TypeError: Cannot read properties of null". | This was affecting the performance of the site on lighthouse. The error was stemming from the javascript for opening and closing the sizing charts. By checking firstly to see if their was a sizing chart before adding event listeners this has resolved the error in the console. (e.g: if (open_btn) { "event listener here" }|
 
 
@@ -933,7 +933,7 @@ The website's performance has been tested using Google Lighthouse
 | Site Management | 97 | 100 | 100 | 100 | N/A |
 | Add Product | 99 | 92 | 100 | 100 | To improve accessibility: Heading elements not in a sequential order. Not needed for aesthetics of the site. |
 | Add Blog | 99 | 92 | 100 | 100 | To improve accessibility: Heading elements not in a sequential order. Not needed for aesthetics of the site. |
-| Contact Management | 99 | 98 | 100 | 90 | To improve SEO: Links are not crawlable. The delete contact link in the delete modal does not have an 'href' attribute directly in the html, but this is populated by javascript and is therefore a known limitation.  |
+| Contact Management | 99 | 98 | 100 | 90 | To improve SEO: Links are not crawlable. The delete contact link in the delete modal does not have an 'href' attribute directly in the HTML, but this is populated by javascript and is, therefore, a known limitation.  |
 | Contact Detail | 98 | 99 | 100 | 100 | N/A |
 | Edit Product | 97 | 92 | 100 | 100 | N/A |
 | Edit Blog | 98 | 92 | 100 | 100 | N/A |
