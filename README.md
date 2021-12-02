@@ -10,9 +10,9 @@ View the live project [here](https://tarmachan.herokuapp.com/)
 
 Tarmachan was built as the 4th milestone project as part of Code Institute's Full Stack Software Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
 
-Tarmachan (Gaelic for Ptarmigan) is a ficticious online ecommerce retailer providing mountain clothing and equipment for consumers. Visitors to the site would be able to browse all products available split into 3 master categories (Men's, Womens's and equipment) and further sub categories, read blog posts uploaded by the site admin, register for an account to view past orders, add products to a personalised wishlist, write product reviews, contact the company with any queries and sign up for the company newsletter. 
+Tarmachan (Gaelic for Ptarmigan) is a fictitious online e-commerce retailer providing mountain clothing and equipment for consumers. Visitors to the site would be able to browse all products available split into 3 master categories (Men's, Women's and equipment) and further sub-categories, read blog posts uploaded by the site admin, register for an account to view past orders, add products to a personalised wishlist, write product reviews, contact the company with any queries and sign up for the company newsletter. 
 
-Tarmachan features ecommerce functionality, payments system using Stripe, CRUD functionality for admin users to manage, products, blog posts, contact messages and Django's integrated admin section for admin users to access database records. 
+Tarmachan features e-commerce functionality, a payments system using Stripe, CRUD functionality for admin users to manage, products, blog posts, contact messages and Django's integrated admin section for admin users to access database records. 
 
 Please Note that the website is for educational purposes only. Stripe's credit card payment functionality is real but remains in a "test mode" so that no payments will be taken. Please do not enter any personal credit/debit card numbers whilst using the site. 
 
@@ -75,19 +75,19 @@ To use the Stripe payment system when making purchases please use the following 
 15. As a site user, I want to be able to search for products using keywords. 
 
 #### Purchasing & Checkout
-16. As a purchasing user, I want to be able to select product sizes (on products which have sizes) and select the quantity of product I wish to purchase. 
+16. As a purchasing user, I want to be able to select product sizes (on products that have sizes) and select the quantity of product I wish to purchase. 
 17. As a purchasing user, I want to be able to add items to a basket should I wish to make more than one purchase. 
 18. As a purchasing user, I want to be notified when I've made changes to my basket and show an updated total price. 
 19. As a purchasing user, I want to be able to update items in the basket by changing the quantity or removing the item from the basket entirely. 
 20. As a purchasing user, I want to be able to checkout securely. 
-21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is sucessful. 
+21. As a purchasing user, I want to be able to view a confirmation page of my order and receive an email confirmation once the purchase is successful. 
 
 #### Admin & Store Management
 22. As a site owner, I want to be able to add, edit and remove products from the site easily. 
 23. As a site owner, I want access to an admin section to view and manage orders. 
-24. As a site owner, I want to be able to manage blog posts.. 
+24. As a site owner, I want to be able to manage blog posts.
 25. As a site owner, I want to be able to delete product reviews if they are unsuitable for the site. 
-26. As a site owner, I want to be able to monitor contact messages that have been submitted by site user's and delete them once they have been responded to. 
+26. As a site owner, I want to be able to monitor contact messages that have been submitted by site users and delete them once they have been responded to. 
 
 
 ## Scope
@@ -95,16 +95,16 @@ To use the Stripe payment system when making purchases please use the following 
 The key features of the website were developed based on the user stories
 
 ### For any site user: 
-- Home page, with dramatic imagery and to quickly help user's understand the purpose of the site.
-- Products Page, where users can view all the products, or products based on filtering criteria. 
-- Product Detail Page, detailing information about the product. From here user's can read reviews from other customers and add products to their bags. 
+- Home page, with dramatic imagery and to quickly help users understand the purpose of the site.
+- Products Page, where users can view all the products or products based on filtering criteria. 
+- Product Detail Page, detailing information about the product. From here users can read reviews from other customers and add products to their bags. 
 - Shopping Bag page, where users can see what products have been added to their bag. 
 - Checkout page, allowing users to purchase products. 
 - Confirmation page, allowing users to see a confirmation of their order. 
 - Blog Page, where users can look at all the blog posts that have been uploaded by the site owner. 
 - Blog Detail Page, where users can find out more information about each blog post.
 - Contact Page, where users can contact the company with any queries.
-- Newsletter Subscriber, available on all pages where users can subscribe to the company newsletter. 
+- Newsletter Subscribe form, available on all pages where users can subscribe to the company newsletter. 
 - Sign Up Page, where users can register to become a registered user. 
 - About Us Page, where users can find out more about the company. 
 
@@ -112,7 +112,7 @@ The key features of the website were developed based on the user stories
 All of the above plus: 
 - Wishlist page, where users can store products in their wishlist. 
 - Profile Page, where users can update their default delivery information allowing for ease at checkout. 
-- Order History, from the profile page users can see the previous orders they have made. 
+- Order History, from the profile page, users can see the previous orders they have made. 
 - Product Reviews, on the product detail page, users can leave a rating and a message about a product. 
 - Log Out Page, where users can log out of their account. 
 
@@ -121,7 +121,7 @@ All of the above plus:
 - Site management page, where admin users can add products, blog, and review contact messages from other users. 
 - Add Product / Blog page, where admin can add products / blogs. 
 - Edit Product / Blog Page, where admin can update products / blogs. 
-- Product Reviews, admin can delete reviews from any user has left a review. 
+- Product Reviews, admin can delete reviews from any user who has left a review. 
 
 ## Structure
 
@@ -143,11 +143,11 @@ All of the above plus:
         - Profile
         - Log Out
 
-- Navbar Desktop - The main navbar has a centralised Tarmachan Logo, which will take users to the home page. Main site links are aligned to the left of the logo. Each of these links will open a mega menu which spans the full width of the screen, again to help aid with navigation and to avoid large amount of scrolling with a regular dropdown. The search icon will drop down a search bar below the main nav, and the basket icon will take users to their shopping bag page. 
+- Navbar Desktop - The main navbar has a centralised Tarmachan Logo, which will take users to the home page. Main site links are aligned to the left of the logo. Each of these links will open a mega menu that spans the full width of the screen, again to help aid with navigation and to avoid a large amount of scrolling with a regular dropdown. The search icon will drop down a search bar below the main nav, and the basket icon will take users to their shopping bag page. 
 
-- Navbar Mobile - The mobile navbar has the same logo image, search and basket links. However rather than links to the left of the logo, a collapsible side nav can be triggered by a burger menu. Scrollable dropdowns allow for all the categories and subcategories to be selected. Also on smaller devices the delivery banner icons are removed and replaced with links within the burger menu. The height of the navbar is also reduced on smaller screen sizes to allow for more screen real estate. The navbar also sticks to the top of the screen on all devices to allow for ease of access to navigation. 
+- Navbar Mobile - The mobile navbar has the same logo image, search and basket links. However rather than links to the left of the logo, a collapsible side nav can be triggered by a burger menu. Scrollable dropdowns allow for all the categories and subcategories to be selected. Also on smaller devices, the delivery banner icons are removed and replaced with links within the burger menu. The height of the navbar is also reduced on smaller screen sizes to allow for more screen real estate. The navbar also sticks to the top of the screen on all devices to allow for ease of access to navigation. 
 
-- Footer - The footer is split into different sections. The first column allows all users to sign up to the tarmachan newsletter by filling in the form with their email and clicking the submit button. There is also a link to the newsletter unsubscribe page which allows users to unsubcribe from the newsletter by filling in their email address. Confirmation emails will be issued to the user whenever they either sign up or unsubscribe from the newsletter. The second column contains navigational links to take the user to product pages for master categories, clearance and all products. The third column contains navigational links to take the user to pages about the company. This column will also show Logout and profile links depending on whether the user is logged in or not. The fourth column has links to social media sites. An additional logo will take the user back to the home page. 
+- Footer - The footer is split into different sections. The first column allows all users to sign up for the tarmachan newsletter by filling in the form with their email and clicking the submit button. There is also a link to the newsletter unsubscribe page which allows users to unsubscribe from the newsletter by filling in their email address. Confirmation emails will be issued to the user whenever they either sign up or unsubscribe from the newsletter. The second column contains navigational links to take the user to product pages for master categories, clearance and all products. The third column contains navigational links to take the user to pages about the company. This column will also show Logout and profile links depending on whether the user is logged in or not. The fourth column has links to social media sites. An additional logo will take the user back to the home page. 
 
 - Toast Messages - Toast message boxes have been used throughout the site to display feedback to the user when they have made interactions with the site. These messages are colour coded to signify different message types: 
     - Green: Success
@@ -157,29 +157,29 @@ All of the above plus:
 
 #### Home page
 
-- Users are greated with a full height hero image and a quote which has relevance to the purpose of the site. There are 3 links available to the user which will take the users to products pages for the 3 master categories (Mens, Womens, Equipment). 
-- There are featured cards for the 4 product categories for both mens and womens clothing. On desktop devices, when a user hovers over the card images, the Men's and Women's links will show. On mobile devices when a user clicks on one of the image cards the Men's and Women's links will show. 
+- Users are greeted with a full height hero image and a quote which has relevance to the purpose of the site. There are 3 links available to the user which will take the users to products pages for the 3 master categories (Mens, Womens, Equipment). 
+- There are featured cards for the 4 product categories for both men's and women's clothing. On desktop devices, when a user hovers over the card images, the Men's and Women's links will show. On mobile devices when a user clicks on one of the image cards, the Men's and Women's links will show. 
 - Large featured section for clearance products advertises the current marketing strategy. The image fulfills expectations as it takes the user to all products that are currently on sale. 
-- Owl Carousel to display the 8 latest blog posts. Clicking the arrows will slide the blogs along by 1. Clicking the dots underneath will slide to the next set of blogs depending on screen size. The blogs will loop round constantly, and allows for touch sliding on smart devices. 
+- Owl Carousel to display the 8 latest blog posts. Clicking the arrows will slide the blogs along by 1. Clicking the dots underneath will slide to the next set of blogs depending on screen size. The blogs will loop around constantly and allow for touch sliding on smart devices. 
 
 #### Products Page
 
 - There is a product counter to display how many products are being displayed depending on filtering criteria. This will also display the search term that a user has entered in the search bar. 
 - Sorting dropdown selector allows users to sort the products by various parameters. 
 - I have kept the layout of the products page similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. 
-- Each product card shows a the product image which when hovered over will show the product description and fade the product image. When this is clicked the user is directed to the product detail page, where they can view further details about the product or add it to their shopping bag. 
-- Basic product information is displayed below the product image (product name, price, tag to the category, rating if applicable and the add to / remove from wishlist icon). I didnt want to overload the product card with too much detail. The information provided is enough to give the user an overview of the product. Products that are on sale will have a sale icon in the upper right corner of the product image to clearly identify which products are on sale to the user. 
-- As the amount of products displaying on a page can be plentisome I have added a back to top button which resides in the bottom corner of the screen. I have deliberately made this quite minimalist so focus is not drawn away from the products. 
+- Each product card shows the product image which when hovered over will show the product description and fade the product image. When this is clicked the user is directed to the product detail page, where they can view further details about the product or add it to their shopping bag. 
+- Basic product information is displayed below the product image (product name, price, tag to the category, rating if applicable and the add to / remove from wishlist icon). I didn't want to overload the product card with too much detail. The information provided is enough to give the user an overview of the product. Products that are on sale will have a sale icon in the upper right corner of the product image to clearly identify which products are on sale to the user. 
+- As the number of products displayed on a page can be plenty some I have added a back to top button which resides in the bottom corner of the screen. I have deliberately made this quite minimalist so the focus is not drawn away from the products. 
 
 #### Product Detail Page
 
 - On larger devices the first row is split into 3 sections:
-    - Section 1: In this section there is some basic product information as well as links to take the users to the reviews section and product details section. Admin users are also able to edit and delete products using the icons featured in this section. This section will display below section 2 (product image) on smaller devices. 
-    - Section 2: A centralised product image. On all screen sizes the product image has a site relevant background image behind it. This gives an almost 3D quality to the image and draws the user in. 
-    - Section 3: This section is for purchasing. The user is able to select the quantity of the product they wish to purchase and select sizes (if the product has sizes). Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Keep Shopping" button. Users are able to add and remove product to and from their wishlist by clicking the add to /remove from wishlist button. Users can also click the sizing chart link which will open a pop-out displaying relevant sizing information to the product. This can be closed using the cross in the pop up or by clicking elsewhere on the screen (larger devices only). This section will display below section 2 (product image) on smaller devices. 
+    - Section 1: In this section, there is some basic product information as well as links to take the users to the reviews section and product details section. Admin users are also able to edit and delete products using the icons featured in this section. This section will display below section 2 (product image) on smaller devices. 
+    - Section 2: A centralised product image. On all screen sizes, the product image has a site relevant background image behind it. This gives an almost 3D quality to the image and draws the user in. 
+    - Section 3: This section is for purchasing. The user is able to select the quantity of the product they wish to purchase and select sizes (if the product has sizes). Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Keep Shopping" button. Users are able to add and remove products to and from their wishlist by clicking the add to /remove from wishlist button. Users can also click the sizing chart link which will open a pop-out displaying relevant sizing information to the product. This can be closed using the cross in the pop up or by clicking elsewhere on the screen (larger devices only). This section will display below section 2 (product image) on smaller devices. 
 - There are two tabs below the product information, image and purchasing options:
     - Product Details tab - This shows an extended description of the product along with product specifications. 
-    - A reviews tab allows logged in user to submit reviews, and view any reviews that have been made by other users. 
+    - A reviews tab allows logged in users to submit reviews, and view any reviews that have been made by other users. 
 
 #### Shopping Bag Page
 
@@ -189,31 +189,31 @@ All of the above plus:
     - Price - displays the individual product price. 
     - Quantity - Users are able to update their order using the quantity selectors and the update button. Users can also remove that product from their shopping bag entirely by clicking the remove button. 
     - Subtotal - displays the subtotal for each product (product price * quantity).
-- Underneath the products that are in the users bag, their is information for bag total, delivery and grand total. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free deivery. 
+- Underneath the products that are in the user's bag, there is information for bag total, delivery and grand total. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. 
 - There is a button to take the users back to the all product page, and a "Secure Checkout" button to take the user to the checkout page. 
 - If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed. 
 
 #### Checkout Page
 
 - The Checkout page is split into two columns on larger devices, and 2 rows on smaller devices:
-    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links which will take the user back to the product details page for that product. User's can also see a breakdown of the order total, delivery and grand total. 
+    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links that will take the user back to the product details page for that product. Users can also see a breakdown of the order total, delivery and grand total. 
     - Checkout Form - split into 3 sections:
         - Details - where users are invited to fill out their full name and email address. Email address will be auto populated if a user has logged in and saved this information to their profile. 
         - Delivery - Users can fill in where they wish their products to be delivered to. These fields will be auto populated if a user has logged in and saved this information to their profile. 
         - Payment - Users can enter their card details here in order to make payments and purchase their chosen products. 
-- Below the checkout form users can click the "Adjust Bag" button to make adjustments to their shopping bag, or click the "Complete Order" button to make their purchases. Users are informed exactly how much they will be charged with a helpful message directly underneath the "Complete Order" button. 
+- Below the checkout form, users can click the "Adjust Bag" button to make adjustments to their shopping bag, or click the "Complete Order" button to make their purchases. Users are informed exactly how much they will be charged with a helpful message directly underneath the "Complete Order" button. 
 
 #### Checkout Success Page 
 - When a user successfully checks out a success toast will be shown to the user with the order number and a confirmation email will be sent to the user with some of the details of their order. 
 - The checkout success page itself is split into two sections:
-    - Order information which details the order info, delivery details and the billing info. 
-    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links which will take the user back to the product details page for that product.
+    - Order information which details the order info, delivery details and billing info. 
+    - Order Summary - Gives a nice overview of each of the products that they are purchasing. Images are links that will take the user back to the product details page for that product.
 - More products link which will take the user back to the all products page encouraging the user to make more purchases. 
 
 #### About Us Page
 - Users can find out more about the company by clicking the about us link under the company dropdown (on larger devices), or within the burger menu. 
 - Users are greeted with a hero image with the company mantra about the products. 
-- The page is split into two sections - Our story where users can read about how the company was found and Our Philosophy where users can read about the companies efforts to use responsibly sourced materials. These are split by a site relevant parallax image. 
+- The page is split into two sections - Our story where users can read about how the company was founded and Our Philosophy where users can read about the companies efforts to use responsibly sourced materials. These are split by a site relevant parallax image. 
 
 #### Contact Us Page
 - Users can find different ways to contact the company on the contact page. Details for the company address, telephone, email and opening times can be found here. 
@@ -221,7 +221,7 @@ All of the above plus:
 - Contact messages can be located on the site administration page (for superusers only). 
 
 #### Blog Page
-- On the Blog page users can find snippets of all the blogs that have been uploaded to the site. The layout for this page is similar to that of the products in that on extra large devices 4 blog posts will show in a row, 3 on a large device, 2 on small and medium devices and 1 on extra small devices. 
+- On the Blog page, users can find snippets of all the blogs that have been uploaded to the site. The layout for this page is similar to that of the products in that on extra large devices 4 blog posts will show in a row, 3 on a large device, 2 on small and medium devices and 1 on extra small devices. 
 - Each blog card has an image relevant to the blog, some information about the user who uploaded it and the date that it was uploaded. Blogs are ordered so that the most recent blogs display first. 
 - Clicking anywhere on each blog card will take the user to the blog detail page for that blog. 
 
@@ -229,19 +229,19 @@ All of the above plus:
 - The blog detail page will appear differently for different blogs as not all fields are required to submit a blog. If all fields have been filled out it will display as follows: 
     - Full width hero image with an image caption underneath. 
     - Blog title, author and date the blog was uploaded followed by the first 3 paragraphs of which only the first paragraph is required. 
-    - When a second image is added this will act as the parallax image between the 3rd and 4th paragraphs, and will have an image caption beneath. 
+    - When a second image is added this will act as the parallax image between the 3rd and 4th paragraphs and will have an image caption beneath. 
     - Paragraphs 4-6 will then display of which only paragraph 4 is required. 
     - When a third image is added this will act as a text break between paragraphs 6 and 7. An image caption will display below the image. 
-    - Pragraphs 7-9 will then display of which only paragraph 7 is required. 
+    - Paragraphs 7-9 will then display of which only paragraph 7 is required. 
 - I have deliberately made it that paragraphs 1, 4 and 7 are required so that there is text between each of the images. 
-- On larger devices I have used an offset column so there is plenty of white space making text more readable and less condensed. 
-- For regular users there is a link to take the user back to the blogs page. 
-- For super users there are links to edit and delete the blog. 
+- On larger devices, I have used an offset column so there is plenty of white space making the text more readable and less condensed. 
+- For regular users, there is a link to take the user back to the blogs page. 
+- For superusers, there are links to edit and delete the blog. 
 
 #### Profile Page 
 The user profile page is split into two parts: 
 - Firstly users can update their default delivery information by filling in the form and clicking the update information button allowing for easier purchasing at checkout. 
-- The second column has information about a users past orders. Users are able to click on the order number to take them to the checkout success page. Going to the confirmation page from the users profile, rather than a keep shopping link there is a link for the user to take them back to their profile. A message to inform the user that this is a past order confirmation is displayed to avoid confusion. 
+- The second column has information about a user's past orders. Users can click on the order number to take them to the checkout success page. Going to the confirmation page from the user's profile, rather than a keep shopping link there is a link for the user to take them back to their profile. A message to inform the user that this is a past order confirmation is displayed to avoid confusion. 
 
 #### User Wishlist Page
 - This page will only be accessible to logged in users. If a user has not added any products to their wishlist then the user will be informed of this and a link to the all products page will be displayed. 
@@ -252,20 +252,20 @@ The user profile page is split into two parts:
 
 ### Admin Features
 
-- Admin will have access to additional features accross the site. Firsty admin members will have an additional icon in the delivery banner (on larger devices) or link in the burger menu (on smaller devices) to take the user to the site admin page. Here the admin user will have access to:
-    - Add a product page link - Will take the admin user to the add product page. Here the user can fill in the form to add a product to the site. Once added the admin user will be taken to the product detail page for the product added. 
-    - Add a blog link - Will take the admin user to the add blog page. Here the user can fill in the form to the add a blog to the site. Once added the admin user will be taken to the blog detail page for the blog added. 
-    - Manage Contact Messages - Will take the admin user to the contact management page. Here admin users will be displyed with all the queries that have been submitted by other users. Admin users can view details of these messages by clicking on the name in the table. On both the contact management page and the contact detail page admin users are able to delete the messages once they have responded to the user. This will trigger a modal to make sure the user is happy to delete the message. 
+- Admin will have access to additional features across the site. Firstly admin members will have an additional icon in the delivery banner (on larger devices) or link in the burger menu (on smaller devices) to take the user to the site admin page. Here the admin user will have access to:
+    - Add a product page link - This will take the admin user to the add product page. Here the user can fill in the form to add a product to the site. Once added the admin user will be taken to the product detail page for the product added. 
+    - Add a blog link - This will take the admin user to the add blog page. Here the user can fill in the form to add a blog to the site. Once added the admin user will be taken to the blog detail page for the blog added. 
+    - Manage Contact Messages - This will take the admin user to the contact management page. Here admin users will be displayed with all the queries that have been submitted by other users. Admin users can view details of these messages by clicking on the name in the table. On both the contact management page and the contact detail page admin users can delete the messages once they have responded to the user. This will trigger a modal to make sure the user is happy to delete the message. 
 - On the product page and product detail page admin users will have access to the edit and delete product icons. The edit icon will take the user to the edit product form, where they can make changes to a product (i.e put in the clearance category). The delete icon will trigger a modal to make sure the user wishes to delete the product and avoid accidental deletions. 
 
     
 
 ### Features left to implement
 
-- Option for billing details and delivery details to be different. User's may wish to deliver items to a different address than their card is registered at. This could cause some issues with authentication. For the purposes of this site I'm happy to have this as a known limitation. 
+- Option for billing details and delivery details to be different. Users may wish to deliver items to a different address than their card is registered at. This could cause some issues with authentication. For the purposes of this site, I'm happy to have this as a known limitation. 
 - A welcome or discount offer for new customers, such as 20% off their first order, to encourage more registrations. 
 - Social Media signup options. 
-- Additional payment options such as apple pay or paypal for ease of purchasing. 
+- Additional payment options such as Apple Pay or Paypal for ease of purchasing. 
 
 
 ## Skeleton
@@ -327,7 +327,7 @@ The final site has stayed relatively true to the wireframes created from the out
 
 - Inspiration for my colour scheme has been taken from [Rab's website](https://rab.equipment/uk/mens/fleece-midlayer). I've decided to go for a slighter darker green to allow further contrast for the white text. As Tarmachan is an outdoors store this colour choice reflects the link between products sold and the Scottish countryside. 
 
-- From there I have used complimentary shades of green to create a softer pallette highlighting different sections of the site. 
+- From there I have used complementary shades of green to create a softer palette highlighting different sections of the site. 
 
 - I have decided to use a white background throughout the majority of the site. This is to keep the visual design clean and means the emphasis is on the products and imagery to bring vibrance to the site. This design follows that of similar Mountain equipment retailers such as [Rab](https://rab.equipment/uk/mens/fleece-midlayer), [North Face](https://www.thenorthface.co.uk/) and [Mountain Equipment](https://www.mountain-equipment.co.uk/). 
 
@@ -352,7 +352,7 @@ The final site has stayed relatively true to the wireframes created from the out
 
 #### Typography
 
-- I have used Cantata One as the logo font which has been used throughout the whole site. This was dictated when deciding what font to use on the products themselves. I wanted a font which was bold yet readable and looked uniform when it's formatted to be uppercase. The same font has therefore been used for headings, subheadings and some buttons. 
+- I have used Cantata One as the logo font which has been used throughout the whole site. This was dictated when deciding what font to use on the products themselves. I wanted a font that was bold yet readable and looked uniform when it's formatted to be uppercase. The same font has therefore been used for headings, subheadings and some buttons. 
 
 ![Cantata One](documentation/typography/cantata.png)
 
@@ -362,7 +362,7 @@ The final site has stayed relatively true to the wireframes created from the out
 
 #### Imagery
 
-- Due to the nature of the products sold I have had to rely on other retailers products and modify them for use on my site. For the most part product images have come from [Mountain Equipment](https://www.mountain-equipment.co.uk/) and other online retailers (credited in the credits section).
+- Due to the nature of the products sold I have had to rely on other retailer's products and modify them for use on my site. For the most part product images have come from [Mountain Equipment](https://www.mountain-equipment.co.uk/) and other online retailers (credited in the credits section).
 
 - I have used a hero image on the home page to the give the site a dramatic appearance. Category images have been used for the featured products section on the home page to give a visual representation of what the companies products are intended for. Parallax images and product detail background images are in keeping with the company name. 
 
@@ -370,7 +370,7 @@ The final site has stayed relatively true to the wireframes created from the out
 
 #### Icons
 
-- Ive made use of icons in various section on the site. They have been used for navigation (on larger devices), social media links, wishlist, product tags and stars. All icons have been obtained from FontAwesome. 
+- I've made use of icons in various sections on the site. They have been used for navigation (on larger devices), social media links, wishlist, product tags and stars. All icons have been obtained from FontAwesome. 
 
 # Information Architecture
 
@@ -392,7 +392,7 @@ The following Entity-Relationship diagram shows the relationships between the mo
 
 ### Checkout App
 - Order Model
-    - Contains details of the of the user's orders, their delivery details, and the items they've order. It is linked to the UserProfile Model by the 'user_profile' field
+    - Contains details of the user's orders, their delivery details, and the items they've ordered. It is linked to the UserProfile Model by the 'user_profile' field
 
 - OrderLineItem Model
     - Contains details for the customer order, quantity and product total. It is linked to the Order Model by the 'order' field and the Product Model by the 'product field'.
@@ -424,7 +424,7 @@ The following Entity-Relationship diagram shows the relationships between the mo
     - Contains the user's details for future orders. 
 ### Wishlist App
 - user_wishlist
-    - Although this is not a Model, I have built a one-to-one link between the User Model and Product Model, which creates a "link table" allowing user's to add products to their wishlist. 
+    - Although this is not a Model, I have built a one-to-one link between the User Model and Product Model, which creates a "link table" allowing a user to add products to their wishlist. 
 ### Django Allauth
 - User
     - The User model is provided by default from Django Allauth and contains the username, email, and password for each user. 
@@ -804,7 +804,7 @@ Note: Alternatively you can select the "Download Zip" option from the dropdown m
                 'storages',
             ]
             ```
-2. To connect Django to S3 we need to update the setting.py file to tell Django which bucket it should be communicating with. We only want to this in the Heroku, so we can add an if statement to check if theres an environment variable called USE_AWS in the environment. 
+2. To connect Django to S3 we need to update the settings.py file to tell Django which bucket it should be communicating with. We only want to this in the Heroku, so we can add an if statement to check if theres an environment variable called USE_AWS in the environment. 
     - ```
         if 'USE_AWS' in os.environ:
             AWS_STORAGE_BUCKET_NAME = 'tarmachan'
